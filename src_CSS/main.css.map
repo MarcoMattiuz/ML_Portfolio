@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAIA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECJD,OAAgB;CDMlC",
+    "mappings": "AEAA,AAAA,mBAAmB,CAAA;EACf,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,UAAU,EAAC,MAAM;EACjB,MAAM,EAAE,eAAe;CAsBxB;;AA1BH,AAOQ,mBAPW,AAMZ,MAAM,CACL,SAAS,EAPjB,mBAAmB,AAMH,OAAO,CACf,SAAS,CAAA;EACP,SAAS,EAAE,eAAe;CAC3B;;AATT,AAYI,mBAZe,CAYf,SAAS,CAAA;EACP,IAAI,EAAE,WAAW;EACjB,MAAM,EAAE,KAAK;EACb,YAAY,EAAE,CAAC;EACf,UAAU,EAAE,oBAAoB;EAQhC,gBAAgB,EAAE,WAAW;CAC9B;;AAPD,UAAU,CAAV,MAAU;EACR,EAAE;IAAI,OAAO,EAAC,CAAC;;EACf,GAAG;IAAG,OAAO,EAAC,CAAC;;EACf,IAAI;IAAE,OAAO,EAAC,CAAC;;;;AFjBrB,AAAA,IAAI,CAAA;EACA,gBAAgB,ECJD,OAAgB;CDMlC",
     "sources": [
         "../styles_SCSS/main.scss",
-        "../styles_SCSS/_variables.scss"
+        "../styles_SCSS/_variables.scss",
+        "../styles_SCSS/_triangle.scss"
     ],
     "names": [],
     "file": "main.css"
