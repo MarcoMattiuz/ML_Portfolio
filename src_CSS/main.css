@@ -15,50 +15,7 @@
   margin-left: 2em;
 }
 
-a {
-  text-decoration: none;
-}
-
-h2 {
-  font-family: "Balsamiq Sans", cursive;
-  color: white;
-  font-size: 1.7em;
-}
-
-p {
-  color: white;
-  font-size: 1.1em;
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  background-color: #0c0d0d;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  background-color: #0c0d0d;
-}
-
-.container .section {
-  width: 100vw;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container .section .header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +35,7 @@ body {
   background-color: #0c0d0d;
 }
 
-.container .section .header .nav-bar {
+.header .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +51,7 @@ body {
   height: 100%;
 }
 
-.container .section .header .nav-bar .links-container {
+.header .nav-bar .links-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,11 +63,11 @@ body {
   height: 100%;
 }
 
-.container .section .header .nav-bar .links-container .links {
+.header .nav-bar .links-container .links {
   margin: 0 auto;
 }
 
-.container .section .header .nav-bar .contact-button {
+.header .nav-bar .contact-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +84,7 @@ body {
   background: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
 }
 
-.container .section .header .nav-bar .contact-button:hover {
+.header .nav-bar .contact-button:hover {
   -webkit-animation: waves 5s infinite;
           animation: waves 5s infinite;
 }
@@ -178,7 +135,55 @@ body {
   }
 }
 
-.container .section .title-container {
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  font-size: 1.7em;
+}
+
+p {
+  color: white;
+  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #0c0d0d;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #0c0d0d;
+  /*
+    .container__:nth-of-type(2){} 
+    indica il secondo figlio (section page2) 
+    del parente (container)
+    */
+}
+
+.container .section {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .title-container {
   position: relative;
   width: 80vw;
   height: 60vh;
@@ -186,7 +191,7 @@ body {
   text-align: center;
 }
 
-.container .section .title-container .opening-quote {
+.container .title-container .opening-quote {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 10rem;
@@ -198,7 +203,7 @@ body {
   z-index: 1;
 }
 
-.container .section .title-container .opening-quote::before {
+.container .title-container .opening-quote::before {
   display: inline;
   position: relative;
   width: 50px;
@@ -210,7 +215,7 @@ body {
   background-image: radial-gradient(rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
 }
 
-.container .section .title-container .opening-quote::after {
+.container .title-container .opening-quote::after {
   display: inline;
   position: relative;
   width: 50px;
