@@ -1,5 +1,5 @@
 @import "./variables";
-@import "./mixims-functions";
+@import "./mixins-functions";
 @import "./logo";
 
 // // // // // // // // //
@@ -110,21 +110,39 @@ body {
             margin: 0;
             text-align: center;
 
-        
-
             .opening-quote {
                 margin: 0 auto;
                 font-family: $open-Sans;
                 font-size: 10rem;
                 font-size: 4.5em;
 
+                @include clipBg-ToText;
+                background-image:  $title-gradiant;
+                text-shadow: -10px -10px rgba($color: #ff1ef6, $alpha: 0.2);
+            }
 
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                background-image: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
-                text-shadow: -10px -10px rgba($color: #ff1ef6, $alpha: 0.2)
-                
+            .opening-quote::before {
+                display: inline;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                content: '"';
+                left: 0.9em;
+
+                @include clipBg-ToText;
+                background-image:  $title-gradiant;
+            }
+
+            .opening-quote::after {
+                display: inline;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                content: '"';
+                right: 3em;
+
+                @include clipBg-ToText;
+                background-image: $title-gradiant;
             }
         }
     }

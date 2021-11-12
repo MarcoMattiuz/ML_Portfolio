@@ -190,8 +190,33 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ff1ef6), color-stop(30, #ef2121), color-stop(70, #fff500));
-  background-image: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
+  background-image: radial-gradient(rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
   text-shadow: -10px -10px rgba(255, 30, 246, 0.2);
+}
+
+.container .section .title-container .opening-quote::before {
+  display: inline;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '"';
+  left: 0.9em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: radial-gradient(rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
+}
+
+.container .section .title-container .opening-quote::after {
+  display: inline;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '"';
+  right: 3em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: radial-gradient(rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
 }
 /*# sourceMappingURL=main.css.map */

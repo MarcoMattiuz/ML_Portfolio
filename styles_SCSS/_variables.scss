@@ -1,8 +1,15 @@
 // // // // // // // // // // //
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@800&display=swap");
 
-// // // // // // // // // // // 
+// // // // // // // // // // //
 $background-black: hsl(180, 4%, 5%);
-$open-Sans: 'Open Sans', sans-serif;
-$bals-Sans: 'Balsamiq Sans', cursive;
-$lora: 'Lora', serif;
+$open-Sans: "Open Sans", sans-serif;
+$bals-Sans: "Balsamiq Sans", cursive;
+$lora: "Lora", serif;
+$title-gradiant: radial-gradient(
+    rgba(77, 95, 207, 0.87),
+    rgba(161, 87, 210, 0.6779),
+    rgba(69, 239, 252, 0.5465),
+    rgba(69, 241, 247, 0.4436),
+    rgba(69, 252, 225, 0)
+);

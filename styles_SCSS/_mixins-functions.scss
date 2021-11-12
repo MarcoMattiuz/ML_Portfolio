@@ -1,6 +1,6 @@
 // ------@mixin-@functions file------ //
-  
-@mixin flex-center{
+
+@mixin flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,8 +12,8 @@
     justify-content: space-between;
 }
 
-@mixin clipBg-ToText{
+@mixin clipBg-ToText {
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 2.5vw;
 }
