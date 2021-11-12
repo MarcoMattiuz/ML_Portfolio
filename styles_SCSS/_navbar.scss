@@ -1,0 +1,70 @@
+.header {
+    @include flex-spaceBetwen;
+
+    position: fixed;
+    width: 90%;
+    height: 3.5em;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 5px 20px 20px $background-black;
+
+    background-color: $background-black;
+
+    .nav-bar {
+        @include flex-spaceBetwen;
+
+        position: relative;
+        margin-right: 1em;
+        width: 80%;
+        height: 100%;
+
+        .links-container {
+            display: flex;
+            align-items: center;
+
+            margin: 0 auto;
+            width: 20em;
+            height: 100%;
+
+            .links {
+                margin: 0 auto;
+            }
+        }
+
+        .contact-button {
+            @include flex-center;
+
+            width: 10em;
+            height: 80%;
+
+            border-radius: 0.5rem;
+            background: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
+        }
+
+        .contact-button:hover {
+            animation: waves 5s infinite;
+        }
+
+        @keyframes waves {
+            0% {
+                background: #ff1ef6;
+                opacity: 0.8;
+            }
+            25% {
+                background: #ef2121;
+                opacity: 0.6;
+            }
+            50% {
+                background: #fff500;
+                opacity: 0.4;
+            }
+            75% {
+                background: #ff1ef6;
+                opacity: 0.6;
+            }
+            100% {
+                background: #ef2121;
+                opacity: 0.8;
+            }
+        }
+    }

@@ -1,9 +1,8 @@
 @import "./variables";
 @import "./mixins-functions";
 @import "./logo";
-
-// // // // // // // // //
-a {
+@import "./navbar" // // // // // // // // //
+    a {
     text-decoration: none;
 }
 
@@ -34,116 +33,51 @@ body {
         width: 100vw;
         height: 100vh;
         @include flex-center;
+    }
 
-        .header {
-            @include flex-spaceBetwen;
+    /*
+    #{&}__:nth-of-type(2){} 
+    indica il secondo figlio (section page2) 
+    del parente (container)
+    */
+    .title-container {
+        position: relative;
+        width: 80vw;
+        height: 60vh;
+        margin: 0;
+        text-align: center;
 
-            position: fixed;
-            width: 100%;
-            height: 5vh;
-            top: 0;
+        .opening-quote {
+            margin: 0 auto;
+            font-family: $open-Sans;
+            font-size: 10rem;
+            font-size: 4.5em;
 
-            .nav-bar {
-                @include flex-spaceBetwen;
-
-                position: relative;
-                margin-right: 1em;
-                width: 80%;
-                height: 100%;
-
-                .links-container {
-                    display: flex;
-                    align-items: center;
-
-                    margin: 0 auto;
-                    width: 20em;
-                    height: 100%;
-
-                    .links {
-                        margin: 0 auto;
-                    }
-                }
-
-                .contact-button {
-                    @include flex-center;
-
-                    width: 10em;
-                    height: 80%;
-
-                    border-radius: 0.5rem;
-                    background: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
-                }
-
-                .contact-button:hover {
-                    animation: waves 5s infinite;
-                }
-
-                @keyframes waves {
-                    0% {
-                        background: #ff1ef6;
-                        opacity: 0.8;
-                    }
-                    25% {
-                        background: #ef2121;
-                        opacity: 0.6;
-                    }
-                    50% {
-                        background: #fff500;
-                        opacity: 0.4;
-                    }
-                    75% {
-                        background: #ff1ef6;
-                        opacity: 0.6;
-                    }
-                    100% {
-                        background: #ef2121;
-                        opacity: 0.8;
-                    }
-                }
-            }
+            @include clipBg-ToText;
+            background-image: $title-gradiant;
+            z-index: 1;
         }
 
-        .title-container {
+        .opening-quote::before {
+            display: inline;
             position: relative;
-            width: 80vw;
-            height: 60vh;
-            margin: 0;
-            text-align: center;
+            width: 50px;
+            height: 50px;
+            content: '"';
 
-            .opening-quote {
-                margin: 0 auto;
-                font-family: $open-Sans;
-                font-size: 10rem;
-                font-size: 4.5em;
+            @include clipBg-ToText;
+            background-image: $title-gradiant;
+        }
 
-                @include clipBg-ToText;
-                background-image:  $title-gradiant;
-                text-shadow: -10px -10px rgba($color: #ff1ef6, $alpha: 0.2);
-            }
+        .opening-quote::after {
+            display: inline;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            content: '"';
 
-            .opening-quote::before {
-                display: inline;
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                content: '"';
-                left: 0.9em;
-
-                @include clipBg-ToText;
-                background-image:  $title-gradiant;
-            }
-
-            .opening-quote::after {
-                display: inline;
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                content: '"';
-                right: 3em;
-
-                @include clipBg-ToText;
-                background-image: $title-gradiant;
-            }
+            @include clipBg-ToText;
+            background-image: $title-gradiant;
         }
     }
 }
