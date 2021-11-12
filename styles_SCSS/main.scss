@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixims-functions";
 @import "./logo";
 
 // // // // // // // // //
@@ -6,14 +7,22 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-family: $bals-Sans;
+    color: white;
+    font-size: 1.7em;
+}
 p {
     color: white;
+    font-size: 1.1em;
+    font-family: $open-Sans;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    background-color: $background-black;
 }
 
 .container {
@@ -24,20 +33,18 @@ body {
     .section {
         width: 100vw;
         height: 100vh;
+        @include flex-center;
 
         .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
+            @include flex-spaceBetwen;
+
+            position: fixed;
             width: 100%;
             height: 5vh;
-            margin: 0;
+            top: 0;
 
             .nav-bar {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                @include flex-spaceBetwen;
 
                 position: relative;
                 margin-right: 1em;
@@ -49,8 +56,7 @@ body {
                     align-items: center;
 
                     margin: 0 auto;
-
-                    width: 15em;
+                    width: 20em;
                     height: 100%;
 
                     .links {
@@ -59,9 +65,7 @@ body {
                 }
 
                 .contact-button {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center;
 
                     width: 10em;
                     height: 80%;
@@ -77,20 +81,50 @@ body {
                 @keyframes waves {
                     0% {
                         background: #ff1ef6;
+                        opacity: 0.8;
                     }
                     25% {
                         background: #ef2121;
+                        opacity: 0.6;
                     }
                     50% {
                         background: #fff500;
+                        opacity: 0.4;
                     }
                     75% {
                         background: #ff1ef6;
+                        opacity: 0.6;
                     }
                     100% {
                         background: #ef2121;
+                        opacity: 0.8;
                     }
                 }
+            }
+        }
+
+        .title-container {
+            position: relative;
+            width: 80vw;
+            height: 60vh;
+            margin: 0;
+            text-align: center;
+
+        
+
+            .opening-quote {
+                margin: 0 auto;
+                font-family: $open-Sans;
+                font-size: 10rem;
+                font-size: 4.5em;
+
+
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
+                text-shadow: -10px -10px rgba($color: #ff1ef6, $alpha: 0.2)
+                
             }
         }
     }
