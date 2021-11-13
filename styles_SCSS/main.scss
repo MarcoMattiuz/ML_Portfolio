@@ -1,7 +1,6 @@
 @import "./variables";
 @import "./mixins-functions";
 @import "./navbar";
-@import "./logo";
 
 // // // // // // // // //
 
@@ -56,10 +55,7 @@ body {
 
         .opening-quote {
             margin: 0 auto;
-            font-family: $open-Sans;
-            font-size: 10rem;
-            font-size: 4.5em;
-
+            @include title-text;
             @include clipBg-ToText;
             background-image: $title-gradiant;
             z-index: 1;
@@ -85,6 +81,12 @@ body {
 
             @include clipBg-ToText;
             background-image: $title-gradiant;
+        }
+
+        .sub-quote {
+            position: relative;
+            margin-top: 2em;
+            @include medium-text;
         }
     }
 }

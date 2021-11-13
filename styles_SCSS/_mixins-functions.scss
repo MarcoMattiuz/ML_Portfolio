@@ -17,3 +17,15 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+@mixin medium-text {
+    font: $open-Sans;
+    font-size: 1.5em;
+    color: $background-white;
+}
+
+@mixin title-text {
+    font-family: $open-Sans;
+    font-size: 10rem;
+    font-size: 4.5em;
+}
