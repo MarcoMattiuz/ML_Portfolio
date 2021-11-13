@@ -1,12 +1,18 @@
 @import "./variables";
 @import "./mixins-functions";
-@import "./logo";
 @import "./navbar";
+@import "./logo";
+
 // // // // // // // // //
 
 a {
     text-decoration: none;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
 h2 {
     font-family: $bals-Sans;
     color: white;
