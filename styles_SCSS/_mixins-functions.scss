@@ -20,12 +20,67 @@
 
 @mixin medium-text {
     font: $open-Sans;
-    font-size: 1.5em;
+    @media (min-width: 2560px) {
+        font-size: 4rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+    font-size: 2rem;
+    color: $background-white;
+}
+
+@mixin small-text {
+    font: $open-Sans;
+    @media (min-width: 2560px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 0.5rem;
+    }
+    font-size: 0.8rem;
     color: $background-white;
 }
 
 @mixin title-text {
     font-family: $open-Sans;
-    font-size: 10rem;
-    font-size: 4.5em;
+    font-size: 5rem;
+    @media (min-width: 2560px) {
+        font-size: 9rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
+}
+
+@mixin small-title-text {
+    font-family: $open-Sans;
+    font-size: 2.5rem;
+    @media (min-width: 2560px) {
+        font-size: 5rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+/* gradients */
+@mixin king-gradinet {
+    background: #1a2a6c; /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(
+        to top,
+        #fdbb2d,
+        #b21f1f,
+        #1a2a6c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin meridian-gradient {
+    background: #283c86; /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to left, #45a247, #283c86); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(
+        to left,
+        #45a247,
+        #283c86
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

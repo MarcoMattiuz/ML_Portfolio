@@ -4,13 +4,14 @@
 // // // // // // // // // // //
 $background-black: hsl(180, 4%, 5%);
 $background-white: rgba(236, 228, 228, 0.925);
-/****************fonts****************/ 
+$standard-radius: 0.5rem;
+/****************fonts****************/
 $open-Sans: "Open Sans", sans-serif;
 $bals-Sans: "Balsamiq Sans", cursive;
 $lora: "Lora", serif;
-
-/*************************************/ 
-$title-gradiant: radial-gradient(
+/*************************************/
+$title-gradiant: linear-gradient(
+    135deg,
     rgba(77, 95, 207, 0.87),
     rgba(161, 87, 210, 0.6779),
     rgba(69, 239, 252, 0.5465),
@@ -21,11 +22,11 @@ $title-gradiant: radial-gradient(
 $buttons-gradient: linear-gradient(
     150deg,
     #5ec29c,
-   
+    #5ec2ba,
     #5e79c2,
     #845ec2,
     #d65db1,
     #ff6f91,
     #ff9671,
-    #f9f871
+   
 );

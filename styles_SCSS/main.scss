@@ -11,41 +11,41 @@ a {
     margin: 0;
     padding: 0;
 }
-
 h2 {
     font-family: $bals-Sans;
     color: white;
-    font-size: 1.7em;
 }
 p {
     color: white;
-    font-size: 1em;
     font-family: $open-Sans;
+    font-size: 1em;
 }
-
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     background-color: $background-black;
 }
+section {
+    width: 100vw;
+    height: 100vh;
+    @include flex-center;
+    opacity: 0.95;
+    scroll-snap-align: center;
+}
 
 .container {
     width: 100%;
     height: 100%;
     background-color: $background-black;
-
-    .section {
-        width: 100vw;
-        height: 100vh;
-        @include flex-center;
-    }
-
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     /*
     #{&}__:nth-of-type(2){} 
     indica il secondo figlio (section page2) 
     del parente (container)
     */
+    /* section 1 */
     .title-container {
         position: relative;
         width: 80vw;
@@ -54,11 +54,11 @@ body {
         text-align: center;
 
         .opening-quote {
+            position: relative;
             margin: 0 auto;
             @include title-text;
             @include clipBg-ToText;
             background-image: $title-gradiant;
-            z-index: 1;
         }
 
         .opening-quote::before {
@@ -87,6 +87,59 @@ body {
             position: relative;
             margin-top: 2em;
             @include medium-text;
+        }
+    }
+
+    /* section 2 */
+    .grid-container {
+        width: 80%;
+        height: 65%;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
+        grid-template-areas:
+            "marco . ."
+            "marco title ."
+            ". title ."
+            ". title lorenzo"
+            ". . lorenzo";
+
+        // media query change areas
+        .item {
+            height: 95%;
+            width: 95%;
+        }
+        .img-container {
+            width: 100px;
+            .personal-photo {
+                width: inherit;
+            }
+        }
+        #marco-box {
+            grid-area: marco;
+            @include flex-spaceBetwen;
+            @include small-text;
+            #marco-presentation {
+                width: inherit;
+            }
+        }
+        #title-box {
+            grid-area: title;
+            @include flex-center;
+            @include small-title-text;
+            @include clipBg-ToText;
+            font-family: $open-Sans;
+            background-image: $title-gradiant;
+            background-position: left;
+        }
+        #lorenzo-box {
+            @include flex-spaceBetwen;
+            grid-area: lorenzo;
+            @include small-text;
+            #lorenzo-presentation {
+                width: inherit;
+            }
         }
     }
 }
