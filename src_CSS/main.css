@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@750&display=swap");
 /****************fonts****************/
 /*************************************/
 .header {
@@ -8,8 +8,8 @@
   height: 3.5em;
   top: 0;
   z-index: 20000;
-  -webkit-box-shadow: 0px 30px 100px 100px #0c0d0d;
-          box-shadow: 0px 30px 100px 100px #0c0d0d;
+  -webkit-box-shadow: 0px 30px 60px 30px #0c0d0d;
+          box-shadow: 0px 30px 60px 30px #0c0d0d;
   background-color: #0c0d0d;
 }
 
@@ -60,62 +60,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 10em;
-  height: 80%;
+  width: 8em;
+  height: 90%;
   border-radius: 0.5rem;
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #ff1ef6), color-stop(30, #ef2121), color-stop(70, #fff500));
-  background: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
+  background: linear-gradient(150deg, #5ec29c, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671, #f9f871);
+  background-size: 250%;
+  background-position: right;
+  -webkit-transition: background-position 0.7s;
+  transition: background-position 0.7s;
 }
 
-.header .nav-bar .contact-button:hover {
-  -webkit-animation: waves 5s infinite;
-          animation: waves 5s infinite;
-}
-
-@-webkit-keyframes waves {
-  0% {
-    background: #ff1ef6;
-    opacity: 0.8;
-  }
-  25% {
-    background: #ef2121;
-    opacity: 0.6;
-  }
-  50% {
-    background: #fff500;
-    opacity: 0.4;
-  }
-  75% {
-    background: #ff1ef6;
-    opacity: 0.6;
-  }
-  100% {
-    background: #ef2121;
-    opacity: 0.8;
-  }
-}
-
-@keyframes waves {
-  0% {
-    background: #ff1ef6;
-    opacity: 0.8;
-  }
-  25% {
-    background: #ef2121;
-    opacity: 0.6;
-  }
-  50% {
-    background: #fff500;
-    opacity: 0.4;
-  }
-  75% {
-    background: #ff1ef6;
-    opacity: 0.6;
-  }
-  100% {
-    background: #ef2121;
-    opacity: 0.8;
-  }
+.header .nav-bar .contact-button:hover,
+.header .nav-bar .contact-button:focus {
+  background-position: left;
 }
 
 a {
@@ -135,7 +92,7 @@ h2 {
 
 p {
   color: white;
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: "Open Sans", sans-serif;
 }
 

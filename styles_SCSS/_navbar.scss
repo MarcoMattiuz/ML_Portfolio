@@ -5,7 +5,7 @@
     height: 3.5em;
     top: 0;
     z-index: 20000;
-    box-shadow: 0px 30px 100px 100px $background-black;
+    box-shadow: 0px 30px 60px 30px $background-black;
 
     background-color: $background-black;
 
@@ -33,37 +33,19 @@
 
         .contact-button {
             @include flex-center;
-            width: 10em;
-            height: 80%;
+            width: 8em;
+            height: 90%;
             border-radius: 0.5rem;
-            background: linear-gradient(90deg, #ff1ef6 0 30%, #ef2121 30 70%, #fff500 70 100%);
-        }
+            background: $buttons-gradient;
+            background-size: 250%;
+            background-position: right;
+            transition: background-position 0.7s;
+        }   
 
-        .contact-button:hover {
-            animation: waves 5s infinite;
+        .contact-button:hover,
+        .contact-button:focus{
+            background-position: left;
         }
-
-        @keyframes waves {
-            0% {
-                background: #ff1ef6;
-                opacity: 0.8;
-            }
-            25% {
-                background: #ef2121;
-                opacity: 0.6;
-            }
-            50% {
-                background: #fff500;
-                opacity: 0.4;
-            }
-            75% {
-                background: #ff1ef6;
-                opacity: 0.6;
-            }
-            100% {
-                background: #ef2121;
-                opacity: 0.8;
-            }
-        }
+       
     }
 }
