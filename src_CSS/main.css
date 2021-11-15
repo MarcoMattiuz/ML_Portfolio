@@ -278,9 +278,17 @@ body {
   background-position: right;
 }
 
+.container #presentation::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 .container #presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: red;
-  overflow-x: scroll;
+  overflow-x: auto;
   -ms-scroll-snap-type: x proximity;
       scroll-snap-type: x proximity;
 }
@@ -298,8 +306,8 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  scroll-snap-align: start;
-  width: 100vw;
+  scroll-snap-align: center;
+  width: 100%;
   height: 100%;
 }
 
