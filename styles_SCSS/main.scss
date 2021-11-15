@@ -85,10 +85,37 @@ section {
 
         .sub-quote {
             position: relative;
-            margin-top: 2em;
+            margin-top: 1.3em;
             @include medium-text;
         }
+
+        .ourWork-button{
+            position:relative;
+            @include flex-center;
+            justify-content: center;
+            margin-top: 2.3em;
+            height: 20%;
+            #ourWork{
+                @include flex-center;
+                width: 30vw;
+                height: 60%;
+                border-radius: 0.5rem;
+                background: $buttons-gradient;
+                background-size: 300%;
+                background-position: left;
+                transition: background-position 0.7s;
+                font-size: 1.1em;
+            }
+
+            #ourWork:hover,#ourWork:focus{
+                background-position: right;
+            }
+
+
+        }
     }
+
+   
 
     /* section 2 */
     .grid-container {

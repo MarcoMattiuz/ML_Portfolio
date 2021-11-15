@@ -228,7 +228,7 @@ section {
 
 .container .title-container .sub-quote {
   position: relative;
-  margin-top: 2em;
+  margin-top: 1.3em;
   font: "Open Sans", sans-serif;
   font-size: 2rem;
   color: rgba(236, 228, 228, 0.925);
@@ -244,6 +244,47 @@ section {
   .container .title-container .sub-quote {
     font-size: 1rem;
   }
+}
+
+.container .title-container .ourWork-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  margin-top: 2.3em;
+  height: 20%;
+}
+
+.container .title-container .ourWork-button #ourWork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30vw;
+  height: 60%;
+  border-radius: 0.5rem;
+  background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
+  background-size: 300%;
+  background-position: left;
+  -webkit-transition: background-position 0.7s;
+  transition: background-position 0.7s;
+  font-size: 1.1em;
+}
+
+.container .title-container .ourWork-button #ourWork:hover, .container .title-container .ourWork-button #ourWork:focus {
+  background-position: right;
 }
 
 .container .grid-container {
