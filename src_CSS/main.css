@@ -57,7 +57,8 @@
 }
 
 .header .nav-bar .logo {
-  width: 5.5em;
+  width: 7em;
+  height: auto;
 }
 
 .header .nav-bar .links-container {
