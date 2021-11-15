@@ -26,12 +26,13 @@ body {
     margin: 0;
     background-color: $background-black;
 }
-section {
-    width: 100vw;
-    height: 100vh;
+.nm-section{
+    width: 100%;
+    height: 100%;
     @include flex-center;
     opacity: 0.95;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
+    // scroll-margin-top: 3.5em;
 }
 
 .container {
@@ -89,13 +90,13 @@ section {
             @include medium-text;
         }
 
-        .ourWork-button{
-            position:relative;
+        .ourWork-button {
+            position: relative;
             @include flex-center;
             justify-content: center;
             margin-top: 2.3em;
             height: 20%;
-            #ourWork{
+            #ourWork {
                 @include flex-center;
                 width: 30vw;
                 height: 60%;
@@ -107,65 +108,31 @@ section {
                 font-size: 1.1em;
             }
 
-            #ourWork:hover,#ourWork:focus{
+            #ourWork:hover,
+            #ourWork:focus {
                 background-position: right;
             }
-
-
         }
     }
 
-   
-
     /* section 2 */
-    .grid-container {
-        width: 80%;
-        height: 65%;
+    #presentation{
+    
+        background-color: red;
+        overflow-x: scroll;
+        scroll-snap-type: x proximity;
 
-        display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
-        grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
-        grid-template-areas:
-            "marco . ."
-            "marco title ."
-            ". title ."
-            ". title lorenzo"
-            ". . lorenzo";
-
-        // media query change areas
-        .item {
-            height: 95%;
-            width: 95%;
-        }
-        .img-container {
-            width: 100px;
-            .personal-photo {
-                width: inherit;
-            }
-        }
-        #marco-box {
-            grid-area: marco;
-            @include flex-spaceBetwen;
-            @include small-text;
-            #marco-presentation {
-                width: inherit;
-            }
-        }
-        #title-box {
-            grid-area: title;
+        .pr-section{
             @include flex-center;
-            @include small-title-text;
-            @include clipBg-ToText;
-            font-family: $open-Sans;
-            background-image: $title-gradiant;
-            background-position: left;
-        }
-        #lorenzo-box {
-            @include flex-spaceBetwen;
-            grid-area: lorenzo;
-            @include small-text;
-            #lorenzo-presentation {
-                width: inherit;
+            flex: none;
+            scroll-snap-align: start;
+            width: 100vw;
+            height: 100%;
+            &:nth-of-type(1){
+                background-color: green;
+            }
+            &:nth-of-type(2){
+                background-color: yellow;
             }
         }
     }

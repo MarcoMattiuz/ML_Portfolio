@@ -9,8 +9,8 @@
   right: 5%;
   width: 90%;
   height: 3.5em;
-  -webkit-box-shadow: -4vw 1vw 6vh 6vh #0c0d0d;
-          box-shadow: -4vw 1vw 6vh 6vh #0c0d0d;
+  -webkit-box-shadow: -2vw 1vw 6vh 6vh #0c0d0d;
+          box-shadow: -2vw 1vw 6vh 6vh #0c0d0d;
   z-index: 100;
   background-color: #0c0d0d;
 }
@@ -139,9 +139,9 @@ body {
   background-color: #0c0d0d;
 }
 
-section {
-  width: 100vw;
-  height: 100vh;
+.nm-section {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +152,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0.95;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .container {
@@ -283,75 +283,19 @@ section {
   font-size: 1.1em;
 }
 
-.container .title-container .ourWork-button #ourWork:hover, .container .title-container .ourWork-button #ourWork:focus {
+.container .title-container .ourWork-button #ourWork:hover,
+.container .title-container .ourWork-button #ourWork:focus {
   background-position: right;
 }
 
-.container .grid-container {
-  width: 80%;
-  height: 65%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr 2fr;
-      grid-template-columns: 2fr 1fr 2fr;
-  -ms-grid-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
-      grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
-      grid-template-areas: "marco . ." "marco title ." ". title ." ". title lorenzo" ". . lorenzo";
+.container #presentation {
+  background-color: red;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
 }
 
-.container .grid-container .item {
-  height: 95%;
-  width: 95%;
-}
-
-.container .grid-container .img-container {
-  width: 100px;
-}
-
-.container .grid-container .img-container .personal-photo {
-  width: inherit;
-}
-
-.container .grid-container #marco-box {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: marco;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font: "Open Sans", sans-serif;
-  font-size: 0.8rem;
-  color: rgba(236, 228, 228, 0.925);
-}
-
-@media (min-width: 2560px) {
-  .container .grid-container #marco-box {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .container .grid-container #marco-box {
-    font-size: 0.5rem;
-  }
-}
-
-.container .grid-container #marco-box #marco-presentation {
-  width: inherit;
-}
-
-.container .grid-container #title-box {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  grid-area: title;
+.container #presentation .pr-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,60 +305,19 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: "Open Sans", sans-serif;
-  background-image: linear-gradient(135deg, rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
-  background-position: left;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100%;
 }
 
-@media (min-width: 2560px) {
-  .container .grid-container #title-box {
-    font-size: 5rem;
-  }
+.container #presentation .pr-section:nth-of-type(1) {
+  background-color: green;
 }
 
-@media (max-width: 768px) {
-  .container .grid-container #title-box {
-    font-size: 1.5rem;
-  }
-}
-
-.container .grid-container #lorenzo-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: lorenzo;
-  font: "Open Sans", sans-serif;
-  font-size: 0.8rem;
-  color: rgba(236, 228, 228, 0.925);
-}
-
-@media (min-width: 2560px) {
-  .container .grid-container #lorenzo-box {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .container .grid-container #lorenzo-box {
-    font-size: 0.5rem;
-  }
-}
-
-.container .grid-container #lorenzo-box #lorenzo-presentation {
-  width: inherit;
+.container #presentation .pr-section:nth-of-type(2) {
+  background-color: yellow;
 }
 /*# sourceMappingURL=main.css.map */
