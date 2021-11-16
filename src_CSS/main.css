@@ -287,10 +287,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: red;
   overflow-x: auto;
-  -ms-scroll-snap-type: x proximity;
-      scroll-snap-type: x proximity;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 
 .container #presentation .pr-section {
@@ -311,11 +310,70 @@ body {
   height: 100%;
 }
 
-.container #presentation .pr-section:nth-of-type(1) {
-  background-color: green;
+.container #presentation .pr-section .content-box {
+  width: 80%;
+  padding: 2em;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
+  -ms-grid-rows: 5rem 2.5fr;
+      grid-template-rows: 5rem 2.5fr;
+      grid-template-areas: "img title" "img content";
+  background-color: #0c0d0d;
+  -webkit-box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
+          box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
+  border-radius: 0.5rem;
 }
 
-.container #presentation .pr-section:nth-of-type(2) {
-  background-color: yellow;
+.container #presentation .pr-section .content-box .img-box {
+  width: 80%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container #presentation .pr-section .content-box .pr-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 2560px) {
+  .container #presentation .pr-section .content-box .pr-title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container #presentation .pr-section .content-box .pr-title {
+    font-size: 1.5rem;
+  }
+}
+
+.container #presentation .pr-section .content-box .pr-title::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 0.3rem;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(236, 228, 228, 0.925);
 }
 /*# sourceMappingURL=main.css.map */
