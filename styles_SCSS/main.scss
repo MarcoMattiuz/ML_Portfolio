@@ -27,17 +27,11 @@ body {
     margin: 0;
     background-color: $background-black;
 }
-<<<<<<< HEAD
 
 
 .nm-section {
     width: 100%;
     height: 100%;
-=======
-section {
-    width: 100vw;
-    height: 100vh;
->>>>>>> c32a7dda22ff3502d2682d0947a90119eafbcc18
     @include flex-center;
     opacity: 0.95;
     scroll-snap-align: center;
@@ -135,7 +129,6 @@ section {
    
 
     /* section 2 */
-<<<<<<< HEAD
     #presentation::-webkit-scrollbar {
         width: 0;
         background: transparent;
@@ -189,56 +182,6 @@ section {
                     background-color: $background-white;
                 }
               
-=======
-    .grid-container {
-        width: 80%;
-        height: 65%;
-
-        display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
-        grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
-        grid-template-areas:
-            "marco . ."
-            "marco title ."
-            ". title ."
-            ". title lorenzo"
-            ". . lorenzo";
-
-        // media query change areas
-        .item {
-            height: 95%;
-            width: 95%;
-        }
-        .img-container {
-            width: 100px;
-            .personal-photo {
-                width: inherit;
-            }
-        }
-        #marco-box {
-            grid-area: marco;
-            @include flex-spaceBetwen;
-            @include small-text;
-            #marco-presentation {
-                width: inherit;
-            }
-        }
-        #title-box {
-            grid-area: title;
-            @include flex-center;
-            @include small-title-text;
-            @include clipBg-ToText;
-            font-family: $open-Sans;
-            background-image: $title-gradiant;
-            background-position: left;
-        }
-        #lorenzo-box {
-            @include flex-spaceBetwen;
-            grid-area: lorenzo;
-            @include small-text;
-            #lorenzo-presentation {
-                width: inherit;
->>>>>>> c32a7dda22ff3502d2682d0947a90119eafbcc18
             }
 
             
