@@ -18,7 +18,9 @@
         height: 100%;
         z-index: 1;
         .logo {
-            width:7em;
+            width:20vw;
+            max-width: 8em;
+            min-width: 5em;
             height:auto;
         }
         .links-container {
