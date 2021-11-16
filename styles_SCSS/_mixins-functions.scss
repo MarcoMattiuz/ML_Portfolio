@@ -21,12 +21,16 @@
 @mixin medium-text {
     font: $open-Sans;
     @media (min-width: 2560px) {
-        font-size: 4rem;
+        font-size: 2rem;
     }
     @media (max-width: 768px) {
+        font-size: 1.3rem;
+    }
+    @media (max-width: 400px) {
         font-size: 1rem;
     }
-    font-size: 2rem;
+
+    font-size: 1.6rem;
     color: $background-white;
 }
 
@@ -51,16 +55,22 @@
     @media (max-width: 768px) {
         font-size: 4rem;
     }
+    @media (max-width: 400px) {
+        font-size: 2.3rem;
+    }
 }
 
 @mixin small-title-text {
     font-family: $open-Sans;
-    font-size: 2.5rem;
+    font-size: 1.35rem;
     @media (min-width: 2560px) {
-        font-size: 5rem;
+        font-size: 2rem;
     }
     @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    @media (max-width: 400px) {
+        font-size: 0.9rem;
     }
 }
 /* gradients */

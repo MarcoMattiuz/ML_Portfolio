@@ -27,22 +27,27 @@ body {
     margin: 0;
     background-color: $background-black;
 }
+<<<<<<< HEAD
 
 
 .nm-section {
     width: 100%;
     height: 100%;
+=======
+section {
+    width: 100vw;
+    height: 100vh;
+>>>>>>> c32a7dda22ff3502d2682d0947a90119eafbcc18
     @include flex-center;
     opacity: 0.95;
-    scroll-snap-align: start;
-    // scroll-margin-top: 3.5em;
+    scroll-snap-align: center;
 }
 
 .container {
     width: 100%;
     height: 100%;
     background-color: $background-black;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     /*
     #{&}__:nth-of-type(2){} 
@@ -53,6 +58,7 @@ body {
     .title-container {
         position: relative;
         width: 80vw;
+        max-width: 70em;
         height: 60vh;
         margin: 0;
         text-align: center;
@@ -71,7 +77,6 @@ body {
             width: 50px;
             height: 50px;
             content: '"';
-
             @include clipBg-ToText;
             background-image: $title-gradiant;
         }
@@ -94,31 +99,43 @@ body {
         }
 
         .ourWork-button {
-            position: relative;
+            position:relative;
             @include flex-center;
             justify-content: center;
             margin-top: 2.3em;
+            max-height: 6.5em;
             height: 20%;
-            #ourWork {
+            #ourWork{
                 @include flex-center;
+                @include small-title-text;
                 width: 30vw;
+                max-width: 20em;
+                min-width: 10em;
                 height: 60%;
                 border-radius: 0.5rem;
                 background: $buttons-gradient;
                 background-size: 300%;
                 background-position: left;
                 transition: background-position 0.7s;
-                font-size: 1.1em;
+                
+            }
+            @media (max-width: 400px) {
+                height: 4.5em;
+                
             }
 
-            #ourWork:hover,
-            #ourWork:focus {
+            #ourWork:hover,#ourWork:focus{
                 background-position: right;
             }
+
+
         }
     }
 
+   
+
     /* section 2 */
+<<<<<<< HEAD
     #presentation::-webkit-scrollbar {
         width: 0;
         background: transparent;
@@ -172,6 +189,56 @@ body {
                     background-color: $background-white;
                 }
               
+=======
+    .grid-container {
+        width: 80%;
+        height: 65%;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
+        grid-template-areas:
+            "marco . ."
+            "marco title ."
+            ". title ."
+            ". title lorenzo"
+            ". . lorenzo";
+
+        // media query change areas
+        .item {
+            height: 95%;
+            width: 95%;
+        }
+        .img-container {
+            width: 100px;
+            .personal-photo {
+                width: inherit;
+            }
+        }
+        #marco-box {
+            grid-area: marco;
+            @include flex-spaceBetwen;
+            @include small-text;
+            #marco-presentation {
+                width: inherit;
+            }
+        }
+        #title-box {
+            grid-area: title;
+            @include flex-center;
+            @include small-title-text;
+            @include clipBg-ToText;
+            font-family: $open-Sans;
+            background-image: $title-gradiant;
+            background-position: left;
+        }
+        #lorenzo-box {
+            @include flex-spaceBetwen;
+            grid-area: lorenzo;
+            @include small-text;
+            #lorenzo-presentation {
+                width: inherit;
+>>>>>>> c32a7dda22ff3502d2682d0947a90119eafbcc18
             }
 
             
