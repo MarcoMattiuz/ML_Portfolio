@@ -52,6 +52,7 @@
 
 .header .nav-bar .links-container .links {
   margin: 0 auto;
+  padding: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +165,7 @@ section {
 .container .title-container {
   position: relative;
   width: 80vw;
+  max-width: 70em;
   height: 60vh;
   margin: 0;
   text-align: center;
@@ -189,6 +191,12 @@ section {
 @media (max-width: 768px) {
   .container .title-container .opening-quote {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .title-container .opening-quote {
+    font-size: 2.3rem;
   }
 }
 
@@ -220,17 +228,23 @@ section {
   position: relative;
   margin-top: 1.3em;
   font: "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: rgba(236, 228, 228, 0.925);
 }
 
 @media (min-width: 2560px) {
   .container .title-container .sub-quote {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 768px) {
+  .container .title-container .sub-quote {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
   .container .title-container .sub-quote {
     font-size: 1rem;
   }
@@ -249,7 +263,7 @@ section {
           justify-content: center;
   justify-content: center;
   margin-top: 2.3em;
-  max-height: 8em;
+  max-height: 6.5em;
   height: 20%;
 }
 
@@ -263,8 +277,11 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.35rem;
   width: 30vw;
   max-width: 20em;
+  min-width: 10em;
   height: 60%;
   border-radius: 0.5rem;
   background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
@@ -272,7 +289,30 @@ section {
   background-position: left;
   -webkit-transition: background-position 0.7s;
   transition: background-position 0.7s;
-  font-size: 1.1em;
+}
+
+@media (min-width: 2560px) {
+  .container .title-container .ourWork-button #ourWork {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .title-container .ourWork-button #ourWork {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .title-container .ourWork-button #ourWork {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .title-container .ourWork-button {
+    height: 4.5em;
+  }
 }
 
 .container .title-container .ourWork-button #ourWork:hover, .container .title-container .ourWork-button #ourWork:focus {
@@ -354,7 +394,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.35rem;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -365,13 +405,19 @@ section {
 
 @media (min-width: 2560px) {
   .container .grid-container #title-box {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 768px) {
   .container .grid-container #title-box {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .grid-container #title-box {
+    font-size: 0.9rem;
   }
 }
 

@@ -32,6 +32,7 @@
             //scroll-behavior: smooth;
             .links {
                 margin: 0 auto;
+                padding: auto;
                 @include flex-center;
                 background: linear-gradient(90deg,rgba(158, 157, 157, 0.199),$background-black,$background-black ); 
                 width: 6.5em;

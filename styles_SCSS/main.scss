@@ -49,6 +49,7 @@ section {
     .title-container {
         position: relative;
         width: 80vw;
+        max-width: 70em;
         height: 60vh;
         margin: 0;
         text-align: center;
@@ -67,7 +68,6 @@ section {
             width: 50px;
             height: 50px;
             content: '"';
-
             @include clipBg-ToText;
             background-image: $title-gradiant;
         }
@@ -94,19 +94,25 @@ section {
             @include flex-center;
             justify-content: center;
             margin-top: 2.3em;
-            max-height: 8em;
+            max-height: 6.5em;
             height: 20%;
             #ourWork{
                 @include flex-center;
+                @include small-title-text;
                 width: 30vw;
                 max-width: 20em;
+                min-width: 10em;
                 height: 60%;
                 border-radius: 0.5rem;
                 background: $buttons-gradient;
                 background-size: 300%;
                 background-position: left;
                 transition: background-position 0.7s;
-                font-size: 1.1em;
+                
+            }
+            @media (max-width: 400px) {
+                height: 4.5em;
+                
             }
 
             #ourWork:hover,#ourWork:focus{
