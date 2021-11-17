@@ -105,24 +105,23 @@
   background-position: right;
 }
 
+*,
+a,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-family: "Balsamiq Sans", cursive;
-  color: white;
-}
-
+h2,
 p {
   color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
 }
 
 body {
@@ -155,11 +154,6 @@ body {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  /*
-    .container__:nth-of-type(2){} 
-    indica il secondo figlio (section page2) 
-    del parente (container)
-    */
   /* section 1 */
   /* section 2 */
 }
@@ -169,7 +163,6 @@ body {
   width: 80vw;
   max-width: 70em;
   height: 60vh;
-  margin: 0;
   text-align: center;
 }
 
