@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./mixins-functions";
 @import "./navbar";
+@import "./webkit-mods";
 
 // // // // // // // // //
 
@@ -26,9 +27,11 @@ body {
     margin: 0;
     background-color: $background-black;
 }
-section {
-    width: 100vw;
-    height: 100vh;
+
+
+.nm-section {
+    width: 100%;
+    height: 100%;
     @include flex-center;
     opacity: 0.95;
     scroll-snap-align: center;
@@ -126,55 +129,63 @@ section {
    
 
     /* section 2 */
-    .grid-container {
-        width: 80%;
-        height: 65%;
+    #presentation::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+    #presentation {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
 
-        display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
-        grid-template-rows: 1fr 0.5fr 1.5fr 0.5fr 1fr;
-        grid-template-areas:
-            "marco . ."
-            "marco title ."
-            ". title ."
-            ". title lorenzo"
-            ". . lorenzo";
-
-        // media query change areas
-        .item {
-            height: 95%;
-            width: 95%;
-        }
-        .img-container {
-            width: 100px;
-            .personal-photo {
-                width: inherit;
-            }
-        }
-        #marco-box {
-            grid-area: marco;
-            @include flex-spaceBetwen;
-            @include small-text;
-            #marco-presentation {
-                width: inherit;
-            }
-        }
-        #title-box {
-            grid-area: title;
+        .pr-section {
             @include flex-center;
-            @include small-title-text;
-            @include clipBg-ToText;
-            font-family: $open-Sans;
-            background-image: $title-gradiant;
-            background-position: left;
-        }
-        #lorenzo-box {
-            @include flex-spaceBetwen;
-            grid-area: lorenzo;
-            @include small-text;
-            #lorenzo-presentation {
-                width: inherit;
+            flex: none;
+            scroll-snap-align: center;
+            width: 100%;
+            height: 100%;
+
+            .content-box {
+                width: 80%;
+                padding: 2em;
+                height: min-content;
+                display: grid;
+                grid-template-columns: 1.3fr 1fr;
+                grid-template-rows: 5rem 2.5fr;
+                grid-template-areas:
+                    "img title"
+                    "img content";
+
+                background-color: $background-black;
+                box-shadow: -1.5rem -1.2rem 2rem 0.1rem hsl(0, 0%, 10%), 1.5rem 1.2rem 2rem 0.1rem hsl(0, 0%, 50%);
+                border-radius: $standard-radius;
+                .img-box {
+                    width: 80%;
+                    grid-area: img;
+                    @include flex-center;
+                }
+
+                .pr-title {
+                    grid-area: title;
+                    @include small-title-text;
+                    text-align: center;
+                }
+                .pr-title::after {
+                    content: "";
+                    display: block;
+                    width: 80%;
+                    height: 0.3rem;
+
+                    position: relative;
+                    margin: 0 auto;
+
+                    background-color: $background-white;
+                }
+              
             }
+
+            
         }
+
     }
 }
