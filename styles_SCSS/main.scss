@@ -36,6 +36,7 @@ body {
     @include flex-center;
     opacity: 0.95;
     scroll-snap-align: center;
+    // scroll-margin-top: 5vh;
 }
 
 .container {
@@ -44,6 +45,7 @@ body {
     background-color: $background-black;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+   
     // // // // // // // // // // // //
     
     
@@ -104,7 +106,7 @@ body {
                 max-width: 20em;
                 min-width: 10em;
                 height: 60%;
-                border-radius: 0.5rem;
+                border-radius: $standard-radius;
                 background: $buttons-gradient;
                 background-size: 300%;
                 background-position: left;
@@ -112,8 +114,7 @@ body {
                 
             }
             @media (max-width: 400px) {
-                height: 4.5em;
-                
+                height: 4.5em; 
             }
 
             #ourWork:hover,#ourWork:focus{
@@ -144,7 +145,8 @@ body {
             height: 100%;
 
             .content-box {
-                width: 80%;
+                width: 70%;
+                max-height: 60%;
                 padding: 2em;
                 height: min-content;
                 display: grid;
@@ -158,12 +160,20 @@ body {
                 box-shadow: -1.5rem -1.2rem 2rem 0.1rem hsl(0, 0%, 10%), 1.5rem 1.2rem 2rem 0.1rem hsl(0, 0%, 50%);
                 border-radius: $standard-radius;
                 .img-box {
-                    width: 80%;
+                    width: 90%;
+                    max-height: 60%;
+                    position: relative;
                     grid-area: img;
                     @include flex-center;
+                    .pr-img{
+                        position: absolute;
+                        width: 100%;
+                        margin-bottom: 10%;
+                    }
                 }
 
                 .pr-title {
+                    margin: 10px;
                     grid-area: title;
                     @include small-title-text;
                     text-align: center;
@@ -179,11 +189,32 @@ body {
 
                     background-color: $background-white;
                 }
+                .pr-content{
+                    margin-top: 0;
+                    position: relative;
+                    width: 100%;
+                    max-height: fit-content;
+                    @include small-text;
+                    font-size: 1vh;
+                }
               
             }
+
+            @media (max-width: 450px) {
+                .content-box {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 2fr 0.5fr 1fr;
+                    grid-template-areas:
+                        "img"
+                        "title"
+                        "content";
+            }
+
+         
 
             
         }
 
     }
+}
 }

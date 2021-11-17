@@ -55,7 +55,7 @@
             @include flex-center;
             width: 8em;
             height: 90%;
-            border-radius: 0.5rem;
+            border-radius: $standard-radius;
             background: $buttons-gradient;
             background-size: 300%;
             background-position: left;
