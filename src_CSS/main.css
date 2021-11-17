@@ -308,7 +308,8 @@ body {
   }
 }
 
-.container .title-container .ourWork-button #ourWork:hover, .container .title-container .ourWork-button #ourWork:focus {
+.container .title-container .ourWork-button #ourWork:hover,
+.container .title-container .ourWork-button #ourWork:focus {
   background-position: right;
 }
 
@@ -459,6 +460,10 @@ body {
     -ms-grid-rows: 2fr 0.5fr 1fr;
         grid-template-rows: 2fr 0.5fr 1fr;
         grid-template-areas: "img" "title" "content";
+  }
+  .container #presentation .pr-section .back {
+    position: relative;
+    margin: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */

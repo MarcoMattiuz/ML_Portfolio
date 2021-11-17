@@ -4,24 +4,26 @@
 @import "./webkit-mods";
 // // // // // // // // //
 // initializing tags //
-// // // // // // // // // 
+// // // // // // // // //
 *,
 a,
 h1,
 h2,
 h3,
-p{
+p {
     margin: 0;
 }
 
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 h2,
-p{
+p {
     color: white;
     font-family: $open-Sans;
 }
-// // // // // // // // // 
+// // // // // // // // //
 
 body {
     width: 100vw;
@@ -45,10 +47,9 @@ body {
     background-color: $background-black;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-   
+
     // // // // // // // // // // // //
-    
-    
+
     /* section 1 */
     .title-container {
         position: relative;
@@ -93,13 +94,13 @@ body {
         }
 
         .ourWork-button {
-            position:relative;
+            position: relative;
             @include flex-center;
             justify-content: center;
             margin-top: 2.3em;
             max-height: 6.5em;
             height: 20%;
-            #ourWork{
+            #ourWork {
                 @include flex-center;
                 @include small-title-text;
                 width: 30vw;
@@ -111,21 +112,17 @@ body {
                 background-size: 300%;
                 background-position: left;
                 transition: background-position 0.7s;
-                
             }
             @media (max-width: 400px) {
-                height: 4.5em; 
+                height: 4.5em;
             }
 
-            #ourWork:hover,#ourWork:focus{
+            #ourWork:hover,
+            #ourWork:focus {
                 background-position: right;
             }
-
-
         }
     }
-
-   
 
     /* section 2 */
     #presentation::-webkit-scrollbar {
@@ -165,7 +162,7 @@ body {
                     position: relative;
                     grid-area: img;
                     @include flex-center;
-                    .pr-img{
+                    .pr-img {
                         position: absolute;
                         width: 100%;
                         margin-bottom: 10%;
@@ -189,7 +186,7 @@ body {
 
                     background-color: $background-white;
                 }
-                .pr-content{
+                .pr-content {
                     margin-top: 0;
                     position: relative;
                     width: 100%;
@@ -197,7 +194,6 @@ body {
                     @include small-text;
                     font-size: 1vh;
                 }
-              
             }
 
             @media (max-width: 450px) {
@@ -208,13 +204,13 @@ body {
                         "img"
                         "title"
                         "content";
+                }
+
+                .back {
+                    position: relative;
+                    margin: 100px;
+                }
             }
-
-         
-
-            
         }
-
     }
-}
 }
