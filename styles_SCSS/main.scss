@@ -4,24 +4,26 @@
 @import "./webkit-mods";
 // // // // // // // // //
 // initializing tags //
-// // // // // // // // // 
+// // // // // // // // //
 *,
 a,
 h1,
 h2,
 h3,
-p{
+p {
     margin: 0;
 }
 
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 h2,
-p{
+p {
     color: white;
     font-family: $open-Sans;
 }
-// // // // // // // // // 
+// // // // // // // // //
 
 body {
     width: 100vw;
@@ -36,6 +38,7 @@ body {
     @include flex-center;
     opacity: 0.95;
     scroll-snap-align: center;
+    // scroll-margin-top: 5vh;
 }
 
 .container {
@@ -44,9 +47,9 @@ body {
     background-color: $background-black;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+
     // // // // // // // // // // // //
-    
-    
+
     /* section 1 */
     .title-container {
         position: relative;
@@ -92,40 +95,35 @@ body {
         }
 
         .ourWork-button {
-            position:relative;
+            position: relative;
             @include flex-center;
             justify-content: center;
             margin-top: 2.3em;
             max-height: 10.5em;
             height: 20%;
-            #ourWork{
+            #ourWork {
                 @include flex-center;
                 @include small-title-text;
                 width: 30vw;
                 max-width: 20em;
                 min-width: 10em;
                 height: 60%;
-                border-radius: 0.5rem;
+                border-radius: $standard-radius;
                 background: $buttons-gradient;
                 background-size: 300%;
                 background-position: left;
                 transition: background-position 0.7s;
-                
             }
             @media (max-width: 400px) {
                 height: 4.5em;
-                
             }
 
-            #ourWork:hover,#ourWork:focus{
+            #ourWork:hover,
+            #ourWork:focus {
                 background-position: right;
             }
-
-
         }
     }
-
-   
 
     /* section 2 */
     #presentation::-webkit-scrollbar {
@@ -145,7 +143,8 @@ body {
             height: 100%;
 
             .content-box {
-                width: 80%;
+                width: 70%;
+                max-height: 60%;
                 padding: 2em;
                 height: min-content;
                 display: grid;
@@ -159,12 +158,20 @@ body {
                 box-shadow: -1.5rem -1.2rem 2rem 0.1rem hsl(0, 0%, 10%), 1.5rem 1.2rem 2rem 0.1rem hsl(0, 0%, 50%);
                 border-radius: $standard-radius;
                 .img-box {
-                    width: 80%;
+                    width: 90%;
+                    max-height: 60%;
+                    position: relative;
                     grid-area: img;
                     @include flex-center;
+                    .pr-img {
+                        position: absolute;
+                        width: 100%;
+                        margin-bottom: 10%;
+                    }
                 }
 
                 .pr-title {
+                    margin: 10px;
                     grid-area: title;
                     @include small-title-text;
                     text-align: center;
@@ -180,11 +187,31 @@ body {
 
                     background-color: $background-white;
                 }
-              
+                .pr-content {
+                    margin-top: 0;
+                    position: relative;
+                    width: 100%;
+                    max-height: fit-content;
+                    @include small-text;
+                    font-size: 1vh;
+                }
             }
 
-            
-        }
+            @media (max-width: 450px) {
+                .content-box {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 2fr 0.5fr 1fr;
+                    grid-template-areas:
+                        "img"
+                        "title"
+                        "content";
+                }
 
+                .back {
+                    position: relative;
+                    margin: 100px;
+                }
+            }
+        }
     }
 }

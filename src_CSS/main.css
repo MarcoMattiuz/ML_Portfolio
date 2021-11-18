@@ -90,7 +90,7 @@
           justify-content: center;
   width: 8em;
   height: 90%;
-  border-radius: 0.5rem;
+  border-radius: 1em;
   background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
   background-size: 300%;
   background-position: left;
@@ -187,7 +187,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .container .title-container .opening-quote {
     font-size: 2.3rem;
   }
@@ -277,7 +277,7 @@ body {
   max-width: 20em;
   min-width: 10em;
   height: 60%;
-  border-radius: 0.5rem;
+  border-radius: 1em;
   background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
   background-size: 300%;
   background-position: left;
@@ -309,7 +309,8 @@ body {
   }
 }
 
-.container .title-container .ourWork-button #ourWork:hover, .container .title-container .ourWork-button #ourWork:focus {
+.container .title-container .ourWork-button #ourWork:hover,
+.container .title-container .ourWork-button #ourWork:focus {
   background-position: right;
 }
 
@@ -346,7 +347,8 @@ body {
 }
 
 .container #presentation .pr-section .content-box {
-  width: 80%;
+  width: 70%;
+  max-height: 60%;
   padding: 2em;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -361,11 +363,13 @@ body {
   background-color: #0c0d0d;
   -webkit-box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
           box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
-  border-radius: 0.5rem;
+  border-radius: 1em;
 }
 
 .container #presentation .pr-section .content-box .img-box {
-  width: 80%;
+  width: 90%;
+  max-height: 60%;
+  position: relative;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -381,7 +385,14 @@ body {
           justify-content: center;
 }
 
+.container #presentation .pr-section .content-box .img-box .pr-img {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
 .container #presentation .pr-section .content-box .pr-title {
+  margin: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: title;
@@ -416,5 +427,44 @@ body {
   position: relative;
   margin: 0 auto;
   background-color: rgba(236, 228, 228, 0.925);
+}
+
+.container #presentation .pr-section .content-box .pr-content {
+  margin-top: 0;
+  position: relative;
+  width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  font: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: rgba(236, 228, 228, 0.925);
+  font-size: 1vh;
+}
+
+@media (min-width: 2560px) {
+  .container #presentation .pr-section .content-box .pr-content {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container #presentation .pr-section .content-box .pr-content {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .container #presentation .pr-section .content-box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr 0.5fr 1fr;
+        grid-template-rows: 2fr 0.5fr 1fr;
+        grid-template-areas: "img" "title" "content";
+  }
+  .container #presentation .pr-section .back {
+    position: relative;
+    margin: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
