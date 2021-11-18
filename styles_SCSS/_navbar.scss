@@ -68,5 +68,19 @@
        
         }
 
+        @media (max-width: 750px) {
+            .links{
+            position: fixed;
+            left: -100%;
+            }
+            .contact-button{
+                position: absolute;
+                height: 2.7em;
+                width: 7.2em;
+                margin-right: 5em;
+                font-size: 0.9em;
+            }
+        }
+
     }
 }

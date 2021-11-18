@@ -5,6 +5,11 @@
     align-items: center;
     justify-content: center;
 }
+@mixin flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
 @mixin flex-spaceBetwen {
     display: flex;
@@ -52,14 +57,12 @@
     @media (min-width: 2560px) {
         font-size: 9rem;
     }
+    
     @media (max-width: 768px) {
         font-size: 4rem;
     }
-<<<<<<< HEAD
-    @media (max-width: 500px) {
-=======
+
     @media (max-width: 450px) {
->>>>>>> f64fa4bf4fcb0d8bb795f03945ba65f0765fc569
         font-size: 2.3rem;
     }
 }
