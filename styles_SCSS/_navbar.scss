@@ -1,7 +1,6 @@
 .header {
     position: fixed;
     left: 5%;
-    padding-top: 2em;
     width: 90%;
     height: 5%;
     box-shadow: 0.5em 0.5em 4em 4em $background-black;
@@ -75,6 +74,9 @@
                 .links{
                     display: none;
                 }
+            }
+            .header{
+                margin-bottom: 1000em;
             }
             .contact-button{
                 position: absolute;

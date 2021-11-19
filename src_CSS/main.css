@@ -5,7 +5,6 @@
 .header {
   position: fixed;
   left: 5%;
-  padding-top: 2em;
   width: 90%;
   height: 5%;
   -webkit-box-shadow: 0.5em 0.5em 4em 4em #090910;
@@ -116,6 +115,9 @@
   .header .nav-bar .links-container .links {
     display: none;
   }
+  .header .nav-bar .header {
+    margin-bottom: 1000em;
+  }
   .header .nav-bar .contact-button {
     position: absolute;
     margin-right: 1.5em;
@@ -190,7 +192,6 @@ h5 {
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0;
   background-color: #090910;
 }
 
