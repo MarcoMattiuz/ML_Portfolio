@@ -2,28 +2,27 @@
 @import "./mixins-functions";
 @import "./navbar";
 @import "./webkit-mods";
+
 // // // // // // // // //
 // initializing tags //
-// // // // // // // // //
-// *,
-// a,
-// h1,
-// h2,
-// h3,
-// p {
-//     // margin: 0;
-// }
-
-a {
-    text-decoration: none;
+// // // // // // // // // 
+*,
+a,
+h1,
+h2,
+h3,
+p{
+    margin: 0;
 }
 
+a{text-decoration: none;}
+
 h2,
-p {
+p{
     color: white;
     font-family: $open-Sans;
 }
-// // // // // // // // //
+// // // // // // // // // 
 
 body {
     width: 100vw;
@@ -47,9 +46,10 @@ body {
     background-color: $background-black;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-
+   
     // // // // // // // // // // // //
-
+    
+    
     /* section 1 */
     .title-container {
         position: relative;
@@ -82,6 +82,7 @@ body {
             width: 50px;
             height: 50px;
             content: '"';
+            right: 0.1em;
 
             @include clipBg-ToText;
             background-image: $title-gradiant;
@@ -94,13 +95,13 @@ body {
         }
 
         .ourWork-button {
-            position: relative;
+            position:relative;
             @include flex-center;
             justify-content: center;
             margin-top: 2.3em;
-            max-height: 6.5em;
+            max-height: 10.5em;
             height: 20%;
-            #ourWork {
+            #ourWork{
                 @include flex-center;
                 @include small-title-text;
                 width: 30vw;
@@ -112,15 +113,17 @@ body {
                 background-size: 300%;
                 background-position: left;
                 transition: background-position 0.7s;
-            }
-            @media (max-width: 400px) {
-                height: 4.5em;
+                
             }
 
-            #ourWork:hover,
-            #ourWork:focus {
+            @media (max-width: 400px) {
+                height: 4.5em; 
+            }
+
+            #ourWork:hover,#ourWork:focus{
                 background-position: right;
             }
+
         }
     }
 
@@ -129,6 +132,7 @@ body {
         // width: 0;
         background: transparent;
     }
+
     #presentation {
         display: flex;
         overflow-x: auto;
@@ -156,13 +160,14 @@ body {
                 background-color: $background-black;
                 box-shadow: -1.5rem -1.2rem 2rem 0.1rem hsl(0, 0%, 10%), 1.5rem 1.2rem 2rem 0.1rem hsl(0, 0%, 50%);
                 border-radius: $standard-radius;
+
                 .img-box {
                     width: 90%;
                     max-height: 60%;
                     position: relative;
                     grid-area: img;
                     @include flex-center;
-                    .pr-img {
+                    .pr-img{
                         position: absolute;
                         width: 100%;
                         margin-bottom: 10%;
@@ -175,6 +180,7 @@ body {
                     @include small-title-text;
                     text-align: center;
                 }
+
                 .pr-title::after {
                     content: "";
                     display: block;
@@ -186,13 +192,12 @@ body {
 
                     background-color: $background-white;
                 }
-                .pr-content {
+                .pr-content{
                     margin-top: 0;
                     position: relative;
                     width: 100%;
                     max-height: fit-content;
                     @include small-text;
-                    // font-size: 1vh;
                 }
               
             }
@@ -207,7 +212,7 @@ body {
                         "content";
                 }
             }
+
         }
-      
     }
 }
