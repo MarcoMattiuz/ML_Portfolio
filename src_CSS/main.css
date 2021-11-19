@@ -103,15 +103,6 @@
   background-position: right;
 }
 
-*,
-a,
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -314,7 +305,6 @@ body {
 }
 
 .container #presentation::-webkit-scrollbar {
-  width: 0;
   background: transparent;
 }
 
@@ -438,7 +428,6 @@ body {
   font: "Open Sans", sans-serif;
   font-size: 0.8rem;
   color: rgba(236, 228, 228, 0.925);
-  font-size: 1vh;
 }
 
 @media (min-width: 2560px) {
@@ -460,10 +449,6 @@ body {
     -ms-grid-rows: 2fr 0.5fr 1fr;
         grid-template-rows: 2fr 0.5fr 1fr;
         grid-template-areas: "img" "title" "content";
-  }
-  .container #presentation .pr-section .back {
-    position: relative;
-    margin: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */

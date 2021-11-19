@@ -5,14 +5,14 @@
 // // // // // // // // //
 // initializing tags //
 // // // // // // // // //
-*,
-a,
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-}
+// *,
+// a,
+// h1,
+// h2,
+// h3,
+// p {
+//     // margin: 0;
+// }
 
 a {
     text-decoration: none;
@@ -126,14 +126,14 @@ body {
 
     /* section 2 */
     #presentation::-webkit-scrollbar {
-        width: 0;
+        // width: 0;
         background: transparent;
     }
     #presentation {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-
+  
         .pr-section {
             @include flex-center;
             flex: none;
@@ -192,8 +192,9 @@ body {
                     width: 100%;
                     max-height: fit-content;
                     @include small-text;
-                    font-size: 1vh;
+                    // font-size: 1vh;
                 }
+              
             }
 
             @media (max-width: 450px) {
@@ -205,12 +206,8 @@ body {
                         "title"
                         "content";
                 }
-
-                .back {
-                    position: relative;
-                    margin: 100px;
-                }
             }
         }
+      
     }
 }
