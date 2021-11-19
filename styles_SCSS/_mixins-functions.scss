@@ -5,6 +5,11 @@
     align-items: center;
     justify-content: center;
 }
+@mixin flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
 @mixin flex-spaceBetwen {
     display: flex;
@@ -26,7 +31,7 @@
     @media (max-width: 768px) {
         font-size: 1.3rem;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         font-size: 1rem;
     }
 
@@ -52,9 +57,11 @@
     @media (min-width: 2560px) {
         font-size: 9rem;
     }
+    
     @media (max-width: 768px) {
         font-size: 4rem;
     }
+
     @media (max-width: 450px) {
         font-size: 2.3rem;
     }
@@ -69,7 +76,7 @@
     @media (max-width: 768px) {
         font-size: 1.2rem;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         font-size: 0.9rem;
     }
 }

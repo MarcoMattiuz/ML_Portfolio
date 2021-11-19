@@ -18,7 +18,9 @@
         height: 100%;
         z-index: 1;
         .logo {
-            width:7em;
+            width:20vw;
+            max-width: 8em;
+            min-width: 5em;
             height:auto;
         }
         .links-container {
@@ -64,6 +66,20 @@
         .contact-button:focus{
             background-position: right;
        
+        }
+
+        @media (max-width: 750px) {
+            .links{
+            position: fixed;
+            left: -100%;
+            }
+            .contact-button{
+                position: absolute;
+                height: 2.7em;
+                width: 7.2em;
+                margin-right: 5em;
+                font-size: 0.9em;
+            }
         }
 
     }
