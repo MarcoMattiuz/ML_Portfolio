@@ -244,6 +244,7 @@ body {
             width: 50px;
             height: 50px;
             content: '"';
+            right: 0.1em;
 
             @include clipBg-ToText;
             background-image: $title-gradiant;
@@ -343,7 +344,6 @@ body {
 }
 
 .container #presentation::-webkit-scrollbar {
-  width: 0;
   background: transparent;
 }
 
@@ -450,7 +450,6 @@ body {
   font: "Open Sans", sans-serif;
   font-size: 0.8rem;
   color: rgba(236, 228, 228, 0.925);
-  font-size: 1vh;
 }
 
 @media (min-width: 2560px) {

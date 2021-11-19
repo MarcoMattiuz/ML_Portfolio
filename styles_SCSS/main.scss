@@ -2,6 +2,7 @@
 @import "./mixins-functions";
 @import "./navbar";
 @import "./webkit-mods";
+
 // // // // // // // // //
 // initializing tags //
 // // // // // // // // // 
@@ -87,6 +88,7 @@ body {
             width: 50px;
             height: 50px;
             content: '"';
+            right: 0.1em;
 
             @include clipBg-ToText;
             background-image: $title-gradiant;
@@ -126,14 +128,15 @@ body {
 
     /* section 2 */
     #presentation::-webkit-scrollbar {
-        width: 0;
+        // width: 0;
         background: transparent;
     }
+
     #presentation {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-
+  
         .pr-section {
             @include flex-center;
             flex: none;
@@ -156,6 +159,7 @@ body {
                 background-color: $background-black;
                 box-shadow: -1.5rem -1.2rem 2rem 0.1rem hsl(0, 0%, 10%), 1.5rem 1.2rem 2rem 0.1rem hsl(0, 0%, 50%);
                 border-radius: $standard-radius;
+
                 .img-box {
                     width: 90%;
                     max-height: 60%;
@@ -175,6 +179,7 @@ body {
                     @include small-title-text;
                     text-align: center;
                 }
+
                 .pr-title::after {
                     content: "";
                     display: block;
@@ -192,7 +197,6 @@ body {
                     width: 100%;
                     max-height: fit-content;
                     @include small-text;
-                    font-size: 1vh;
                 }
               
             }
@@ -209,6 +213,5 @@ body {
             }
 
         }
-
     }
 }
