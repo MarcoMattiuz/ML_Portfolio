@@ -5,8 +5,9 @@
 .header {
   position: fixed;
   left: 5%;
+  padding-top: 1em;
   width: 90%;
-  height: 5%;
+  height: 7%;
   -webkit-box-shadow: 0.5em 0.5em 4em 4em #090910;
           box-shadow: 0.5em 0.5em 4em 4em #090910;
   z-index: 100;
@@ -116,7 +117,8 @@
     display: none;
   }
   .header .nav-bar .header {
-    margin-bottom: 1000em;
+    padding-top: 0em;
+    height: 5%;
   }
   .header .nav-bar .contact-button {
     position: absolute;
