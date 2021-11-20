@@ -15,7 +15,6 @@
         @include clipBg-ToText;
         background-image: $title-gradiant;
     }
-
     .sub-quote {
         position: relative;
         margin-top: 0.6em;
@@ -43,6 +42,9 @@
         #ourWork:hover,
         #ourWork:focus {
             background-position: right;
+        }
+        @media (max-width: 350px) {
+            margin-top: 2em;
         }
     }
 }
