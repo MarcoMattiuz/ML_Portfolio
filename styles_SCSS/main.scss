@@ -21,13 +21,18 @@ h2,
 p{
     color: white;
     font-family: $open-Sans;
+    @include small-text;
+}
+h5{
+    color: white;
+    font-family: $open-Sans;
+    @include medium-text;
 }
 // // // // // // // // // 
 
 body {
     width: 100vw;
     height: 100vh;
-    margin: 0;
     background-color: $background-black;
 }
 
@@ -53,21 +58,21 @@ body {
     /* section 1 */
     .title-container {
         position: relative;
-        width: 80vw;
-        max-width: 70em;
-        height: 60vh;
+        width: 85%;
+        height:77%;
         text-align: center;
-
+        margin-left: 3em;
+        margin-right: 3em;
         .opening-quote {
             position: relative;
-            margin: 0 auto;
+            margin: 1em auto;
             @include title-text;
             @include clipBg-ToText;
             background-image: $title-gradiant;
         }
 
-        .opening-quote::before {
-            display: inline;
+       /* .opening-quote::before {
+            display: inherit;
             position: relative;
             width: 50px;
             height: 50px;
@@ -87,10 +92,11 @@ body {
             @include clipBg-ToText;
             background-image: $title-gradiant;
         }
+        */
 
         .sub-quote {
             position: relative;
-            margin-top: 1.3em;
+            margin-top: 0.6em;
             @include medium-text;
         }
 
@@ -98,26 +104,18 @@ body {
             position:relative;
             @include flex-center;
             justify-content: center;
-            margin-top: 2.3em;
-            max-height: 10.5em;
-            height: 20%;
+            margin-top: 4em;
+
             #ourWork{
+                @include buttonBig-text;
                 @include flex-center;
-                @include small-title-text;
-                width: 30vw;
-                max-width: 20em;
-                min-width: 10em;
-                height: 60%;
-                border-radius: $standard-radius;
+                height: 2em;
+                width: 8.5em;
+                border-radius: $standard-radius - 0.2em;
                 background: $buttons-gradient;
                 background-size: 300%;
                 background-position: left;
                 transition: background-position 0.7s;
-                
-            }
-
-            @media (max-width: 400px) {
-                height: 4.5em; 
             }
 
             #ourWork:hover,#ourWork:focus{
