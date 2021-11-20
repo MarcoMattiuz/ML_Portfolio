@@ -1,34 +1,37 @@
+@import "./pageOne";
 @import "./variables";
 @import "./mixins-functions";
 @import "./navbar";
 @import "./webkit-mods";
-
+@import "./carousel";
 // // // // // // // // //
 // initializing tags //
-// // // // // // // // // 
+// // // // // // // // //
 *,
 a,
 h1,
 h2,
 h3,
-p{
+p {
     margin: 0;
 }
 
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 h2,
-p{
+p {
     color: white;
     font-family: $open-Sans;
     @include small-text;
 }
-h5{
+h5 {
     color: white;
     font-family: $open-Sans;
     @include medium-text;
 }
-// // // // // // // // // 
+// // // // // // // // //
 
 body {
     width: 100vw;
@@ -51,8 +54,8 @@ body {
     background-color: $background-black;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-   
     // // // // // // // // // // // //
+<<<<<<< HEAD
     
     
     /* section 1 */
@@ -104,93 +107,7 @@ body {
             }
         }
     }
+=======
+>>>>>>> c2dc4c72cd81ba32a40bd6410448a73f031ce255
 
-    /* section 2 */
-    #presentation::-webkit-scrollbar {
-        // width: 0;
-        background: transparent;
-    }
-
-    #presentation {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-  
-        .pr-section {
-            @include flex-center;
-            flex: none;
-            scroll-snap-align: center;
-            width: 100%;
-            height: 100%;
-
-            .content-box {
-                width: 70%;
-                max-height: 60%;
-                padding: 2em;
-                height: min-content;
-                display: grid;
-                grid-template-columns: 1.3fr 1fr;
-                grid-template-rows: 5rem 2.5fr;
-                grid-template-areas:
-                    "img title"
-                    "img content";
-
-                background-color: $background-black;
-                box-shadow: -1.5rem -1.2rem 2rem 0.1rem hsl(0, 0%, 10%), 1.5rem 1.2rem 2rem 0.1rem hsl(0, 0%, 50%);
-                border-radius: $standard-radius;
-
-                .img-box {
-                    width: 90%;
-                    max-height: 60%;
-                    position: relative;
-                    grid-area: img;
-                    @include flex-center;
-                    .pr-img{
-                        position: absolute;
-                        width: 100%;
-                        margin-bottom: 10%;
-                    }
-                }
-
-                .pr-title {
-                    margin: 10px;
-                    grid-area: title;
-                    @include small-title-text;
-                    text-align: center;
-                }
-
-                .pr-title::after {
-                    content: "";
-                    display: block;
-                    width: 80%;
-                    height: 0.3rem;
-
-                    position: relative;
-                    margin: 0 auto;
-
-                    background-color: $background-white;
-                }
-                .pr-content{
-                    margin-top: 0;
-                    position: relative;
-                    width: 100%;
-                    max-height: fit-content;
-                    @include small-text;
-                }
-              
-            }
-
-            @media (max-width: 450px) {
-                .content-box {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 2fr 0.5fr 1fr;
-                    grid-template-areas:
-                        "img"
-                        "title"
-                        "content";
-                }
-            }
-
-        }
-    }
 }

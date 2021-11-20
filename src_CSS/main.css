@@ -2,6 +2,134 @@
 /****************fonts****************/
 /*************************************/
 /* gradients */
+/* section 1 */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@750&display=swap");
+.title-container {
+  position: relative;
+  width: 85%;
+  height: 77%;
+  text-align: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  /* .opening-quote::before {
+        display: inherit;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        content: '"';
+        @include clipBg-ToText;
+        background-image: $title-gradiant;
+    }
+
+    .opening-quote::after {
+        display: inline;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        content: '"';
+        right: 0.1em;
+
+        @include clipBg-ToText;
+        background-image: $title-gradiant;
+    }
+    */
+}
+
+.title-container .opening-quote {
+  position: relative;
+  margin: 1em auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
+}
+
+@media (max-width: 1150px) {
+  .title-container .opening-quote {
+    font-size: 4.9vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .title-container .opening-quote {
+    font-size: 1.6rem;
+  }
+}
+
+.title-container .sub-quote {
+  position: relative;
+  margin-top: 0.6em;
+  font: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: rgba(236, 228, 228, 0.925);
+}
+
+@media (max-width: 1150px) {
+  .title-container .sub-quote {
+    font-size: 2.3vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .title-container .sub-quote {
+    font-size: 1em;
+  }
+}
+
+.title-container .ourWork-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.title-container .ourWork-button #ourWork {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: rgba(236, 228, 228, 0.925);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2em;
+  width: 8.5em;
+  border-radius: 0.5em;
+  background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
+  background-size: 300%;
+  background-position: left;
+  -webkit-transition: background-position 0.7s;
+  transition: background-position 0.7s;
+}
+
+@media (max-width: 900px) {
+  .title-container .ourWork-button #ourWork {
+    font-size: 1.4rem;
+  }
+}
+
+.title-container .ourWork-button #ourWork:hover,
+.title-container .ourWork-button #ourWork:focus {
+  background-position: right;
+}
+
+/****************fonts****************/
+/*************************************/
+/* gradients */
 .header {
   position: fixed;
   left: 5%;
@@ -194,10 +322,101 @@
   }
 }
 
+<<<<<<< HEAD
 .background-menu {
   width: 100%;
   height: 100%;
   background: white;
+=======
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+}
+
+.carousel_image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2em;
+}
+
+.carousel_track-container {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.carousel_track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  font-size: large;
+  color: lightcoral;
+  background-color: rgba(240, 248, 255, 0.801);
+  width: 40px;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+.carousel_button:hover,
+.carousel_button:focus {
+  background-color: aliceblue;
+}
+
+.carousel_button--left {
+  left: -60px;
+}
+
+.carousel_button--right {
+  right: -60px;
+}
+
+.carousel_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 12px;
+}
+
+.carousel_indicator.current-slide {
+  background: rgba(0, 0, 0, 0.7);
+>>>>>>> c2dc4c72cd81ba32a40bd6410448a73f031ce255
 }
 
 *,
@@ -291,6 +510,7 @@ body {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
+<<<<<<< HEAD
   /* section 1 */
   /* section 2 */
 }
@@ -542,5 +762,7 @@ body {
         grid-template-rows: 2fr 0.5fr 1fr;
         grid-template-areas: "img" "title" "content";
   }
+=======
+>>>>>>> c2dc4c72cd81ba32a40bd6410448a73f031ce255
 }
 /*# sourceMappingURL=main.css.map */
