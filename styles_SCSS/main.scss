@@ -54,6 +54,6 @@ body {
     background-color: $background-black;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden;
     // // // // // // // // // // // //
-
 }

@@ -263,6 +263,31 @@
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdbb2d), color-stop(#b21f1f), to(#1a2a6c));
+  background-image: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+}
+
 .carousel {
   position: relative;
   height: 600px;
@@ -438,5 +463,6 @@ body {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */
