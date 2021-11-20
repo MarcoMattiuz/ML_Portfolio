@@ -7,11 +7,25 @@
   left: 5%;
   padding-top: 1em;
   width: 90%;
-  height: 7%;
+  height: 6%;
   -webkit-box-shadow: 0.5em 0.5em 4em 4em #090910;
           box-shadow: 0.5em 0.5em 4em 4em #090910;
   z-index: 100;
   background-color: #090910;
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 5%;
+    -webkit-box-shadow: 0.2em 0.2em 2em 2em #090910;
+            box-shadow: 0.2em 0.2em 2em 2em #090910;
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    height: 7%;
+  }
 }
 
 .header .nav-bar {
@@ -116,23 +130,74 @@
   .header .nav-bar .links-container .links {
     display: none;
   }
-  .header .nav-bar .header {
-    padding-top: 0em;
-    height: 5%;
-  }
   .header .nav-bar .contact-button {
     position: absolute;
-    margin-right: 1.5em;
+    margin-right: 1em;
     font-size: 0.8rem;
   }
   .header .nav-bar .hamburger-menu {
     display: block;
     position: relative;
-    margin-right: 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 1em;
+    width: 4em;
+    height: 2em;
+    cursor: pointer;
+  }
+  .header .nav-bar .hamburger-icon {
+    width: 2.0em;
+    height: 0.25em;
+    background: rgba(236, 228, 228, 0.925);
+    border-radius: 0.5em;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .nav-bar .hamburger-icon::before, .header .nav-bar .hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 2.0em;
+    height: 0.25em;
+    background: rgba(236, 228, 228, 0.925);
+    border-radius: 0.5em;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .header .nav-bar .hamburger-icon::before {
+    -webkit-transform: translateY(-0.5em);
+            transform: translateY(-0.5em);
+  }
+  .header .nav-bar .hamburger-icon::after {
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+  }
+  .header .nav-bar .hamburger-menu.open .hamburger-icon {
+    background: transparent;
+  }
+  .header .nav-bar .hamburger-menu.open .hamburger-icon::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header .nav-bar .hamburger-menu.open .hamburger-icon::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .header .nav-bar .logo {
     width: 5.5em;
   }
+}
+
+.background-menu {
+  width: 100%;
+  height: 100%;
+  background: white;
 }
 
 *,
@@ -191,6 +256,12 @@ h5 {
   }
 }
 
+@media (max-width: 350px) {
+  h5 {
+    font-size: 0.8rem;
+  }
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -231,28 +302,6 @@ body {
   text-align: center;
   margin-left: 3em;
   margin-right: 3em;
-  /* .opening-quote::before {
-            display: inherit;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-
-        .opening-quote::after {
-            display: inline;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            right: 0.1em;
-
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-        */
 }
 
 .container .title-container .opening-quote {
@@ -278,6 +327,12 @@ body {
   }
 }
 
+@media (max-width: 350px) {
+  .container .title-container .opening-quote {
+    font-size: 1.2rem;
+  }
+}
+
 .container .title-container .sub-quote {
   position: relative;
   margin-top: 0.6em;
@@ -295,6 +350,12 @@ body {
 @media (max-width: 750px) {
   .container .title-container .sub-quote {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 350px) {
+  .container .title-container .sub-quote {
+    font-size: 0.8rem;
   }
 }
 
@@ -344,6 +405,12 @@ body {
 
 .container .title-container .ourWork-button #ourWork:hover, .container .title-container .ourWork-button #ourWork:focus {
   background-position: right;
+}
+
+@media (max-width: 350px) {
+  .container .title-container .ourWork-button {
+    margin-top: 2em;
+  }
 }
 
 .container #presentation::-webkit-scrollbar {

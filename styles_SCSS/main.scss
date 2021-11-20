@@ -71,28 +71,6 @@ body {
             background-image: $title-gradiant;
         }
 
-       /* .opening-quote::before {
-            display: inherit;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-
-        .opening-quote::after {
-            display: inline;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            right: 0.1em;
-
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-        */
 
         .sub-quote {
             position: relative;
@@ -121,7 +99,9 @@ body {
             #ourWork:hover,#ourWork:focus{
                 background-position: right;
             }
-
+            @media (max-width: 350px) {
+                margin-top: 2em;
+            }
         }
     }
 
