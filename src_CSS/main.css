@@ -334,13 +334,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1a2a6c;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdbb2d), color-stop(#b21f1f), to(#1a2a6c));
-  background-image: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-radius: 10px;
+  background: rgba(236, 228, 228, 0.925);
+  opacity: 0.5;
+  border-radius: 0.7em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.9;
 }
 
 .carousel {
@@ -349,21 +349,13 @@
   width: 80%;
 }
 
-.carousel_image {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 2em;
-}
-
-.carousel_track-container {
+.carousel .carousel_track-container {
   height: 100%;
   position: relative;
   overflow-x: hidden;
 }
 
-.carousel_track {
+.carousel .carousel_track-container .carousel_track {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -375,11 +367,141 @@
   transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
 }
 
-.carousel_slide {
+.carousel .carousel_track-container .carousel_track .carousel_slide {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content {
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "img title" "img pres" "img sign" "img links";
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: img;
+  width: 90%;
+  height: 100%;
+  -webkit-box-shadow: inset -5px -5px 15px 15px #110303;
+          box-shadow: inset -5px -5px 15px 15px #110303;
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container .carousel_image {
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2em;
+}
+
+@media (max-width: 1150px) {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_title {
+    font-size: 4.9vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_title {
+    font-size: 1.2rem;
+  }
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_pr {
+  font: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: rgba(236, 228, 228, 0.925);
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pres;
+  max-height: 60%;
+}
+
+@media (min-width: 2560px) {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_pr {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_pr {
+    font-size: 0.8rem;
+  }
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .sign {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: sign;
+  padding: 1em;
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .sign .sign_img {
+  height: 20%;
+  width: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_links {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: links;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+  padding: 1em;
+  font-size: 1em;
+  list-style: none;
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_links .link {
+  color: rgba(236, 228, 228, 0.925);
+}
+
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_links .link:hover,
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_text .carousel_links .link:focus {
+  color: white;
 }
 
 .carousel_button {
@@ -390,8 +512,8 @@
   background: transparent;
   border: 0;
   font-size: large;
-  color: lightcoral;
-  background-color: rgba(240, 248, 255, 0.801);
+  color: white;
+  font-size: 10px;
   width: 40px;
   cursor: pointer;
   border-radius: 1em;
@@ -399,7 +521,7 @@
 
 .carousel_button:hover,
 .carousel_button:focus {
-  background-color: aliceblue;
+  color: rgba(236, 228, 228, 0.925);
 }
 
 .carousel_button--left {
@@ -417,20 +539,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 0.4em;
+  width: 3em;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  border-radius: 1em;
+  background: rgba(236, 228, 228, 0.925);
 }
 
 .carousel_indicator {
   border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  width: 1em;
+  height: 1em;
+  background: white;
   margin: 0 12px;
 }
 
 .carousel_indicator.current-slide {
-  background: rgba(0, 0, 0, 0.7);
+  background: #090910;
 }
 
 *,
