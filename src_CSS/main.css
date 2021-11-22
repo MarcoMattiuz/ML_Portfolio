@@ -513,7 +513,7 @@
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "img title" "img pres" "img sign" "img links";
+      grid-template-areas: "img title" "img pres" "img sign" "img links";
 }
 
 .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container {
@@ -754,6 +754,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #090910;
+  overflow-y: hidden;
 }
 
 .nm-section {
@@ -770,6 +771,7 @@ body {
           justify-content: center;
   opacity: 0.95;
   scroll-snap-align: center;
+  overflow-y: hidden;
 }
 
 .container {
