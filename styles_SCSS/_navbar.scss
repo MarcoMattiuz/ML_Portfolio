@@ -143,8 +143,12 @@
     }
    
 }
+.hamburger-menu-container{
+    display: none;    
+}
 @media (max-width: 750px) {
     .hamburger-menu-container{
+        display: block;
         position: fixed;
         transform: translateX(100%);
         width: 100%;
@@ -200,6 +204,9 @@
                 img{
                     margin: 6em 1em 0 1em ;
                     width: 40%; height: auto; 
+                }
+                img:hover,img:focus{
+                    background: gray;
                 }
             } 
         }
