@@ -6,6 +6,7 @@ const prevButton = document.querySelector(".carousel_button--left");
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
+
 //arrange the slides
 // slides[0].slides.left = slideWidth*0 +'px';
 // slides[1].slides.left = slideWidth*1 +'px';
@@ -29,9 +30,9 @@ prevButton.addEventListener("click", e => {
     const nextSlide = currentSlide.nextElementSibling;
     console.log(prevSlide);
     //move to the next slide
-    if(prevSlide!=null){
+    if (prevSlide != null) {
         moveToSlide(track, currentSlide, prevSlide);
-    }else{
+    } else {
         console.log("forward");
         moveToSlide(track, currentSlide, nextSlide);
     }
@@ -43,9 +44,10 @@ nextButton.addEventListener("click", e => {
     const prevSlide = currentSlide.previousElementSibling;
     console.log(nextSlide);
     //move to the next slide
-    if(nextSlide!=null){
+    if (nextSlide != null) {
         moveToSlide(track, currentSlide, nextSlide);
-    }else{
+
+    } else {
         console.log("back");
         moveToSlide(track, currentSlide, prevSlide);
     }
