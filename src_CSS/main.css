@@ -128,10 +128,9 @@
 /* gradients */
 .header {
   position: fixed;
-  left: 5%;
   padding-top: 1em;
-  width: 90%;
-  height: 6%;
+  width: 100%;
+  height: 4em;
   -webkit-box-shadow: 0.5em 0.5em 4em 4em #090910;
           box-shadow: 0.5em 0.5em 4em 4em #090910;
   z-index: 100;
@@ -140,7 +139,7 @@
 
 @media (max-width: 750px) {
   .header {
-    height: 5%;
+    height: 3em;
     -webkit-box-shadow: 0.2em 0.2em 2em 2em #090910;
             box-shadow: 0.2em 0.2em 2em 2em #090910;
   }
@@ -148,7 +147,7 @@
 
 @media (max-width: 350px) {
   .header {
-    height: 7%;
+    height: 3em;
   }
 }
 
@@ -166,11 +165,14 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .header .nav-bar .logo {
   width: 7em;
   height: auto;
+  margin-left: 1em;
 }
 
 .header .nav-bar .links-container {
@@ -221,7 +223,7 @@
 }
 
 .header .nav-bar .contact-button {
-  margin: 0 auto;
+  margin-right: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +273,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 1.5em;
+    margin-right: 4em;
     width: 2.5em;
     height: 2em;
     cursor: pointer;
@@ -316,6 +318,25 @@
   .header .nav-bar .logo {
     width: 5.5em;
   }
+}
+
+.hamburger-menu-container {
+  position: fixed;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  background: white;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+.hamburger-menu-container.open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 /* width */
@@ -496,7 +517,7 @@ h5 {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #090910;
 }
