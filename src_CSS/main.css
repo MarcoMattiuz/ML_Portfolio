@@ -320,8 +320,13 @@
   }
 }
 
+.hamburger-menu-container {
+  display: none;
+}
+
 @media (max-width: 750px) {
   .hamburger-menu-container {
+    display: block;
     position: fixed;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -425,6 +430,9 @@
     margin: 6em 1em 0 1em;
     width: 40%;
     height: auto;
+  }
+  .hamburger-menu-container .links-container1 .menu-icons img:hover, .hamburger-menu-container .links-container1 .menu-icons img:focus {
+    background: gray;
   }
   .hamburger-menu-container.open {
     -webkit-transform: translateX(0%);
