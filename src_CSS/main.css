@@ -390,7 +390,7 @@ body {
       grid-template-columns: 1.3fr 1fr;
   -ms-grid-rows: 5rem 2.5fr;
       grid-template-rows: 5rem 2.5fr;
-      grid-template-areas: "img title" "img content";
+      grid-template-areas: "img title" "img content";
   background-color: #090910;
   -webkit-box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
           box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
@@ -473,7 +473,7 @@ body {
         grid-template-columns: 1fr;
     -ms-grid-rows: 2fr 0.5fr 1fr;
         grid-template-rows: 2fr 0.5fr 1fr;
-        grid-template-areas: "img" "title" "content";
+        grid-template-areas: "img" "title" "content";
   }
 }
 /*# sourceMappingURL=main.css.map */
