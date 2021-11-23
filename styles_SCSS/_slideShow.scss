@@ -1,0 +1,163 @@
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+
+    .carousel_track-container {
+        height: 100%;
+        position: relative;
+        overflow-x: hidden;
+
+        .carousel_track {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            height: 100%;
+            transition: transform 250ms ease-out;
+
+            .carousel_slide {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                .carousel_content {
+                    height: 100%;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    grid-template-areas:
+                        "img title"
+                        "img pres"
+                        "img sign"
+                        "img links";
+
+                    .carousel_img--container {
+                        
+                        grid-area: img;
+                        width: 90%;
+                        height: 100%;
+                        box-shadow: inset -5px -5px 15px 15px rgb(17, 3, 3);
+                        
+                        
+                        .carousel_image {
+                            position: relative;
+                            z-index: -1;
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                  
+
+                    .carousel_text {
+
+                        .carousel_title {
+                            grid-area: title;
+                            @include title-text;
+                            @include flex-center;
+                            height: 2em;
+                           
+                           
+                        }
+
+                     
+                        .carousel_pr {
+                            @include small-text;
+                            grid-area: pres;
+                            max-height: 60% ;
+                         
+                        }
+                        .sign {
+                            grid-area: sign;
+                            padding: 1em;
+
+                            .sign_img {
+                                height: 20%;
+                                width: 20%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .carousel_links {
+                            grid-area: links;
+                            display: flex;
+                            justify-content: space-around;
+                            width: 30%;
+
+                            padding: 1em;
+                            font-size: 1em;
+                            list-style: none;
+                            
+                           
+                            .link{
+                                color: $background-white;
+                            }
+
+                            .link:hover,
+                            .link:focus{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background:transparent;
+    border: 0;
+    font-size: large;
+    color: white;
+    font-size: 10px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+.carousel_button:hover,
+.carousel_button:focus {
+    color: $background-white;
+}
+
+.carousel_button--left {
+    left: -60px;
+}
+
+.carousel_button--right {
+    right: -60px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.4em;
+    width: 3em;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    border-radius: 1em;
+    background: $background-white;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    background: white;
+    margin: 0 12px;
+}
+
+.carousel_indicator.current-slide {
+    background: $background-black;
+}

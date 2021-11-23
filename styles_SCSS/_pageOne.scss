@@ -1,0 +1,50 @@
+@import "./variables";
+@import "./mixins-functions";
+/* section 1 */
+.title-container {
+    position: relative;
+    width: 85%;
+    height: 77%;
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    .opening-quote {
+        position: relative;
+        margin: 1em auto;
+        @include title-text;
+        @include clipBg-ToText;
+        background-image: $title-gradiant;
+    }
+    .sub-quote {
+        position: relative;
+        margin-top: 0.6em;
+        @include medium-text;
+    }
+
+    .ourWork-button {
+        position: relative;
+        @include flex-center;
+        justify-content: center;
+        margin-top: 4em;
+
+        #ourWork {
+            @include buttonBig-text;
+            @include flex-center;
+            height: 2em;
+            width: 8.5em;
+            border-radius: $standard-radius - 0.2em;
+            background: $buttons-gradient;
+            background-size: 300%;
+            background-position: left;
+            transition: background-position 0.7s;
+        }
+
+        #ourWork:hover,
+        #ourWork:focus {
+            background-position: right;
+        }
+        @media (max-width: 350px) {
+            margin-top: 2em;
+        }
+    }
+}

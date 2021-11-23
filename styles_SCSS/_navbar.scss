@@ -1,30 +1,38 @@
 .header {
     position: fixed;
-    left: 5%;
     padding-top:1em;
-    width: 90%;
-    height: 7%;
+    width: 100%;
+    height: 4em;
     box-shadow: 0.5em 0.5em 4em 4em $background-black;
     z-index: 100;
     background-color: $background-black;
 
+    @media (max-width: 750px) {
+        height: 3em;
+        box-shadow: 0.2em 0.2em 2em 2em $background-black;
+
+        }
+        @media (max-width: 350px) {
+            height: 3em;
+        }
     .nav-bar {
         @include flex-spaceBetwen;
         position: relative;
         width: 100%;
         height: 100%;
         z-index: 1;
-
+        margin-left: 1em;
+        margin-right: 1em;
         
         .logo {
             width:7em;
             height:auto;
+            margin-left: 0.3em;
         }
         .links-container {
             display: flex;
             align-items: center;
             justify-content: end;
-
             width: 35em;
             height: 100%;
             p{
@@ -51,7 +59,7 @@
         }
 
         .contact-button {
-            margin: 0 auto;
+            margin-right: 4em;
             @include flex-center;
             width: 8em;
             height: 90%;
@@ -60,6 +68,7 @@
             background-size: 300%;
             background-position: left;
             transition: background-position 0.7s;
+
         }   
         .hamburger-menu{
             display: none;
@@ -76,24 +85,142 @@
                     display: none;
                 }
             }
-            .header{
-                padding-top: 0em;
-                height: 5%;
-            }
+            
             .contact-button{
                 position: absolute;
-                margin-right: 1.5em;
+                margin-right: 1em;
                 font-size: 0.8rem;
             }
             .hamburger-menu{
                 display: block;
                 position: relative;
-                margin-right:1.5em;
+                @include flex-center;
+                margin-right:2.5em;
+                width: 2.5em;
+                height: 2em;
+                cursor: pointer;
+                
             }
+            .hamburger-icon{
+                width: 2.0em;
+                height: 0.25em;
+                background: $background-white;
+                border-radius: 0.5em;
+                transition: all 0.5s ease-in-out;
+            }
+           .hamburger-icon::before,.hamburger-icon::after{
+            content: '';
+            position:absolute;
+            width: 2.0em;
+            height: 0.25em;
+            background: $background-white;
+            border-radius: 0.5em;
+            transition: all 0.5s ease-in-out;
+            }
+            .hamburger-icon::before{
+            transform: translateY(-0.5em);
+            }
+            .hamburger-icon::after{
+            transform: translateY(0.5em);
+            }
+            .hamburger-menu.open .hamburger-icon{
+                background: transparent;
+            }
+            .hamburger-menu.open .hamburger-icon::before{
+                transform:  rotate(45deg) ;
+            }
+            .hamburger-menu.open .hamburger-icon::after{
+                transform:  rotate(-45deg);
+            }
+
             .logo{
                 width: 5.5em;
             }
+           
+            
         }
 
     }
+   
 }
+.hamburger-menu-container{
+    display: none;    
+}
+@media (max-width: 750px) {
+    .hamburger-menu-container{
+        display: block;
+        position: fixed;
+        transform: translateX(100%);
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        background: $background-black;
+        transition: transform 400ms ease-in-out;
+    
+        .links-container1{
+            transform: translateX(100%);
+            transition: transform 400ms ease-in;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 8em;
+            
+            p{
+                @include navbar-text;
+            }
+            .contact-button1{
+                width: 75% ;
+                margin:0.3em;
+                padding: 1.3em ;
+                @include flex-center;
+                border-radius: $standard-radius;
+                background: $buttons-gradient;
+                background-size: 200%;
+                background-position: left;
+                transition: background-position 700ms;
+            }
+            .contact-button1:hover,.contact-button1:focus{
+                background-position: right;
+            }
+            .links1{
+                width: 75% ;
+                margin:0.3em;
+                border-radius: $standard-radius;
+                padding: 1.3em ;
+                @include flex-center;
+                background: linear-gradient(90deg,rgba(158, 157, 157, 0.199),$background-black,$background-black );
+                background-size: 150%;
+                background-position: right;
+                transition: background-position 0.3s;
+            }
+            .links1:hover,.links1:focus{
+                background-position: left;  
+            }
+            .menu-icons{
+                @include flex-center;
+                img{
+                    margin: 6em 1em 0 1em ;
+                    width: 40%; height: auto; 
+                }
+                img:hover,img:focus{
+                    background: gray;
+                }
+            } 
+        }
+    
+    }
+    .hamburger-menu-container.open{
+        transform: translateX(0%);
+        box-shadow: -2em 2em 5em 1em $background-black;
+        .links-container1{
+            transform: translateX(0%);
+    
+        }
+    
+    }
+    
+}
+
