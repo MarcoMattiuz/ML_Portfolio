@@ -37,13 +37,11 @@
                         "img links";
 
                     .carousel_img--container {
-                        
                         grid-area: img;
                         width: 90%;
                         height: 100%;
                         box-shadow: inset -5px -5px 15px 15px rgb(17, 3, 3);
-                        
-                        
+
                         .carousel_image {
                             position: relative;
                             z-index: -1;
@@ -53,25 +51,18 @@
                         }
                     }
 
-                  
-
                     .carousel_text {
-
                         .carousel_title {
                             grid-area: title;
                             @include title-text;
                             @include flex-center;
                             height: 2em;
-                           
-                           
                         }
 
-                     
                         .carousel_pr {
                             @include small-text;
                             grid-area: pres;
-                            max-height: 60% ;
-                         
+                            max-height: 60%;
                         }
                         .sign {
                             grid-area: sign;
@@ -93,14 +84,13 @@
                             padding: 1em;
                             font-size: 1em;
                             list-style: none;
-                            
-                           
-                            .link{
+
+                            .link {
                                 color: $background-white;
                             }
 
                             .link:hover,
-                            .link:focus{
+                            .link:focus {
                                 color: white;
                             }
                         }
@@ -111,11 +101,24 @@
     }
 }
 
+@media (min-width: 750px) {
+    .carousel_content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "img"
+            "title"
+            "pres"
+            "sign"
+            "links";
+    }
+}
+
 .carousel_button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background:transparent;
+    background: transparent;
     border: 0;
     font-size: large;
     color: white;

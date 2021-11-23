@@ -632,6 +632,16 @@
   color: white;
 }
 
+@media (min-width: 750px) {
+  .carousel_content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "img" "title" "pres" "sign" "links";
+  }
+}
+
 .carousel_button {
   position: absolute;
   top: 50%;
