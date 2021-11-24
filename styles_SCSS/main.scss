@@ -4,6 +4,7 @@
 @import "./navbar";
 @import "./webkit-mods";
 @import "./slideShow";
+@import "./pageThree";
 // // // // // // // // //
 // initializing tags //
 // // // // // // // // //
@@ -36,7 +37,7 @@ h5 {
 body {
     width: 100%;
     height: 100vh;
-    background-color: $background-black;
+    //background-color: $background-black;
     overflow-y: hidden;
 }
 
@@ -47,6 +48,7 @@ body {
     opacity: 0.95;
     scroll-snap-align: center;
     overflow-y: hidden;
+    overflow-x: hidden;
     // scroll-margin-top: 5vh;
 }
 
