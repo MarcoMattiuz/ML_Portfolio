@@ -119,7 +119,7 @@
 
 @media (max-width: 350px) {
   .title-container .ourWork-button {
-    margin-top: 2em;
+    margin-top: 1em;
   }
 }
 
@@ -164,7 +164,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 1;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -624,6 +623,11 @@
   color: white;
 }
 
+.carousel .about {
+  left: -250px;
+  top: -200px;
+}
+
 @media (max-width: 750px) {
   .carousel_content {
     background-color: red;
@@ -892,9 +896,15 @@ body {
   width: 100%;
   height: 100%;
   background-color: #090910;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
+}
+
+.parallax_title {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(236, 228, 228, 0.925);
+  opacity: 0.8;
+  font-size: 8vw;
 }
 /*# sourceMappingURL=main.css.map */
