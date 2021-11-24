@@ -711,16 +711,13 @@
 .grid-container .element:nth-of-type(1) {
   background-image: linear-gradient(135deg, rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
   background-size: 150%;
-  background-position: left;
 }
 
 .grid-container .element:nth-of-type(2) {
-  background: #283c86;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: -webkit-gradient(linear, right top, left top, from(#45a247), to(#283c86));
-  background-image: linear-gradient(to left, #45a247, #283c86);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(155deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background-size: 200%;
+  background: position x 0;
+  background: position y 0;
 }
 
 .grid-container .element:nth-of-type(3) {
@@ -732,22 +729,16 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.grid-container .element:nth-of-type(4) {
-  background: #283c86;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: -webkit-gradient(linear, right top, left top, from(#45a247), to(#283c86));
-  background-image: linear-gradient(to left, #45a247, #283c86);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.grid-container .element:nth-child(4) {
+  background-image: linear-gradient(45deg, #00416a, #799f0c, #ffe000), linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
+  background-size: 200%;
+  background: position x 0;
+  background: position y 0;
 }
 
 .grid-container .element:nth-of-type(5) {
-  background: #1a2a6c;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdbb2d), color-stop(#b21f1f), to(#1a2a6c));
-  background-image: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(135deg, rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
+  background-size: 150%;
 }
 
 .grid-container .element:nth-of-type(6) {
@@ -769,12 +760,8 @@
 }
 
 .grid-container .element:nth-of-type(8) {
-  background: #1a2a6c;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdbb2d), color-stop(#b21f1f), to(#1a2a6c));
-  background-image: linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(135deg, rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
+  background-size: 150%;
 }
 
 .grid-container .element:nth-of-type(9) {

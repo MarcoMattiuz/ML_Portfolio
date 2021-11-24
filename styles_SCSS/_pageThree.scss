@@ -7,7 +7,6 @@
     grid-row-gap: 5%;
     grid-column-gap: 5%;
     text-align: center;
-    
 
     .element {
         text-align: center;
@@ -19,19 +18,26 @@
         &:nth-of-type(1) {
             background-image: $title-gradiant;
             background-size: 150%;
-            background-position: left;
         }
         &:nth-of-type(2) {
-            @include meridian-gradient;
+            background-image: linear-gradient(155deg, #03001e, #7303c0, #ec38bc, #fdeff9);
+            background-size: 200%;
+            background: position x 0;
+            background: position y 0;
         }
         &:nth-of-type(3) {
             @include meridian-gradient;
         }
-        &:nth-of-type(4) {
-            @include meridian-gradient;
+        &:nth-child(4) {
+            background-image: linear-gradient(45deg, #00416a, #799f0c, #ffe000),
+            linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
+            background-size: 200%;
+            background: position x 0;
+            background: position y 0;
         }
         &:nth-of-type(5) {
-            @include king-gradinet;
+            background-image: $title-gradiant;
+            background-size: 150%;
         }
         &:nth-of-type(6) {
             @include king-gradinet;
@@ -40,13 +46,14 @@
             @include king-gradinet;
         }
         &:nth-of-type(8) {
-            @include king-gradinet;
+            background-image: $title-gradiant;
+            background-size: 150%;
         }
         &:nth-of-type(9) {
             @include king-gradinet;
         }
 
-        &:nth-of-type(1):hover{
+        &:nth-of-type(1):hover {
             background-position: right;
         }
         .inner-title {
@@ -60,16 +67,14 @@
     .element:hover,
     .element:focus {
         transform: scale(1.1);
-        
     }
 }
 
-@media (max-width: 750px){
-    .grid-container{
-        grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 2em;
-    grid-column-gap: 2em;
+@media (max-width: 750px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 2em;
+        grid-column-gap: 2em;
     }
 }
-
