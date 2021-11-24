@@ -40,13 +40,13 @@
                         grid-area: img;
                         width: 90%;
                         height: 100%;
-                        box-shadow: inset -5px -5px 15px 15px rgb(17, 3, 3);
+                        
 
                         .carousel_image {
                             position: relative;
-                            z-index: -1;
-                            height: 100%;
-                            width: 100%;
+                            
+                            height: inherit;
+                            width: inherit;
                             object-fit: cover;
                         }
                     }
@@ -101,18 +101,18 @@
     }
 }
 
-@media (min-width: 750px) {
-    .carousel_content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "img"
-            "title"
-            "pres"
-            "sign"
-            "links";
-    }
-}
+// @media (min-width: 750px) {
+//     .carousel_content {
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+//         grid-template-areas:
+//             "img"
+//             "title"
+//             "pres"
+//             "sign"
+//             "links";
+//     }
+// }
 
 .carousel_button {
     position: absolute;
@@ -149,7 +149,7 @@
     margin: 0 auto;
     margin-top: 0.5em;
     border-radius: 1em;
-    background: $background-white;
+    
 }
 
 .carousel_indicator {
@@ -157,10 +157,9 @@
     border-radius: 100%;
     width: 1em;
     height: 1em;
-    background: white;
     margin: 0 12px;
 }
 
-.carousel_indicator.current-slide {
-    background: $background-black;
+.carousel_indicator.current-indicator {
+    background: lightcyan;
 }

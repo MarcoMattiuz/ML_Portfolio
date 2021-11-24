@@ -523,50 +523,12 @@
   grid-area: img;
   width: 90%;
   height: 100%;
-  -webkit-box-shadow: inset -5px -5px 15px 15px #110303;
-          box-shadow: inset -5px -5px 15px 15px #110303;
 }
 
-<<<<<<< HEAD
-.container .title-container {
-  position: relative;
-  width: 85%;
-  height: 77%;
-  text-align: center;
-  margin-left: 3em;
-  margin-right: 3em;
-  /* .opening-quote::before {
-            display: inherit;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-
-        .opening-quote::after {
-            display: inline;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            right: 0.1em;
-
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-        */
-}
-
-.container .title-container .opening-quote {
-=======
 .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container .carousel_image {
->>>>>>> 519b6b7bf732b43b055e1b5403c326742b9e8666
   position: relative;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  width: inherit;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -667,16 +629,6 @@
   color: white;
 }
 
-@media (min-width: 750px) {
-  .carousel_content {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "img" "title" "pres" "sign" "links";
-  }
-}
-
 .carousel_button {
   position: absolute;
   top: 50%;
@@ -701,29 +653,8 @@
   left: -60px;
 }
 
-<<<<<<< HEAD
-.container #presentation .pr-section .content-box {
-  width: 70%;
-  max-height: 60%;
-  padding: 2em;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.3fr 1fr;
-      grid-template-columns: 1.3fr 1fr;
-  -ms-grid-rows: 5rem 2.5fr;
-      grid-template-rows: 5rem 2.5fr;
-      grid-template-areas: "img title" "img content";
-  background-color: #090910;
-  -webkit-box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
-          box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
-  border-radius: 0.7em;
-=======
 .carousel_button--right {
   right: -60px;
->>>>>>> 519b6b7bf732b43b055e1b5403c326742b9e8666
 }
 
 .carousel_nav {
@@ -738,7 +669,6 @@
   margin: 0 auto;
   margin-top: 0.5em;
   border-radius: 1em;
-  background: rgba(236, 228, 228, 0.925);
 }
 
 .carousel_indicator {
@@ -746,12 +676,11 @@
   border-radius: 100%;
   width: 1em;
   height: 1em;
-  background: white;
   margin: 0 12px;
 }
 
-.carousel_indicator.current-slide {
-  background: #090910;
+.carousel_indicator.current-indicator {
+  background: lightcyan;
 }
 
 *,
@@ -790,15 +719,6 @@ p {
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 450px) {
-  .container #presentation .pr-section .content-box {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 2fr 0.5fr 1fr;
-        grid-template-rows: 2fr 0.5fr 1fr;
-        grid-template-areas: "img" "title" "content";
-=======
 h5 {
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -816,7 +736,6 @@ h5 {
 @media (max-width: 750px) {
   h5 {
     font-size: 1em;
->>>>>>> 519b6b7bf732b43b055e1b5403c326742b9e8666
   }
 }
 
