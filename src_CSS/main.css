@@ -173,6 +173,11 @@
   width: 7em;
   height: auto;
   margin-left: 0.3em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url(https://d33wubrfki0l68.cloudfront.net/_next/static/media/f4f16a82938b3471164dab57854d8c5b36bff0ff/big-gradient-2.cec2615303f228afe4e48bc145bee6a7.jpg);
+  background-size: cover;
 }
 
 .header .nav-bar .links-container {
@@ -431,9 +436,6 @@
     width: 40%;
     height: auto;
   }
-  .hamburger-menu-container .links-container1 .menu-icons img:hover, .hamburger-menu-container .links-container1 .menu-icons img:focus {
-    background: gray;
-  }
   .hamburger-menu-container.open {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -513,7 +515,7 @@
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "img title" "img pres" "img sign" "img links";
+      grid-template-areas: "img title" "img pres" "img sign" "img links";
 }
 
 .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container {

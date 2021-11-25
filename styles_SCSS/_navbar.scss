@@ -28,6 +28,10 @@
             width:7em;
             height:auto;
             margin-left: 0.3em;
+            @include clipBg-ToText;
+            background-image: url(https://d33wubrfki0l68.cloudfront.net/_next/static/media/f4f16a82938b3471164dab57854d8c5b36bff0ff/big-gradient-2.cec2615303f228afe4e48bc145bee6a7.jpg);
+            background-size: cover;
+           
         }
         .links-container {
             display: flex;
@@ -50,10 +54,12 @@
                 background-size: 250%;
                 background-position: right;
                 transition: background-position 0.3s;
+                               
 
             }
             .links:hover,.links:focus{
                 background-position: left;  
+ 
             }
 
         }
@@ -76,7 +82,7 @@
         .contact-button:hover,
         .contact-button:focus{
             background-position: right;
-       
+            
         }
 
         @media (max-width: 750px) {
@@ -204,10 +210,12 @@
                 img{
                     margin: 6em 1em 0 1em ;
                     width: 40%; height: auto; 
+
+
                 }
                 img:hover,img:focus{
-                    background: gray;
-                }
+                
+             }
             } 
         }
     
