@@ -68,8 +68,20 @@
     .element:focus {
         transform: scale(1.1);
     }
+
+    
+}
+/*
+
+da sistemare
+
+
+#skill{
+    left: -250px;
+    top: -200px;
 }
 
+*/
 @media (max-width: 750px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
