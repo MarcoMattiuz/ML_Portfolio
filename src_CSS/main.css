@@ -527,42 +527,7 @@
           box-shadow: inset -5px -5px 15px 15px #110303;
 }
 
-<<<<<<< HEAD
-.container .title-container {
-  position: relative;
-  width: 85%;
-  height: 77%;
-  text-align: center;
-  margin-left: 3em;
-  margin-right: 3em;
-  /* .opening-quote::before {
-            display: inherit;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-
-        .opening-quote::after {
-            display: inline;
-            position: relative;
-            width: 50px;
-            height: 50px;
-            content: '"';
-            right: 0.1em;
-
-            @include clipBg-ToText;
-            background-image: $title-gradiant;
-        }
-        */
-}
-
-.container .title-container .opening-quote {
-=======
 .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container .carousel_image {
->>>>>>> 519b6b7bf732b43b055e1b5403c326742b9e8666
   position: relative;
   z-index: -1;
   height: 100%;
@@ -691,29 +656,8 @@
   left: -60px;
 }
 
-<<<<<<< HEAD
-.container #presentation .pr-section .content-box {
-  width: 70%;
-  max-height: 60%;
-  padding: 2em;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.3fr 1fr;
-      grid-template-columns: 1.3fr 1fr;
-  -ms-grid-rows: 5rem 2.5fr;
-      grid-template-rows: 5rem 2.5fr;
-      grid-template-areas: "img title" "img content";
-  background-color: #090910;
-  -webkit-box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
-          box-shadow: -1.5rem -1.2rem 2rem 0.1rem #1a1a1a, 1.5rem 1.2rem 2rem 0.1rem gray;
-  border-radius: 0.7em;
-=======
 .carousel_button--right {
   right: -60px;
->>>>>>> 519b6b7bf732b43b055e1b5403c326742b9e8666
 }
 
 .carousel_nav {
@@ -780,15 +724,6 @@ p {
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 450px) {
-  .container #presentation .pr-section .content-box {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 2fr 0.5fr 1fr;
-        grid-template-rows: 2fr 0.5fr 1fr;
-        grid-template-areas: "img" "title" "content";
-=======
 h5 {
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -806,7 +741,6 @@ h5 {
 @media (max-width: 750px) {
   h5 {
     font-size: 1em;
->>>>>>> 519b6b7bf732b43b055e1b5403c326742b9e8666
   }
 }
 
@@ -838,6 +772,7 @@ body {
   opacity: 0.95;
   scroll-snap-align: center;
   overflow-y: hidden;
+  scroll-margin-top: 2vh;
 }
 
 .container {
