@@ -4,16 +4,17 @@ const nextButton = document.querySelector(".carousel_button--right");
 const prevButton = document.querySelector(".carousel_button--left");
 const nav = document.querySelector(".carousel_nav");
 const indicator = Array.from(nav.children);
-console.log(indicator);
+
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-
-
-
 
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + "px";
 }
+
+
+
+
 slides.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
@@ -55,4 +56,5 @@ nextButton.addEventListener("click", e => {
         moveToSlide(track, currentSlide, prevSlide);
     }
 })
+
 
