@@ -184,7 +184,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  width: 35em;
+  width: 30em;
   height: 100%;
 }
 
@@ -472,8 +472,8 @@
 
 .carousel {
   position: relative;
-  height: 600px;
-  width: 80%;
+  height: 60%;
+  width: 70%;
 }
 
 .carousel .carousel_track-container {
@@ -488,22 +488,19 @@
   list-style: none;
   position: relative;
   height: 100%;
-  -webkit-transition: -webkit-transform 250ms ease-out;
-  transition: -webkit-transform 250ms ease-out;
-  transition: transform 250ms ease-out;
-  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
 .carousel .carousel_track-container .carousel_track .carousel_slide {
+  background-color: #ff0000;
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content {
   height: 100%;
   width: 100%;
   display: -ms-grid;
@@ -515,16 +512,17 @@
       grid-template-areas: "img title" "img pres" "img pres" "img links";
 }
 
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container {
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_img--container {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;
   grid-area: img;
+  background: blue;
   width: 90%;
   height: 100%;
 }
 
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_img--container .carousel_image {
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_img--container .carousel_image {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;
@@ -536,7 +534,8 @@
      object-fit: cover;
 }
 
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_title {
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_title {
+  background: yellow;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: title;
@@ -555,24 +554,25 @@
 }
 
 @media (max-width: 1150px) {
-  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_title {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_title {
     font-size: 4.9vw;
   }
 }
 
 @media (max-width: 550px) {
-  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_title {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_title {
     font-size: 1.6rem;
   }
 }
 
 @media (max-width: 350px) {
-  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_title {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_title {
     font-size: 1.2rem;
   }
 }
 
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_pr {
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_pr {
+  background: green;
   font: "Open Sans", sans-serif;
   font-size: 0.8rem;
   color: rgba(236, 228, 228, 0.925);
@@ -584,18 +584,18 @@
 }
 
 @media (min-width: 2560px) {
-  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_pr {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_pr {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_pr {
+  .carousel .carousel_track-container .carousel_track .carousel_slide .carousel_pr {
     font-size: 0.8rem;
   }
 }
 
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_links {
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_links {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: links;
@@ -610,12 +610,12 @@
   list-style: none;
 }
 
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_links .link {
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_links .link {
   color: rgba(236, 228, 228, 0.925);
 }
 
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_links .link:hover,
-.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_content .carousel_links .link:focus {
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_links .link:hover,
+.carousel .carousel_track-container .carousel_track .carousel_slide .carousel_links .link:focus {
   color: white;
 }
 

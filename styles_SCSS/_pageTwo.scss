@@ -1,0 +1,162 @@
+.carousel {
+    position: relative;
+    height: 60%;
+    width: 70%;
+
+    .carousel_track-container {
+        height: 100%;
+        position: relative;
+        overflow-x: hidden;
+
+        .carousel_track {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            height: 100%;
+            transition: transform 250ms ease-in;
+
+            .carousel_slide {
+                background-color: #ff0000;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                // overflow: hidden;
+
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "img title"
+                    "img pres"
+                    "img pres"
+                    "img links";
+
+                .carousel_img--container {
+                    grid-area: img;
+                    background: blue;
+                    width: 90%;
+                    height: 100%;
+
+                    .carousel_image {
+                        grid-area: img;
+                        position: relative;
+                        height: inherit;
+                        width: inherit;
+                        object-fit: cover;
+                    }
+                }
+
+                .carousel_title {
+                    background: yellow;
+                    grid-area: title;
+                    @include title-text;
+                    @include flex-center;
+                    height: 2em;
+                }
+
+                .carousel_pr {
+                    background: green;
+                    @include small-text;
+                    grid-area: pres;
+                    max-height: 80%;
+                }
+
+                // .carousel_pr::after{
+                //     position: absolute;
+                //     display: block;
+                //     background-color: orange;
+                //     content: url(images/testSign.png);
+                // }
+
+                .carousel_links {
+                    grid-area: links;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 30%;
+
+                    padding: 1rem;
+                    font-size: 1em;
+                    list-style: none;
+
+                    .link {
+                        color: $background-white;
+                    }
+
+                    .link:hover,
+                    .link:focus {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    #about {
+        left: -250px;
+        top: -200px;
+    }
+}
+
+@media (max-width: 750px) {
+    .carousel_content {
+        background-color: red;
+        grid-template-areas:
+            "img img"
+            "title title"
+            "pres pres"
+            "links links";
+    }
+}
+
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    font-size: large;
+    color: white;
+    font-size: 10px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+.carousel_button:hover,
+.carousel_button:focus {
+    color: $background-white;
+}
+
+.carousel_button--left {
+    left: -60px;
+}
+
+.carousel_button--right {
+    right: -60px;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.4em;
+    width: 3em;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    border-radius: 1em;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 100%;
+    width: 1em;
+    height: 1em;
+    margin: 0 12px;
+}
+
+.carousel_indicator.current-indicator {
+    background: lightcyan;
+}
