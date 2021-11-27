@@ -1,6 +1,8 @@
-// //////////////////NOT WORKING///////////////
+
 
 /* width */
+
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -10,16 +12,16 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
+  background: transparent;
   border-radius: 1px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: $background-white;
-  opacity: 0.5;
   border-radius: $standard-radius;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  opacity: 0.9;
+  background: white;
 }

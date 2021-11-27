@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts/script.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -25,7 +25,7 @@
         </div>
 
         <div class="links-container">
-          <a href="#" class="links" id="home"><p>Home</p></a>
+          <a href="#start" class="links" id="home"><p>Home</p></a>
           <a href="#" class="links" id="about"><p>About us</p></a>
           <a href="#" class="links" id="projects"><p>Projects</p></a>
 
@@ -65,10 +65,23 @@
     </div>
 
     <div class="container">
+      <!-- section 1 -->
       <section class="nm-section">
-        <!-- section 1 -->
+        <img
+          src="images/cricle1.svg"
+          class="decorative_circle"
+          id="top-left"
+          alt="cerchio"
+        />
+        <img
+        src="images/circle2.svg"
+        class="decorative_circle"
+        id="bottom-right"
+        alt="cerchio"
+      />
+        <!-- ---------------------------------  -->
         <div class="title-container">
-          <div class="opening-quote">
+          <div class="opening-quote" id="start">
             <h1>" true knowledge exists</h1>
             <h1>in knowing that you</h1>
             <h1>know nothing."</h1>
@@ -80,11 +93,15 @@
             <a href="#" id="ourWork"><h6>Our work</h6></a>
           </div>
         </div>
+        <canvas></canvas>
+        <script src="scripts/background.js"></script>
+        <!-- ---------------------------------  -->
       </section>
-      <!-- seciton 2 -->
 
+      <!-- seciton 2 -->
       <section class="nm-section">
         <div class="carousel">
+          <h1 class="parallax_title" id="about">ABOUT</h1>
           <button class="carousel_button carousel_button--left">
             <i class="fas fa-caret-left fa-7x"></i>
           </button>
@@ -99,36 +116,29 @@
                       alt=""
                     />
                   </div>
-                  <div class="carousel_text">
-                    <h2 class="carousel_title">Hi I'm Marco</h2>
-                    <p class="carousel_pr">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      In, asperiores facilis veniam incidunt atque consectetur
-                      enim accusantium perferendis Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. In, asperiores facilis
-                      veniam incidunt atque consectetur enim accusantium
-                      perferendis suscipit nobis! Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit. Dicta quis autem fugiat
-                      facere accusantium magni exercitationem, beatae ipsam
-                      perferendis at neque reiciendis eos soluta molestias nobis
-                      et quam minus! Nesciunt cumque dolores quisquam hic
-                      obcaecati nulla repellendus, doloribus dolor deserunt?
-                    </p>
-                    <div class="sign">
-                      <img
-                        src="images/testSign.png"
-                        alt="sign"
-                        class="sign_img"
-                      />
-                    </div>
-                    <ul class="carousel_links">
-                      <li class="link">
-                        <i class="fab fa-instagram fa-2x"></i>
-                      </li>
-                      <li class="link"><i class="fab fa-github fa-2x"></i></li>
-                      <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
-                    </ul>
-                  </div>
+
+                  <h2 class="carousel_title">Hi I'm Marco</h2>
+                  <p class="carousel_pr">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                    asperiores facilis veniam incidunt atque consectetur enim
+                    accusantium perferendis Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. In, asperiores facilis veniam
+                    incidunt atque consectetur enim accusantium perferendis
+                    suscipit nobis! Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Dicta quis autem fugiat facere accusantium
+                    magni exercitationem, beatae ipsam perferendis at neque
+                    reiciendis eos soluta molestias nobis et quam minus!
+                    Nesciunt cumque dolores quisquam hic obcaecati nulla
+                    repellendus, doloribus dolor deserunt?
+                  </p>
+
+                  <ul class="carousel_links">
+                    <li class="link">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </li>
+                    <li class="link"><i class="fab fa-github fa-2x"></i></li>
+                    <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
+                  </ul>
                 </div>
               </li>
               <li class="carousel_slide">
@@ -140,34 +150,25 @@
                       alt=""
                     />
                   </div>
-                  <div class="carousel_text">
-                    <h2 class="carousel_title">Hi I'm Lorenzo</h2>
-                    <p class="carousel_pr">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      In, asperiores facilis veniam incidunt atque consectetur
-                      enim accusantium perferendis suscipit nobis! Lorem ipsum
-                      dolor sit amet, consectetur adipisicing elit. Dicta quis
-                      autem fugiat facere accusantium magni exercitationem,
-                      beatae ipsam perferendis at neque reiciendis eos soluta
-                      molestias nobis et quam minus! Nesciunt cumque dolores
-                      quisquam hic obcaecati nulla repellendus, doloribus dolor
-                      deserunt?
-                    </p>
-                    <div class="sign">
-                      <img
-                        src="images/testSign.png"
-                        alt="sign"
-                        class="sign_img"
-                      />
-                    </div>
-                    <ul class="carousel_links">
-                      <li class="link">
-                        <i class="fab fa-instagram fa-2x"></i>
-                      </li>
-                      <li class="link"><i class="fab fa-github fa-2x"></i></li>
-                      <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
-                    </ul>
-                  </div>
+
+                  <h2 class="carousel_title">Hi I'm Lorenzo</h2>
+                  <p class="carousel_pr">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+                    asperiores facilis veniam incidunt atque consectetur enim
+                    accusantium perferendis suscipit nobis! Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit. Dicta quis autem
+                    fugiat facere accusantium magni exercitationem, beatae ipsam
+                    perferendis at neque reiciendis eos soluta molestias nobis
+                    et quam minus! Nesciunt cumque dolores quisquam hic
+                    obcaecati nulla repellendus, doloribus dolor deserunt?
+                  </p>
+                  <ul class="carousel_links">
+                    <li class="link">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </li>
+                    <li class="link"><i class="fab fa-github fa-2x"></i></li>
+                    <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -176,18 +177,60 @@
             <i class="fas fa-caret-right fa-7x"></i>
           </button>
           <div class="carousel_nav">
-            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator current-indicator"></button>
             <button class="carousel_indicator"></button>
           </div>
         </div>
         <script src="scripts/slideShow.js"></script>
       </section>
+      <!-- section 3 -->
       <section class="nm-section">
-        <h1 class="temporary-titles">page3</h1>
+        <!-- da sistemare -->
+        <!-- <h1 class="parallax_title" id="skill">SKILLS</h1> -->
+        <!-- ---------------------------- -->
+        <div class="grid-container">
+          <div class="element">
+            <h3 class="inner-title">html</h3>
+            <p class="sml-desc">4/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">C,C#</h3>
+            <p class="sml-desc">3/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">scss</h3>
+            <p class="sml-desc">3/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">js</h3>
+            <p class="sml-desc">2/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">php</h3>
+            <p class="sml-desc">1/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">java</h3>
+            <p class="sml-desc">3/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">Unity</h3>
+            <p class="sml-desc">2/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">Git</h3>
+            <p class="sml-desc">3/5</p>
+          </div>
+          <div class="element">
+            <h3 class="inner-title">Solidity</h3>
+            <p class="sml-desc">2/5</p>
+          </div>
+        </div>
       </section>
       <section class="nm-section">
         <h1 class="temporary-titles">page4</h1>
       </section>
+      <section class="nm-section"></section>
     </div>
   </body>
 </html>
