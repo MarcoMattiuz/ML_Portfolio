@@ -865,6 +865,7 @@ h5 {
 }
 
 body {
+  font-size: 20px;
   width: 100vw;
   height: 100vh;
   background-color: #090910;
@@ -890,6 +891,13 @@ body {
   scroll-snap-align: center;
   overflow: hidden;
   z-index: -1;
+}
+
+.nm-section:nth-of-type(1) #top-left {
+  z-index: 0;
+  width: 30rem;
+  left: -100px;
+  top: -150px;
 }
 
 .nm-section:nth-of-type(2) #about {
@@ -919,5 +927,9 @@ body {
   color: rgba(236, 228, 228, 0.925);
   opacity: 0.8;
   font-size: 12vw;
+}
+
+.decorative_circle {
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */

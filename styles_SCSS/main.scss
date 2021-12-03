@@ -37,6 +37,7 @@ h5 {
 // // // // // // // // //
 
 body {
+    font-size: 20px;
     width: 100vw;
     height: 100vh;
     background-color: $background-black;
@@ -54,6 +55,15 @@ body {
     overflow: hidden;
     z-index: -1;
     // scroll-margin-top: 5vh;
+
+    &:nth-of-type(1) {
+        #top-left {
+            z-index: 0;
+            width: 30rem;
+            left: -100px;
+            top: -150px;
+        }
+    }
     &:nth-of-type(2) {
         #about {
             left: 0;
@@ -89,5 +99,6 @@ body {
     font-size: 12vw;
 }
 
-//cerchi decorativi
-//fai che si muovono un pò quando scrolli
+.decorative_circle {
+    position: absolute;
+}
