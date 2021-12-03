@@ -63,6 +63,7 @@
                         @include small-text;
                         grid-area: pres;
                         max-height: 80%;
+                        word-wrap: break-word;
                     }
 
                     // .carousel_pr::after{
