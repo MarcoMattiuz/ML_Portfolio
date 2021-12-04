@@ -864,13 +864,11 @@ h5 {
   }
 }
 
-body {
+body, body {
   font-size: 20px;
   width: 100vw;
   height: 100vh;
   background-color: #090910;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -888,9 +886,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0.95;
-  scroll-snap-align: center;
   overflow: hidden;
   z-index: -1;
+}
+
+.nm-section:nth-of-type(1) {
+  background-color: red;
 }
 
 .nm-section:nth-of-type(1) #top-left {
@@ -900,9 +901,17 @@ body {
   top: -150px;
 }
 
+.nm-section:nth-of-type(2) {
+  background-color: blue;
+}
+
 .nm-section:nth-of-type(2) #about {
   left: 0;
   top: 100vh;
+}
+
+.nm-section:nth-of-type(3) {
+  background-color: green;
 }
 
 .nm-section:nth-of-type(3) #skill {
@@ -910,9 +919,17 @@ body {
   top: 200vh;
 }
 
+.nm-section:nth-of-type(4) {
+  background-color: lightyellow;
+}
+
 .nm-section:nth-of-type(4) #projects {
   left: 0;
   top: 300vh;
+}
+
+.nm-section:nth-of-type(5) {
+  background-color: tomato;
 }
 
 .nm-section:nth-of-type(5) #contact {
