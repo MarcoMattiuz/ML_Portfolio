@@ -25,7 +25,7 @@ h2,
 p {
     color: white;
     font-family: $open-Sans;
-    @include small-text;
+    //@include small-text;
 }
 h5 {
     color: white;
@@ -35,39 +35,58 @@ h5 {
 // // // // // // // // //
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    //background-color: $background-black;
-    overflow-y: hidden;
-}
-
-.nm-section {
-  
-    width: 100%;
-    height: 100%;
-    @include flex-center;
-    opacity: 0.95;
-    scroll-snap-align: center;
+    background-color: $background-black;
     overflow-y: hidden;
     overflow-x: hidden;
-    // scroll-margin-top: 5vh;
 }
 
 .container {
     width: 100%;
     height: 100%;
     background-color: $background-black;
-
+    scroll-snap-type: y mandatory;
     overflow-y: auto;
     overflow-x: hidden;
     // // // // // // // // // // // //
 }
 
-.parallax_title {
-    position:absolute;
+.nm-section {
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+    opacity: 0.95;
+    scroll-snap-align: center;
+    overflow: hidden;
+    // scroll-margin-top: 5vh;
+}
 
+.parallax_title {
+    position: absolute;
+    z-index: 1;
     font-family: $open-Sans;
     color: $background-white;
     opacity: 0.8;
-    font-size: 8vw;
+    font-size: 12vw;
+}
+
+//cerchi decorativi
+//fai che si muovono un pò quando scrolli
+.decorative_circle{
+    position: fixed;
+}
+#top-left{
+    
+    bottom: 70%;
+    right: 90%;
+}
+#bottom-right{
+
+    top: 60%;
+    left: 80%;
+}
+canvas{
+    position: absolute;
+    z-index: -1;
 }

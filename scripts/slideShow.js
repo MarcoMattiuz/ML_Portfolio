@@ -12,9 +12,6 @@ const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + "px";
 }
 
-
-
-
 slides.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
@@ -26,11 +23,11 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 
 prevButton.addEventListener("click", e => {
     const currentSlide = track.querySelector(".current-slide");
-    const currentIndicator = track.querySelector(".current-indicator");
     const prevSlide = currentSlide.previousElementSibling;
     const nextSlide = currentSlide.nextElementSibling;
-
-
+    const currDot = nav.querySelector(".current-indicator");
+    const nextDot = nav.querySelector(".carousel_indicator");
+    updateDots(currDot,nextDot);
     console.log(prevSlide);
     //move to the next slide
     if (prevSlide != null) {
@@ -46,6 +43,11 @@ nextButton.addEventListener("click", e => {
     const currentSlide = track.querySelector(".current-slide");
     const nextSlide = currentSlide.nextElementSibling;
     const prevSlide = currentSlide.previousElementSibling;
+    const currDot = nav.querySelector(".current-indicator");
+    const nextDot = nav.querySelector(".carousel_indicator");
+    if(currDot!=null&&nextDot!=null){
+    updateDots(currDot,nextDot);
+    }
     console.log(nextSlide);
     //move to the next slide
     if (nextSlide != null) {
@@ -56,5 +58,21 @@ nextButton.addEventListener("click", e => {
         moveToSlide(track, currentSlide, prevSlide);
     }
 })
+const updateDots = (currentDot,targetDot) => {
+    currentDot.classList.remove('current-indicator');
+    targetDot.classList.add('current-indicator');
+}
+nav.addEventListener('click', e => {
 
+    const targetDot= e.target.closest('button');
+    if(!targetDot) return;
+
+    const currentSlide = track.querySelector(".current-slide");
+    const currDot = nav.querySelector(".current-indicator");
+    const targetIndex = indicator.findIndex( indicator => indicator== targetDot );
+    const targetSlide = slides[targetIndex];
+    moveToSlide(track, currentSlide, targetSlide);
+
+    updateDots(currDot,targetDot);
+})
 
