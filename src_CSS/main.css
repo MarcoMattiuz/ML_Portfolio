@@ -2,130 +2,7 @@
 /****************fonts****************/
 /*************************************/
 /* gradients */
-/* section 1 */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@750&display=swap");
-.title-container {
-  position: relative;
-  width: 85%;
-  height: 77%;
-  text-align: center;
-  margin-left: 3em;
-  margin-right: 3em;
-}
-
-.title-container .opening-quote {
-  position: relative;
-  margin: 1em auto;
-  font-family: "Open Sans", sans-serif;
-  font-size: 3.5rem;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(135deg, rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
-}
-
-@media (max-width: 1150px) {
-  .title-container .opening-quote {
-    font-size: 4.9vw;
-  }
-}
-
-@media (max-width: 550px) {
-  .title-container .opening-quote {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .title-container .opening-quote {
-    font-size: 1.2rem;
-  }
-}
-
-.title-container .sub-quote {
-  position: relative;
-  margin-top: 0.6em;
-  font: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  color: rgba(236, 228, 228, 0.925);
-}
-
-@media (max-width: 1150px) {
-  .title-container .sub-quote {
-    font-size: 2.3vw;
-  }
-}
-
-@media (max-width: 750px) {
-  .title-container .sub-quote {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 350px) {
-  .title-container .sub-quote {
-    font-size: 0.8rem;
-  }
-}
-
-.title-container .ourWork-button {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-content: center;
-  margin-top: 4em;
-}
-
-.title-container .ourWork-button #ourWork {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.8rem;
-  color: rgba(236, 228, 228, 0.925);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 2em;
-  width: 8.5em;
-  border-radius: 0.5em;
-  background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
-  background-size: 300%;
-  background-position: left;
-  -webkit-transition: background-position 0.7s;
-  transition: background-position 0.7s;
-}
-
-@media (max-width: 900px) {
-  .title-container .ourWork-button #ourWork {
-    font-size: 1.4rem;
-  }
-}
-
-.title-container .ourWork-button #ourWork:hover,
-.title-container .ourWork-button #ourWork:focus {
-  background-position: right;
-}
-
-@media (max-width: 350px) {
-  .title-container .ourWork-button {
-    margin-top: 1em;
-  }
-}
-
-/****************fonts****************/
-/*************************************/
-/* gradients */
 .header {
   position: fixed;
   padding-top: 1em;
@@ -445,29 +322,124 @@
   }
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 0.5rem;
+/* section 1 */
+.title-container {
+  position: relative;
+  width: 85%;
+  height: 77%;
+  text-align: center;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
-::-webkit-scrollbar-corner {
-  background: transparent;
+.title-container .opening-quote {
+  position: relative;
+  margin: 1em auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, rgba(77, 95, 207, 0.87), rgba(161, 87, 210, 0.6779), rgba(69, 239, 252, 0.5465), rgba(69, 241, 247, 0.4436), rgba(69, 252, 225, 0));
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 1px;
+@media (max-width: 1150px) {
+  .title-container .opening-quote {
+    font-size: 4.9vw;
+  }
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(236, 228, 228, 0.925);
-  border-radius: 0.7em;
+@media (max-width: 550px) {
+  .title-container .opening-quote {
+    font-size: 1.6rem;
+  }
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: white;
+@media (max-width: 350px) {
+  .title-container .opening-quote {
+    font-size: 1.2rem;
+  }
+}
+
+.title-container .sub-quote {
+  position: relative;
+  margin-top: 0.6em;
+  font: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: rgba(236, 228, 228, 0.925);
+}
+
+@media (max-width: 1150px) {
+  .title-container .sub-quote {
+    font-size: 2.3vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .title-container .sub-quote {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 350px) {
+  .title-container .sub-quote {
+    font-size: 0.8rem;
+  }
+}
+
+.title-container .ourWork-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.title-container .ourWork-button #ourWork {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: rgba(236, 228, 228, 0.925);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2em;
+  width: 8.5em;
+  border-radius: 0.5em;
+  background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
+  background-size: 300%;
+  background-position: left;
+  -webkit-transition: background-position 0.7s;
+  transition: background-position 0.7s;
+}
+
+@media (max-width: 900px) {
+  .title-container .ourWork-button #ourWork {
+    font-size: 1.4rem;
+  }
+}
+
+.title-container .ourWork-button #ourWork:hover,
+.title-container .ourWork-button #ourWork:focus {
+  background-position: right;
+}
+
+@media (max-width: 350px) {
+  .title-container .ourWork-button {
+    margin-top: 1em;
+  }
 }
 
 .carousel {
@@ -581,6 +553,7 @@
   -ms-grid-column: 2;
   grid-area: pres;
   max-height: 80%;
+  word-wrap: break-word;
 }
 
 @media (min-width: 2560px) {
@@ -619,11 +592,14 @@
   color: white;
 }
 
+<<<<<<< HEAD
 .carousel #about {
   left: -250px;
   top: -150px;
 }
 
+=======
+>>>>>>> 60ec3b08baf646e4d72427ee53c2ac9b63b26e44
 @media (max-width: 750px) {
   .carousel_content {
     background-color: red;
@@ -706,6 +682,7 @@
   border-radius: 0.7em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  z-index: 1;
 }
 
 .grid-container .element:nth-of-type(1) {
@@ -729,8 +706,8 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.grid-container .element:nth-child(4) {
-  background-image: linear-gradient(45deg, #00416a, #799f0c, #ffe000), linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
+.grid-container .element:nth-of-type(4) {
+  background-image: linear-gradient(95deg, #00416a, #799f0c, #ffe000), linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
   background-size: 200%;
   background: position x 0;
   background: position y 0;
@@ -805,6 +782,34 @@ da sistemare
 }
 
 */
+/****************fonts****************/
+/*************************************/
+/* gradients */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 228, 228, 0.925);
+  border-radius: 0.7em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
 *,
 a,
 h1,
@@ -868,16 +873,9 @@ h5 {
 }
 
 body {
+  font-size: 20px;
   width: 100vw;
   height: 100vh;
-  background-color: #090910;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
   background-color: #090910;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
@@ -900,11 +898,39 @@ body {
   opacity: 0.95;
   scroll-snap-align: center;
   overflow: hidden;
+  z-index: -1;
+}
+
+.nm-section:nth-of-type(1) #top-left {
+  z-index: 0;
+  width: 30rem;
+  left: -100px;
+  top: -150px;
+}
+
+.nm-section:nth-of-type(2) #about {
+  left: 0;
+  top: 100vh;
+}
+
+.nm-section:nth-of-type(3) #skill {
+  left: 0;
+  top: 200vh;
+}
+
+.nm-section:nth-of-type(4) #projects {
+  left: 0;
+  top: 300vh;
+}
+
+.nm-section:nth-of-type(5) #contact {
+  left: 0;
+  top: 400vh;
 }
 
 .parallax_title {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   font-family: "Open Sans", sans-serif;
   color: rgba(236, 228, 228, 0.925);
   opacity: 0.8;
@@ -913,22 +939,5 @@ body {
 
 .decorative_circle {
   position: absolute;
-}
-
-#top-left {
-  position: absolute;
-  bottom: 70%;
-  right: 90%;
-}
-
-#bottom-right {
-  position: absolute;
-  top: 60%;
-  left: 80%;
-}
-
-canvas {
-  position: absolute;
-  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */

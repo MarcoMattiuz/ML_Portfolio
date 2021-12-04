@@ -14,6 +14,7 @@
         height: 80%;
         border-radius: $standard-radius;
         transition: all 0.2s ease-in-out;
+        z-index: 1;
 
         &:nth-of-type(1) {
             background-image: $title-gradiant;
@@ -28,9 +29,9 @@
         &:nth-of-type(3) {
             @include meridian-gradient;
         }
-        &:nth-child(4) {
-            background-image: linear-gradient(45deg, #00416a, #799f0c, #ffe000),
-            linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
+        &:nth-of-type(4) {
+            background-image: linear-gradient(95deg, #00416a, #799f0c, #ffe000),
+                linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
             background-size: 200%;
             background: position x 0;
             background: position y 0;
@@ -72,8 +73,6 @@
     .element:focus {
         transform: scale(1.1);
     }
-
-    
 }
 /*
 
