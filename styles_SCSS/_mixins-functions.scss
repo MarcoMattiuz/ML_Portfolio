@@ -17,6 +17,11 @@
     justify-content: space-between;
 }
 
+@mixin grid-center {
+    display: grid;
+    place-items: center;
+}
+
 @mixin clipBg-ToText {
     background-clip: text;
     -webkit-background-clip: text;
@@ -89,9 +94,9 @@
 /* gradients */
 @mixin king-gradinet {
     background: #1a2a6c; /* fallback for old browsers */
-    background-image: -webkit-linear-gradient(to top, #fdbb2d, #b21f1f, #1a2a6c); /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -webkit-linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c); /* Chrome 10-25, Safari 5.1-6 */
     background-image: linear-gradient(
-        to top,
+        45deg,
         #fdbb2d,
         #b21f1f,
         #1a2a6c

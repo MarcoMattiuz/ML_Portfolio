@@ -7,55 +7,125 @@
     grid-row-gap: 5%;
     grid-column-gap: 5%;
     text-align: center;
-
+    opacity: 0.85;
     .element {
-        text-align: center;
         width: 80%;
         height: 80%;
         border-radius: $standard-radius;
-        transition: all 0.2s ease-in-out;
         z-index: 1;
+        transform-style: preserve-3d;
+        @include grid-center;
 
         &:nth-of-type(1) {
-            background-image: $title-gradiant;
-            background-size: 150%;
+            @include king-gradinet;
+            background-size: 200%;
+            background-position-x: left;
+            background-position-y: bottom;
+        }
+
+        &:nth-of-type(1):hover,
+        &:nth-of-type(1):focus {
+            background-position-x: right;
+            background-position-y: top;
         }
         &:nth-of-type(2) {
-            background-image: linear-gradient(155deg, #03001e, #7303c0, #ec38bc, #fdeff9);
-            background-size: 200%;
-            background: position x 0;
-            background: position y 0;
+            @include king-gradinet;
+            background-size: 350%;
+
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(2):hover,
+        &:nth-of-type(2):focus {
+            background-position-x: left;
+            background-position-y: top;
         }
         &:nth-of-type(3) {
-            @include meridian-gradient;
+            @include king-gradinet;
+            background-size: 220%;
+            background-position-x: right;
+            background-position-y: bottom;
+        }
+
+        &:nth-of-type(3):hover,
+        &:nth-of-type(3):focus {
+            background-position-x: left;
+            background-position-y: top;
         }
         &:nth-of-type(4) {
-            background-image: linear-gradient(95deg, #00416a, #799f0c, #ffe000),
-                linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
-            background-size: 200%;
-            background: position x 0;
-            background: position y 0;
-        }
-        &:nth-of-type(5) {
-            background-image: $title-gradiant;
+            @include king-gradinet;
             background-size: 150%;
+
+            background-position-x: left;
+            background-position-y: top;
+        }
+        &:nth-of-type(4):hover,
+        &:nth-of-type(4):focus {
+            background-position-x: right;
+            background-position-y: top;
+        }
+
+        &:nth-of-type(5) {
+            @include king-gradinet;
+            background-size: 200%;
+            background-position-x: left;
+            background-position-y: bottom;
+        }
+
+        &:nth-of-type(5):hover,
+        &:nth-of-type(5):focus {
+            background-position-x: right;
+            background-position-y: top;
         }
         &:nth-of-type(6) {
             @include king-gradinet;
+            background-size: 350%;
+
+            background-position-x: right;
+            background-position-y: top;
         }
-        &:nth-of-type(7) {
-            @include king-gradinet;
-        }
-        &:nth-of-type(8) {
-            background-image: $title-gradiant;
-            background-size: 150%;
-        }
-        &:nth-of-type(9) {
-            @include king-gradinet;
+        &:nth-of-type(6):hover,
+        &:nth-of-type(6):focus {
+            background-position-x: left;
+            background-position-y: top;
         }
 
-        &:nth-of-type(1):hover {
-            background-position: right;
+        &:nth-of-type(7) {
+            @include king-gradinet;
+            background-size: 200%;
+            background-position-x: left;
+            background-position-y: bottom;
+        }
+
+        &:nth-of-type(7):hover,
+        &:nth-of-type(7):focus {
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(8) {
+            @include king-gradinet;
+            background-size: 350%;
+
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(8):hover,
+        &:nth-of-type(8):focus {
+            background-position-x: left;
+            background-position-y: top;
+        }
+
+        &:nth-of-type(9) {
+            @include king-gradinet;
+            background-size: 350%;
+
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(9):hover,
+        &:nth-of-type(9):focus {
+            background-position-x: left;
+            background-position-y: top;
         }
 
         .inner-title {
@@ -63,15 +133,12 @@
             font-size: 2em;
             font-family: $open-Sans;
             color: $background-white;
+            transform: translateZ(30px);
         }
         .sml-desc {
             display: block;
+            transform: translateZ(20px);
         }
-    }
-
-    .element:hover,
-    .element:focus {
-        transform: scale(1.1);
     }
 }
 /*

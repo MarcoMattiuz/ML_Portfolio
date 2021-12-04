@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- hamburger menu script  -->
     <script src="scripts/hamburgerMenu.js"></script>
+    <!-- background.js script  -->
     <script src="scripts/background.js"></script>
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- font awesome link -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <!-- main css  -->
     <link rel="stylesheet" href="src_CSS/main.css" />
-    <title>ML-Portfolio</title>
+    <!-- glide css links -->
+    <link rel="stylesheet" href="src_CSS/glide.core.css" />
+    <link rel="stylesheet" href="src_CSS/glide.theme.css" />
+
+    <title>ML-Portfolio | By Marco&Lorenzo</title>
   </head>
   <body>
     <!-- navigation bar -->
@@ -73,15 +83,6 @@
         id="top-left"
         alt="cerchio"
       />
-
-      <!--
-      <img
-        src="images/circle2.svg"
-        class="decorative_circle"
-        id="bottom-right"
-        alt="cerchio"
-      /> -->
-      <!-- ---------------------------------  -->
       <div class="title-container">
         <div class="opening-quote" id="start">
           <h1>" true knowledge exists</h1>
@@ -101,135 +102,102 @@
     <!-- seciton 2 -->
     <section class="nm-section">
       <h1 class="parallax_title" id="about">ABOUT</h1>
-      <div class="carousel">
-        <button class="carousel_button carousel_button--left">
-          <i class="fas fa-caret-left fa-7x"></i>
-        </button>
-        <div class="carousel_track-container">
-          <ul class="carousel_track">
-            <li class="carousel_slide current-slide">
-              <div class="carousel_content">
-                <div class="carousel_img--container">
-                  <img
-                    src="https://source.unsplash.com/random"
-                    class="carousel_image"
-                    alt=""
-                  />
-                </div>
 
-                <h2 class="carousel_title">Hi I'm Marco</h2>
-                <p class="carousel_pr">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                  asperiores facilis veniam incidunt atque consectetur enim
-                  accusantium perferendis Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. In, asperiores facilis veniam incidunt atque
-                  consectetur enim accusantium perferendis suscipit nobis! Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit. Dicta quis
-                  autem fugiat facere accusantium magni exercitationem, beatae
-                  ipsam perferendis at neque reiciendis eos soluta molestias
-                  nobis et quam minus! Nesciunt cumque dolores quisquam hic
-                  obcaecati nulla repellendus, doloribus dolor deserunt?
+      <div class="container">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <h1>hello I'm ONE</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum, iste quasi molestias natus voluptatum suscipit error
+                  dolore eaque quae. Cupiditate suscipit ducimus molestiae,
+                  rerum, quod, similique natus in vel id eveniet at!
                 </p>
-
-                <ul class="carousel_links">
-                  <li class="link">
-                    <i class="fab fa-instagram fa-2x"></i>
-                  </li>
-                  <li class="link"><i class="fab fa-github fa-2x"></i></li>
-                  <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="carousel_slide">
-              <div class="carousel_content">
-                <div class="carousel_img--container">
-                  <img
-                    src="https://source.unsplash.com/random"
-                    class="carousel_image"
-                    alt=""
-                  />
-                </div>
-
-                <h2 class="carousel_title">Hi I'm Lorenzo</h2>
-                <p class="carousel_pr">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                  asperiores facilis veniam incidunt atque consectetur enim
-                  accusantium perferendis suscipit nobis! Lorem ipsum dolor sit
-                  amet, consectetur adipisicing elit. Dicta quis autem fugiat
-                  facere accusantium magni exercitationem, beatae ipsam
-                  perferendis at neque reiciendis eos soluta molestias nobis et
-                  quam minus! Nesciunt cumque dolores quisquam hic obcaecati
-                  nulla repellendus, doloribus dolor deserunt?
+              </li>
+              <li class="glide__slide">
+                <h1>hello I'm TWO</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum, iste quasi molestias natus voluptatum suscipit error
+                  dolore eaque quae. Cupiditate suscipit ducimus molestiae,
+                  rerum, quod, similique natus in vel id eveniet at! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Numquam porro
+                  consequatur quis in cum et at itaque cupiditate ullam,
+                  voluptatem consequuntur repellat, accusamus ipsam quia, min
                 </p>
-                <ul class="carousel_links">
-                  <li class="link">
-                    <i class="fab fa-instagram fa-2x"></i>
-                  </li>
-                  <li class="link"><i class="fab fa-github fa-2x"></i></li>
-                  <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <button class="carousel_button carousel_button--right">
-          <i class="fas fa-caret-right fa-7x"></i>
-        </button>
-        <div class="carousel_nav">
-          <button class="carousel_indicator current-indicator"></button>
-          <button class="carousel_indicator"></button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
-      <script src="scripts/slideShow.js"></script>
+
+      <!-- Glide.js CDN link -->
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+      <!-- sliderOptions.js link  -->
+      <script src="scripts/glideOptions.js"></script>
     </section>
     <!-- section 3 -->
     <section class="nm-section">
       <h1 class="parallax_title" id="skill">SKILLS</h1>
       <!-- ---------------------------- -->
       <div class="grid-container">
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">html</h3>
           <p class="sml-desc">4/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">figma</h3>
           <p class="sml-desc">3/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">scss</h3>
           <p class="sml-desc">3/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">js</h3>
           <p class="sml-desc">2/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">php</h3>
           <p class="sml-desc">1/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">java</h3>
           <p class="sml-desc">3/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">unity</h3>
           <p class="sml-desc">2/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">Git</h3>
           <p class="sml-desc">3/5</p>
         </div>
-        <div class="element">
+        <div class="element" data-tilt>
           <h3 class="inner-title">Solidity</h3>
           <p class="sml-desc">2/5</p>
         </div>
       </div>
     </section>
+    <!-- section 4 -->
     <section class="nm-section">
       <h1 class="parallax_title" id="projects">PROJECTS</h1>
     </section>
+    <!-- section 5 -->
     <section class="nm-section">
       <h1 class="parallax_title" id="contact">CONTACT US</h1>
     </section>
+    <script src="assets/tilt.jquery.js"></script>
   </body>
 </html>

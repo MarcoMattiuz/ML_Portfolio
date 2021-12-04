@@ -17,8 +17,9 @@
 // var cont1 = 0;
 // console.log(cont);
 var vh=Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);;
-
 console.log(vh);
+
+
 window.addEventListener("scroll", a => {
     console.log("ciao");
 })

@@ -36,7 +36,8 @@ h5 {
 }
 // // // // // // // // //
 
-body,body {
+body,
+body {
     font-size: 20px;
     width: 100vw;
     height: 100vh;
@@ -61,35 +62,30 @@ body,body {
             left: -100px;
             top: -150px;
         }
-        background-color: red;
     }
     &:nth-of-type(2) {
         #about {
             left: 0;
             top: 100vh;
         }
-        background-color: blue;
     }
     &:nth-of-type(3) {
         #skill {
             left: 0;
             top: 200vh;
         }
-        background-color: green;
     }
     &:nth-of-type(4) {
         #projects {
             left: 0;
             top: 300vh;
         }
-        background-color: lightyellow;
     }
     &:nth-of-type(5) {
         #contact {
             left: 0;
             top: 400vh;
         }
-        background-color: tomato;
     }
 }
 
