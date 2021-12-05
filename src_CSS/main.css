@@ -465,6 +465,8 @@
 
 .container .glide .glide__track .glide__slides .glide__slide h1 {
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1vw, 0.5rem, 2vw);
 }
 
 .container .glide .glide__track .glide__slides .glide__slide p {
@@ -793,22 +795,22 @@ body {
   top: -150px;
 }
 
-.nm-section:nth-of-type(2) #about {
+.nm-section:nth-of-type(2) #title-about {
   left: 0;
   top: 100vh;
 }
 
-.nm-section:nth-of-type(3) #skill {
+.nm-section:nth-of-type(3) #title-skill {
   left: 0;
   top: 200vh;
 }
 
-.nm-section:nth-of-type(4) #projects {
+.nm-section:nth-of-type(4) #title-projects {
   left: 0;
   top: 300vh;
 }
 
-.nm-section:nth-of-type(5) #contact {
+.nm-section:nth-of-type(5) #title-contact {
   left: 0;
   top: 400vh;
 }

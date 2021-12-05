@@ -64,25 +64,26 @@ body {
         }
     }
     &:nth-of-type(2) {
-        #about {
+        #title-about {
             left: 0;
             top: 100vh;
+            // transform: rotate(-15deg);
         }
     }
     &:nth-of-type(3) {
-        #skill {
+        #title-skill {
             left: 0;
             top: 200vh;
         }
     }
     &:nth-of-type(4) {
-        #projects {
+        #title-projects {
             left: 0;
             top: 300vh;
         }
     }
     &:nth-of-type(5) {
-        #contact {
+        #title-contact {
             left: 0;
             top: 400vh;
         }
