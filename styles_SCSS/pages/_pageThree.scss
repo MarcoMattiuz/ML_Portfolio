@@ -1,3 +1,12 @@
+.fade-in{
+    opacity: 0.25;
+    transition: opacity 500ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+
+}
+
 .grid-container{
 
     margin-top:6rem;
@@ -107,25 +116,3 @@
 .element:nth-child(9){
     background: linear-gradient(150.08deg, #F17B41 -6.53%, #CB73D2 109%);
 }
-
-
-
-/*
-
-da sistemare
-
-
-#skill{
-    left: -250px;
-    top: -200px;
-}
-
-*/
-// @media (max-width: 750px) {
-//     .grid-container {
-//         grid-template-columns: 1fr 1fr 1fr;
-//         grid-template-rows: 1fr 1fr 1fr 1fr ;
-//         grid-row-gap: 2em;
-//         grid-column-gap: 2em;
-//     }
-// }

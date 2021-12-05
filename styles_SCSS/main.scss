@@ -1,10 +1,12 @@
-@import "./pageOne";
+@import "./navbar";
+
+@import "./pages/pageOne";
+@import "./pages/pageTwo";
+@import "./pages/pageThree";
+
 @import "./variables";
 @import "./mixins-functions";
-@import "./navbar";
 @import "./webkit-mods";
-@import "./slideShow";
-@import "./pageThree";
 // // // // // // // // //
 // initializing tags //
 // // // // // // // // //
@@ -35,21 +37,13 @@ h5 {
 // // // // // // // // //
 
 body {
+    font-size: 20px;
     width: 100vw;
     height: 100vh;
-    background-color: $background-black;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
     background-color: $background-black;
     scroll-snap-type: y mandatory;
     overflow-y: auto;
     overflow-x: hidden;
-    // // // // // // // // // // // //
 }
 
 .nm-section {
@@ -59,34 +53,52 @@ body {
     opacity: 0.95;
     scroll-snap-align: center;
     overflow: hidden;
+    z-index: -1;
     // scroll-margin-top: 5vh;
+
+    &:nth-of-type(1) {
+        #top-left {
+            z-index: 0;
+            width: 30rem;
+            left: -100px;
+            top: -150px;
+        }
+    }
+    &:nth-of-type(2) {
+        #about {
+            left: 0;
+            top: 100vh;
+        }
+    }
+    &:nth-of-type(3) {
+        #skill {
+            left: 0;
+            top: 200vh;
+        }
+    }
+    &:nth-of-type(4) {
+        #projects {
+            left: 0;
+            top: 300vh;
+        }
+    }
+    &:nth-of-type(5) {
+        #contact {
+            left: 0;
+            top: 400vh;
+        }
+    }
 }
 
 .parallax_title {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     font-family: $open-Sans;
     color: $background-white;
     opacity: 0.8;
     font-size: 12vw;
 }
 
-//cerchi decorativi
-//fai che si muovono un pò quando scrolli
-.decorative_circle{
-    position: fixed;
-}
-#top-left{
-    
-    bottom: 70%;
-    right: 90%;
-}
-#bottom-right{
-
-    top: 60%;
-    left: 80%;
-}
-canvas{
+.decorative_circle {
     position: absolute;
-    z-index: -1;
 }
