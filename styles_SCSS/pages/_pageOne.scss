@@ -1,16 +1,16 @@
-
 /* section 1 */
 .title-container {
     position: relative;
-    width: 85%;
-    height: 77%;
+    padding: 3em;
     text-align: center;
     margin-left: 3em;
     margin-right: 3em;
     .opening-quote {
         position: relative;
         margin: 1em auto;
-        @include title-text;
+        font-family: $open-Sans;
+        font-size: clamp();
+        // @include title-text;
         @include clipBg-ToText;
         background-image: $title-gradiant;
     }
@@ -23,14 +23,13 @@
     .ourWork-button {
         position: relative;
         @include flex-center;
-        justify-content: center;
         margin-top: 4em;
+        padding: 2em;
 
         #ourWork {
             @include buttonBig-text;
             @include flex-center;
-            height: 2em;
-            width: 8.5em;
+            padding: 1em 2.5em;
             border-radius: $standard-radius - 0.2em;
             background: $buttons-gradient;
             background-size: 300%;
@@ -46,6 +45,4 @@
             margin-top: 1em;
         }
     }
-    
 }
-

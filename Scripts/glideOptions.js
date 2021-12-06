@@ -1,6 +1,6 @@
 const config = {
     type: "carousel",
-    autoplay: 4000 | true,
+    // autoplay: 4000 | true,
     hoverpause: true,
     keyboard: true,
   };

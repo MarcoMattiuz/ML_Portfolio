@@ -23,6 +23,12 @@ a {
     text-decoration: none;
 }
 
+ul,
+ol,
+li{
+    list-style: none;
+}
+
 h2,
 p {
     color: white;
@@ -36,7 +42,6 @@ h5 {
 }
 // // // // // // // // //
 
-body,
 body {
     font-size: 20px;
     width: 100vw;
@@ -44,48 +49,50 @@ body {
     background-color: $background-black;
     overflow-y: auto;
     overflow-x: hidden;
-}
+    transform-style: preserve-3d;
 
-.nm-section {
-    width: 100%;
-    height: 100%;
-    @include flex-center;
-    opacity: 0.95;
-    overflow: hidden;
-    z-index: -1;
-    // scroll-margin-top: 5vh;
+    .nm-section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+        opacity: 0.95;
+        overflow: hidden;
+        z-index: -1;
+        // scroll-margin-top: 5vh;
 
-    &:nth-of-type(1) {
-        #top-left {
-            z-index: 0;
-            width: 30rem;
-            left: -100px;
-            top: -150px;
+        &:nth-of-type(1) {
+            #top-left {
+                z-index: 0;
+                width: 30rem;
+                left: -100px;
+                top: -150px;
+            }
         }
-    }
-    &:nth-of-type(2) {
-        #title-about {
-            left: 0;
-            top: 100vh;
-            // transform: rotate(-15deg);
+        &:nth-of-type(2) {
+            #title-about {
+                left: 0;
+                top: 0;
+                // transform: rotate(-15deg);
+            }
         }
-    }
-    &:nth-of-type(3) {
-        #title-skill {
-            left: 0;
-            top: 200vh;
+        &:nth-of-type(3) {
+            #title-skill {
+                left: 0;
+                top: 0;
+            }
         }
-    }
-    &:nth-of-type(4) {
-        #title-projects {
-            left: 0;
-            top: 300vh;
+        &:nth-of-type(4) {
+            #title-projects {
+                left: 0;
+                top: 0;
+            }
         }
-    }
-    &:nth-of-type(5) {
-        #title-contact {
-            left: 0;
-            top: 400vh;
+        &:nth-of-type(5) {
+            #title-contact {
+                left: 0;
+                top: 0;
+            }
         }
     }
 }
@@ -97,6 +104,8 @@ body {
     color: $background-white;
     opacity: 0.8;
     font-size: 12vw;
+    transform: translateZ(20px);
+    // transform: rotate3d(2, -1, -1, -0.2turn); 
 }
 
 .decorative_circle {
