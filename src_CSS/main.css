@@ -516,6 +516,203 @@
   color: rgba(236, 228, 228, 0.925);
 }
 
+.grid-container {
+  width: 70%;
+  height: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 1fr 1fr;
+      grid-template-columns: 30% 1fr 1fr;
+  -ms-grid-rows: 30% 1fr 1fr;
+      grid-template-rows: 30% 1fr 1fr;
+  grid-row-gap: 5%;
+  grid-column-gap: 5%;
+  text-align: center;
+  opacity: 0.85;
+}
+
+.grid-container .element {
+  width: 80%;
+  height: 80%;
+  border-radius: 0.7em;
+  z-index: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.grid-container .element:nth-of-type(1) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 200%;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+.grid-container .element:nth-of-type(1):hover, .grid-container .element:nth-of-type(1):focus {
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(2) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 350%;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(2):hover, .grid-container .element:nth-of-type(2):focus {
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(3) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 220%;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.grid-container .element:nth-of-type(3):hover, .grid-container .element:nth-of-type(3):focus {
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(4) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 150%;
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(4):hover, .grid-container .element:nth-of-type(4):focus {
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(5) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 200%;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+.grid-container .element:nth-of-type(5):hover, .grid-container .element:nth-of-type(5):focus {
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(6) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 350%;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(6):hover, .grid-container .element:nth-of-type(6):focus {
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(7) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 200%;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+.grid-container .element:nth-of-type(7):hover, .grid-container .element:nth-of-type(7):focus {
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(8) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 350%;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(8):hover, .grid-container .element:nth-of-type(8):focus {
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(9) {
+  background: #1a2a6c;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 350%;
+  background-position-x: right;
+  background-position-y: top;
+}
+
+.grid-container .element:nth-of-type(9):hover, .grid-container .element:nth-of-type(9):focus {
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.grid-container .element .inner-title {
+  display: block;
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(236, 228, 228, 0.925);
+  -webkit-transform: translateZ(30px);
+          transform: translateZ(30px);
+}
+
+.grid-container .element .sml-desc {
+  display: block;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+/*
+
+da sistemare
+
+
+#skill{
+    left: -250px;
+    top: -200px;
+}
+
+*/
 /****************fonts****************/
 /*************************************/
 /* gradients */
