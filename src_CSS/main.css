@@ -628,8 +628,6 @@
   background-size: 200%;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
   background-position-x: right;
   background-position-y: top;
 }

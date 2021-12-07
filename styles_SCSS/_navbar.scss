@@ -152,7 +152,7 @@
 }
 @media (max-width: 750px) {
     .hamburger-menu-container{
-        display: block;
+        display:block;
         position: fixed;
         transform: translateX(100%);
         width: 100%;
@@ -224,7 +224,7 @@
         box-shadow: -2em 2em 5em 1em $background-black;
         .links-container1{
             transform: translateX(0%);
-    
+
         }
     
     }
