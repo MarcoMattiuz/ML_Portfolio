@@ -9,94 +9,8 @@
     transform: scale(1);
 
 }
-/*
-.grid-container{
-
-    margin-top:6rem;
-    width:70%;
-    display:grid;
-    grid-template-columns: repeat(3,13rem);
-    grid-template-rows:repeat(3,11rem); 
-    gap:1.5rem;
-    justify-content:center;
-  }
-  .element{
-    background-color:gray;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-evenly;
-    border-radius:2rem;
-    
-    transform:scale(1);
-   // box-shadow:0rem black;
-    transition: transform 250ms;
-    h3{
-        @include small-title-text;
-        text-transform: uppercase;
-    }
-    p{
-        text-align: center;
-        margin-left: 0.9rem;
-        margin-right: 0.9rem;
-        font-size: 1rem;
-        
-    }
-
-  }
-  .element:hover,.element:focus{
-    transform:scale(1.2);
-    //box-shadow:0rem 0rem 15rem 1rem black;
-  }
-  @media (min-width: 2560px) {
-    .grid-container{
-        p{
-            font-size: 3rem;
-        }
-    }
-}
-  @media (max-width: 1150px) {
-    .grid-container{
-        grid-template-columns: repeat(3,18vw);
-        grid-template-rows:repeat(3,15.5vw); 
-        gap:2vw;
-        h3{
-            font-size: 2.5vw;
-        }
-        p{
-            font-size: 1.3vw
-        }
-        border-radius: 1rem;
-    }
-
-    }
-    @media (max-width: 950px) {
-        .grid-container{
-            grid-template-columns: 22em;
-            grid-template-rows:1fr; 
-            gap:1rem;
-            .element{
-                    padding: 1rem 1rem;
-                    border-radius: 1.2rem;
-
-                h3{
-                    font-size: 1rem;
-                }
-                p{
-                    font-size:0.7rem;
-                }
-            }
-            .element:hover,.element:focus{
-                transform:scale(1.3);
-                //box-shadow:0rem 0rem 15rem 1rem black;
-              }
-        }
-        }
-.element:nth-child(1){
-    background: linear-gradient(145.59deg, #1861EF -0.9%, #27E85C 103.96%);
-*/
     .grid-container {
-        margin-top:2rem;
+     margin-top:2rem;
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3,13rem);
@@ -120,6 +34,7 @@
             transform: translateZ(30px);
         }
         .sml-desc {
+            font-family: $raleway;
             text-align: center;
             margin-left: 0.9rem;
             margin-right: 0.9rem;

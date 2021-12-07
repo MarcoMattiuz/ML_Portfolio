@@ -1,22 +1,23 @@
 // // // // // // // // // // //
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@750&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 // // // // // // // // // // //
 $background-black: hsl(240, 26%, 5%);
 $background-white: rgba(236, 228, 228, 0.925);
 $standard-radius: 0.7em;
 /****************fonts****************/
 $open-Sans: "Open Sans", sans-serif;
+$raleway: 'Raleway', sans-serif;
 $bals-Sans: "Balsamiq Sans", cursive;
 $lora: "Lora", serif;
 /*************************************/
 $title-gradiant: linear-gradient(
     135deg,
-    rgba(77, 95, 207, 0.9),
-    rgba(161, 87, 210, 0.8),
-    rgba(69, 239, 252, 0.8),
-    rgba(69, 241, 247, 0.8),
-    rgba(69, 252, 225, 0.9)
+    rgb(77, 94, 207),
+    rgb(161, 87, 210),
+    rgb(69, 240, 252),
+    rgb(69, 241, 247),
+    rgb(69, 252, 225)
 );
 
 $buttons-gradient: linear-gradient(
