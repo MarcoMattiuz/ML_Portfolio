@@ -853,7 +853,8 @@ li {
   list-style: none;
 }
 
-h2, h3,
+h2,
+h3,
 p {
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -863,14 +864,16 @@ p {
 }
 
 @media (min-width: 2560px) {
-  h2, h3,
+  h2,
+  h3,
   p {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 768px) {
-  h2, h3,
+  h2,
+  h3,
   p {
     font-size: 0.8rem;
   }
@@ -913,6 +916,50 @@ body {
           transform-style: preserve-3d;
 }
 
+body #first-top {
+  top: -110px;
+  -webkit-transform: scale(2.3);
+          transform: scale(2.3);
+}
+
+body #first-bottom {
+  bottom: -120px;
+  -webkit-transform: scale(2.7);
+          transform: scale(2.7);
+}
+
+body #third-top {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+body #third-bottom {
+  top: 290vh;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+}
+
+body #fourth-bottom {
+  top: 397vh;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+  right: -250px;
+}
+
+body #fifth-bottom {
+  top: 520vh;
+  -webkit-transform: scale(2.7);
+          transform: scale(2.7);
+  left: 98vw;
+}
+
+body #fifth-top {
+  top: 415vh;
+  -webkit-transform: scale(2.1);
+          transform: scale(2.1);
+  left: 98vw;
+}
+
 body .nm-section {
   position: relative;
   width: 100%;
@@ -931,13 +978,6 @@ body .nm-section {
   z-index: -1;
 }
 
-body .nm-section:nth-of-type(1) #top-left {
-  z-index: 0;
-  width: 30rem;
-  left: -100px;
-  top: -150px;
-}
-
 body .nm-section:nth-of-type(2) #title-about {
   left: 0;
   top: 0;
@@ -946,6 +986,10 @@ body .nm-section:nth-of-type(2) #title-about {
 body .nm-section:nth-of-type(3) #title-skill {
   left: 0;
   top: 0;
+}
+
+body .nm-section:nth-of-type(3) #third-top {
+  top: 200vw;
 }
 
 body .nm-section:nth-of-type(4) #title-projects {
@@ -960,14 +1004,31 @@ body .nm-section:nth-of-type(5) #title-contact {
 
 .parallax_title {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   font-family: "Open Sans", sans-serif;
   color: rgba(236, 228, 228, 0.925);
   opacity: 0.8;
-  font-size: 12vw;
+  font-size: clamp(12vw, calc(8vw+2rem), 5rem);
 }
 
 .decorative_circle {
   position: absolute;
+  z-index: 0;
+}
+
+.top-right {
+  right: -100px;
+}
+
+.bottom-left {
+  left: -100px;
+}
+
+.top-left {
+  left: -100px;
+}
+
+.bottom-right {
+  right: -100px;
 }
 /*# sourceMappingURL=main.css.map */
