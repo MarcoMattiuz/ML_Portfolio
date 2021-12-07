@@ -1,6 +1,6 @@
 .container {
     width: 75vw;
-    max-height: 60%;
+    max-height: 50%;
     display: flex;
     align-items: center;
     padding: 2em;
@@ -10,56 +10,68 @@
             .glide__slides {
                 .glide__slide {
                     .container-pr {
+                        box-shadow: 0 0 2.5rem 0 black;
                         margin: 5rem;
                         display: grid;
                         width: 100%;
                         height: 100%;
-                        grid-template-columns: 40% 100%;
-                        grid-template-rows: 25%, 35%, 20%, 20%;
-                        grid-template-areas:
-                            "img title"
-                            "img content"
-                            "img sign"
-                            "img links";
+                        grid-template-columns: 50% 50%;
+                        // grid-template-areas:
+                        //     "img content-box";
 
                         .img-pr {
-                            grid-area: img;
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-                        .title-pr {
-                            width: 50%;
-                            text-align: start;
-                            grid-area: title;
-                            padding: 2rem;
-                            @include small-title-text;
-                        }
-                        .title-pr::after {
-                            content: "Itis Max Plank";
-                            display: block;
-                        }
-                        .content-pr {
-                            grid-area: content;
-                            padding: 2em;
-                            width: 40%;
-                            break-inside: auto;
-                        }
-                        .sign-pr {
-                            grid-area: sign;
-                            width: 15%;
-                            object-fit: cover;
-                            padding: 2rem;
+                            width: 60%;
+                            object-fit: contain;
+                            opacity: 0.85;
+                            
                         }
 
-                        .list-pr {
-                            grid-area: links;
-                            width: 20%;
-                            @include flex-spaceBetwen;
-                            padding: 2em;
-                            .link-pr {
-                                a {
-                                    color: $background-white;
+                        .content-box {
+                            width: 80%;
+                            display: grid;
+                            grid-template-rows: 20% 40% 20% 20%;
+                            grid-template-areas: 
+                            "title"
+                            "content"
+                            "sign"
+                            "links"
+                            ;
+
+                            .title-pr {
+                                width: 50%;
+                                text-align: start;
+                                grid-area: title;
+                                padding: 2rem;
+                                @include small-title-text;
+                                font-size: 3rem;
+                            }
+                            .title-pr::after {
+                                content: "Itis Max Plank";
+                                display: block;
+                            }
+                            .content-pr {
+                                grid-area: content;
+                                padding: 2em;
+                                width: 40%;
+                                font-size: 1.5rem;
+                                break-inside: auto;
+                            }
+                            .sign-pr {
+                                grid-area: sign;
+                                width: 15%;
+                                object-fit: cover;
+                                padding: 2rem;
+                            }
+
+                            .list-pr {
+                                grid-area: links;
+                                width: 20%;
+                                @include flex-spaceBetwen;
+                                padding: 2em;
+                                .link-pr {
+                                    a {
+                                        color: $background-white;
+                                    }
                                 }
                             }
                         }
