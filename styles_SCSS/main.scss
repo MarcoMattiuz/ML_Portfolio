@@ -29,7 +29,7 @@ li{
     list-style: none;
 }
 
-h2,
+h2,h3,
 p {
     color: white;
     font-family: $open-Sans;
@@ -104,7 +104,7 @@ body {
     color: $background-white;
     opacity: 0.8;
     font-size: 12vw;
-    transform: translateZ(20px);
+    // transform: translateZ(20px);
     // transform: rotate3d(2, -1, -1, -0.2turn); 
 }
 

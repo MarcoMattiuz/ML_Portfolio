@@ -299,7 +299,13 @@
     /**
      * Auto load
      */
-    $('[data-tilt]').tilt();
+    window.addEventListener('resize',a=>{
+
+        if(screen.width>951){
+            $('[data-tilt]').tilt();
+        }
+    });
+
 
     return true;
 }));
