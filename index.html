@@ -15,10 +15,11 @@
     />
     <!-- main css  -->
     <link rel="stylesheet" href="src_CSS/main.css" />
-    <!-- glide css links -->
-    <link rel="stylesheet" href="src_CSS/glide.core.css" />
-    <link rel="stylesheet" href="src_CSS/glide.theme.css" />
-
+    <!-- fullPage.js css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+    />
     <title>ML-Portfolio | By Marco&Lorenzo</title>
   </head>
   <body>
@@ -32,12 +33,12 @@
         </div>
 
         <div class="links-container">
-          <a href="#start" class="links" id="home"><p>Home</p></a>
-          <a href="#" class="links" id="about"><p>About us</p></a>
-          <a href="#" class="links" id="projects"><p>Projects</p></a>
+          <a href="#section1" class="links" id="home"><p>Home</p></a>
+          <a href="#section2" class="links" id="about"><p>About us</p></a>
+          <a href="#section4" class="links" id="projects"><p>Projects</p></a>
 
           <div id="contactButton" class="contact-button">
-            <a href="#" id="contact"><p>Contact us</p></a>
+            <a href="#section5" id="contact"><p>Contact us</p></a>
           </div>
         </div>
         <div class="hamburger-menu">
@@ -72,218 +73,192 @@
     </div>
 
     <!-- --------------------------------------- -->
-    <img
-    src="images/cricle1.svg"
-    class="decorative_circle bottom-right"
-    id="first-bottom"
-    alt="cerchio"
-    />
-    <img
-    src="images/cricle1.svg"
-    class="decorative_circle top-left"
-    id="first-top"
-    alt="cerchio"
-    />
-    <!-- section 1 -->
-    <section class="nm-section">
-     
-      <div class="title-container">
-        <div class="opening-quote" id="start">
-          <h1>" true knowledge exists</h1>
-          <h1>in knowing that you</h1>
-          <h1>know nothing."</h1>
-        </div>
-        <h5 class="sub-quote">
-          We are two students... And we are working on it :)
-        </h5>
-        <div class="ourWork-button">
-          <a href="#" id="ourWork"><h6>Our work</h6></a>
-        </div>
-      </div>
-      <!-- ---------------------------------  -->
-    </section>
 
-    <!-- seciton 2 -->
-    <section class="nm-section">
-      <h1 class="parallax_title" id="title-about">ABOUT</h1>
+    <div id="fullPage">
+      <section class="section">
+        <div class="title-container">
+          <div class="opening-quote" id="start">
+            <h1>" true knowledge exists</h1>
+            <h1>in knowing that you</h1>
+            <h1>know nothing."</h1>
+          </div>
+          <h5 class="sub-quote">
+            We are two students... And we are working on it :)
+          </h5>
+          <div class="ourWork-button">
+            <a href="#" id="ourWork"><h6>Our work</h6></a>
+          </div>
+        </div>
+        <!-- ---------------------------------  -->
+      </section>
 
-      <div class="container">
-        <div class="line"></div>
-        <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <!-- ------------------------- -->
-                <div class="container-pr">
-                  <img
-                    src="images/temporary-photo.jpg"
-                    alt="temp"
-                    class="img-pr"
-                  />
-                  <div class="content-box">
-                    <h1 class="title-pr">I'm Marco</h1>
-                    <p class="content-pr">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Perferendis animi sapiente enim, harum est aperiam eius
-                      
-                    </p>
-                    <img src="images/testSign.png" alt="temp" class="sign-pr" />
-                    <ul class="list-pr">
-                      <li class="link-pr">
-                        <a href="#"><i class="fab fa-instagram 3x"></i> </a>
-                      </li>
-                      <li class="link-pr">
-                        <a href="#"><i class="fab fa-github 3x"></i> </a>
-                      </li>
-                      <li class="link-pr">
-                        <a href="#"><i class="fab fa-codepen 2x"></i> </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <!-- ------------------------- -->
-                <div class="container-pr">
-                  <img
-                    src="images/temporary-photo.jpg"
-                    alt="temp"
-                    class="img-pr"
-                  />
-                  <div class="content-box">
-                    <h1 class="title-pr">I'm Marco</h1>
-                    <p class="content-pr">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Perferendis animi sapiente enim, harum est aperiam eius
-                      
-                    </p>
-                    <img src="images/testSign.png" alt="temp" class="sign-pr" />
-                    <ul class="list-pr">
-                      <li class="link-pr">
-                        <a href="#"><i class="fab fa-instagram 3x"></i> </a>
-                      </li>
-                      <li class="link-pr">
-                        <a href="#"><i class="fab fa-github 3x"></i> </a>
-                      </li>
-                      <li class="link-pr">
-                        <a href="#"><i class="fab fa-codepen 2x"></i> </a>
-                      </li>
-                    </ul>
-                  </div>
-              </li>
+      <!-- seciton 2 -->
+      <section class="section">
+        <h1 class="parallax_title" id="title-about">ABOUT</h1>
+
+        <div class="slide">
+          <div class="pr-container">
+            <img src="images/defMarco.jpg" alt="marco's face" class="pr-img"/>
+            <h2 class="pr-title">I'm Marco</h2>
+            <p class="pr-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio,
+              in?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, deserunt?
+            </p>
+            <img src="images/testSign.png" alt="marco's sign" class="pr-sign">
+            <ul class="pr-links">
+              <li class="link"><a href="http://" > <i class="fab fa-instagram fa-2x"></i> </a></li>
+              <li class="link"><a href="http://" > <i class="fab fa-github fa-2x"></i> </a></li>
+              <li class="link"><a href="http://" > <i class="fab fa-codepen fa-2x"></i></a></li>
             </ul>
           </div>
-
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+        </div>
+        <div class="slide">
+          <div class="pr-container">
+            <img src="images/defMarco.jpg" alt="lorenzo's face" class="pr-img"/>
+            <h2 class="pr-title">I'm Lorenzo</h2>
+            <p class="pr-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio,
+              in?Lorem ipsum, dolor sit amet Lorem, ipsum. consectetur adipisicing elit. Aperiam, deserunt?
+            </p>
+            <img src="images/testSign.png" alt="lorenzo's sign" class="pr-sign">
+            <ul class="pr-links">
+              <li class="link"><a href="http://" > <i class="fab fa-instagram fa-2x"></i> </a></li>
+              <li class="link"><a href="http://" > <i class="fab fa-github fa-2x"></i> </a></li>
+              <li class="link"><a href="http://" > <i class="fab fa-codepen fa-2x"></i></a></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- section 3 -->
 
-      <!-- Glide.js CDN link -->
-      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-      <!-- sliderOptions.js link  -->
-      <script src="scripts/glideOptions.js"></script>
-    </section>
-    <!-- section 3 -->
-    <img
-        src="images/cricle1.svg"
-        class="decorative_circle top-left"
-        id="third-top"
-        alt="cerchio"
-      />
-      <img
-        src="images/cricle1.svg"
-        class="decorative_circle bottom-right"
-        id="third-bottom"
-        alt="cerchio"
-      />
-    <section class="nm-section">
-      
-      <h1 class="parallax_title" id="title-skill">SKILLS</h1>
-      <!-- ---------------------------- -->
-      <div class="grid-container">
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">html</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
+      <section class="section">
+        <h1 class="parallax_title" id="title-skill">SKILLS</h1>
+        <!-- ---------------------------- -->
+        <div class="grid-container">
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">html</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">figma</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">scss</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">js</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">php</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">java</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">unity</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">Git</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">Solidity</h3>
+            <p class="sml-desc">
+              i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf
+            </p>
+          </div>
         </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">figma</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">scss</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">js</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">php</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">java</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">unity</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">Git</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-        <div class="element" data-tilt data-tilt-scale="1.08" data-tilt-transition="true">
-          <h3 class="inner-title">Solidity</h3>
-          <p class="sml-desc">i relaly like programmaing sike jdbv sdkb sdkjsk sdfs sdf fsdfsdf</p>
-        </div>
-      </div>
-    </section>
-    <!-- section 4 -->
-    
-  <img
-    src="images/cricle1.svg"
-    class="decorative_circle bottom-left"
-    id="fourth-bottom"
-    alt="cerchio"
-  />
-    <section class="nm-section">
-     
-      <h1 class="parallax_title" id="title-projects">PROJECTS</h1>
-    </section>
-    <img
-        src="images/cricle1.svg"
-        class="decorative_circle top-right"
-        id="fifth-top"
-        alt="cerchio"
-      />
-     
-      <img
-      src="images/cricle1.svg"
-      class="decorative_circle bottom-left"
-      id="fifth-bottom"
-      alt="cerchio"
-    />
-    <!-- section 5 -->
-    <section class="nm-section">
-      
-     
-      <h1 class="parallax_title" id="title-contact">CONTACT US</h1>
-    </section>
+      </section>
+      <!-- section 4 -->
+
+      <section class="section">
+        <h1 class="parallax_title" id="title-projects">PROJECTS</h1>
+      </section>
+
+      <!-- section 5 -->
+      <section class="section">
+        <h1 class="parallax_title" id="title-contact">CONTACT US</h1>
+      </section>
+    </div>
+
+    <!-- fullPage.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <!-- fullPage.js config file -->
+    <script src="scripts/fullPageOptions.js"></script>
     <!-- background.js script  -->
     <script src="scripts/background.js"></script>
-        <!-- pagethree script  -->
-        <script src="scripts/pageThree.js"></script>
+    <!-- pagethree script  -->
+    <script src="scripts/pageThree.js"></script>
     <!-- hamburger menu script  -->
     <script src="scripts/hamburgerMenu.js"></script>
-        <!-- tilt.js library link  -->
-        <script src="assets/tilt.jquery.js"></script>
+    <!-- tilt.js library link  -->
+    <script src="assets/tilt.jquery.js"></script>
   </body>
 </html>
