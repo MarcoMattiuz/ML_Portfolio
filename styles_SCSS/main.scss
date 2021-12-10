@@ -136,19 +136,17 @@ body {
 
 .parallax_title {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     font-family: $open-Sans;
     color: $background-white;
     opacity: 0.8;
     font-size: clamp(12vw, calc(8vw+2rem), 5rem);
+    white-space: nowrap;
     // transform: translateZ(20px);
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }
 
-.decorative_circle {
-    position: absolute;
-    z-index: 0;
-}
+
 
 .top-right {
     right: -100px;
@@ -162,6 +160,11 @@ body {
 .top-left{
     left: -100px;
     // top: -150px;
+}
+//CSS
+.decorative_circle {
+    position: absolute;
+    z-index: -5;
 }
 .bottom-right {
     right: -100px;

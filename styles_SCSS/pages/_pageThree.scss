@@ -9,6 +9,7 @@
     transform: scale(1);
 
 }
+
     .grid-container {
      margin-top:2rem;
     width: 70%;
@@ -46,6 +47,7 @@
             background-size: 170%;
             background-position: left bottom;
             transform: scale(1);
+            left:100%;
 
         }
 
@@ -76,7 +78,7 @@
             background-position-x: right;
             background-position-y: bottom;
             transform: scale(1);
-            transition: all 300ms ease-in-out;
+           
         }
 
         &:nth-of-type(3):hover,
@@ -89,7 +91,7 @@
             background: linear-gradient(150.08deg, #D03E20 -6.53%, #F6CE0E 109%);
             background-size: 200%;
             transform: scale(1);
-            transition: all 300ms ease-in-out;
+            
             background-position-x: left;
             background-position-y: top;
         }
@@ -106,7 +108,7 @@
             background-position-x: left;
             background-position-y: bottom;
             transform: scale(1);
-            transition: all 300ms ease-in-out;
+            
         }
 
         &:nth-of-type(5):hover,
@@ -119,7 +121,7 @@
             background: linear-gradient(150.08deg, #363553 -6.53%, #722D89 46.42%, #E8458B 109%);
             background-size: 200%;
             transform: scale(1);
-            transition: all 300ms ease-in-out;
+           
             background-position-x: right;
             background-position-y: top;
         }
@@ -136,7 +138,7 @@
             background-position-x: left;
             background-position-y: bottom;
             transform: scale(1);
-            transition: all 300ms ease-in-out;
+           
         }
 
         &:nth-of-type(7):hover,
@@ -149,7 +151,7 @@
             background: linear-gradient(150.08deg, #F02FC2 -6.53%, #6094EA 70.54%, #37A2B0 109%);
             background-size: 200%;
             transform: scale(1);
-            transition: all 300ms ease-in-out;
+            
             background-position-x: right;
             background-position-y: top;
         }
@@ -164,7 +166,7 @@
             background: linear-gradient(150.08deg, #F17B41 -6.53%, #CB73D2 109%,#8c73d2 109%);
             background-size: 200%;
             transform: scale(1);
-            transition: all 300ms ease-in-out;
+         
             background-position-x: right;
             background-position-y: top;
         }

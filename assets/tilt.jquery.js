@@ -299,11 +299,14 @@
     /**
      * Auto load
      */
+ 
     window.addEventListener('resize',a=>{
 
         if(screen.width>951){
+            
             $('[data-tilt]').tilt();
         }
+  
     });
 
 
