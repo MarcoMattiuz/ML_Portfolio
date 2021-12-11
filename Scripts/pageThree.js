@@ -1,5 +1,5 @@
 
-     window.addEventListener('load',a=>{
+     /*window.addEventListener('load',a=>{
 
         if(screen.width<950){
            
@@ -9,8 +9,8 @@
             })
         }
         
-    });
-            document.addEventListener('scroll', function(){
+    });*/
+           /* document.addEventListener('scroll', function(){
                
                 if(screen.width<950){
                     console.log(screen.width);
@@ -19,7 +19,7 @@
                         element.style.left =  Math.max( -10 + 0.13  * window.scrollY,-10) + '%';
                 }
         
-            });
+            });*/
             window.addEventListener('scroll',()=>{
                 let fadeIn = document.querySelector(".fade-in");
                 let contentPos = fadeIn.getBoundingClientRect().top;

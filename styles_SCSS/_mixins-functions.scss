@@ -30,7 +30,7 @@
 
 @mixin medium-text {
     font: $open-Sans;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     color: $background-white;
     @media (max-width: 1150px) {
         font-size: 2.3vw;

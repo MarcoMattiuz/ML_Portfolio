@@ -11,7 +11,7 @@
 }
 
     .grid-container {
-     margin-top:2rem;
+     margin-top:15rem;
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3,13rem);
@@ -46,22 +46,18 @@
             background-image: linear-gradient(145.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
             background-size: 170%;
             background-position: left bottom;
-            transform: scale(1);
-            left:100%;
-
+            transform-origin: center;
         }
 
         &:nth-of-type(1):hover,
         &:nth-of-type(1):focus {
             background-position: right top;
-            transform: scale(1.1);
+    
             
         }
         &:nth-of-type(2) {
             background: linear-gradient(144.35deg, #274B74 1.73%, #8233C5 58.54%, #E963FD 104.42%);
             background-size: 200%;
-            transform: scale(1);
-
             background-position-x: right;
             background-position-y: top;
             
@@ -70,14 +66,14 @@
         &:nth-of-type(2):focus {
             background-position-x: left;
             background-position-y: top;
-            transform: scale(1.1);
+
         }
         &:nth-of-type(3) {
             background: linear-gradient(150.08deg, #879AF2 -6.53%, #D3208B 51.52%, #FDA000 109%);
             background-size: 220%;
             background-position-x: right;
             background-position-y: bottom;
-            transform: scale(1);
+        
            
         }
 
@@ -85,13 +81,12 @@
         &:nth-of-type(3):focus {
             background-position-x: left;
             background-position-y: top;
-            transform: scale(1.1);
+          
         }
         &:nth-of-type(4) {
             background: linear-gradient(150.08deg, #D03E20 -6.53%, #F6CE0E 109%);
             background-size: 200%;
-            transform: scale(1);
-            
+
             background-position-x: left;
             background-position-y: top;
         }
@@ -99,7 +94,7 @@
         &:nth-of-type(4):focus {
             background-position-x: right;
             background-position-y: top;
-            transform: scale(1.1);
+          
         }
 
         &:nth-of-type(5) {
@@ -107,7 +102,7 @@
             background-size: 200%;
             background-position-x: left;
             background-position-y: bottom;
-            transform: scale(1);
+          
             
         }
 
@@ -115,12 +110,12 @@
         &:nth-of-type(5):focus {
             background-position-x: right;
             background-position-y: top;
-            transform: scale(1.1);
+         
         }
         &:nth-of-type(6) {
             background: linear-gradient(150.08deg, #363553 -6.53%, #722D89 46.42%, #E8458B 109%);
             background-size: 200%;
-            transform: scale(1);
+           
            
             background-position-x: right;
             background-position-y: top;
@@ -129,7 +124,7 @@
         &:nth-of-type(6):focus {
             background-position-x: left;
             background-position-y: top;
-            transform: scale(1.1);
+         
         }
 
         &:nth-of-type(7) {
@@ -137,7 +132,7 @@
             background-size: 200%;
             background-position-x: left;
             background-position-y: bottom;
-            transform: scale(1);
+         
            
         }
 
@@ -145,12 +140,12 @@
         &:nth-of-type(7):focus {
             background-position-x: right;
             background-position-y: top;
-            transform: scale(1.1);
+           
         }
         &:nth-of-type(8) {
             background: linear-gradient(150.08deg, #F02FC2 -6.53%, #6094EA 70.54%, #37A2B0 109%);
             background-size: 200%;
-            transform: scale(1);
+          
             
             background-position-x: right;
             background-position-y: top;
@@ -159,14 +154,13 @@
         &:nth-of-type(8):focus {
             background-position-x: left;
             background-position-y: top;
-            transform: scale(1.1);
+         
         }
 
         &:nth-of-type(9) {
             background: linear-gradient(150.08deg, #F17B41 -6.53%, #CB73D2 109%,#8c73d2 109%);
             background-size: 200%;
-            transform: scale(1);
-         
+
             background-position-x: right;
             background-position-y: top;
         }
@@ -174,7 +168,7 @@
         &:nth-of-type(9):focus {
             background-position-x: left;
             background-position-y: bottom;
-            transform: scale(1.1);
+            
         }
 
     }
@@ -190,7 +184,7 @@
     }
     @media (max-width: 950px) {
         .grid-container{
-            grid-template-columns: 100%;
+            grid-template-columns: 80%;
             grid-template-rows:1fr; 
             .element{
                     padding: 1rem;
@@ -201,7 +195,7 @@
         }
         @media (max-width: 450px) {
             .grid-container{
-                width: 90%;
+                width: 80%;
                 .element{
                         padding: 1rem ;
                         border-radius: 1.2rem;

@@ -29,6 +29,7 @@ li {
     list-style: none;
 }
 
+
 h2,
 h3,
 p {
@@ -41,67 +42,40 @@ h5 {
     font-family: $open-Sans;
     @include medium-text;
 }
+
+span{
+    background: $background-white !important;
+}
 // // // // // // // // //
 
 body {
+    position: relative;
     font-size: 20px;
     width: 100vw;
     height: 100vh;
     background-color: $background-black;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform-style: preserve-3d;
 
-
-    #first-top{
-        top:-110px;
-        transform: scale(2.3);
-    }
-    #first-bottom{
-        bottom: -120px;
-        transform: scale(2.7);
-    }
-    #third-top{
-        transform: scale(1.7);
-    }
-    #third-bottom{
-        top: 290vh;
-        transform: scale(2.1);
+    .fp-tableCell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    #fourth-bottom{
-        top: 397vh;
-        transform: scale(2.5);
-        right:-250px;
-    }
-
-    #fifth-bottom{
-        top: 520vh;
-        transform: scale(2.7);
-        left: 98vw;
-    }
-
-    
-
-    #fifth-top{
-        top: 415vh;
-        transform: scale(2.1);
-        left: 98vw;
-    }
-
-    .nm-section {
+    .section {
         position: relative;
         width: 100%;
         height: 100%;
         @include flex-center;
         opacity: 0.95;
         overflow: hidden;
-        z-index: -1;
+        z-index: 1;
+        background: transparent;
         // scroll-margin-top: 5vh;
 
-        // &:nth-of-type(1){
-
-        // }
+        &:nth-of-type(1) {
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
 
         &:nth-of-type(2) {
             #title-about {
@@ -115,7 +89,7 @@ body {
                 left: 0;
                 top: 0;
             }
-            #third-top{
+            #third-top {
                 top: 200vw;
             }
         }
@@ -124,6 +98,7 @@ body {
                 left: 0;
                 top: 0;
             }
+
         }
         &:nth-of-type(5) {
             #title-contact {
@@ -146,27 +121,7 @@ body {
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }
 
-
-
-.top-right {
-    right: -100px;
-    // top: -150px;
-}
-.bottom-left {
-    left: -100px;
-    // bottom: -150px;
-}
-
-.top-left{
-    left: -100px;
-    // top: -150px;
-}
-//CSS
-.decorative_circle {
-    position: absolute;
-    z-index: -5;
-}
-.bottom-right {
-    right: -100px;
-    // bottom: -150px;
+.fp-slidesNav.fp-bottom {
+    display: flex;
+    justify-content: center;
 }

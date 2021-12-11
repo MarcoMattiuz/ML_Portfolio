@@ -12,6 +12,7 @@ window.onload = function(){
     if(hamburgerButton){
     hamburgerButton.addEventListener("click", () =>{
         if(!hamburgerMenuOpen){
+            
             hamburgerMenu.classList.add('open');
             hamburgerButton.classList.add('open');
             document.querySelector('.contact-button').style.display='none';
