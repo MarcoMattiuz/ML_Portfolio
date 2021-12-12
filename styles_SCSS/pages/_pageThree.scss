@@ -11,7 +11,7 @@
 }
 
     .grid-container {
-     margin-top:15rem;
+     margin-top:19rem;
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3,13rem);
@@ -30,7 +30,7 @@
 
         .inner-title {
 
-            font-size: clamp(1rem,1.8vw,2.1rem);
+            font-size: clamp(1.1rem,1.6vw,1.8rem);
             text-transform: uppercase;
             transform: translateZ(30px);
         }
@@ -39,7 +39,7 @@
             text-align: center;
             margin-left: 0.9rem;
             margin-right: 0.9rem;
-            font-size: clamp(0.75rem,1vw,1rem);
+            font-size: clamp(0.75rem,1vw,0.9rem);
             transform: translateZ(20px);
         }
         &:nth-of-type(1) {
@@ -58,6 +58,7 @@
         &:nth-of-type(2) {
             background: linear-gradient(144.35deg, #274B74 1.73%, #8233C5 58.54%, #E963FD 104.42%);
             background-size: 200%;
+
             background-position-x: right;
             background-position-y: top;
             

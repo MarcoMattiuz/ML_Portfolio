@@ -19,7 +19,7 @@ window.addEventListener("scroll", a => {
     cont++;
     title_about.style.left=Math.max( -5 + 0.07  * window.scrollY,-1) + '%';
     title_Skill.style.left=Math.max(160 - 0.07  * window.scrollY,-10) + '%';
-    title_projects.style.left=Math.max(-140 + 0.07  * window.scrollY,-50) + '%';
+    title_projects.style.left=Math.max(-170 + 0.07  * window.scrollY,-50) + '%';
     title_contact.style.left=Math.max(+280 - 0.07  * window.scrollY,-50) + '%';
 
    

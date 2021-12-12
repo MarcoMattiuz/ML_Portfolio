@@ -1,5 +1,5 @@
 new fullpage('#fullPage', {
-    autoScrolling: true,
+    autoScrolling: false,
     navigation: true, //this one
     anchors: ['section1','section2','section3','section4','section5'],
     navigationTooltips: ['Home','Abouts us','Skills','Projects','Contact us'],

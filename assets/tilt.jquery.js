@@ -332,7 +332,7 @@
                  if(index%2){
                     //Math.random()*-100)-99
                     console.log(slide);
-                    var slide = Math.max(-120 + 0.07  * window.scrollY,-30);
+                    var slide = Math.max(-120 + 0.07  * window.scrollY,-60);
                     element[index].style.transform =" translateX("+ slide + "%)";
                     element[index].addEventListener("mouseover", () =>{
                         element[index].style.transform =" scale(1.1)";
@@ -342,9 +342,13 @@
                     var slide = Math.max(110 - 0.07  * window.scrollY,-60);
                     element[index].style.transform =" translateX("+ slide + "%)";
                  element[index].addEventListener("mouseover", () =>{
-                    //element[index].style.transform =" translateX("+ slide + "%) scale(1.1)";
+                    element[index].style.transform =" scale(1.1)";
                  });
                  }
+                 element.forEach(element =>{ 
+                    element.style.transition="all 300ms ease-in-out";
+                 
+                });
              }
              
             }
