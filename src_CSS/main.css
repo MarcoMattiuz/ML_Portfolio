@@ -23,20 +23,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (max-width: 750px) {
-  .header {
-    height: 3em;
-    -webkit-box-shadow: 0.2em 0.2em 2em 2em #090910;
-            box-shadow: 0.2em 0.2em 2em 2em #090910;
-  }
-}
-
-@media (max-width: 350px) {
-  .header {
-    height: 3em;
-  }
+  /* @media (max-width: 750px) {
+        height: 3em;
+        box-shadow: 0.2em 0.2em 2em 2em $background-black;
+        }
+        
+        @media (max-width: 350px) {
+            height: 3em;
+        }*/
 }
 
 .header .nav-bar {
@@ -461,7 +455,7 @@
 }
 
 .pr-container {
-  width: 75%;
+  width: clamp(75%, 50%, calc(45%+5rem));
   max-height: 60%;
   display: -ms-grid;
   display: grid;
@@ -477,8 +471,11 @@
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;
   grid-area: img;
-  width: 95%;
-  max-height: 100%;
+  background: url("../images/defMarco.jpg") no-repeat;
+  background-size: cover;
+  margin-left: 20%;
+  -webkit-box-shadow: 0 0 15px 0 black;
+          box-shadow: 0 0 15px 0 black;
 }
 
 .pr-container .pr-title {
@@ -508,7 +505,7 @@
 }
 
 .pr-container .pr-title::after {
-  content: "I'm a Student at Max Planck";
+  content: "I'm a Student | Max Planck";
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: rgba(236, 228, 228, 0.925);
@@ -564,7 +561,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 40%;
   padding: 2rem;
 }
 
@@ -585,7 +582,48 @@
 
 @media (max-width: 900px) {
   .pr-container {
-        grid-template-areas: "img img" "title title" "content content" "sign links";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40% 1fr 1fr 1fr;
+        grid-template-rows: 40% 1fr 1fr 1fr;
+        grid-template-areas: "title" "content" "sign" "links";
+  }
+  .pr-title {
+    padding: 0.5rem;
+    background: url("../images/defMarco.jpg") no-repeat;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 1150px) {
+  .pr-title {
+    font-size: 4.9vw;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 550px) {
+  .pr-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 350px) {
+  .pr-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .pr-content {
+    padding: 2rem;
+    padding-left: 0.5rem;
+  }
+  .pr-sign {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    padding: 0;
   }
 }
 
@@ -937,12 +975,6 @@ body .section {
   overflow: hidden;
   z-index: 1;
   background: transparent;
-}
-
-body .section:nth-of-type(1) {
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 body .section:nth-of-type(2) #title-about {

@@ -1,7 +1,6 @@
-
-var fullpage = new fullpage('#fullPage', {
-    autoScrolling: false,
-    navigation: true,
+new fullpage('#fullPage', {
+    autoScrolling: true,
+    navigation: true, //this one
     anchors: ['section1','section2','section3','section4','section5'],
     navigationTooltips: ['Home','Abouts us','Skills','Projects','Contact us'],
     showActiveTooltip: true,

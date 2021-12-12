@@ -72,10 +72,10 @@ body {
         background: transparent;
         // scroll-margin-top: 5vh;
 
-        &:nth-of-type(1) {
-            background-repeat: no-repeat;
-            object-fit: cover;
-        }
+        // &:nth-of-type(1) {
+        //     // background: url('../images/semi-left-circle.svg') no-repeat;
+        //     // background-size: cover;
+        // }
 
         &:nth-of-type(2) {
             #title-about {
