@@ -332,7 +332,7 @@
                  if(index%2){
                     //Math.random()*-100)-99
                     console.log(slide);
-                    var slide = Math.max(-100 + 0.07  * window.scrollY,-60);
+                    var slide = Math.max(-120 + 0.07  * window.scrollY,-30);
                     element[index].style.transform =" translateX("+ slide + "%)";
                     element[index].addEventListener("mouseover", () =>{
                         element[index].style.transform =" scale(1.1)";
