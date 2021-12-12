@@ -1,8 +1,11 @@
+
 .pr-container {
     width: clamp(75%,50%,calc(45%+5rem));
     max-height: 60%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    justify-content: center;
+    padding-left: 20%;
+    grid-template-columns: 32rem 50%;
     grid-template-rows: 20% 1fr 1fr 1fr;
     grid-template-areas:
         "img title"
@@ -15,31 +18,44 @@
         background: url("../images/defMarco.jpg") no-repeat;
         background-size: cover;
         margin-right: 10%;
-        box-shadow: 0 0 15px 0 black;
+        height: 130%;
+        max-width: 29rem;
+        box-shadow: 0 0 20px 0 black;
+        border-radius: 0.1rem;
+        
     }
     .pr-title {
         grid-area: title;
-        @include title-text;
+        font-family: $open-Sans;
+        font-size: clamp(2.5rem,3.3vw,3.5rem);
     }
     .pr-title::after {
         content: "I'm a Student | Max Planck";
-        @include small-title-text;
+        font-size: clamp(1rem,1.6vw,1.6rem);
+        font-family: $raleway;
         display: block;
     }
     .pr-content {
+        margin-top: 5%;
+        font-size: clamp(1rem,1vw,1.1rem);
         grid-area: content;
-        @include medium-text;
+        font-family: $raleway;
+        width: 80%;
+
     }
     .pr-sign {
         grid-area: sign;
         object-fit: contain;
+        width: 7rem;
+        margin-top: 2rem;
     }
     .pr-links {
         grid-area: links;
         display: flex;
         flex-flow: row;
+       
         justify-content: space-between;
-        width: 40%;
+        width: 12rem;
         padding: 2rem;
         .link {
             a {
@@ -58,29 +74,39 @@
 
 @media (max-width: 900px) {
     .pr-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 40% 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 1fr 1fr 1fr;
         grid-template-areas: 
             "title"
             "content"
             "sign"
             "links";
+            padding-left: 0%;
     }
 
     .pr-title {
         padding: 0.5rem;
         background: url("../images/defMarco.jpg") no-repeat;
         background-size: cover;
-        @include title-text;
+        
     }
 
     .pr-content{
-        padding: 2rem;
-        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        padding-left: 10%;
+        
     }
 
     .pr-sign{
-        transform: scale(0.6);
-        padding: 0;
+        transform: scale(0.8);
+        position: absolute;
+        top: 59%;
+        left: 6.5%;
+
+    }
+    .pr-links{
+        transform: scale(0.8);
+       
     }
 }

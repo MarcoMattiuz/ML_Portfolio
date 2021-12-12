@@ -21,8 +21,9 @@
         
             });*/
             window.addEventListener('scroll',()=>{
-                let fadeIn = document.querySelector(".fade-in");
-                let contentPos = fadeIn.getBoundingClientRect().top;
+                let fadeIn = document.querySelectorAll(".fade-in");
+                fadeIn.forEach(fadeIn =>{
+                    let contentPos = fadeIn.getBoundingClientRect().top;
                 let screenPos = window.innerHeight /1.09;
                 if(contentPos< screenPos){
         
@@ -31,5 +32,7 @@
                 }else {
                         fadeIn.classList.remove("appear");
                 }
+                })
+                
             });
 

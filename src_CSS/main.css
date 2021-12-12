@@ -465,8 +465,12 @@
   max-height: 60%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20%;
+  -ms-grid-columns: 32rem 50%;
+      grid-template-columns: 32rem 50%;
   -ms-grid-rows: 20% 1fr 1fr 1fr;
       grid-template-rows: 20% 1fr 1fr 1fr;
       grid-template-areas: "img title" "img content" "img sign" "img links";
@@ -480,8 +484,11 @@
   background: url("../images/defMarco.jpg") no-repeat;
   background-size: cover;
   margin-right: 10%;
-  -webkit-box-shadow: 0 0 15px 0 black;
-          box-shadow: 0 0 15px 0 black;
+  height: 130%;
+  max-width: 29rem;
+  -webkit-box-shadow: 0 0 20px 0 black;
+          box-shadow: 0 0 20px 0 black;
+  border-radius: 0.1rem;
 }
 
 .pr-container .pr-title {
@@ -489,60 +496,24 @@
   -ms-grid-column: 2;
   grid-area: title;
   font-family: "Open Sans", sans-serif;
-  font-size: 3.5rem;
-}
-
-@media (max-width: 1150px) {
-  .pr-container .pr-title {
-    font-size: 4.9vw;
-  }
-}
-
-@media (max-width: 550px) {
-  .pr-container .pr-title {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .pr-container .pr-title {
-    font-size: 1.2rem;
-  }
+  font-size: clamp(2.5rem, 3.3vw, 3.5rem);
 }
 
 .pr-container .pr-title::after {
   content: "I'm a Student | Max Planck";
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  color: rgba(236, 228, 228, 0.925);
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
+  font-family: "Raleway", sans-serif;
   display: block;
 }
 
 .pr-container .pr-content {
+  margin-top: 5%;
+  font-size: clamp(1rem, 1vw, 1.1rem);
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: content;
-  font: "Open Sans", sans-serif;
-  font-size: 1.1rem;
-  color: rgba(236, 228, 228, 0.925);
-}
-
-@media (max-width: 1150px) {
-  .pr-container .pr-content {
-    font-size: 2.3vw;
-  }
-}
-
-@media (max-width: 750px) {
-  .pr-container .pr-content {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 350px) {
-  .pr-container .pr-content {
-    font-size: 0.8rem;
-  }
+  font-family: "Raleway", sans-serif;
+  width: 80%;
 }
 
 .pr-container .pr-sign {
@@ -551,6 +522,8 @@
   grid-area: sign;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 7rem;
+  margin-top: 2rem;
 }
 
 .pr-container .pr-links {
@@ -567,7 +540,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40%;
+  width: 12rem;
   padding: 2rem;
 }
 
@@ -588,48 +561,33 @@
 
 @media (max-width: 900px) {
   .pr-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 40% 1fr 1fr 1fr;
-        grid-template-rows: 40% 1fr 1fr 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100% 1fr 1fr 1fr;
+        grid-template-rows: 100% 1fr 1fr 1fr;
         grid-template-areas: "title" "content" "sign" "links";
+    padding-left: 0%;
   }
   .pr-title {
     padding: 0.5rem;
     background: url("../images/defMarco.jpg") no-repeat;
     background-size: cover;
-    font-family: "Open Sans", sans-serif;
-    font-size: 3.5rem;
   }
-}
-
-@media (max-width: 900px) and (max-width: 1150px) {
-  .pr-title {
-    font-size: 4.9vw;
-  }
-}
-
-@media (max-width: 900px) and (max-width: 550px) {
-  .pr-title {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 900px) and (max-width: 350px) {
-  .pr-title {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 900px) {
   .pr-content {
-    padding: 2rem;
-    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    padding-left: 10%;
   }
   .pr-sign {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-    padding: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    position: absolute;
+    top: 59%;
+    left: 6.5%;
+  }
+  .pr-links {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 
@@ -648,7 +606,7 @@
 }
 
 .grid-container {
-  margin-top: 15rem;
+  margin-top: 19rem;
   width: 70%;
   display: -ms-grid;
   display: grid;
@@ -684,7 +642,7 @@
 }
 
 .grid-container .element .inner-title {
-  font-size: clamp(1rem, 1.8vw, 2.1rem);
+  font-size: clamp(1.1rem, 1.6vw, 1.8rem);
   text-transform: uppercase;
   -webkit-transform: translateZ(30px);
           transform: translateZ(30px);
@@ -695,7 +653,7 @@
   text-align: center;
   margin-left: 0.9rem;
   margin-right: 0.9rem;
-  font-size: clamp(0.75rem, 1vw, 1rem);
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
   -webkit-transform: translateZ(20px);
           transform: translateZ(20px);
 }
@@ -1017,7 +975,7 @@ body .section:nth-of-type(5) #title-contact {
   font-family: "Open Sans", sans-serif;
   color: rgba(236, 228, 228, 0.925);
   opacity: 0.8;
-  font-size: clamp(12vw, calc(8vw+2rem), 5rem);
+  font-size: clamp(11.5rem, 12vw, 20rem);
   white-space: nowrap;
 }
 
