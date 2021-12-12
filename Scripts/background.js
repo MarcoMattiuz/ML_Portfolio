@@ -2,8 +2,11 @@
 
 // window.addEventListener("load", () => {
  var title_about = document.querySelector("#title-about");
+ var title_Skill = document.querySelector("#title-skill");
+ var title_projects = document.querySelector("#title-projects");
+ var title_contact = document.querySelector("#title-contact");
+
  console.log(title_about);
-// var title_skill = document.querySelector("#skill");
 
 
 var cont = 0;
@@ -14,8 +17,12 @@ console.log(vh);
 
 window.addEventListener("scroll", a => {
     cont++;
-    title_about.style.left= cont+"px";
-    console.log(cont);
+    title_about.style.left=Math.max( -5 + 0.07  * window.scrollY,-1) + '%';
+    title_Skill.style.left=Math.max(160 - 0.07  * window.scrollY,-10) + '%';
+    title_projects.style.left=Math.max(-140 + 0.07  * window.scrollY,-50) + '%';
+    title_contact.style.left=Math.max(+280 - 0.07  * window.scrollY,-50) + '%';
+
+   
 })
 
 

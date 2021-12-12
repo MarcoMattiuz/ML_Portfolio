@@ -221,7 +221,7 @@
         /**
          * Public methods
          */
-        $.fn.tilt.destroy = function () {
+         $.fn.tilt.destroy = function () {
             $(this).each(function () {
                 $(this).find('.js-tilt-glare').remove();
                 $(this).css({ 'will-change': '', 'transform': '' });
@@ -299,23 +299,57 @@
     /**
      * Auto load
      */
+ 
+   
+            
     // var cond = false;
     // if (cond) {
     //     $('[data-tilt]').tilt();
 
     // }
+    window.addEventListener('scroll',()=>{
+        let grid = document.querySelector(".grid-container");
+        let contentPos = grid.getBoundingClientRect().top;
+        let screenPos = window.innerHeight /1.09;
+        const element = document.querySelectorAll(".element");
+        
+        if(contentPos< screenPos){
+            if(screen.width>1000){
+                $('[data-tilt]').tilt();
+            
+            }else {
+                const tilt = $('.element').tilt();
 
-    window.addEventListener('load', a =>{
-        $('[data-tilt]').tilt();
-    })
-    window.addEventListener('resize', a => {
-
-        if (screen.width > 951) {
-            $('[data-tilt]').tilt();
-            // cond = true;
+        // Destroy instance
+             tilt.tilt.destroy.call(tilt);   
+             
+             element.forEach(element =>{ 
+                 element.style.transition="all 300ms ease-in-out";
+              
+             });
+             
+             for (let index = 0; index < element.length; index++) {
+                 if(index%2){
+                    //Math.random()*-100)-99
+                    console.log(slide);
+                    var slide = Math.max(-100 + 0.07  * window.scrollY,-60);
+                    element[index].style.transform =" translateX("+ slide + "%)";
+                    element[index].addEventListener("mouseover", () =>{
+                        element[index].style.transform =" scale(1.1)";
+                     });
+                    
+                 }else{
+                    var slide = Math.max(110 - 0.07  * window.scrollY,-60);
+                    element[index].style.transform =" translateX("+ slide + "%)";
+                 element[index].addEventListener("mouseover", () =>{
+                    //element[index].style.transform =" translateX("+ slide + "%) scale(1.1)";
+                 });
+                 }
+             }
+             
+            }
         }
     });
-
-
     return true;
+    
 }));

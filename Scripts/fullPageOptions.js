@@ -11,4 +11,5 @@ new fullpage('#fullPage', {
     easing: 'easeInOutCubic',
     controlArrows: false,
     slidesNavigation: true
-})
+});
+console.log(fullpage.navigation);
