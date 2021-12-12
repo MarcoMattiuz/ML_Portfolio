@@ -18,10 +18,13 @@ console.log(vh);
 window.addEventListener("scroll", a => {
     cont++;
     title_about.style.left=Math.max( -5 + 0.07  * window.scrollY,-1) + '%';
+    title_about.style.transform="skewX("+   0.03*window.scrollY   + 'deg'+")";
     title_Skill.style.left=Math.max(160 - 0.07  * window.scrollY,-10) + '%';
+    title_Skill.style.transform="skewX("+ -0.03*window.scrollY + 'deg'+")";
     title_projects.style.left=Math.max(-140 + 0.07  * window.scrollY,-50) + '%';
+    title_projects.style.transform="skewX("+0.01*window.scrollY+ 'deg'+")";
     title_contact.style.left=Math.max(+280 - 0.07  * window.scrollY,-50) + '%';
-
+    title_projects.style.transform="skewX("+  0.01*window.scrollY + 'deg'+")";
    
 })
 

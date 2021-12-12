@@ -81,6 +81,7 @@ body {
             #title-about {
                 left: 0;
                 top: 0;
+                transform: skewX(0deg);
                 // transform: rotate(-15deg);
             }
         }
@@ -88,15 +89,14 @@ body {
             #title-skill {
                 left: 0;
                 top: 0;
-            }
-            #third-top {
-                top: 200vw;
+                transform: skewX(0deg);
             }
         }
         &:nth-of-type(4) {
             #title-projects {
                 left: 0;
                 top: 0;
+                transform: skewX(0deg);
             }
 
         }
@@ -104,6 +104,7 @@ body {
             #title-contact {
                 left: 0;
                 top: 0;
+                transform: skewX(0deg);
             }
         }
     }
@@ -117,6 +118,7 @@ body {
     opacity: 0.8;
     font-size: clamp(12vw, calc(8vw+2rem), 5rem);
     white-space: nowrap;
+    
     // transform: translateZ(20px);
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }
