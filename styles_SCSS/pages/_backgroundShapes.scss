@@ -12,6 +12,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
+    overflow:hidden;
     @media (max-width: 750px) {
         opacity: 0.6;
     }

@@ -15,6 +15,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 @media (max-width: 750px) {
@@ -408,7 +409,6 @@
   text-align: center;
   margin-left: 3em;
   margin-right: 3em;
-  margin-top: 2vw;
 }
 
 .title-container .opening-quote {
@@ -534,7 +534,7 @@
       grid-template-columns: 32rem 50%;
   -ms-grid-rows: 20% 1fr 1fr 1fr;
       grid-template-rows: 20% 1fr 1fr 1fr;
-      grid-template-areas: "img title" "img content" "img sign" "img links";
+      grid-template-areas: "img title" "img content" "img sign" "img links";
 }
 
 .pr-container .pr-img {
@@ -626,7 +626,7 @@
         grid-template-columns: 100%;
     -ms-grid-rows: 100% 1fr 1fr 1fr;
         grid-template-rows: 100% 1fr 1fr 1fr;
-        grid-template-areas: "title" "content" "sign" "links";
+        grid-template-areas: "title" "content" "sign" "links";
     padding-left: 0%;
   }
   .pr-title {
