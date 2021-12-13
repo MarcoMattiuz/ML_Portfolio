@@ -1,0 +1,41 @@
+@mixin circleBase ($size,$minSize){
+    width:$size;
+    height: $size;
+    min-width: $minSize;
+    min-height: $minSize;
+}
+
+.circle{
+    position:absolute;
+    z-index: -1;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    @media (max-width: 750px) {
+        opacity: 0.6;
+    }
+    .inner-circle{
+        position:absolute;
+        border-radius: 50%;
+        background: hsl(240, 26%, 5%);
+     
+    }
+    &:nth-child(1){
+        background: linear-gradient(145.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
+        @include circleBase(33vw,450px);
+        margin-left: -8em;
+        .inner-circle{
+            @include circleBase(27vw,380px);
+        }
+    }
+    &:nth-child(2){
+        background: linear-gradient(150.08deg, #d02020 -6.53%, #f6df0e 109%);
+        @include circleBase(36vw,480px);
+        margin-left: 70%;
+        margin-top: 15em;
+        .inner-circle{
+            @include circleBase(29vw,350px);
+        }
+    }
+}

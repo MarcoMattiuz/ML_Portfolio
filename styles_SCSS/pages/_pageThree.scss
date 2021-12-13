@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(3,13rem);
     grid-template-rows:repeat(3,11rem); 
-    gap:clamp(0.5rem,2vw,1.5rem);
+    gap:clamp(0.5rem,2vw,2.2rem);
     justify-content:center;
     text-align: center;
     .element {
