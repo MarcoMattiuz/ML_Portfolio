@@ -12,4 +12,5 @@ new fullpage('#fullPage', {
     controlArrows: false,
     slidesNavigation: true
 });
-console.log(fullpage.navigation);
+
+

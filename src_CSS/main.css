@@ -70,8 +70,6 @@
   padding-top: 1em;
   width: 100%;
   height: 3em;
-  -webkit-box-shadow: 0.5em 0.5em 4em 4em #090910;
-          box-shadow: 0.5em 0.5em 4em 4em #090910;
   z-index: 100;
   background-color: #090910;
   display: -webkit-box;
@@ -111,11 +109,13 @@
           justify-content: space-between;
   position: relative;
   width: 100%;
-  max-width: 100rem;
+  max-width: 120rem;
   height: 100%;
   z-index: 1;
   margin-left: 1em;
   margin-right: 1em;
+  -webkit-box-shadow: 0.5em 0.5em 4em 4em #090910;
+          box-shadow: 0.5em 0.5em 4em 4em #090910;
 }
 
 .header .nav-bar .logo {
@@ -534,7 +534,7 @@
       grid-template-columns: 32rem 50%;
   -ms-grid-rows: 20% 1fr 1fr 1fr;
       grid-template-rows: 20% 1fr 1fr 1fr;
-      grid-template-areas: "img title" "img content" "img sign" "img links";
+      grid-template-areas: "img title" "img content" "img sign" "img links";
 }
 
 .pr-container .pr-img {
@@ -626,7 +626,7 @@
         grid-template-columns: 100%;
     -ms-grid-rows: 100% 1fr 1fr 1fr;
         grid-template-rows: 100% 1fr 1fr 1fr;
-        grid-template-areas: "title" "content" "sign" "links";
+        grid-template-areas: "title" "content" "sign" "links";
     padding-left: 0%;
   }
   .pr-title {
@@ -1005,25 +1005,29 @@ body .section {
 body .section:nth-of-type(2) #title-about {
   left: 0;
   top: 0;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 body .section:nth-of-type(3) #title-skill {
   left: 0;
   top: 0;
-}
-
-body .section:nth-of-type(3) #third-top {
-  top: 200vw;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 body .section:nth-of-type(4) #title-projects {
   left: 0;
   top: 0;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 body .section:nth-of-type(5) #title-contact {
   left: 0;
   top: 0;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 .parallax_title {
