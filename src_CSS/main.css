@@ -969,6 +969,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #090910;
+  overflow-x: hidden;
 }
 
 body .fp-tableCell {
@@ -1028,6 +1029,10 @@ body .section:nth-of-type(5) #title-contact {
   top: 0;
   -webkit-transform: skewX(0deg);
           transform: skewX(0deg);
+}
+
+.fp-enabled body, html.fp-enabled {
+  overflow-x: hidden !important;
 }
 
 .parallax_title {

@@ -55,6 +55,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: $background-black;
+    overflow-x: hidden;
 
     .fp-tableCell {
         display: flex;
@@ -83,7 +84,6 @@ body {
                 left: 0;
                 top: 0;
                 transform: skewX(0deg);
-                // transform: rotate(-15deg);
             }
         }
         &:nth-of-type(3) {
@@ -109,6 +109,10 @@ body {
             }
         }
     }
+}
+
+.fp-enabled body, html.fp-enabled {
+    overflow-x: hidden !important;
 }
 
 .parallax_title {
