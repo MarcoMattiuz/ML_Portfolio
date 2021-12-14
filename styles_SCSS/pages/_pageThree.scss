@@ -39,7 +39,7 @@
             text-align: center;
             margin-left: 0.9rem;
             margin-right: 0.9rem;
-            font-size: clamp(0.75rem,1vw,0.9rem);
+            font-size: clamp(0.60rem,1vw,0.9rem);
             transform: translateZ(20px);
         }
         &:nth-of-type(1) {
@@ -182,9 +182,10 @@
         border-radius: 1rem;
     }
 
-    }
+   }
     @media (max-width: 950px) {
         .grid-container{
+            margin-bottom: 8em;
             grid-template-columns: 80%;
             grid-template-rows:1fr; 
             .element{
@@ -193,14 +194,15 @@
             }
            
         }
-        }
+    }
         @media (max-width: 450px) {
             .grid-container{
+                margin-bottom: 15em;
                 width: 80%;
+                
                 .element{
-                        padding: 1rem ;
+                        padding: 0.5rem ;
                         border-radius: 1.2rem;
                 }
-
             }
-            }
+        }
