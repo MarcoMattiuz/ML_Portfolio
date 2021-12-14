@@ -5,6 +5,7 @@
     display: grid;
     justify-content: center;
     padding-left: 20%;
+    margin-bottom: 3em;
     grid-template-columns: 32rem 50%;
     grid-template-rows: 20% 1fr 1fr 1fr;
     grid-template-areas:
@@ -21,7 +22,7 @@
         height: 130%;
         max-width: 29rem;
         box-shadow: 0 0 20px 0 black;
-        border-radius: 0.1rem;
+        border-radius: 0.4rem;
         
     }
     .pr-title {
@@ -31,7 +32,7 @@
     }
     .pr-title::after {
         content: "I'm a Student | Max Planck";
-        font-size: clamp(1rem,1.6vw,1.6rem);
+        font-size: clamp(0.8rem,1.6vw,1.6rem);
         font-family: $raleway;
         display: block;
     }
@@ -48,17 +49,34 @@
         object-fit: contain;
         width: 7rem;
         margin-top: 2rem;
+        @media (max-width: 900px) {
+            position: absolute;
+            top: 59%;
+            left: 6.5%;
+        }
+        @media (max-width: 450px) {
+           
+            top: 50%;
+            left: 6.5%;
+        }
     }
     .pr-links {
         grid-area: links;
         display: flex;
         flex-flow: row;
-       
-        justify-content: space-between;
-        width: 12rem;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
         padding: 2rem;
+        @media (max-width: 900px) {
+            width: 90%;
+        }
+        @media (max-width:450px) {
+            padding:1rem;
+        }
         .link {
             a {
+                padding:1em;
                 color: $background-white;
             }
         }
@@ -75,7 +93,7 @@
 @media (max-width: 900px) {
     .pr-container {
         grid-template-columns: 100%;
-        grid-template-rows: 100% 1fr 1fr 1fr;
+        grid-template-rows: 80% 1fr 1fr 1fr;
         grid-template-areas: 
             "title"
             "content"
@@ -90,7 +108,7 @@
         background-size: cover;
         
     }
-
+    
     .pr-content{
         padding-top: 0.5rem;
         text-align: center;
@@ -100,13 +118,15 @@
 
     .pr-sign{
         transform: scale(0.8);
-        position: absolute;
-        top: 59%;
-        left: 6.5%;
-
     }
     .pr-links{
+        
         transform: scale(0.8);
-       
     }
+}
+.fp-slidesNav.fp-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -42,8 +42,11 @@
         #ourWork:focus {
             background-position: right;
         }
-        @media (max-width: 350px) {
-            margin-top: 1em;
+        @media (max-width: 450px) {
+            margin-top: 1.2em;
         }
+    }
+    @media (max-width: 450px) {
+        margin-top: 4em;
     }
 }

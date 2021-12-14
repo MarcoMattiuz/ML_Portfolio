@@ -55,6 +55,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: $background-black;
+    overflow-x: hidden;
 
     .fp-tableCell {
         display: flex;
@@ -83,7 +84,6 @@ body {
                 left: 0;
                 top: 0;
                 transform: skewX(0deg);
-                // transform: rotate(-15deg);
             }
         }
         &:nth-of-type(3) {
@@ -111,6 +111,10 @@ body {
     }
 }
 
+.fp-enabled body, html.fp-enabled {
+    overflow-x: hidden !important;
+}
+
 .parallax_title {
     position: absolute;
     z-index: -1;
@@ -124,7 +128,4 @@ body {
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }
 
-.fp-slidesNav.fp-bottom {
-    display: flex;
-    justify-content: center;
-}
+
