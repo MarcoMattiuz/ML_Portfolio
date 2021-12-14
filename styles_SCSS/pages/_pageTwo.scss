@@ -1,4 +1,3 @@
-
 .pr-container {
     width: clamp(75%,50%,calc(45%+5rem));
     max-height: 60%;
@@ -20,9 +19,8 @@
         margin-right: 10%;
         height: 130%;
         max-width: 29rem;
-        box-shadow: 0 0 20px 0 black;
         border-radius: 0.1rem;
-        
+        box-shadow: inset 0 0 20px 0 $background-black;
     }
     .pr-title {
         grid-area: title;
@@ -41,7 +39,6 @@
         grid-area: content;
         font-family: $raleway;
         width: 80%;
-
     }
     .pr-sign {
         grid-area: sign;

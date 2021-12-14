@@ -547,9 +547,9 @@
   margin-right: 10%;
   height: 130%;
   max-width: 29rem;
-  -webkit-box-shadow: 0 0 20px 0 black;
-          box-shadow: 0 0 20px 0 black;
   border-radius: 0.1rem;
+  -webkit-box-shadow: inset 0 0 20px 0 #090910;
+          box-shadow: inset 0 0 20px 0 #090910;
 }
 
 .pr-container .pr-title {
