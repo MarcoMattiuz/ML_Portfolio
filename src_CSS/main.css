@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@750&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@800&family=Quicksand:wght@300&family=Titillium+Web:wght@300&display=swap");
 .circle {
   position: absolute;
   z-index: -1;
@@ -1045,32 +1046,87 @@ body .section {
 body .section:nth-of-type(2) #title-about {
   left: 0;
   top: 0;
-  -webkit-transform: skewX(0deg);
-          transform: skewX(0deg);
 }
 
 body .section:nth-of-type(3) #title-skill {
   left: 0;
   top: 0;
-  -webkit-transform: skewX(0deg);
-          transform: skewX(0deg);
 }
 
 body .section:nth-of-type(4) #title-projects {
   left: 0;
   top: 0;
-  -webkit-transform: skewX(0deg);
-          transform: skewX(0deg);
 }
 
 body .section:nth-of-type(5) #title-contact {
   left: 0;
   top: 0;
-  -webkit-transform: skewX(0deg);
-          transform: skewX(0deg);
 }
 
-.fp-enabled body, html.fp-enabled {
+body .footer {
+  height: 10rem;
+  background: transparent;
+}
+
+body .footer .foot-wrap {
+  height: 100%;
+  width: 83%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .footer .foot-wrap .foot-logo {
+  width: 8rem;
+  margin: 5rem;
+}
+
+body .footer .foot-wrap .emails {
+  margin: 5rem;
+}
+
+body .footer .foot-wrap .emails .mails {
+  font: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.925);
+  margin: 1rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@media (min-width: 2560px) {
+  body .footer .foot-wrap .emails .mails {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body .footer .foot-wrap .emails .mails {
+    font-size: 0.8rem;
+  }
+}
+
+body .footer::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 0.2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 2rem;
+  background-color: rgba(236, 228, 228, 0.925);
+}
+
+.fp-enabled body,
+html.fp-enabled {
   overflow-x: hidden !important;
 }
 

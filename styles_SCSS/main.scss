@@ -8,6 +8,8 @@
 @import "./variables";
 @import "./mixins-functions";
 @import "./webkit-mods";
+
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@800&family=Quicksand:wght@300&family=Titillium+Web:wght@300&display=swap");
 // // // // // // // // //
 // initializing tags //
 // // // // // // // // //
@@ -43,7 +45,7 @@ h5 {
     @include medium-text;
 }
 
-span{
+span {
     background: $background-white !important;
 }
 // // // // // // // // //
@@ -82,36 +84,70 @@ body {
             #title-about {
                 left: 0;
                 top: 0;
-                transform: skewX(0deg);
             }
         }
         &:nth-of-type(3) {
             #title-skill {
                 left: 0;
                 top: 0;
-                
-                transform: skewX(0deg);
             }
         }
         &:nth-of-type(4) {
             #title-projects {
                 left: 0;
                 top: 0;
-                transform: skewX(0deg);
             }
-
         }
         &:nth-of-type(5) {
             #title-contact {
                 left: 0;
                 top: 0;
-                transform: skewX(0deg);
             }
         }
     }
+
+    .footer {
+        height: 10rem;
+        background: transparent;
+
+        .foot-wrap {
+            height: 100%;
+            width: 83%;
+            margin: 0 auto;
+            @include flex-spaceBetwen;
+
+            .foot-logo {
+                width: 8rem;
+                margin: 5rem;
+            }
+
+            .emails {
+                margin: 5rem;
+
+                .mails {
+                    @include small-text;
+                    color: $background-white;
+                    margin: 1rem;
+                    font-family: 'Titillium Web', sans-serif;
+                }
+            }
+        }
+    }
+
+    .footer::before {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 0.2rem;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 2rem;
+        background-color: $background-white;
+    }
 }
 
-.fp-enabled body, html.fp-enabled {
+.fp-enabled body,
+html.fp-enabled {
     overflow-x: hidden !important;
 }
 
@@ -123,7 +159,7 @@ body {
     opacity: 0.8;
     font-size: clamp(11.5rem, 12vw, 20rem);
     white-space: nowrap;
-    
+
     // transform: translateZ(20px);
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }
