@@ -542,7 +542,7 @@
       grid-template-columns: 32rem 50%;
   -ms-grid-rows: 20% 1fr 1fr 1fr;
       grid-template-rows: 20% 1fr 1fr 1fr;
-      grid-template-areas: "img title" "img content" "img sign" "img links";
+      grid-template-areas: "img title" "img content" "img sign" "img links";
 }
 
 .pr-container .pr-img {
@@ -555,15 +555,9 @@
   margin-right: 10%;
   height: 130%;
   max-width: 29rem;
-<<<<<<< HEAD
-  border-radius: 0.1rem;
-  -webkit-box-shadow: inset 0 0 20px 0 #090910;
-          box-shadow: inset 0 0 20px 0 #090910;
-=======
   -webkit-box-shadow: 0 0 20px 0 black;
           box-shadow: 0 0 20px 0 black;
   border-radius: 0.4rem;
->>>>>>> b39ba50b822ec21360a8fb6ec2831fe104e8051d
 }
 
 .pr-container .pr-title {
@@ -671,7 +665,7 @@
         grid-template-columns: 100%;
     -ms-grid-rows: 80% 1fr 1fr 1fr;
         grid-template-rows: 80% 1fr 1fr 1fr;
-        grid-template-areas: "title" "content" "sign" "links";
+        grid-template-areas: "title" "content" "sign" "links";
     padding-left: 0%;
   }
   .pr-title {
