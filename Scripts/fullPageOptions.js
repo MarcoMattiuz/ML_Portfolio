@@ -33,7 +33,7 @@ window.addEventListener("resize", () => {
             scrollBar: false,
             easing: 'easeInOutCubic',
             controlArrows: false,
-            slidesNavigation: true
+            slidesNavigation: trues
         });
 
 

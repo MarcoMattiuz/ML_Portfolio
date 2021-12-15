@@ -1,4 +1,3 @@
-
 .pr-container {
     width: clamp(75%,50%,calc(45%+5rem));
     max-height: 60%;
@@ -41,7 +40,6 @@
         grid-area: content;
         font-family: $raleway;
         width: 80%;
-
     }
     .pr-sign {
         grid-area: sign;

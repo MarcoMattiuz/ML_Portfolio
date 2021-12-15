@@ -30,7 +30,6 @@ li {
     list-style: none;
 }
 
-
 h2,
 h3,
 p {
@@ -90,6 +89,7 @@ body {
             #title-skill {
                 left: 0;
                 top: 0;
+                
                 transform: skewX(0deg);
             }
         }
@@ -127,5 +127,17 @@ body {
     // transform: translateZ(20px);
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }
+
+.fade-in{
+    opacity: 0.25;
+    transform: scale(0.95);
+    transition: all 500ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+    transform: scale(1);
+
+}
+
 
 

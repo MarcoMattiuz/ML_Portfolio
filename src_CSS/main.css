@@ -704,20 +704,6 @@
           align-items: center;
 }
 
-.fade-in {
-  opacity: 0.25;
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  -webkit-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
 .grid-container {
   margin-top: 19rem;
   width: 70%;
@@ -732,6 +718,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-top: clamp(1.5rem, 2vw, 3rem);
 }
 
 .grid-container .element {
@@ -891,7 +878,6 @@
 
 @media (max-width: 950px) {
   .grid-container {
-    margin-bottom: 8em;
     -ms-grid-columns: 80%;
         grid-template-columns: 80%;
     -ms-grid-rows: 1fr;
@@ -905,7 +891,6 @@
 
 @media (max-width: 450px) {
   .grid-container {
-    margin-bottom: 15em;
     width: 80%;
   }
   .grid-container .element {
@@ -1097,5 +1082,19 @@ body .section:nth-of-type(5) #title-contact {
   opacity: 0.8;
   font-size: clamp(11.5rem, 12vw, 20rem);
   white-space: nowrap;
+}
+
+.fade-in {
+  opacity: 0.25;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=main.css.map */
