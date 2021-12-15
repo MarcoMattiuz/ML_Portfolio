@@ -40,4 +40,13 @@
             @include circleBase(29vw,350px);
         }
     }
+    &:nth-child(3){
+        background: linear-gradient(150.08deg, #d02020 -6.53%, #f6df0e 109%);
+        @include circleBase(36vw,480px);
+        margin-left: 70%;
+        margin-top: 40em;
+        .inner-circle{
+            @include circleBase(29vw,350px);
+        }
+    }
 }

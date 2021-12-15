@@ -64,6 +64,23 @@
   min-height: 350px;
 }
 
+.circle:nth-child(3) {
+  background: linear-gradient(150.08deg, #d02020 -6.53%, #f6df0e 109%);
+  width: 36vw;
+  height: 36vw;
+  min-width: 480px;
+  min-height: 480px;
+  margin-left: 70%;
+  margin-top: 40em;
+}
+
+.circle:nth-child(3) .inner-circle {
+  width: 29vw;
+  height: 29vw;
+  min-width: 350px;
+  min-height: 350px;
+}
+
 /****************fonts****************/
 /*************************************/
 /* gradients */
@@ -516,18 +533,6 @@
   background-position: right;
 }
 
-@media (max-width: 450px) {
-  .title-container .ourWork-button {
-    margin-top: 1.2em;
-  }
-}
-
-@media (max-width: 450px) {
-  .title-container {
-    margin-top: 4em;
-  }
-}
-
 .pr-container {
   width: clamp(75%, 50%, calc(45%+5rem));
   max-height: 60%;
@@ -537,7 +542,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 20%;
-  margin-bottom: 3em;
   -ms-grid-columns: 32rem 50%;
       grid-template-columns: 32rem 50%;
   -ms-grid-rows: 20% 1fr 1fr 1fr;
@@ -598,7 +602,7 @@
 @media (max-width: 900px) {
   .pr-container .pr-sign {
     position: absolute;
-    top: 59%;
+    top: 50%;
     left: 6.5%;
   }
 }
@@ -689,7 +693,6 @@
 }
 
 .fp-slidesNav.fp-bottom {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
