@@ -155,7 +155,7 @@ html.fp-enabled {
     position: absolute;
     z-index: -1;
     font-family: $open-Sans;
-    color: $background-white;
+    color: rgba(100, 255, 216, 0.45);
     opacity: 0.8;
     font-size: clamp(11.5rem, 12vw, 20rem);
     white-space: nowrap;
