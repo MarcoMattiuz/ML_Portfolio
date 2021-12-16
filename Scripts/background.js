@@ -23,7 +23,7 @@ window.addEventListener("scroll", a => {
     // title_Skill.style.transform="skewX("+ -0.03*window.scrollY + 'deg'+")";
     // title_projects.style.transform="skewX("+0.01*window.scrollY+ 'deg'+")";
     title_projects.style.left=Math.max(-170 + 0.07  * window.scrollY,-50) + '%';
-    title_contact.style.left=Math.max(+280 - 0.07  * window.scrollY,-50) + '%';
+    title_contact.style.left=Math.max(+350 - 0.07  * window.scrollY,-50) + '%';
     // title_contact.style.transform="skewX("+0.015*window.scrollY+ 'deg'+")";
     console.log(window.scrollY);
 })

@@ -547,7 +547,7 @@
       grid-template-columns: 32rem 50%;
   -ms-grid-rows: 20% 1fr 1fr 1fr;
       grid-template-rows: 20% 1fr 1fr 1fr;
-      grid-template-areas: "img title" "img content" "img sign" "img links";
+      grid-template-areas: "img title" "img content" "img sign" "img links";
 }
 
 .pr-container .pr-img {
@@ -670,7 +670,7 @@
         grid-template-columns: 100%;
     -ms-grid-rows: 80% 1fr 1fr 1fr;
         grid-template-rows: 80% 1fr 1fr 1fr;
-        grid-template-areas: "title" "content" "sign" "links";
+        grid-template-areas: "title" "content" "sign" "links";
     padding-left: 0%;
   }
   .pr-title {
@@ -1078,9 +1078,9 @@ body .footer .foot-wrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .footer .foot-wrap .foot-logo {
@@ -1093,24 +1093,10 @@ body .footer .foot-wrap .emails {
 }
 
 body .footer .foot-wrap .emails .mails {
-  font: "Open Sans", sans-serif;
-  font-size: 0.8rem;
-  color: rgba(236, 228, 228, 0.925);
+  font-size: 1.5rem;
   color: rgba(236, 228, 228, 0.925);
   margin: 1rem;
   font-family: 'Titillium Web', sans-serif;
-}
-
-@media (min-width: 2560px) {
-  body .footer .foot-wrap .emails .mails {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  body .footer .foot-wrap .emails .mails {
-    font-size: 0.8rem;
-  }
 }
 
 body .footer::before {

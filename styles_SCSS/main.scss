@@ -114,7 +114,7 @@ body {
             height: 100%;
             width: 83%;
             margin: 0 auto;
-            @include flex-spaceBetwen;
+            @include flex-center;
 
             .foot-logo {
                 width: 8rem;
@@ -125,7 +125,7 @@ body {
                 margin: 5rem;
 
                 .mails {
-                    @include small-text;
+                    font-size: 1.5rem;
                     color: $background-white;
                     margin: 1rem;
                     font-family: 'Titillium Web', sans-serif;
