@@ -1132,7 +1132,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #090910;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body .fp-tableCell {
@@ -1145,6 +1145,7 @@ body .fp-tableCell {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 body .section {
