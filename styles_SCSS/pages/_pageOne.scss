@@ -10,9 +10,10 @@
     .opening-quote {
         position: relative;
         margin: 1em auto;
-        @include title-text;
-        @include clipBg-ToText;
-        background-image: $title-gradiant;
+        color: $background-white;
+         @include title-text;
+        // @include clipBg-ToText;
+        // background-image: $title-gradiant;
     }
     .sub-quote {
         position: relative;
@@ -46,3 +47,4 @@
     }
     
 }
+
