@@ -501,25 +501,31 @@
 .title-container .opening-quote {
   position: relative;
   margin: 1em auto;
-  color: rgba(236, 228, 228, 0.925);
+}
+
+.title-container .opening-quote .t-text {
   font-family: "Open Sans", sans-serif;
   font-size: 3.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #4d5ecf, #a157d2, #45f0fc, #45f1f7, #45fce1);
 }
 
 @media (max-width: 1150px) {
-  .title-container .opening-quote {
+  .title-container .opening-quote .t-text {
     font-size: 4.9vw;
   }
 }
 
 @media (max-width: 550px) {
-  .title-container .opening-quote {
+  .title-container .opening-quote .t-text {
     font-size: 1.6rem;
   }
 }
 
 @media (max-width: 350px) {
-  .title-container .opening-quote {
+  .title-container .opening-quote .t-text {
     font-size: 1.2rem;
   }
 }
