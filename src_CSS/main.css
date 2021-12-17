@@ -150,23 +150,6 @@
   min-height: 390px;
 }
 
-.circle:nth-child(8) {
-  background: linear-gradient(150.08deg, #f76015 -6.53%, #e032ec 109%, #693ce4 109%);
-  width: 36vw;
-  height: 36vw;
-  min-width: 480px;
-  min-height: 480px;
-  margin-left: 70%;
-  margin-top: 225em;
-}
-
-.circle:nth-child(8) .inner-circle {
-  width: 29vw;
-  height: 29vw;
-  min-width: 350px;
-  min-height: 350px;
-}
-
 /****************fonts****************/
 /*************************************/
 /* gradients */
@@ -985,6 +968,61 @@
   }
 }
 
+input {
+  outline: none;
+  border: none;
+  background: #312f2fdc;
+  padding: 1.5em;
+  margin-bottom: 1rem;
+  width: 90%;
+  border-radius: 0.7em;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+  background: #312f2fdc;
+  padding: 1.5em;
+  width: 5rem;
+  width: 90%;
+  border-radius: 0.7em;
+  resize: none;
+}
+
+button {
+  border: none;
+}
+
+.contact-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: clamp(60rem, 30rem, 10rem);
+  margin: 3rem;
+  margin-top: 8vh;
+}
+
+.contact-form .submit {
+  display: block;
+  position: relative;
+  margin: 1.5rem auto;
+  padding: 1.5em;
+  border-radius: 0.7em;
+  background-image: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
+  background-size: 200%;
+  background-position: right;
+  -webkit-transition: background-position 0.7s;
+  transition: background-position 0.7s;
+  color: rgba(236, 228, 228, 0.925);
+  font-size: calc(0.7vw+1rem);
+}
+
+.contact-form .submit:hover,
+.contact-form .submit:focus {
+  background-position: left;
+}
+
 /****************fonts****************/
 /*************************************/
 /* gradients */
@@ -1149,8 +1187,7 @@ body .section:nth-of-type(5) #title-contact {
 }
 
 body .footer {
-  height: 10rem;
-  background: transparent;
+  height: 10vh;
 }
 
 body .footer .foot-wrap {
@@ -1180,6 +1217,7 @@ body .footer .foot-wrap .emails {
 body .footer .foot-wrap .emails .mails {
   font-size: 1.5rem;
   color: rgba(236, 228, 228, 0.925);
+  opacity: 0.6;
   margin: 1rem;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -1194,6 +1232,7 @@ body .footer::before {
           transform: translate(-50%);
   border-radius: 2rem;
   background-color: rgba(236, 228, 228, 0.925);
+  opacity: 0.6;
 }
 
 .fp-enabled body,
