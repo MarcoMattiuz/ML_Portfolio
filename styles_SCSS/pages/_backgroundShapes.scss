@@ -88,10 +88,10 @@
     &:nth-child(8){
         background: linear-gradient(150.08deg,#f76015 -6.53%, #e032ec 109%,#693ce4 109%);
         @include circleBase(36vw,480px);
-        margin-left: 70%;
+        margin-left: 60%;
         margin-top: 225em;
         .inner-circle{
-            @include circleBase(29vw,350px);
+            @include circleBase(29vw,370px);
         }
     }
 }

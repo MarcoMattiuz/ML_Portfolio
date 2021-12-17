@@ -156,15 +156,15 @@
   height: 36vw;
   min-width: 480px;
   min-height: 480px;
-  margin-left: 70%;
+  margin-left: 60%;
   margin-top: 225em;
 }
 
 .circle:nth-child(8) .inner-circle {
   width: 29vw;
   height: 29vw;
-  min-width: 350px;
-  min-height: 350px;
+  min-width: 370px;
+  min-height: 370px;
 }
 
 /****************fonts****************/
@@ -422,6 +422,7 @@
     font: "Open Sans", sans-serif;
     font-size: 0.9rem;
     color: rgba(236, 228, 228, 0.925);
+    font-size: 1rem;
   }
   .hamburger-menu-container .links-container1 .contact-button1 {
     width: 75%;
