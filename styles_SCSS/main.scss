@@ -4,6 +4,8 @@
 @import "./pages/pageOne";
 @import "./pages/pageTwo";
 @import "./pages/pageThree";
+@import "./pages/pageFive";
+
 
 @import "./variables";
 @import "./mixins-functions";
@@ -56,12 +58,14 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: $background-black;
-    overflow-x: hidden;
+    overflow: hidden;
+    // overflow-y: hidden;
 
     .fp-tableCell {
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
 
     .section {
@@ -107,14 +111,13 @@ body {
     }
 
     .footer {
-        height: 10rem;
-        background: transparent;
+        height: 10vh;
 
         .foot-wrap {
             height: 100%;
             width: 83%;
             margin: 0 auto;
-            @include flex-spaceBetwen;
+            @include flex-center;
 
             .foot-logo {
                 width: 8rem;
@@ -125,8 +128,9 @@ body {
                 margin: 5rem;
 
                 .mails {
-                    @include small-text;
+                    font-size: 1.5rem;
                     color: $background-white;
+                    opacity: 0.6;
                     margin: 1rem;
                     font-family: 'Titillium Web', sans-serif;
                 }
@@ -143,6 +147,7 @@ body {
         transform: translate(-50%);
         border-radius: 2rem;
         background-color: $background-white;
+        opacity: 0.6;
     }
 }
 

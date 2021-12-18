@@ -1,0 +1,54 @@
+input {
+    outline: none;
+    border: none;
+    background: #312f2fdc;
+    padding: 1.5em;
+    margin-bottom: 1rem;
+    width: 90%;
+    border-radius: $standard-radius;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+    background: #312f2fdc;
+    padding: 1.5em;
+    width: 5rem;
+    width: 90%;
+    border-radius: $standard-radius;
+    resize: none;
+}
+
+button{
+    border: none;
+}
+.contact-form {
+    // display: grid;
+  
+    justify-content: center;
+    width: clamp(60rem,30rem,10rem);
+    margin: 3rem;
+    margin-top: 8vh;
+
+    .submit{
+        display: block;
+        position: relative;
+        margin: 1.5rem auto;
+        padding: 1.5em;
+        border-radius: $standard-radius;
+        background-image: $buttons-gradient;
+        background-size: 200%;
+        background-position: right;
+        transition: background-position 0.7s;
+
+        color: $background-white;
+        font-size: calc(0.7vw+1rem);
+    }
+
+    .submit:hover,
+    .submit:focus{
+        background-position: left;
+    }
+}
+
