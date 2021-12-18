@@ -28,7 +28,7 @@
         position: relative;
         @include flex-center;
         justify-content: center;
-        margin-top: clamp(3em,5vw,6em);
+        margin-top: clamp(2.5em,5vw,6em);
 
         #ourWork {
             @include buttonBig-text;

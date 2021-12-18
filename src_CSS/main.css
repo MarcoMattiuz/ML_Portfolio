@@ -174,8 +174,8 @@
 @media (max-width: 750px) {
   .header {
     height: 2em;
-    -webkit-box-shadow: 0.1em 0.1em 1em 1em #090910;
-            box-shadow: 0.1em 0.1em 1em 1em #090910;
+    -webkit-box-shadow: 0.1em 0.1em #090910;
+            box-shadow: 0.1em 0.1em #090910;
   }
 }
 
@@ -200,10 +200,17 @@
           box-shadow: 0.5em 0.5em 4em 4em #090910;
 }
 
+@media (max-width: 750px) {
+  .header .nav-bar {
+    -webkit-box-shadow: 0.1em 0.1em 1.5em 2em #090910;
+            box-shadow: 0.1em 0.1em 1.5em 2em #090910;
+  }
+}
+
 .header .nav-bar .logo {
-  width: clamp(4.4em, 7vw, 8em);
+  width: clamp(4.4em, 7vw, 7.1em);
   height: auto;
-  margin-left: 2em;
+  margin-left: clamp(1em, 2vw, 2.5em);
 }
 
 .header .nav-bar .links-container {
@@ -304,7 +311,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 2.5em;
+    margin-right: clamp(1.5em, 2vw, 2.5em);
     width: 2.5em;
     height: 2em;
     cursor: pointer;
@@ -519,7 +526,7 @@
 
 @media (max-width: 350px) {
   .title-container .opening-quote .t-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -561,7 +568,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   justify-content: center;
-  margin-top: clamp(3em, 5vw, 6em);
+  margin-top: clamp(2.5em, 5vw, 6em);
 }
 
 .title-container .ourWork-button #ourWork {

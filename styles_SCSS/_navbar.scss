@@ -11,7 +11,7 @@
 
    @media (max-width: 750px) {
         height: 2em;
-        box-shadow: 0.1em 0.1em 1em 1em $background-black;
+        box-shadow: 0.1em 0.1em $background-black;
         }
         
     .nav-bar {
@@ -24,11 +24,13 @@
         margin-left: 1em;
         margin-right: 1em;
         box-shadow: 0.5em 0.5em 4em 4em $background-black;
-        
+            @media (max-width: 750px) {
+            box-shadow: 0.1em 0.1em 1.5em 2em $background-black;
+            }
         .logo {
-            width:clamp(4.4em,7vw,8em);
+            width:clamp(4.4em,7vw,7.1em);
             height:auto;
-            margin-left: 2em;
+            margin-left: clamp(1em,2vw,2.5em);
            
         }
         .links-container {
@@ -98,7 +100,7 @@
                 display: block;
                 position: relative;
                 @include flex-center;
-                margin-right:2.5em;
+                margin-right: clamp(1.5em,2vw,2.5em);
                 width: 2.5em;
                 height: 2em;
                 cursor: pointer;
