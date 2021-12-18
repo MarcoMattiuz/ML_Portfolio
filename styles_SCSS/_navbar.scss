@@ -11,7 +11,6 @@
 
    @media (max-width: 750px) {
         height: 2em;
-        box-shadow: 0.1em 0.1em $background-black;
         }
         
     .nav-bar {
@@ -23,7 +22,7 @@
         z-index: 1;
         margin-left: 1em;
         margin-right: 1em;
-        box-shadow: 0.5em 0.5em 4em 4em $background-black;
+        box-shadow: 0.1em 0.1em 2em 3em $background-black;
             @media (max-width: 750px) {
             box-shadow: 0.1em 0.1em 1.5em 2em $background-black;
             }
@@ -171,7 +170,7 @@
             justify-content: start;
             align-items: center;
             flex-direction: column;
-            margin-top: 8em;
+            margin-top: 7em;
             
             p{
                 @include navbar-text;
@@ -197,7 +196,7 @@
                 width: 75% ;
                 margin:0.3em;
                 border-radius: $standard-radius;
-                padding: 1.3em ;
+                padding: 0.7em;
                 @include flex-center;
                 background: linear-gradient(90deg,rgba(158, 157, 157, 0.199),$background-black,$background-black );
                 background-size: 150%;
