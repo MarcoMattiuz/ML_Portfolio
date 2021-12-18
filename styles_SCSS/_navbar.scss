@@ -196,7 +196,7 @@
                 width: 75% ;
                 margin:0.3em;
                 border-radius: $standard-radius;
-                padding: 0.7em;
+                padding: 1.2em;
                 @include flex-center;
                 background: linear-gradient(90deg,rgba(158, 157, 157, 0.199),$background-black,$background-black );
                 background-size: 150%;
@@ -209,7 +209,7 @@
             .menu-icons{
                 @include flex-center;
                 img{
-                    margin: 6em 1em 0 1em ;
+                    margin: 4em 1em 0 1em ;
                     width: 40%; height: auto; 
                     transition: all 100ms ease-in;
 

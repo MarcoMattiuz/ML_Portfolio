@@ -431,7 +431,7 @@
     width: 75%;
     margin: 0.3em;
     border-radius: 0.7em;
-    padding: 0.7em;
+    padding: 1.2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -463,7 +463,7 @@
             justify-content: center;
   }
   .hamburger-menu-container .links-container1 .menu-icons img {
-    margin: 6em 1em 0 1em;
+    margin: 4em 1em 0 1em;
     width: 40%;
     height: auto;
     -webkit-transition: all 100ms ease-in;
