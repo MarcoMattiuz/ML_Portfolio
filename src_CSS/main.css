@@ -1210,20 +1210,23 @@ body .footer .foot-wrap {
 }
 
 body .footer .foot-wrap .foot-logo {
-  width: 8rem;
+  width: 5rem;
   margin: 5rem;
+  opacity: 0.6;
+  margin-right: 10%;
 }
 
 body .footer .foot-wrap .emails {
   margin: 5rem;
+  margin-left: 10%;
 }
 
 body .footer .foot-wrap .emails .mails {
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   color: rgba(236, 228, 228, 0.925);
   opacity: 0.6;
-  margin: 1rem;
-  font-family: 'Titillium Web', sans-serif;
+  margin: 0.1rem;
+  font-family: "Titillium Web", sans-serif;
 }
 
 body .footer::before {

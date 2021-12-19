@@ -6,7 +6,6 @@
 @import "./pages/pageThree";
 @import "./pages/pageFive";
 
-
 @import "./variables";
 @import "./mixins-functions";
 @import "./webkit-mods";
@@ -120,19 +119,22 @@ body {
             @include flex-center;
 
             .foot-logo {
-                width: 8rem;
+                width: 5rem;
                 margin: 5rem;
+                opacity: 0.6;
+                margin-right: 10%;
             }
 
             .emails {
                 margin: 5rem;
+                margin-left: 10%;
 
                 .mails {
-                    font-size: 1.5rem;
+                    font-size: 0.8rem;
                     color: $background-white;
                     opacity: 0.6;
-                    margin: 1rem;
-                    font-family: 'Titillium Web', sans-serif;
+                    margin: 0.1rem;
+                    font-family: "Titillium Web", sans-serif;
                 }
             }
         }
@@ -169,16 +171,12 @@ html.fp-enabled {
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }
 
-.fade-in{
+.fade-in {
     opacity: 0.25;
     transform: scale(0.95);
     transition: all 500ms ease-in;
 }
-.fade-in.appear{
+.fade-in.appear {
     opacity: 1;
     transform: scale(1);
-
 }
-
-
-
