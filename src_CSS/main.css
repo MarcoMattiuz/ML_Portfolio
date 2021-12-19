@@ -1142,7 +1142,8 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #090910;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body .fp-tableCell {
