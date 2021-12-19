@@ -617,7 +617,7 @@
       grid-template-columns: 32rem 50%;
   -ms-grid-rows: 20% 1fr 1fr 1fr;
       grid-template-rows: 20% 1fr 1fr 1fr;
-      grid-template-areas: "img title" "img content" "img sign" "img links";
+      grid-template-areas: "img title" "img content" "img sign" "img links";
 }
 
 .pr-container .pr-img {
@@ -740,7 +740,7 @@
         grid-template-columns: 100%;
     -ms-grid-rows: 80% 1fr 1fr 1fr;
         grid-template-rows: 80% 1fr 1fr 1fr;
-        grid-template-areas: "title" "content" "sign" "links";
+        grid-template-areas: "title" "content" "sign" "links";
     padding-left: 0%;
   }
   .pr-title {
@@ -830,7 +830,7 @@
 }
 
 .grid-container .element:nth-of-type(1) {
-  background-image: linear-gradient(145.59deg, #1861EF -0.9%, #27E85C 103.96%, #27e8de 103.96%);
+  background-image: linear-gradient(145.59deg, #1861ef -0.9%, #27e85c 103.96%, #27e8de 103.96%);
   background-size: 170%;
   background-position: left bottom;
   -webkit-transform-origin: center;
@@ -842,7 +842,7 @@
 }
 
 .grid-container .element:nth-of-type(2) {
-  background: linear-gradient(144.35deg, #274B74 1.73%, #8233C5 58.54%, #E963FD 104.42%);
+  background: linear-gradient(144.35deg, #274b74 1.73%, #8233c5 58.54%, #e963fd 104.42%);
   background-size: 200%;
   background-position-x: right;
   background-position-y: top;
@@ -854,7 +854,7 @@
 }
 
 .grid-container .element:nth-of-type(3) {
-  background: linear-gradient(150.08deg, #879AF2 -6.53%, #D3208B 51.52%, #FDA000 109%);
+  background: linear-gradient(150.08deg, #879af2 -6.53%, #d3208b 51.52%, #fda000 109%);
   background-size: 220%;
   background-position-x: right;
   background-position-y: bottom;
@@ -866,7 +866,7 @@
 }
 
 .grid-container .element:nth-of-type(4) {
-  background: linear-gradient(150.08deg, #D03E20 -6.53%, #F6CE0E 109%);
+  background: linear-gradient(150.08deg, #d03e20 -6.53%, #f6ce0e 109%);
   background-size: 200%;
   background-position-x: left;
   background-position-y: top;
@@ -878,7 +878,7 @@
 }
 
 .grid-container .element:nth-of-type(5) {
-  background: linear-gradient(150.08deg, #CFDE38 -6.53%, #3ACC9C 49.24%, #3A74CC 109%);
+  background: linear-gradient(150.08deg, #cfde38 -6.53%, #3acc9c 49.24%, #3a74cc 109%);
   background-size: 200%;
   background-position-x: left;
   background-position-y: bottom;
@@ -890,7 +890,7 @@
 }
 
 .grid-container .element:nth-of-type(6) {
-  background: linear-gradient(150.08deg, #363553 -6.53%, #722D89 46.42%, #E8458B 109%);
+  background: linear-gradient(150.08deg, #363553 -6.53%, #722d89 46.42%, #e8458b 109%);
   background-size: 200%;
   background-position-x: right;
   background-position-y: top;
@@ -902,7 +902,7 @@
 }
 
 .grid-container .element:nth-of-type(7) {
-  background: linear-gradient(150.08deg, #5C2774 -6.53%, #335CC5 57.33%, #637FFD 109%);
+  background: linear-gradient(150.08deg, #5c2774 -6.53%, #335cc5 57.33%, #637ffd 109%);
   background-size: 200%;
   background-position-x: left;
   background-position-y: bottom;
@@ -914,7 +914,7 @@
 }
 
 .grid-container .element:nth-of-type(8) {
-  background: linear-gradient(150.08deg, #F02FC2 -6.53%, #6094EA 70.54%, #37A2B0 109%);
+  background: linear-gradient(150.08deg, #f02fc2 -6.53%, #6094ea 70.54%, #37a2b0 109%);
   background-size: 200%;
   background-position-x: right;
   background-position-y: top;
@@ -926,7 +926,7 @@
 }
 
 .grid-container .element:nth-of-type(9) {
-  background: linear-gradient(150.08deg, #F17B41 -6.53%, #CB73D2 109%, #8c73d2 109%);
+  background: linear-gradient(150.08deg, #f17b41 -6.53%, #cb73d2 109%, #8c73d2 109%);
   background-size: 200%;
   background-position-x: right;
   background-position-y: top;
@@ -978,6 +978,7 @@ input {
   margin-bottom: 1rem;
   width: 90%;
   border-radius: 0.7em;
+  color: rgba(236, 228, 228, 0.925);
 }
 
 textarea {
@@ -990,10 +991,17 @@ textarea {
   width: 90%;
   border-radius: 0.7em;
   resize: none;
+  color: rgba(236, 228, 228, 0.925);
 }
 
 button {
   border: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
 
 .contact-form {

@@ -6,6 +6,7 @@ input {
     margin-bottom: 1rem;
     width: 90%;
     border-radius: $standard-radius;
+    color: $background-white;
 }
 
 textarea {
@@ -18,10 +19,23 @@ textarea {
     width: 90%;
     border-radius: $standard-radius;
     resize: none;
+    color: $background-white;
 }
 
 button{
     border: none;
+}
+
+// input:-internal-autofill-selected {
+//     appearance: menulist-button;
+//     background-image: none !important;
+//     background-color: -internal-light-dark(rgb(24, 103, 240), rgba(70, 90, 126, 0.4)) !important;
+//     color: -internal-light-dark(black, white) !important;
+// }
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
 }
 .contact-form {
     // display: grid;
