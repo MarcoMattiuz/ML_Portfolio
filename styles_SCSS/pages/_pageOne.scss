@@ -6,7 +6,7 @@
     text-align: center;
     margin-left: 3em;
     margin-right: 3em;
-
+    margin-top: clamp(4em,5vw,6em);
     .opening-quote {
         position: relative;
         margin: 1em auto;
@@ -28,7 +28,7 @@
         position: relative;
         @include flex-center;
         justify-content: center;
-        margin-top: 4em;
+        margin-top: clamp(2.5em,5vw,6em);
 
         #ourWork {
             @include buttonBig-text;
