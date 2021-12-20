@@ -972,7 +972,8 @@
 
 .emb-game {
   width: 60%;
-  overflow: hidden;
+  height: 70%;
+  border-radius: 20px;
 }
 
 input {
@@ -1139,6 +1140,10 @@ h5 {
 
 span {
   background: rgba(236, 228, 228, 0.925) !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
