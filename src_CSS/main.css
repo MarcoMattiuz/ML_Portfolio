@@ -592,14 +592,6 @@
   color: white;
 }
 
-<<<<<<< HEAD
-.carousel #about {
-  left: -250px;
-  top: -150px;
-}
-
-=======
->>>>>>> 60ec3b08baf646e4d72427ee53c2ac9b63b26e44
 @media (max-width: 750px) {
   .carousel_content {
     background-color: red;
