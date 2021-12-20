@@ -970,6 +970,11 @@
   }
 }
 
+.emb-game {
+  width: 60%;
+  overflow: hidden;
+}
+
 input {
   outline: none;
   border: none;
