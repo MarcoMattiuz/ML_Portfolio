@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- we haven't used bootstrap / tailwind beacue we hate ourself -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts/hamburgerMenu.js"></script>
-    <!-- <script src="scripts/background.js"></script> -->
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- font awesome link -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <!-- main css  -->
     <link rel="stylesheet" href="src_CSS/main.css" />
-    <title>ML-Portfolio</title>
+    <!-- fullPage.js css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+    />
+    <link rel="icon" href="images/faviIcon.png">
+    <title>ML-Page | By Marco&Lorenzo</title>
   </head>
   <body>
     <!-- navigation bar -->
@@ -26,12 +35,14 @@
         </div>
 
         <div class="links-container">
-          <a href="#start" class="links" id="home"><p>Home</p></a>
-          <a href="#" class="links" id="about"><p>About us</p></a>
-          <a href="#" class="links" id="projects"><p>Projects</p></a>
+          <a href="#section1" class="links" id="home"><p>Home</p></a>
+          <a href="#section2" class="links" id="about"><p>About us</p></a>
+          <a href="/root/BallGameML/index.html" class="links" id="projects"
+            ><p>Projects</p></a
+          >
 
           <div id="contactButton" class="contact-button">
-            <a href="#" id="contact"><p>Contact us</p></a>
+            <a href="#section5" id="contact"><p>Contact us</p></a>
           </div>
         </div>
         <div class="hamburger-menu">
@@ -65,171 +76,295 @@
       </div>
     </div>
 
-    <!-- section 1 -->
-    <section class="nm-section">
-      <img
-        src="images/semi-left-circle.svg"
-        class="decorative_circle"
-        id="top-left"
-        alt="cerchio"
-      />
+    <!-- --------------------------------------- -->
 
-      <!--
-      <img
-        src="images/circle2.svg"
-        class="decorative_circle"
-        id="bottom-right"
-        alt="cerchio"
-      /> -->
-      <!-- ---------------------------------  -->
-      <div class="title-container">
-        <div class="opening-quote" id="start">
-          <h1>" true knowledge exists</h1>
-          <h1>in knowing that you</h1>
-          <h1>know nothing."</h1>
-        </div>
-        <h5 class="sub-quote">
-          We are two students... And we are working on it :)
-        </h5>
-        <div class="ourWork-button">
-          <a href="#" id="ourWork"><h6>Our work</h6></a>
+    <!-- <div id="fullPage"> -->
+      <!-- 
+      <div class="circle">
+        <div class="inner-circle">
         </div>
       </div>
-      <!-- ---------------------------------  -->
-    </section>
-
-    <!-- seciton 2 -->
-    <section class="nm-section">
-      <h1 class="parallax_title" id="about">ABOUT</h1>
-      <div class="carousel">
-        <button class="carousel_button carousel_button--left">
-          <i class="fas fa-caret-left fa-7x"></i>
-        </button>
-        <div class="carousel_track-container">
-          <ul class="carousel_track">
-            <li class="carousel_slide current-slide">
-              <div class="carousel_content">
-                <div class="carousel_img--container">
-                  <img
-                    src="https://source.unsplash.com/random"
-                    class="carousel_image"
-                    alt=""
-                  />
-                </div>
-
-                <h2 class="carousel_title">Hi I'm Marco</h2>
-                <p class="carousel_pr">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                  asperiores facilis veniam incidunt atque consectetur enim
-                  accusantium perferendis Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. In, asperiores facilis veniam incidunt atque
-                  consectetur enim accusantium perferendis suscipit nobis! Lorem
-                  ipsum dolor sit amet, consectetur adipisicing elit. Dicta quis
-                  autem fugiat facere accusantium magni exercitationem, beatae
-                  ipsam perferendis at neque reiciendis eos soluta molestias
-                  nobis et quam minus! Nesciunt cumque dolores quisquam hic
-                  obcaecati nulla repellendus, doloribus dolor deserunt?
-                </p>
-
-                <ul class="carousel_links">
-                  <li class="link">
-                    <i class="fab fa-instagram fa-2x"></i>
-                  </li>
-                  <li class="link"><i class="fab fa-github fa-2x"></i></li>
-                  <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
-                </ul>
-              </div>
-            </li>
-            <li class="carousel_slide">
-              <div class="carousel_content">
-                <div class="carousel_img--container">
-                  <img
-                    src="https://source.unsplash.com/random"
-                    class="carousel_image"
-                    alt=""
-                  />
-                </div>
-
-                <h2 class="carousel_title">Hi I'm Lorenzo</h2>
-                <p class="carousel_pr">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
-                  asperiores facilis veniam incidunt atque consectetur enim
-                  accusantium perferendis suscipit nobis! Lorem ipsum dolor sit
-                  amet, consectetur adipisicing elit. Dicta quis autem fugiat
-                  facere accusantium magni exercitationem, beatae ipsam
-                  perferendis at neque reiciendis eos soluta molestias nobis et
-                  quam minus! Nesciunt cumque dolores quisquam hic obcaecati
-                  nulla repellendus, doloribus dolor deserunt?
-                </p>
-                <ul class="carousel_links">
-                  <li class="link">
-                    <i class="fab fa-instagram fa-2x"></i>
-                  </li>
-                  <li class="link"><i class="fab fa-github fa-2x"></i></li>
-                  <li class="link"><i class="fab fa-codepen fa-2x"></i></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <button class="carousel_button carousel_button--right">
-          <i class="fas fa-caret-right fa-7x"></i>
-        </button>
-        <div class="carousel_nav">
-          <button class="carousel_indicator current-indicator"></button>
-          <button class="carousel_indicator"></button>
+      <div class="circle">
+        <div class="inner-circle">
         </div>
       </div>
-      <script src="scripts/slideShow.js"></script>
-    </section>
-    <!-- section 3 -->
-    <section class="nm-section">
-      <h1 class="parallax_title" id="skill">SKILLS</h1>
-      <!-- ---------------------------- -->
-      <div class="grid-container">
-        <div class="element">
-          <h3 class="inner-title">html</h3>
-          <p class="sml-desc">4/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">figma</h3>
-          <p class="sml-desc">3/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">scss</h3>
-          <p class="sml-desc">3/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">js</h3>
-          <p class="sml-desc">2/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">php</h3>
-          <p class="sml-desc">1/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">java</h3>
-          <p class="sml-desc">3/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">unity</h3>
-          <p class="sml-desc">2/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">Git</h3>
-          <p class="sml-desc">3/5</p>
-        </div>
-        <div class="element">
-          <h3 class="inner-title">Solidity</h3>
-          <p class="sml-desc">2/5</p>
+      <div class="circle">
+        <div class="inner-circle">
         </div>
       </div>
-    </section>
-    <section class="nm-section">
-      <h1 class="parallax_title" id="projects">PROJECTS</h1>
-    </section>
-    <section class="nm-section">
-      <h1 class="parallax_title" id="contact">CONTACT US</h1>
-    </section>
+      <div class="circle">
+        <div class="inner-circle">
+        </div>
+      </div>
+      <div class="circle">
+        <div class="inner-circle">
+        </div>
+      </div>
+      <div class="circle">
+        <div class="inner-circle">
+        </div>
+      </div>
+      <div class="circle">
+        <div class="inner-circle">
+        </div>
+      </div>
+      <div class="circle">
+        <div class="inner-circle">
+        </div>
+      </div> -->
+      <section class="section">
+        <div class="title-container">
+          <div class="opening-quote">
+            <h1 class="t-text">" true knowledge exists</h1>
+            <h1 class="t-text">in knowing that you</h1>
+            <h1 class="t-text">know nothing."</h1>
+          </div>
+          <h5 class="sub-quote">
+            We are two students... And we are working on it :)
+          </h5>
+          <div class="ourWork-button">
+            <a href="#" id="ourWork"><h6>Our work</h6></a>
+          </div>
+        </div>
+
+        
+        <!-- ---------------------------------  -->
+      </section>
+
+      <!-- seciton 2 -->
+      <section class="section">
+        <h1 class="parallax_title" id="title-about">ABOUT</h1>
+<!-- 
+        <div class="slide fade-in">
+          <div class="pr-container">
+            <div class="pr-img"></div>
+            <h2 class="pr-title">I'm Marco</h2>
+            <p class="pr-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio,
+              in?fsipsum, dolor sit ameghfkhgjkng elit. Aperiam, deserunt?
+              in?Lsdfgm ipsum, doldfgdgf adipisicing elit. Aperiam, deserunt?
+            </p>
+            <img src="images/testSign.png" alt="marco's sign" class="pr-sign" />
+
+            <ul class="pr-links">
+              <li class="link">
+                <a href="http://"> <i class="fab fa-instagram fa-2x"></i> </a>
+              </li>
+              <li class="link">
+                <a href="http://"> <i class="fab fa-github fa-2x"></i> </a>
+              </li>
+              <li class="link">
+                <a href="http://"> <i class="fab fa-codepen fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide fade-in">
+          <div class="pr-container">
+            <div class="pr-img"></div>
+            <h2 class="pr-title">I'm Lorenzo</h2>
+            <p class="pr-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio,
+              in?Lorem ipsum, dolor sit amet Lorem, ipsum. consectetur
+              adipisicing elit. Aperiam, deserunt?
+            </p>
+            <img
+              src="images/testSign.png"
+              alt="lorenzo's sign"
+              class="pr-sign"
+            />
+            <ul class="pr-links">
+              <li class="link">
+                <a href="http://"> <i class="fab fa-instagram fa-2x"></i> </a>
+              </li>
+              <li class="link">
+                <a href="http://"> <i class="fab fa-github fa-2x"></i> </a>
+              </li>
+              <li class="link">
+                <a href="http://"> <i class="fab fa-codepen fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </section>
+      <!-- section 3 -->
+
+      <h1 class="parallax_title" id="title-skill">SKILLS</h1>
+      <section class="section">
+        <!-- ---------------------------- -->
+        <div class="grid-container fade-in">
+          <div
+            if="firstElement"
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">html</h3>
+            <p class="sml-desc">
+              don't really what to say, it's html you know...
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">figma</h3>
+            <p class="sml-desc">
+              we like immagining things, figma is the place were we can "make it
+              real"
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">scss</h3>
+            <p class="sml-desc">
+              Sometimes css can be a bit unpleasant, scss/sass help us to
+              maintain a good ralationship whit it
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">js</h3>
+            <p class="sml-desc">This is our favorite part :)</p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">php</h3>
+            <p class="sml-desc">I like to collect some data sometimes</p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">java</h3>
+            <p class="sml-desc">
+              We are studing it at school, and we really like it
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">unity</h3>
+            <p class="sml-desc">
+              Certanly a powerfull tool, maybe in some weak hands
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">Git/Github</h3>
+            <p class="sml-desc">
+              We like collaborating, git let us do exactely that
+            </p>
+          </div>
+          <div
+            class="element"
+            data-tilt
+            data-tilt-scale="1.08"
+            data-tilt-transition="true"
+          >
+            <h3 class="inner-title">Solidity</h3>
+            <p class="sml-desc">
+              Blockchain is the future, we are working on it
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- section 4 -->
+
+      <section class="section">
+        <h1 class="parallax_title" id="title-projects">PROJECTS</h1>
+      </section>
+
+      <!-- section 5 -->
+      <section class="section">
+        <h1 class="parallax_title" id="title-contact">CONTACT US</h1>
+
+        <form
+          action="https://formsubmit.co/67c4adfc0f02525412a9a2111a593a54"
+          method="POST"
+          class="contact-form"
+        >
+          <input type="hidden" name="_next" value="https://elegant-heisenberg-16e7cf.netlify.app/pages/thanksYouPage.html">
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank you for reaching to us!"
+          />
+          <input type="hidden" name="_template" value="table" />
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            class="ct-name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+          <textarea
+            placeholder="Your Message"
+            class="form-control"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+
+          <button type="submit" class="submit">Send Message</button>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <div class="foot-wrap">
+          <img src="images/logoML_site.png" alt="logo" class="foot-logo" />
+
+          <div class="emails">
+            <p class="mails">marccs35@gmail.com</p>
+            <p class="mails">lorenzobo@gmail.com</p>
+          </div>
+        </div>
+      </footer>
+    <!-- </div> -->
+
+    <!-- fullPage.js CDN -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script> -->
+    <!-- fullPage.js config file -->
+    <!-- <script src="scripts/fullPageOptions.js"></script> -->
+    <!-- background.js script  -->
+    <script src="scripts/background.js"></script>
+    <!-- pagethree script  -->
+    <script src="scripts/pageThree.js"></script>
+    <!-- hamburger menu script  -->
+    <script src="scripts/hamburgerMenu.js"></script>
+    <!-- tilt.js library link  -->
+    <script src="assets/tilt.jquery.js"></script>
   </body>
 </html>

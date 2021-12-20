@@ -1,0 +1,97 @@
+@mixin circleBase ($size,$minSize){
+    width:$size;
+    height: $size;
+    min-width: $minSize;
+    min-height: $minSize;
+}
+
+.circle{
+    position:absolute;
+    z-index: -1;
+    border-radius: 50%;
+    display:flex;
+    opacity: 0.8;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    @media (max-width: 750px) {
+        opacity: 0.6;
+    }
+    .inner-circle{
+        position:absolute;
+        border-radius: 50%;
+        background: hsl(240, 26%, 5%);
+     
+    }
+    &:nth-child(1){
+        background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
+        @include circleBase(33vw,450px);
+        margin-left: -8em;
+        .inner-circle{
+            @include circleBase(27vw,380px);
+        }
+    }
+    &:nth-child(2){
+        background: linear-gradient(150.08deg, #d02020 4.53%, #f6df0e 109%);
+        @include circleBase(36vw,480px);
+        margin-left: 70%;
+        margin-top: 15em;
+        .inner-circle{
+            @include circleBase(29vw,350px);
+        }
+    }
+    &:nth-child(3){
+        background: linear-gradient(180.08deg,  #b320d0 -6.53%, #0ee7f6 109%);
+        @include circleBase(46vw,480px);
+        margin-left: -19%;
+        margin-top: 45em;
+        .inner-circle{
+            @include circleBase(39vw,380px);
+        }
+    }
+    &:nth-child(4){
+        background: linear-gradient(100.08deg, #efcf18 10%, #27dbe8 );
+        @include circleBase(36vw,480px);
+        margin-left: 70%;
+        margin-top: 83em;
+        .inner-circle{
+            @include circleBase(29vw,370px);
+        }
+    }
+    &:nth-child(5){
+        background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
+        @include circleBase(37vw,490px);
+        margin-left: -10em;
+        margin-top: 125em;
+        .inner-circle{
+            @include circleBase(30vw,390px);
+        }
+    }
+    &:nth-child(6){
+        background: linear-gradient(150.08deg, #8822b8, #8333c5 , #1c44f7 );
+        @include circleBase(36vw,480px);
+        margin-left: 70%;
+        margin-top: 160em;
+        .inner-circle{
+            @include circleBase(29vw,350px);
+        }
+    }
+    &:nth-child(7){
+        background: linear-gradient(180.59deg, #879AF2 -6.53%, #D3208B 51.52%, #FDA000 109%);
+        @include circleBase(37vw,490px);
+        margin-left: -10em;
+        margin-top: 190em;
+        .inner-circle{
+            @include circleBase(30vw,390px);
+        }
+    }
+    // &:nth-child(8){
+    //     // background: linear-gradient(150.08deg,#f76015 -6.53%, #e032ec 109%,#693ce4 109%);
+    //     @include circleBase(36vw,480px);
+    //     margin-left: 70%;
+    //     margin-top: 225em;
+    //     .inner-circle{
+    //         @include circleBase(29vw,350px);
+    //     }
+    // }
+}

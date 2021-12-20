@@ -1,95 +1,172 @@
 .grid-container {
+    margin-top: 19rem;
     width: 70%;
-    height: 70%;
     display: grid;
-    grid-template-columns: 30% 1fr 1fr;
-    grid-template-rows: 30% 1fr 1fr;
-    grid-row-gap: 5%;
-    grid-column-gap: 5%;
+    grid-template-columns: repeat(3, 13rem);
+    grid-template-rows: repeat(3, 11rem);
+    gap: clamp(0.5rem, 2vw, 2.2rem);
+    justify-content: center;
     text-align: center;
-
+    margin-top: clamp(1.5rem, 2vw, 3rem);
     .element {
-        text-align: center;
-        width: 80%;
-        height: 80%;
-        border-radius: $standard-radius;
-        transition: all 0.2s ease-in-out;
+        border-radius: 1em;
         z-index: 1;
-
-        &:nth-of-type(1) {
-            background-image: $title-gradiant;
-            background-size: 150%;
-        }
-        &:nth-of-type(2) {
-            background-image: linear-gradient(155deg, #03001e, #7303c0, #ec38bc, #fdeff9);
-            background-size: 200%;
-            background: position x 0;
-            background: position y 0;
-        }
-        &:nth-of-type(3) {
-            @include meridian-gradient;
-        }
-        &:nth-of-type(4) {
-            background-image: linear-gradient(95deg, #00416a, #799f0c, #ffe000),
-                linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
-            background-size: 200%;
-            background: position x 0;
-            background: position y 0;
-        }
-        &:nth-of-type(5) {
-            background-image: $title-gradiant;
-            background-size: 150%;
-        }
-        &:nth-of-type(6) {
-            @include king-gradinet;
-        }
-        &:nth-of-type(7) {
-            @include king-gradinet;
-        }
-        &:nth-of-type(8) {
-            background-image: $title-gradiant;
-            background-size: 150%;
-        }
-        &:nth-of-type(9) {
-            @include king-gradinet;
-        }
-
-        &:nth-of-type(1):hover {
-            background-position: right;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transform-style: preserve-3d;
 
         .inner-title {
-            display: block;
-            font-size: 2em;
-            font-family: $open-Sans;
-            color: $background-white;
+            font-size: clamp(1.1rem, 1.6vw, 1.8rem);
+            text-transform: uppercase;
+            transform: translateZ(30px);
         }
         .sml-desc {
-            display: block;
+            font-family: $raleway;
+            text-align: center;
+            margin-left: 0.9rem;
+            margin-right: 0.9rem;
+            font-size: clamp(0.6rem, 1vw, 0.9rem);
+            transform: translateZ(20px);
+        }
+        &:nth-of-type(1) {
+            background-image: linear-gradient(145.59deg, #1861ef -0.9%, #27e85c 103.96%, #27e8de 103.96%);
+            background-size: 170%;
+            background-position: left bottom;
+            transform-origin: center;
+        }
+
+        &:nth-of-type(1):hover,
+        &:nth-of-type(1):focus {
+            background-position: right top;
+        }
+        &:nth-of-type(2) {
+            background: linear-gradient(144.35deg, #274b74 1.73%, #8233c5 58.54%, #e963fd 104.42%);
+            background-size: 200%;
+
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(2):hover,
+        &:nth-of-type(2):focus {
+            background-position-x: left;
+            background-position-y: top;
+        }
+        &:nth-of-type(3) {
+            background: linear-gradient(150.08deg, #879af2 -6.53%, #d3208b 51.52%, #fda000 109%);
+            background-size: 220%;
+            background-position-x: right;
+            background-position-y: bottom;
+        }
+
+        &:nth-of-type(3):hover,
+        &:nth-of-type(3):focus {
+            background-position-x: left;
+            background-position-y: top;
+        }
+        &:nth-of-type(4) {
+            background: linear-gradient(150.08deg, #d03e20 -6.53%, #f6ce0e 109%);
+            background-size: 200%;
+
+            background-position-x: left;
+            background-position-y: top;
+        }
+        &:nth-of-type(4):hover,
+        &:nth-of-type(4):focus {
+            background-position-x: right;
+            background-position-y: top;
+        }
+
+        &:nth-of-type(5) {
+            background: linear-gradient(150.08deg, #cfde38 -6.53%, #3acc9c 49.24%, #3a74cc 109%);
+            background-size: 200%;
+            background-position-x: left;
+            background-position-y: bottom;
+        }
+
+        &:nth-of-type(5):hover,
+        &:nth-of-type(5):focus {
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(6) {
+            background: linear-gradient(150.08deg, #363553 -6.53%, #722d89 46.42%, #e8458b 109%);
+            background-size: 200%;
+
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(6):hover,
+        &:nth-of-type(6):focus {
+            background-position-x: left;
+            background-position-y: top;
+        }
+
+        &:nth-of-type(7) {
+            background: linear-gradient(150.08deg, #5c2774 -6.53%, #335cc5 57.33%, #637ffd 109%);
+            background-size: 200%;
+            background-position-x: left;
+            background-position-y: bottom;
+        }
+
+        &:nth-of-type(7):hover,
+        &:nth-of-type(7):focus {
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(8) {
+            background: linear-gradient(150.08deg, #f02fc2 -6.53%, #6094ea 70.54%, #37a2b0 109%);
+            background-size: 200%;
+
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(8):hover,
+        &:nth-of-type(8):focus {
+            background-position-x: left;
+            background-position-y: top;
+        }
+
+        &:nth-of-type(9) {
+            background: linear-gradient(150.08deg, #f17b41 -6.53%, #cb73d2 109%, #8c73d2 109%);
+            background-size: 200%;
+
+            background-position-x: right;
+            background-position-y: top;
+        }
+        &:nth-of-type(9):hover,
+        &:nth-of-type(9):focus {
+            background-position-x: left;
+            background-position-y: bottom;
         }
     }
+}
 
-    .element:hover,
-    .element:focus {
-        transform: scale(1.1);
+@media (max-width: 1150px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 18vw);
+        grid-template-rows: repeat(3, 15.5vw);
+        border-radius: 1rem;
     }
 }
-/*
-
-da sistemare
-
-
-#skill{
-    left: -250px;
-    top: -200px;
+@media (max-width: 950px) {
+    .grid-container {
+        grid-template-columns: 80%;
+        grid-template-rows: 1fr;
+        .element {
+            padding: 1rem;
+            border-radius: 1.2rem;
+        }
+    }
 }
+@media (max-width: 450px) {
+    .grid-container {
+        width: 80%;
 
-*/
-// @media (max-width: 750px) {
-//     .grid-container {
-//         grid-template-columns: 1fr 1fr 1fr;
-//         grid-template-rows: 1fr 1fr 1fr 1fr ;
-//         grid-row-gap: 2em;
-//         grid-column-gap: 2em;
-//     }
-// }
+        .element {
+            padding: 0.5rem;
+            border-radius: 1.2rem;
+        }
+    }
+}

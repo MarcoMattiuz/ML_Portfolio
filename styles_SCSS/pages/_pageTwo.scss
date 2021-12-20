@@ -1,159 +1,130 @@
-.carousel {
-    position: relative;
-    height: 600px;
-    width: 80%;
 
-    .carousel_track-container {
-        height: 100%;
-        position: relative;
-        overflow-x: hidden;
+.pr-container {
+    width: clamp(75%,50%,calc(45%+5rem));
+    max-height: 60%;
+    display: grid;
+    justify-content: center;
+    padding-left: 20%;
+    grid-template-columns: 32rem 50%;
+    grid-template-rows: 20% 1fr 1fr 1fr;
+    grid-template-areas:
+        "img title"
+        "img content"
+        "img sign"
+        "img links";
 
-        .carousel_track {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            position: relative;
-            height: 100%;
-            transition: transform 250ms ease-out;
-
-            .carousel_slide {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-
-                .carousel_content {
-                    height: 100%;
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr 1fr 1fr 1fr;
-                    grid-template-areas:
-                        "img title"
-                        "img pres"
-                        "img pres"
-                        "img links";
-
-                    .carousel_img--container {
-                        grid-area: img;
-
-                        width: 90%;
-                        height: 100%;
-
-                        .carousel_image {
-                            grid-area: img;
-                            position: relative;
-
-                            height: inherit;
-                            width: inherit;
-                            object-fit: cover;
-                        }
-                    }
-
-                    .carousel_title {
-                        grid-area: title;
-                        @include title-text;
-                        @include flex-center;
-                        height: 2em;
-                    }
-
-                    .carousel_pr {
-                        @include small-text;
-                        grid-area: pres;
-                        max-height: 80%;
-                        word-wrap: break-word;
-                    }
-
-                    // .carousel_pr::after{
-                    //     position: absolute;
-                    //     display: block;
-                    //     background-color: orange;
-                    //     content: url(images/testSign.png);
-                    // }
-
-                    .carousel_links {
-                        grid-area: links;
-                        display: flex;
-                        justify-content: space-around;
-                        width: 30%;
-
-                        padding: 1rem;
-                        font-size: 1em;
-                        list-style: none;
-
-                        .link {
-                            color: $background-white;
-                        }
-
-                        .link:hover,
-                        .link:focus {
-                            color: white;
-                        }
-                    }
-                }
+    .pr-img {
+        grid-area: img;
+        background: url("../images/defMarco.jpg") no-repeat;
+        background-size: cover;
+        margin-right: 10%;
+        height: 130%;
+        max-width: 29rem;
+        box-shadow: 0 0 20px 0 black;
+        border-radius: 0.4rem;
+        
+    }
+    .pr-title {
+        grid-area: title;
+        font-family: $open-Sans;
+        font-size: clamp(2.5rem,3.3vw,3.5rem);
+    }
+    .pr-title::after {
+        content: "I'm a Student | Max Planck";
+        font-size: clamp(0.8rem,1.6vw,1.6rem);
+        font-family: $raleway;
+        display: block;
+    }
+    .pr-content {
+        margin-top: 5%;
+        font-size: clamp(1rem,1vw,1.1rem);
+        grid-area: content;
+        font-family: $raleway;
+        width: 80%;
+    }
+    .pr-sign {
+        grid-area: sign;
+        object-fit: contain;
+        width: 7rem;
+        margin-top: 2rem;
+        @media (max-width: 900px) {
+            position: absolute;
+            top: 50%;
+            left: 6.5%;
+        }
+        @media (max-width: 450px) {
+           
+            top: 50%;
+            left: 6.5%;
+        }
+    }
+    .pr-links {
+        grid-area: links;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        padding: 2rem;
+        @media (max-width: 900px) {
+            width: 90%;
+        }
+        @media (max-width:450px) {
+            padding:1rem;
+        }
+        .link {
+            a {
+                padding:1em;
+                color: $background-white;
             }
+        }
+        .link:hover,
+        .link:focus {
+            a {
+                color: white;
+            }
+            transform: scale(1.1);
         }
     }
 }
 
-@media (max-width: 750px) {
-    .carousel_content {
-        background-color: red;
-        grid-template-areas:
-            "img img"
-            "title title"
-            "pres pres"
-            "links links";
+@media (max-width: 900px) {
+    .pr-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 1fr 1fr 1fr;
+        grid-template-areas: 
+            "title"
+            "content"
+            "sign"
+            "links";
+            padding-left: 0%;
+    }
+
+    .pr-title {
+        padding: 0.5rem;
+        background: url("../images/defMarco.jpg") no-repeat;
+        background-size: cover;
+        
+    }
+    
+    .pr-content{
+        padding-top: 0.5rem;
+        text-align: center;
+        padding-left: 10%;
+        
+    }
+
+    .pr-sign{
+        transform: scale(0.8);
+    }
+    .pr-links{
+        
+        transform: scale(0.8);
     }
 }
-
-.carousel_button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    font-size: large;
-    color: white;
-    font-size: 10px;
-    width: 40px;
-    cursor: pointer;
-    border-radius: 1em;
-}
-
-.carousel_button:hover,
-.carousel_button:focus {
-    color: $background-white;
-}
-
-.carousel_button--left {
-    left: -60px;
-}
-
-.carousel_button--right {
-    right: -60px;
-}
-
-.carousel_nav {
+.fp-slidesNav.fp-bottom {
+   
     display: flex;
     justify-content: center;
-    padding: 0.4em;
-    width: 3em;
-    margin: 0 auto;
-    margin-top: 0.5em;
-    border-radius: 1em;
-}
-
-.carousel_indicator {
-    border: 0;
-    border-radius: 100%;
-    width: 1em;
-    height: 1em;
-    margin: 0 12px;
-}
-
-.carousel_indicator.current-indicator {
-    background: lightcyan;
+    align-items: center;
 }

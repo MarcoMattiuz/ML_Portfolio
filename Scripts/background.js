@@ -1,29 +1,30 @@
 //prova
 
-window.addEventListener("load", () => {
-    var title_about = document.querySelector("#about");
-    var title_skill = document.querySelector("#skill");
+// window.addEventListener("load", () => {
+var title_about = document.querySelector("#title-about");
+var title_Skill = document.querySelector("#title-skill");
+var title_projects = document.querySelector("#title-projects");
+var title_contact = document.querySelector("#title-contact");
 
-    var cont = 0;
-    console.log(cont);
-
-    document.addEventListener("scroll", a => {
-        cont++;
-        console.log(cont);
-        title_about.style.left = cont+"px";
-    })
+console.log(title_about);
 
 
-    var cont1 = 0;
-    console.log(cont);
-
-    document.addEventListener("scroll", a => {
-        cont1++;
-        console.log(cont1);
-        title_skill.style.left = cont1+"px";
-    })
+var cont = 0;
+// console.log(cont);
+// var vh=Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);;
+// console.log(vh);
 
 
-   
-});
+window.addEventListener("scroll", a => {
+    cont = window.scrollY;
+    title_about.style.left = Math.max(-5 + 0.07 * window.scrollY, -1) + '%';
+    title_Skill.style.left = Math.max(160 - 0.07 * window.scrollY, -10) + '%';
+    title_projects.style.left = Math.max(-170 + 0.07 * window.scrollY, -50) + '%';
+    title_contact.style.left = Math.max(+300 - 0.07 * window.scrollY, -50) + '%';
+    console.log(window.scrollY);
+})
+
+
+
+// });
 
