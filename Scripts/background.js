@@ -18,9 +18,9 @@ var cont = 0;
 window.addEventListener("scroll", a => {
     cont = window.scrollY;
     title_about.style.left = Math.max(-5 + 0.07 * window.scrollY, -1) + '%';
-    title_Skill.style.left = Math.max(160 - 0.07 * window.scrollY, -10) + '%';
-    title_projects.style.left = Math.max(-170 + 0.07 * window.scrollY, -50) + '%';
-    title_contact.style.left = Math.max(+300 - 0.07 * window.scrollY, -50) + '%';
+    title_Skill.style.left = Math.max(260 - 0.07 * window.scrollY, -10) + '%';
+    title_projects.style.left = Math.max(-270 + 0.07 * window.scrollY, -50) + '%';
+    title_contact.style.left = Math.max(+350 - 0.07 * window.scrollY, -50) + '%';
     console.log(window.scrollY);
 })
 
