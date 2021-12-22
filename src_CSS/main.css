@@ -970,6 +970,12 @@
   }
 }
 
+.emb-game {
+  width: 60%;
+  height: 70%;
+  border-radius: 20px;
+}
+
 input {
   outline: none;
   border: none;
@@ -1134,6 +1140,12 @@ h5 {
 
 span {
   background: rgba(236, 228, 228, 0.925) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {

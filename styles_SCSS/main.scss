@@ -4,6 +4,7 @@
 @import "./pages/pageOne";
 @import "./pages/pageTwo";
 @import "./pages/pageThree";
+@import "./pages/pageFour";
 @import "./pages/pageFive";
 
 @import "./variables";
@@ -51,6 +52,13 @@ span {
 }
 // // // // // // // // //
 
+html{
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+}
+
+
 body {
     position: relative;
     font-size: 20px;
@@ -76,7 +84,7 @@ body {
         overflow: hidden;
         z-index: 1;
         background: transparent;
-     
+       
         
         &:nth-of-type(2) {
             #title-about {
