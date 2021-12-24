@@ -806,142 +806,6 @@
   }
 }
 
-/*.pr-container {
-    width: clamp(75%,90%,calc(45%+5rem));
-    max-height: 60%;
-    display: grid;
-    justify-content: center;
-  
-    grid-template-columns: 32rem 50%;
-    grid-template-rows: 20% 1fr 1fr 1fr;
-    grid-template-areas:
-        "img title"
-        "img content"
-        "img sign"
-        "img links";
-        margin-left:25%;
-
-    .pr-img {
-        grid-area: img;
-        background: url("../images/defMarco.jpg") no-repeat;
-        background-size: cover;
-        margin-right: 10%;
-        height: 120%;
-        max-width: 121%;
-        box-shadow: 0 0 20px 0 black;
-        border-radius: 0.4rem;
-        
-    }
-    .pr-title {
-        grid-area: title;
-        font-family: $open-Sans;
-        font-size: clamp(2.5rem,3.3vw,3.5rem);
-        
-    }
-    .pr-title::after {
-        content: "I'm a Student | Max Planck";
-        font-size: clamp(0.8rem,1.6vw,1.6rem);
-        font-family: $raleway;
-        display: block;
-    }
-    .pr-content {
-        margin-top: 5%;
-        font-size: clamp(1rem,1vw,1.1rem);
-        grid-area: content;
-        font-family: $raleway;
-        width: 120%;
-        @media (max-width: 1900px) {
-            width: 80%;
-        }
-      
-    }
-    .pr-sign {
-        grid-area: sign;
-        object-fit: contain;
-        width: 7rem;
-        margin-top: 2rem;
-        @media (max-width: 900px) {
-            position: absolute;
-            top: 50%;
-            left: 20%;
-        }
-        @media (max-width: 450px) {
-           
-            top: 50%;
-            left: 6.5%;
-        }
-    }
-    .pr-links {
-        grid-area: links;
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        padding: 2rem;
-        @media (max-width: 900px) {
-            width: 90%;
-        }
-        @media (max-width:450px) {
-            padding:1rem;
-        }
-        .link {
-            a {
-                padding:1em;
-                color: $background-white;
-            }
-        }
-        .link:hover,
-        .link:focus {
-            a {
-                color: white;
-            }
-            transform: scale(1.1);
-        }
-    }
-}
-
-@media (max-width: 900px) {
-    .pr-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 80% 1fr 1fr 1fr;
-        grid-template-areas: 
-            "title"
-            "content"
-            "sign"
-            "links";
-
-        background-color: antiquewhite;
-    }
-
-    .pr-title {
-        padding: 0.5rem;
-        background: url("../images/defMarco.jpg") no-repeat;
-        background-size: cover;
-        
-    }
-    
-    .pr-content{
-        padding-top: 0.5rem;
-        text-align: center;
-        padding-left: 10%;
-        
-    }
-
-    .pr-sign{
-        transform: scale(0.8);
-    }
-    .pr-links{
-        
-        transform: scale(0.8);
-    }
-}
-.autobiography{
-    width:100%;
-    margin-left:25vw;
-
-}
-*/
 .grid-container {
   margin-top: 19rem;
   width: 70%;
@@ -1309,6 +1173,12 @@ span {
   background: rgba(236, 228, 228, 0.925) !important;
 }
 
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
   position: relative;
   font-size: 20px;
@@ -1345,30 +1215,10 @@ body .section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.95;
+  opacity: 0.9;
+  background-color: blue;
   overflow: hidden;
   z-index: 1;
-  background: transparent;
-}
-
-body .section:nth-of-type(2) #title-about {
-  left: 0;
-  top: 0;
-}
-
-body .section:nth-of-type(3) #title-skill {
-  left: 0;
-  top: 0;
-}
-
-body .section:nth-of-type(4) #title-projects {
-  left: 0;
-  top: 0;
-}
-
-body .section:nth-of-type(5) #title-contact {
-  left: 0;
-  top: 0;
 }
 
 body .footer {
@@ -1436,6 +1286,7 @@ html.fp-enabled {
   opacity: 0.8;
   font-size: clamp(11.5rem, 12vw, 20rem);
   white-space: nowrap;
+  top: 0;
 }
 
 .fade-in {
