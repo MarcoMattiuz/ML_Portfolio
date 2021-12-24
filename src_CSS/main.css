@@ -636,7 +636,7 @@
 
 @media (max-width: 600px) {
   .pr-container {
-    width: 60%;
+    width: 50%;
     height: 70%;
   }
 }
@@ -669,7 +669,7 @@
   position: relative;
   top: 0.3em;
   font-family: "Open Sans", sans-serif;
-  font-size: clamp(2.2rem, 2.4vw, 2.6rem);
+  font-size: clamp(2rem, 2.4vw, 2.6rem);
   color: #090910;
   white-space: nowrap;
   margin-bottom: 0em;
@@ -788,19 +788,19 @@
 
 @media (max-width: 1200px) {
   .cards {
-    left: 80%;
+    left: 70%;
   }
 }
 
 @media (max-width: 900px) {
   .cards {
-    left: 60%;
+    left: 50%;
   }
 }
 
 @media (max-width: 600px) {
   .cards {
-    left: 40%;
+    left: 31%;
   }
 }
 
