@@ -1216,7 +1216,6 @@ body .section {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0.9;
-  background-color: blue;
   overflow: hidden;
   z-index: 1;
 }
