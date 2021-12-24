@@ -611,16 +611,16 @@
   height: 100%;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 4fr,1fr;
-      grid-template-rows: 4fr,1fr;
-      grid-template-areas: "img" "text";
+  -ms-grid-rows: 4fr, 1fr;
+      grid-template-rows: 4fr, 1fr;
+      grid-template-areas: "img" "text";
   -ms-flex-line-pack: end;
       align-content: flex-end;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background-image: url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg");
-  background-size: contain;
+  background: url("../images/defMarco.jpg");
+  background-size: cover;
   -o-object-fit: fill;
      object-fit: fill;
   background-repeat: no-repeat;
@@ -675,8 +675,8 @@
   margin-bottom: 0em;
   -webkit-transition: all 240ms ease-in-out;
   transition: all 240ms ease-in-out;
-  -webkit-transition-property: top,margin-bottom;
-  transition-property: top,margin-bottom;
+  -webkit-transition-property: top, margin-bottom;
+  transition-property: top, margin-bottom;
 }
 
 .pr-container .pr-content .title-p p {
@@ -689,8 +689,8 @@
   font-family: "Raleway", sans-serif;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  -webkit-transition-property: opacity,font-size;
-  transition-property: opacity,font-size;
+  -webkit-transition-property: opacity, font-size;
+  transition-property: opacity, font-size;
 }
 
 .pr-container .pr-content .pr-links {
@@ -727,12 +727,14 @@
           transform: scale(0.75);
 }
 
-.pr-container:hover .pr-content .title-p .pr-title, .pr-container:focus .pr-content .title-p .pr-title {
+.pr-container:hover .pr-content .title-p .pr-title,
+.pr-container:focus .pr-content .title-p .pr-title {
   margin-bottom: 0.6vw;
   top: 0em;
 }
 
-.pr-container:hover .pr-content .title-p p, .pr-container:focus .pr-content .title-p p {
+.pr-container:hover .pr-content .title-p p,
+.pr-container:focus .pr-content .title-p p {
   opacity: 1;
   font-size: clamp(0.8rem, 0.9vw, 1rem);
 }
@@ -1305,12 +1307,6 @@ h5 {
 
 span {
   background: rgba(236, 228, 228, 0.925) !important;
-}
-
-html {
-  scroll-behavior: smooth;
-  width: 100vw;
-  height: 100vh;
 }
 
 body {
