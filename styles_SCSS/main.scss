@@ -87,6 +87,10 @@ body {
        
         
         &:nth-of-type(2) {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
             #title-about {
                 left: 0;
                 top: 0;

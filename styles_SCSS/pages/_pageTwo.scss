@@ -11,16 +11,12 @@
     align-items: stretch;
     background-image:
       url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg");
-      background-size:contain;
-    object-fit: fill;
+      background-size:cover;
+
     background-repeat: no-repeat;
     border-radius:$standard-radius ;
     @media (max-width:900px){
         width: 80%;
-        height: 80%;
-    }
-    @media (max-width:600px){
-        width: 50%;
         height: 70%;
     }
    .pr-content{
@@ -48,7 +44,7 @@
             transition: all 240ms ease-in-out;
             transition-property: top,margin-bottom;
         }
-        p{
+        .pr-paragraph{
             position: relative;
            
             padding-bottom:0.5em ;
@@ -62,7 +58,7 @@
         }
        }
        .pr-links {
-       margin-left: 1em;
+        margin-left: 1em;
         display: flex;
         flex-flow: row;
         align-items: center;
@@ -113,13 +109,12 @@
         height: 60%;
         margin-left: 30%;
         flex-shrink: 0;
-
         display: flex;
         justify-content: center;
         align-items: center;
         @media (max-width:900px){
             width: 100%;
-            height: 60%;
+            height: 50%;
             margin-left: 10%;
            
         }
@@ -137,146 +132,95 @@
            
     }
     @media (max-width:600px){
-        left:31%;     
+        left:50%;     
     }
   }
-  
 
-/*.pr-container {
-    width: clamp(75%,90%,calc(45%+5rem));
-    max-height: 60%;
+  
+  .pr-container1{
     display: grid;
-    justify-content: center;
-  
-    grid-template-columns: 32rem 50%;
-    grid-template-rows: 20% 1fr 1fr 1fr;
-    grid-template-areas:
-        "img title"
-        "img content"
-        "img sign"
-        "img links";
-        margin-left:25%;
-
-    .pr-img {
-        grid-area: img;
-        background: url("../images/defMarco.jpg") no-repeat;
-        background-size: cover;
-        margin-right: 10%;
-        height: 120%;
-        max-width: 121%;
-        box-shadow: 0 0 20px 0 black;
-        border-radius: 0.4rem;
-        
-    }
-    .pr-title {
-        grid-area: title;
-        font-family: $open-Sans;
-        font-size: clamp(2.5rem,3.3vw,3.5rem);
-        
-    }
-    .pr-title::after {
-        content: "I'm a Student | Max Planck";
-        font-size: clamp(0.8rem,1.6vw,1.6rem);
-        font-family: $raleway;
-        display: block;
-    }
-    .pr-content {
-        margin-top: 5%;
-        font-size: clamp(1rem,1vw,1.1rem);
-        grid-area: content;
-        font-family: $raleway;
-        width: 120%;
-        @media (max-width: 1900px) {
-            width: 80%;
-        }
-      
-    }
-    .pr-sign {
-        grid-area: sign;
-        object-fit: contain;
-        width: 7rem;
-        margin-top: 2rem;
-        @media (max-width: 900px) {
-            position: absolute;
-            top: 50%;
-            left: 20%;
-        }
-        @media (max-width: 450px) {
-           
-            top: 50%;
-            left: 6.5%;
-        }
-    }
-    .pr-links {
-        grid-area: links;
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        padding: 2rem;
-        @media (max-width: 900px) {
-            width: 90%;
-        }
-        @media (max-width:450px) {
-            padding:1rem;
-        }
-        .link {
-            a {
-                padding:1em;
-                color: $background-white;
-            }
-        }
-        .link:hover,
-        .link:focus {
-            a {
-                color: white;
-            }
-            transform: scale(1.1);
-        }
-    }
-}
-
-@media (max-width: 900px) {
-    .pr-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 80% 1fr 1fr 1fr;
-        grid-template-areas: 
-            "title"
-            "content"
-            "sign"
-            "links";
-
-        background-color: antiquewhite;
-    }
-
-    .pr-title {
-        padding: 0.5rem;
-        background: url("../images/defMarco.jpg") no-repeat;
-        background-size: cover;
-        
-    }
+    width: 100%;
+    height: 100%;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr; 
+    grid-template-areas: 
     
+    "text";
+    align-content: flex-end;
+    background-image:
+      url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg");
+      background-size:cover;
+
+    background-repeat: no-repeat;
+    border-radius:$standard-radius ;
+ 
+
+   .pr-content{
+
+       grid-area: text;
+       margin-top:37%;
+       height: 50%; 
+       width: 100%;
+       max-width: 100%;
+       background-color: white;
+       border-radius: 0 0 $standard-radius  $standard-radius ;
+       padding-top: 0em;
+       transition: padding-top 240ms ease-in;
+    
+       .title-p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top:0.5em;
+
+        .pr-title{
+            position: relative;
+            top: 0.3em;
+            font-family: $open-Sans;
+            font-size: clamp(2rem,2.4vw,2.6rem);
+            color: $background-black;
+            white-space: nowrap;
+
+        }
+        .pr-paragraph1{
+            margin: 2em;
+            
+            position: relative;        
+
+            text-align: center;
+            width: 80%;
+            color: $background-black;
+            font-size: clamp(1rem,1.1vw,1.2rem);
+            font-family: $raleway;
+
+        }
+       }
+    
+   }
+   @media (max-width:900px){
+    width: 80%;
+    height: 70%;
     .pr-content{
-        padding-top: 0.5rem;
-        text-align: center;
-        padding-left: 10%;
-        
-    }
 
-    .pr-sign{
-        transform: scale(0.8);
+        height: 60%; 
     }
-    .pr-links{
+    }
+    @media (max-width:800px){
+        height: 65%;
+        background-image: none;
         
-        transform: scale(0.8);
+        .pr-content{
+            margin-top:15%;
+            height: 75%; 
+            padding-bottom: 0.5em;
+            border-radius:  $standard-radius ;
+        }
+        }
+}
+.pr-container1:hover,.pr-container1:focus{
+    .pr-content{
+        padding-top:1em;
+    
     }
 }
-.autobiography{
-    width:100%;
-    margin-left:25vw;
-
-}
-*/
-  
-

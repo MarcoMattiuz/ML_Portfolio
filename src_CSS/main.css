@@ -620,9 +620,7 @@
       -ms-flex-align: stretch;
           align-items: stretch;
   background-image: url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg");
-  background-size: contain;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.7em;
 }
@@ -630,19 +628,12 @@
 @media (max-width: 900px) {
   .pr-container {
     width: 80%;
-    height: 80%;
-  }
-}
-
-@media (max-width: 600px) {
-  .pr-container {
-    width: 50%;
     height: 70%;
   }
 }
 
 .pr-container .pr-content {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
   height: 100%;
@@ -679,7 +670,7 @@
   transition-property: top,margin-bottom;
 }
 
-.pr-container .pr-content .title-p p {
+.pr-container .pr-content .title-p .pr-paragraph {
   position: relative;
   padding-bottom: 0.5em;
   opacity: 0;
@@ -775,7 +766,7 @@
 @media (max-width: 900px) {
   .cards .autobiography {
     width: 100%;
-    height: 60%;
+    height: 50%;
     margin-left: 10%;
   }
 }
@@ -800,146 +791,106 @@
 
 @media (max-width: 600px) {
   .cards {
-    left: 31%;
+    left: 50%;
   }
 }
 
-/*.pr-container {
-    width: clamp(75%,90%,calc(45%+5rem));
-    max-height: 60%;
-    display: grid;
-    justify-content: center;
-  
-    grid-template-columns: 32rem 50%;
-    grid-template-rows: 20% 1fr 1fr 1fr;
-    grid-template-areas:
-        "img title"
-        "img content"
-        "img sign"
-        "img links";
-        margin-left:25%;
+.pr-container1 {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "text";
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  background-image: url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.7em;
+}
 
-    .pr-img {
-        grid-area: img;
-        background: url("../images/defMarco.jpg") no-repeat;
-        background-size: cover;
-        margin-right: 10%;
-        height: 120%;
-        max-width: 121%;
-        box-shadow: 0 0 20px 0 black;
-        border-radius: 0.4rem;
-        
-    }
-    .pr-title {
-        grid-area: title;
-        font-family: $open-Sans;
-        font-size: clamp(2.5rem,3.3vw,3.5rem);
-        
-    }
-    .pr-title::after {
-        content: "I'm a Student | Max Planck";
-        font-size: clamp(0.8rem,1.6vw,1.6rem);
-        font-family: $raleway;
-        display: block;
-    }
-    .pr-content {
-        margin-top: 5%;
-        font-size: clamp(1rem,1vw,1.1rem);
-        grid-area: content;
-        font-family: $raleway;
-        width: 120%;
-        @media (max-width: 1900px) {
-            width: 80%;
-        }
-      
-    }
-    .pr-sign {
-        grid-area: sign;
-        object-fit: contain;
-        width: 7rem;
-        margin-top: 2rem;
-        @media (max-width: 900px) {
-            position: absolute;
-            top: 50%;
-            left: 20%;
-        }
-        @media (max-width: 450px) {
-           
-            top: 50%;
-            left: 6.5%;
-        }
-    }
-    .pr-links {
-        grid-area: links;
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        padding: 2rem;
-        @media (max-width: 900px) {
-            width: 90%;
-        }
-        @media (max-width:450px) {
-            padding:1rem;
-        }
-        .link {
-            a {
-                padding:1em;
-                color: $background-white;
-            }
-        }
-        .link:hover,
-        .link:focus {
-            a {
-                color: white;
-            }
-            transform: scale(1.1);
-        }
-    }
+.pr-container1 .pr-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+  margin-top: 37%;
+  height: 50%;
+  width: 100%;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 0 0 0.7em 0.7em;
+  padding-top: 0em;
+  -webkit-transition: padding-top 240ms ease-in;
+  transition: padding-top 240ms ease-in;
+}
+
+.pr-container1 .pr-content .title-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 0.5em;
+}
+
+.pr-container1 .pr-content .title-p .pr-title {
+  position: relative;
+  top: 0.3em;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(2rem, 2.4vw, 2.6rem);
+  color: #090910;
+  white-space: nowrap;
+}
+
+.pr-container1 .pr-content .title-p .pr-paragraph1 {
+  margin: 2em;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  color: #090910;
+  font-size: clamp(1rem, 1.1vw, 1.2rem);
+  font-family: "Raleway", sans-serif;
 }
 
 @media (max-width: 900px) {
-    .pr-container {
-        grid-template-columns: 100%;
-        grid-template-rows: 80% 1fr 1fr 1fr;
-        grid-template-areas: 
-            "title"
-            "content"
-            "sign"
-            "links";
-
-        background-color: antiquewhite;
-    }
-
-    .pr-title {
-        padding: 0.5rem;
-        background: url("../images/defMarco.jpg") no-repeat;
-        background-size: cover;
-        
-    }
-    
-    .pr-content{
-        padding-top: 0.5rem;
-        text-align: center;
-        padding-left: 10%;
-        
-    }
-
-    .pr-sign{
-        transform: scale(0.8);
-    }
-    .pr-links{
-        
-        transform: scale(0.8);
-    }
+  .pr-container1 {
+    width: 80%;
+    height: 70%;
+  }
+  .pr-container1 .pr-content {
+    height: 60%;
+  }
 }
-.autobiography{
-    width:100%;
-    margin-left:25vw;
 
+@media (max-width: 800px) {
+  .pr-container1 {
+    height: 65%;
+    background-image: none;
+  }
+  .pr-container1 .pr-content {
+    margin-top: 15%;
+    height: 75%;
+    padding-bottom: 0.5em;
+    border-radius: 0.7em;
+  }
 }
-*/
+
+.pr-container1:hover .pr-content, .pr-container1:focus .pr-content {
+  padding-top: 1em;
+}
+
 .grid-container {
   margin-top: 19rem;
   width: 70%;
@@ -1353,6 +1304,15 @@ body .section {
   overflow: hidden;
   z-index: 1;
   background: transparent;
+}
+
+body .section:nth-of-type(2) {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body .section:nth-of-type(2) #title-about {
