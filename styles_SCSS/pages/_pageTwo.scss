@@ -16,8 +16,8 @@
     background-repeat: no-repeat;
     border-radius: $standard-radius;
     @media (max-width: 900px) {
-        width: 80%;
-        height: 70%;
+        width: 55%;
+        height: 50%;
     }
    .pr-content{
        grid-area: text;
@@ -199,8 +199,8 @@
     
    }
    @media (max-width:900px){
-    width: 80%;
-    height: 70%;
+    width: 55%;
+    height: 50%;
     .pr-content{
 
         height: 60%; 

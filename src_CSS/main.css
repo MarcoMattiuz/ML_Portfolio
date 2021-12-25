@@ -627,8 +627,8 @@
 
 @media (max-width: 900px) {
   .pr-container {
-    width: 80%;
-    height: 70%;
+    width: 55%;
+    height: 50%;
   }
 }
 
@@ -868,8 +868,8 @@
 
 @media (max-width: 900px) {
   .pr-container1 {
-    width: 80%;
-    height: 70%;
+    width: 55%;
+    height: 50%;
   }
   .pr-container1 .pr-content {
     height: 60%;
