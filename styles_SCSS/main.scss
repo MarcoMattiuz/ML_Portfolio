@@ -87,29 +87,34 @@ body {
 
     .footer {
         height: 10vh;
-
+        margin-top: 5vh;
         .foot-wrap {
             height: 100%;
-            width: 83%;
+            width: 73%;
             margin: 0 auto;
-            @include flex-center;
-
-            .foot-logo {
-                width: 5rem;
-                margin: 5rem;
-                opacity: 0.6;
-                margin-right: 10%;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+            .left-side{
+                .foot-logo {
+                    width: 5rem;
+                    opacity: 0.6;
+                    margin-right: 50%;
+                }
+                .mails{
+                    font-size: 0.8rem;
+                    color: $background-white;
+                    opacity: 0.6;
+                    margin: 0.3rem;
+                    font-family: "Titillium Web", sans-serif;
+                }
             }
-
             .emails {
-                margin: 5rem;
-                margin-left: 10%;
-
                 .mails {
                     font-size: 0.8rem;
                     color: $background-white;
                     opacity: 0.6;
-                    margin: 0.1rem;
+                    margin: 0.3rem;
                     font-family: "Titillium Web", sans-serif;
                 }
             }

@@ -7,6 +7,8 @@ input {
     width: 90%;
     border-radius: $standard-radius;
     color: $background-white;
+    font-family:$raleway;
+    font-size: 0.75em;
 }
 
 textarea {
@@ -17,13 +19,16 @@ textarea {
     padding: 1.5em;
     width: 5rem;
     width: 90%;
+    font-size: 0.75em;
     border-radius: $standard-radius;
+    font-family:$raleway;
     resize: none;
     color: $background-white;
 }
 
 button{
     border: none;
+    @include navbar-text;
 }
 
 
@@ -33,13 +38,38 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 .contact-form {
-    // display: grid;
-  
-    justify-content: center;
-    width: clamp(60rem,30rem,10rem);
+    width: clamp(33rem,43vw,50em);
     margin: 3rem;
     margin-top: 8vh;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+//    .checkmark{
+//     display: inline-block;
+//     transform: rotate(45deg);
+//     height: 1.5em;
+//     width: 0.5em;
+//     margin-left: 7em;
+//     align-self: flex-start;
+//     border-bottom: 6px solid #78b13f;
+//     border-right: 6px solid #78b13f;
+//    }
+    p{
+        padding-bottom: 1em;
+        padding-top: 2em;
+        font-family: $raleway;
+        text-align: center;
+        font-size: 1em;
+    }
+    .input-helpers{
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+        font-size: 0.7em;
+        align-self: flex-start;
+        padding-left: 1.9vw;
+    }
+    
     .submit{
         display: block;
         position: relative;
@@ -47,7 +77,7 @@ input:-webkit-autofill:focus {
         padding: 1.5em;
         border-radius: $standard-radius;
         background-image: $buttons-gradient;
-        background-size: 200%;
+        background-size: 250%;
         background-position: right;
         transition: background-position 0.7s;
 

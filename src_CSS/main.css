@@ -226,7 +226,7 @@
 }
 
 .header .nav-bar .links-container p {
-  font: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   color: rgba(236, 228, 228, 0.925);
 }
@@ -399,7 +399,7 @@
     margin-top: 7em;
   }
   .hamburger-menu-container .links-container1 p {
-    font: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 0.9rem;
     color: rgba(236, 228, 228, 0.925);
     font-size: 1rem;
@@ -627,8 +627,15 @@
 
 @media (max-width: 900px) {
   .pr-container {
-    width: 50%;
-    height: 60%;
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pr-container {
+    width: 60%;
+    height: 70%;
   }
 }
 
@@ -699,7 +706,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
+  width: 100%;
 }
 
 .pr-container .pr-links .link {
@@ -776,6 +783,12 @@
 @media (max-width: 600px) {
   .cards .autobiography {
     margin-left: -10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards .autobiography {
+    margin-left: -25%;
   }
 }
 
@@ -868,8 +881,8 @@
 
 @media (max-width: 900px) {
   .pr-container1 {
-    width: 55%;
-    height: 50%;
+    width: 80%;
+    height: 70%;
   }
   .pr-container1 .pr-content {
     height: 60%;
@@ -886,6 +899,16 @@
     height: 75%;
     padding-bottom: 0.5em;
     border-radius: 0.7em;
+  }
+}
+
+@media (max-width: 500px) {
+  .pr-container1 {
+    width: 55%;
+    height: 70%;
+  }
+  .pr-container1 .pr-content {
+    height: 75%;
   }
 }
 
@@ -1103,6 +1126,8 @@ input {
   width: 90%;
   border-radius: 0.7em;
   color: rgba(236, 228, 228, 0.925);
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75em;
 }
 
 textarea {
@@ -1113,13 +1138,18 @@ textarea {
   padding: 1.5em;
   width: 5rem;
   width: 90%;
+  font-size: 0.75em;
   border-radius: 0.7em;
+  font-family: "Raleway", sans-serif;
   resize: none;
   color: rgba(236, 228, 228, 0.925);
 }
 
 button {
   border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: rgba(236, 228, 228, 0.925);
 }
 
 input:-webkit-autofill,
@@ -1129,12 +1159,39 @@ input:-webkit-autofill:focus {
 }
 
 .contact-form {
+  width: clamp(33rem, 43vw, 50em);
+  margin: 3rem;
+  margin-top: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: clamp(60rem, 30rem, 10rem);
-  margin: 3rem;
-  margin-top: 8vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form p {
+  padding-bottom: 1em;
+  padding-top: 2em;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 1em;
+}
+
+.contact-form .input-helpers {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  font-size: 0.7em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-left: 1.9vw;
 }
 
 .contact-form .submit {
@@ -1144,7 +1201,7 @@ input:-webkit-autofill:focus {
   padding: 1.5em;
   border-radius: 0.7em;
   background-image: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
-  background-size: 200%;
+  background-size: 250%;
   background-position: right;
   -webkit-transition: background-position 0.7s;
   transition: background-position 0.7s;
@@ -1309,40 +1366,42 @@ body .section {
 
 body .footer {
   height: 10vh;
+  margin-top: 5vh;
 }
 
 body .footer .foot-wrap {
   height: 100%;
-  width: 83%;
+  width: 73%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-body .footer .foot-wrap .foot-logo {
+body .footer .foot-wrap .left-side .foot-logo {
   width: 5rem;
-  margin: 5rem;
   opacity: 0.6;
-  margin-right: 10%;
+  margin-right: 50%;
 }
 
-body .footer .foot-wrap .emails {
-  margin: 5rem;
-  margin-left: 10%;
+body .footer .foot-wrap .left-side .mails {
+  font-size: 0.8rem;
+  color: rgba(236, 228, 228, 0.925);
+  opacity: 0.6;
+  margin: 0.3rem;
+  font-family: "Titillium Web", sans-serif;
 }
 
 body .footer .foot-wrap .emails .mails {
   font-size: 0.8rem;
   color: rgba(236, 228, 228, 0.925);
   opacity: 0.6;
-  margin: 0.1rem;
+  margin: 0.3rem;
   font-family: "Titillium Web", sans-serif;
 }
 

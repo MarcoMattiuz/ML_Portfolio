@@ -35,4 +35,8 @@
                 })
                 
             });
+            const name1 = document.querySelector(".ct-name");
+            name1.oninput = () =>{
+                console.log('run');
+            }
 

@@ -16,8 +16,12 @@
     background-repeat: no-repeat;
     border-radius: $standard-radius;
     @media (max-width: 900px) {
-        width: 50%;
-        height: 60%;
+        width: 80%;
+        height: 70%;
+    }
+    @media (max-width: 500px) {
+        width: 60%;
+        height: 70%;
     }
    .pr-content{
        grid-area: text;
@@ -64,7 +68,7 @@
             flex-flow: row;
             align-items: center;
             justify-content: center;
-            width: 60%;
+            width: 100%;
 
             .link {
                 a {
@@ -121,6 +125,9 @@
         }
         @media (max-width: 600px) {
             margin-left: -10%;
+        }
+        @media (max-width: 500px) {
+            margin-left: -25%;
         }
     }
     @media (max-width:1200px){
@@ -199,8 +206,8 @@
     
    }
    @media (max-width:900px){
-    width: 55%;
-    height: 50%;
+    width: 80%;
+    height: 70%;
     .pr-content{
 
         height: 60%; 
@@ -217,6 +224,14 @@
             border-radius:  $standard-radius ;
         }
         }
+        @media (max-width:500px){
+            width: 55%;
+            height: 70%;
+            .pr-content{
+        
+                height: 75%; 
+            }
+            }
 }
 .pr-container1:hover,.pr-container1:focus{
     .pr-content{

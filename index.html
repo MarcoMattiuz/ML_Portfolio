@@ -353,12 +353,13 @@
     <!-- section 5 -->
     <section class="section" id="section5">
       <!-- <h1 class="parallax_title" id="title-contact">CONTACT US</h1> -->
-
+      
       <form
         action="https://formsubmit.co/67c4adfc0f02525412a9a2111a593a54"
         method="POST"
         class="contact-form"
       >
+      <p>if you want to contact us send a message here </p>
         <input
           type="hidden"
           name="_next"
@@ -369,19 +370,25 @@
           type="hidden"
           name="_autoresponse"
           value="Thank you for reaching to us!"
+
         />
         <input type="hidden" name="_template" value="table" />
-
+        <p class="input-helpers"> Field Name </p>
+        <div class="checkmark"></div>
         <input
           type="text"
           name="name"
-          placeholder="Your name"
+          placeholder="Your name..."
           class="ct-name"
           required
+
         />
-        <input type="email" name="email" placeholder="Your email" required />
+        
+        <p class="input-helpers"> Field Email </p>
+        <input type="email" name="email" placeholder="googlesd@gmail.com.." required />
+        <p class="input-helpers"> Field Message </p>
         <textarea
-          placeholder="Your Message"
+          placeholder="Write message..."
           class="form-control"
           name="message"
           rows="10"
@@ -389,16 +396,21 @@
         ></textarea>
 
         <button type="submit" class="submit">Send Message</button>
+       
       </form>
     </section>
-
+    
     <footer class="footer">
+      
       <div class="foot-wrap">
+        <div class="left-side">
         <img src="images/logoML_site.png" alt="logo" class="foot-logo" />
-
+        <p class="mails">@2022 M&L portfolio </p>
+      </div>
         <div class="emails">
           <p class="mails">marccs35@gmail.com</p>
           <p class="mails">lorenzobo@gmail.com</p>
+
         </div>
       </div>
     </footer>

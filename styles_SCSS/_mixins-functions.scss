@@ -66,7 +66,7 @@
 }
 
 @mixin navbar-text {
-    font: $open-Sans;
+    font-family: $open-Sans;
     font-size: 0.9rem;
     color: $background-white;
 }
