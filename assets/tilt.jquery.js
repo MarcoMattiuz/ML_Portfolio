@@ -304,10 +304,10 @@
             
     // var cond = false;
     // if (cond) {
-    //     $('[data-tilt]').tilt();
+        $('[data-tilt]').tilt();
 
     // }
-    window.addEventListener('scroll',()=>{
+   /* window.addEventListener('scroll',()=>{
         let grid = document.querySelector(".grid-container");
         let contentPos = grid.getBoundingClientRect().top;
         let screenPos = window.innerHeight /1.09;
@@ -353,7 +353,7 @@
              
             }
         }
-    });
+    });*/
     return true;
     
 }));
