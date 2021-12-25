@@ -1384,16 +1384,17 @@ body .footer .foot-wrap {
 }
 
 body .footer .foot-wrap .left-side .foot-logo {
-  width: 5rem;
+  width: 4rem;
   opacity: 0.6;
   margin-right: 50%;
+  padding-top: 0.5em;
 }
 
 body .footer .foot-wrap .left-side .mails {
   font-size: 0.8rem;
   color: rgba(236, 228, 228, 0.925);
   opacity: 0.6;
-  margin: 0.3rem;
+  margin-top: 0.2em;
   font-family: "Titillium Web", sans-serif;
 }
 
