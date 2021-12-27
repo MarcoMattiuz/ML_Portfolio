@@ -1,8 +1,5 @@
-//import * as page from "/root/Scripts/pageThree.js";
-import subtract from "/root/Scripts/pageThree.js";
+
 window.onload = function(){
-
-
 
     src="https://kit.fontawesome.com/d53ca7f8cc.js";
     crossorigin="anonymous";
@@ -62,8 +59,3 @@ window.onload = function(){
     window.addEventListener('resize', () => {
       spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
     });
-
-    // console.log(page.lowercaseString("geasASASAS"));
-    // console.log(page.add(45,2));
-    console.log(subtract(6,3));
-  
