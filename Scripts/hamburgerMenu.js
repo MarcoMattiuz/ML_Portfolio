@@ -1,3 +1,5 @@
+//import * as page from "/root/Scripts/pageThree.js";
+import subtract from "/root/Scripts/pageThree.js";
 window.onload = function(){
 
 
@@ -7,12 +9,23 @@ window.onload = function(){
 }
     const hamburgerButton = document.querySelector('.hamburger-menu');
     const hamburgerMenu = document.querySelector('.hamburger-menu-container');
-   
+    const buttonLink = document.querySelectorAll('.contact1');   
     let hamburgerMenuOpen = false;
+    for (let index = 0; index < buttonLink.length; index++) {
+      buttonLink[index].onclick = () =>{
+              hamburgerMenu.classList.remove('open');
+              hamburgerButton.classList.remove('open');
+              document.querySelector('.contact-button').style.display='flex';
+  
+              hamburgerMenuOpen = false;
+    }
+    }
+    
     if(hamburgerButton){
     hamburgerButton.addEventListener("click", () =>{
+  
         if(!hamburgerMenuOpen){
-            
+           
             hamburgerMenu.classList.add('open');
             hamburgerButton.classList.add('open');
             document.querySelector('.contact-button').style.display='none';
@@ -50,4 +63,7 @@ window.onload = function(){
       spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
     });
 
+    // console.log(page.lowercaseString("geasASASAS"));
+    // console.log(page.add(45,2));
+    console.log(subtract(6,3));
   

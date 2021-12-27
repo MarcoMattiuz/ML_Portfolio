@@ -39,4 +39,13 @@
             name1.oninput = () =>{
                 console.log('run');
             }
+            export const lowercaseString = (string) => {
+                return string.toLowerCase()
+              }
+              export const add = (a,b) => {return a+b}
+
+            export default (a,b) => {
+                return a-b;
+            }  
+       
 

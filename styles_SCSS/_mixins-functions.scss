@@ -73,9 +73,9 @@
 
 @mixin title-text {
     font-family: $open-Sans;
-    font-size: 3.5rem;
+    font-size: 4.9rem;
     @media (max-width: 1150px) {
-        font-size: 4.9vw;
+        font-size: 6vw;
     }
      @media (max-width: 550px) {
         font-size: 1.6rem;
