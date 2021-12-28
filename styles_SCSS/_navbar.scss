@@ -7,6 +7,10 @@
     height: 3em;
     z-index: 100;
     background-color: $background-black;
+    box-shadow: 0.1em 0.1em 2em 3em $background-black;
+    @media (max-width: 750px) {
+    box-shadow: 0.1em 0.1em 1.5em 2em $background-black;
+    }
     @include flex-center;
 
    @media (max-width: 750px) {
@@ -22,10 +26,7 @@
         z-index: 1;
         margin-left: 1em;
         margin-right: 1em;
-        box-shadow: 0.1em 0.1em 2em 3em $background-black;
-            @media (max-width: 750px) {
-            box-shadow: 0.1em 0.1em 1.5em 2em $background-black;
-            }
+      
         .logo {
             width:clamp(4.4em,7vw,7.1em);
             height:auto;

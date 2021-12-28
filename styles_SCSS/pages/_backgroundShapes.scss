@@ -4,7 +4,75 @@
     min-width: $minSize;
     min-height: $minSize;
 }
+@mixin triangleBase($left,$top,$rot){
+    top:$top;
+    left:$left;
+    transform:rotateZ($rot);
+}
+.triangle-container{
+    position: absolute;
+    left:0px;
+    top:0;
 
+}
+.triangle{
+  position:absolute;
+  z-index: 3;
+       
+  // The actual clipping effect
+  clip-path: url(#cp);
+
+  // Keep it proportional
+  width: 10vw;
+  height: 10vw;
+  max-height: 11vh;
+  max-width: 11vh;
+  &:nth-child(1){
+    background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+    @include triangleBase(5vw,20vw,15deg);
+    }
+    &:nth-child(2){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(15vw,30vw,115deg);
+    }
+    &:nth-child(3){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(85vw,35vw,90deg);
+    }
+    &:nth-child(4){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(75vw,90vw,20deg);
+    }
+    &:nth-child(5){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(55vw,80vw,80deg);
+    }
+    &:nth-child(6){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(85vw,20vw,150deg);
+    }
+    &:nth-child(7){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(15vw,10vw,50deg);
+    }
+    &:nth-child(8){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(75vw,10vw,100deg);
+    }
+    &:nth-child(9){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(15vw,100vw,100deg);
+    }
+    &:nth-child(10){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(5vw,60vw,10deg);
+    }
+}
+  .circle-container{
+      position: absolute;
+      width: 100%;
+
+  }
 .circle{
     display: inline-block;
     position:absolute;
@@ -14,6 +82,8 @@
     opacity: 0.8;
     align-items:center;
     justify-content:center;
+    max-width: 40em;
+    max-height: 40em;
     @media (max-width: 750px) {
         opacity: 0.6;
     }
@@ -24,12 +94,13 @@
         position:absolute;
         border-radius: 50%;
         background: hsl(240, 26%, 5%);
-     
+        max-width: 30em;
+        max-height: 30em;
     }
 
     &:nth-child(1){
-        background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
-        @include circleBase(33vw,450px);
+        
+        @include circleBase(60vw,450px);
         margin-left:70%;
         margin-top: 10em;
         .inner-circle{
@@ -37,7 +108,7 @@
         }
     }
     &:nth-child(2){
-        background: linear-gradient(150.08deg, #d02020 4.53%, #f6df0e 109%);
+        
         @include circleBase(36vw,480px);
         margin-left: 70%;
         margin-top: 15em;
