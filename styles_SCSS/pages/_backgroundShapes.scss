@@ -13,7 +13,9 @@
     position: absolute;
     left:0px;
     top:0;
-
+    @media (max-width:500px){
+        margin-top: 80px;
+        }
 }
 .triangle{
   position:absolute;

@@ -9,6 +9,12 @@
   top: 0;
 }
 
+@media (max-width: 500px) {
+  .triangle-container {
+    margin-top: 80px;
+  }
+}
+
 .triangle {
   position: absolute;
   z-index: 3;
