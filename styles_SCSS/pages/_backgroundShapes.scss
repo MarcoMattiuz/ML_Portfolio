@@ -49,7 +49,7 @@
         background: linear-gradient(180.08deg,  #b320d0 -6.53%, #0ee7f6 109%);
         @include circleBase(46vw,480px);
         margin-left: -19%;
-        margin-top: 45em;
+        margin-top:85vh;
         .inner-circle{
             @include circleBase(39vw,380px);
         }
@@ -58,7 +58,7 @@
         background: linear-gradient(100.08deg, #efcf18 10%, #27dbe8 );
         @include circleBase(36vw,480px);
         margin-left: 70%;
-        margin-top: 83em;
+        margin-top: 170vh;
         .inner-circle{
             @include circleBase(29vw,370px);
         }
@@ -67,7 +67,7 @@
         background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
         @include circleBase(37vw,490px);
         margin-left: -10em;
-        margin-top: 125em;
+        margin-top: 240vh;
         .inner-circle{
             @include circleBase(30vw,390px);
         }
@@ -76,7 +76,7 @@
         background: linear-gradient(150.08deg, #8822b8, #8333c5 , #1c44f7 );
         @include circleBase(36vw,480px);
         margin-left: 70%;
-        margin-top: 160em;
+        margin-top: 320vh;
         .inner-circle{
             @include circleBase(29vw,350px);
         }
@@ -85,7 +85,7 @@
         background: linear-gradient(180.59deg, #879AF2 -6.53%, #D3208B 51.52%, #FDA000 109%);
         @include circleBase(37vw,490px);
         margin-left: -10em;
-        margin-top: 190em;
+        margin-top: 390vh;
         .inner-circle{
             @include circleBase(30vw,390px);
         }
@@ -94,7 +94,7 @@
           background: linear-gradient(150.08deg,#f76015 -6.53%, #e032ec 109%,#693ce4 109%);
          @include circleBase(36vw,480px);
          margin-left: 70%;
-         margin-top: 225em;
+         margin-top: 470vh;
          .inner-circle{
              @include circleBase(29vw,350px);
          }
@@ -103,7 +103,7 @@
         background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
         @include circleBase(33vw,450px);
         margin-left:-9em;
-        margin-top: 0em;
+        margin-top: 0vw;
         .inner-circle{
             @include circleBase(27vw,380px);
         }
@@ -112,7 +112,7 @@
         background: linear-gradient(150.08deg, #d02020 4.53%, #f6df0e 109%);
         @include circleBase(36vw,480px);
         margin-left: 70%;
-        margin-top: 15em;
+        margin-top: 25vw;
         .inner-circle{
             @include circleBase(29vw,350px);
         }
@@ -123,7 +123,7 @@
         background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
         @include circleBase(37vw,490px);
         margin-left: -10em;
-        margin-top: 260em;
+        margin-top: 550vh;
         .inner-circle{
             @include circleBase(30vw,390px);
         }
@@ -132,7 +132,7 @@
         background: linear-gradient(150.08deg, #8822b8, #8333c5 , #1c44f7 );
         @include circleBase(36vw,480px);
         margin-left: 70%;
-        margin-top: 290em;
+        margin-top: 620vh;
         .inner-circle{
             @include circleBase(29vw,350px);
         }
@@ -141,20 +141,12 @@
         background: linear-gradient(100.08deg, #efcf18 10%, #27dbe8 );
         @include circleBase(36vw,480px);
         margin-left: -10%;
-        margin-top: 325em;
+        margin-top: 700vh;
+
         .inner-circle{
             @include circleBase(29vw,370px);
         }
     }
 
-    &:nth-child(16){
-        background: linear-gradient(150.08deg, #b82222, #c59733);
-        @include circleBase(36vw,480px);
-        margin-left: 70%;
-        margin-top: 350em;
-        
-        .inner-circle{
-            @include circleBase(29vw,350px);
-        }
-    }
+
 }

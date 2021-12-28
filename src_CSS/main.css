@@ -79,7 +79,7 @@
   min-width: 480px;
   min-height: 480px;
   margin-left: -19%;
-  margin-top: 45em;
+  margin-top: 85vh;
 }
 
 .circle:nth-child(3) .inner-circle {
@@ -96,7 +96,7 @@
   min-width: 480px;
   min-height: 480px;
   margin-left: 70%;
-  margin-top: 83em;
+  margin-top: 170vh;
 }
 
 .circle:nth-child(4) .inner-circle {
@@ -113,7 +113,7 @@
   min-width: 490px;
   min-height: 490px;
   margin-left: -10em;
-  margin-top: 125em;
+  margin-top: 240vh;
 }
 
 .circle:nth-child(5) .inner-circle {
@@ -130,7 +130,7 @@
   min-width: 480px;
   min-height: 480px;
   margin-left: 70%;
-  margin-top: 160em;
+  margin-top: 320vh;
 }
 
 .circle:nth-child(6) .inner-circle {
@@ -147,7 +147,7 @@
   min-width: 490px;
   min-height: 490px;
   margin-left: -10em;
-  margin-top: 190em;
+  margin-top: 390vh;
 }
 
 .circle:nth-child(7) .inner-circle {
@@ -164,7 +164,7 @@
   min-width: 480px;
   min-height: 480px;
   margin-left: 70%;
-  margin-top: 225em;
+  margin-top: 470vh;
 }
 
 .circle:nth-child(8) .inner-circle {
@@ -181,7 +181,7 @@
   min-width: 450px;
   min-height: 450px;
   margin-left: -9em;
-  margin-top: 0em;
+  margin-top: 0vw;
 }
 
 .circle:nth-child(9) .inner-circle {
@@ -198,7 +198,7 @@
   min-width: 480px;
   min-height: 480px;
   margin-left: 70%;
-  margin-top: 15em;
+  margin-top: 25vw;
 }
 
 .circle:nth-child(10) .inner-circle {
@@ -215,7 +215,7 @@
   min-width: 490px;
   min-height: 490px;
   margin-left: -10em;
-  margin-top: 260em;
+  margin-top: 550vh;
 }
 
 .circle:nth-child(13) .inner-circle {
@@ -232,7 +232,7 @@
   min-width: 480px;
   min-height: 480px;
   margin-left: 70%;
-  margin-top: 290em;
+  margin-top: 620vh;
 }
 
 .circle:nth-child(14) .inner-circle {
@@ -249,7 +249,7 @@
   min-width: 480px;
   min-height: 480px;
   margin-left: -10%;
-  margin-top: 325em;
+  margin-top: 700vh;
 }
 
 .circle:nth-child(15) .inner-circle {
@@ -257,23 +257,6 @@
   height: 29vw;
   min-width: 370px;
   min-height: 370px;
-}
-
-.circle:nth-child(16) {
-  background: linear-gradient(150.08deg, #b82222, #c59733);
-  width: 36vw;
-  height: 36vw;
-  min-width: 480px;
-  min-height: 480px;
-  margin-left: 70%;
-  margin-top: 350em;
-}
-
-.circle:nth-child(16) .inner-circle {
-  width: 29vw;
-  height: 29vw;
-  min-width: 350px;
-  min-height: 350px;
 }
 
 /****************fonts****************/
@@ -1594,8 +1577,10 @@ html.fp-enabled {
   opacity: 0.25;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
-  -webkit-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 
 .fade-in.appear {
