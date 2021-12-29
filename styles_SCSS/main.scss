@@ -12,6 +12,7 @@
 @import "./webkit-mods";
 
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@800&family=Quicksand:wght@300&family=Titillium+Web:wght@300&display=swap");
+
 // // // // // // // // //
 // initializing tags //
 // // // // // // // // //
@@ -41,6 +42,7 @@ p {
     font-family: $open-Sans;
     @include small-text;
 }
+
 h5 {
     color: white;
     font-family: $open-Sans;
@@ -50,9 +52,10 @@ h5 {
 span {
     background: $background-white !important;
 }
+
 // // // // // // // // //
 
-html{
+html {
     scroll-behavior: smooth;
     width: 100vw;
     height: 100vh;
@@ -88,21 +91,24 @@ body {
     .footer {
         height: 10vh;
         margin-top: 5vh;
+
         .foot-wrap {
             height: 100%;
             width: 73%;
             margin: 0 auto;
-           display: flex;
-           justify-content: space-around;
-           align-items: center;
-            .left-side{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .left-side {
                 .foot-logo {
-                    width:4rem;
+                    width: 4rem;
                     opacity: 0.6;
                     margin-right: 50%;
                     padding-top: 0.5em;
                 }
-                .mails{
+
+                .mails {
                     font-size: 0.8rem;
                     color: $background-white;
                     opacity: 0.6;
@@ -110,6 +116,7 @@ body {
                     font-family: "Titillium Web", sans-serif;
                 }
             }
+
             .emails {
                 .mails {
                     font-size: 0.8rem;
@@ -159,6 +166,7 @@ html.fp-enabled {
     transform: scale(0.95);
     transition: all 500ms ease-in;
 }
+
 .fade-in.appear {
     opacity: 1;
     transform: scale(1);

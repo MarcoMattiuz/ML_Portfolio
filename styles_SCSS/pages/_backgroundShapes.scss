@@ -1,9 +1,4 @@
-@mixin circleBase ($size,$minSize){
-    width:$size;
-    height: $size;
-    min-width: $minSize;
-    min-height: $minSize;
-}
+
 
 .circle{
     display: inline-block;
