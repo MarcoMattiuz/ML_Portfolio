@@ -147,9 +147,9 @@ html.fp-enabled {
     position: absolute;
     z-index: -1;
     font-family: $open-Sans;
-    background-image: linear-gradient(180deg, rgba(100, 255, 216, 0.986),rgba(0, 0, 0, 0));
+    background-image: linear-gradient(180deg, rgba(100, 255, 216, 0.986),rgba(100, 255, 216, 0.336));
 
-    font-size: clamp(5.5rem, 15vw, 20rem);
+    font-size: clamp(5.5rem, 11vw, 20rem);
     white-space: nowrap;
     top: 0;
     background-size:cover;
