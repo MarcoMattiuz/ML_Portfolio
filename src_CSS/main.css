@@ -584,7 +584,7 @@
 .header .nav-bar .links-container p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
 }
 
 .header .nav-bar .links-container .links {
@@ -688,7 +688,7 @@
   .header .nav-bar .hamburger-icon {
     width: 2.0em;
     height: 0.25em;
-    background: rgba(236, 228, 228, 0.925);
+    background: rgba(236, 228, 228, 0.952);
     border-radius: 0.5em;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -698,7 +698,7 @@
     position: absolute;
     width: 2.0em;
     height: 0.25em;
-    background: rgba(236, 228, 228, 0.925);
+    background: rgba(236, 228, 228, 0.952);
     border-radius: 0.5em;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -771,7 +771,7 @@
   .hamburger-menu-container .links-container1 p {
     font-family: "Open Sans", sans-serif;
     font-size: 0.9rem;
-    color: rgba(236, 228, 228, 0.925);
+    color: rgba(236, 228, 228, 0.952);
     font-size: 1rem;
   }
   .hamburger-menu-container .links-container1 .contact-button1 {
@@ -917,7 +917,7 @@
   margin-top: 0.6em;
   font: "Open Sans", sans-serif;
   font-size: 1.1rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
 }
 
 @media (max-width: 1150px) {
@@ -956,7 +956,7 @@
 .title-container .ourWork-button #ourWork {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1510,7 +1510,7 @@ input {
   margin-bottom: 1rem;
   width: 90%;
   border-radius: 0.7em;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
   font-family: "Raleway", sans-serif;
   font-size: 0.75em;
 }
@@ -1533,7 +1533,7 @@ textarea {
   border-radius: 0.7em;
   font-family: "Raleway", sans-serif;
   resize: none;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
 }
 
 @media (max-width: 500px) {
@@ -1546,7 +1546,7 @@ button {
   border: none;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
 }
 
 input:-webkit-autofill,
@@ -1607,7 +1607,7 @@ input:-webkit-autofill:focus {
   background-position: right;
   -webkit-transition: background-position 0.7s;
   transition: background-position 0.7s;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
   font-size: calc(0.7vw+1rem);
 }
 
@@ -1636,7 +1636,7 @@ input:-webkit-autofill:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(236, 228, 228, 0.925);
+  background: rgba(236, 228, 228, 0.952);
   border-radius: 0.7em;
 }
 
@@ -1670,7 +1670,7 @@ p {
   font-family: "Open Sans", sans-serif;
   font: "Open Sans", sans-serif;
   font-size: 0.8rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
 }
 
 @media (min-width: 2560px) {
@@ -1694,7 +1694,7 @@ h5 {
   font-family: "Open Sans", sans-serif;
   font: "Open Sans", sans-serif;
   font-size: 1.1rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
 }
 
 @media (max-width: 1150px) {
@@ -1716,7 +1716,7 @@ h5 {
 }
 
 span {
-  background: rgba(236, 228, 228, 0.925) !important;
+  background: rgba(236, 228, 228, 0.952) !important;
 }
 
 html {
@@ -1800,7 +1800,7 @@ body .footer .foot-wrap .left-side .foot-logo {
 
 body .footer .foot-wrap .left-side .mails {
   font-size: 0.8rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
   opacity: 0.6;
   margin-top: 0.2em;
   font-family: "Titillium Web", sans-serif;
@@ -1808,7 +1808,7 @@ body .footer .foot-wrap .left-side .mails {
 
 body .footer .foot-wrap .emails .mails {
   font-size: 0.8rem;
-  color: rgba(236, 228, 228, 0.925);
+  color: rgba(236, 228, 228, 0.952);
   opacity: 0.6;
   margin: 0.3rem;
   font-family: "Titillium Web", sans-serif;
@@ -1823,7 +1823,7 @@ body .footer::before {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   border-radius: 2rem;
-  background-color: rgba(236, 228, 228, 0.925);
+  background-color: rgba(236, 228, 228, 0.952);
   opacity: 0.6;
 }
 
