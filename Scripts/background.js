@@ -28,8 +28,8 @@ console.log(title_about);
 
             velocity = 0.07;
             title_about.style.right= Math.max(55 - velocity * window.scrollY, +1) + '%';
-            title_Skill.style.right = Math.max(300 - velocity * window.scrollY, +1) + '%';
-            title_projects.style.right = Math.max(330 - velocity * window.scrollY, +1) + '%';
+            title_Skill.style.right = Math.max(280 - velocity * window.scrollY, +1) + '%';
+            title_projects.style.right = Math.max(310 - velocity * window.scrollY, +1) + '%';
             title_contact.style.right = Math.max(350 - velocity * window.scrollY, +1) + '%';
        
         }else{
