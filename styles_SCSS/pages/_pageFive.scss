@@ -9,6 +9,9 @@ input {
     color: $background-white;
     font-family:$raleway;
     font-size: 0.75em;
+    @media (max-width: 500px) {
+        padding: 1.1em;
+   }
 }
 
 textarea {
@@ -17,8 +20,11 @@ textarea {
     margin-bottom: 1rem;
     background: #312f2fdc;
     padding: 1.5em;
-    width: 5rem;
+    height: 90%;
     width: 90%;
+    @media (max-width: 500px) {
+         height: 5rem;
+    }
     font-size: 0.75em;
     border-radius: $standard-radius;
     font-family:$raleway;
@@ -57,10 +63,13 @@ input:-webkit-autofill:focus {
 //    }
     p{
         padding-bottom: 1em;
-        padding-top: 2em;
+
         font-family: $raleway;
         text-align: center;
         font-size: 1em;
+        @media (max-width: 500px) {
+            padding-bottom: 1em;
+       }
     }
     .input-helpers{
         padding-top: 0.5em;

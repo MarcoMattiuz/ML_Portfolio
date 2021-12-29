@@ -15,9 +15,146 @@
   }
 }
 
+.triangle-container .section-2 {
+  position: absolute;
+  left: 0px;
+  top: 3300px;
+}
+
+.triangle-container .section-2 .triangle:nth-child(1) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: -20vw;
+  left: 5vw;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(2) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 30vw;
+  left: 15vw;
+  -webkit-transform: rotateZ(115deg);
+          transform: rotateZ(115deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(3) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 55vw;
+  left: 85vw;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(4) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 90vw;
+  left: 75vw;
+  -webkit-transform: rotateZ(20deg);
+          transform: rotateZ(20deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(5) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 80vw;
+  left: 79vw;
+  -webkit-transform: rotateZ(80deg);
+          transform: rotateZ(80deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(6) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: -25vw;
+  left: 85vw;
+  -webkit-transform: rotateZ(150deg);
+          transform: rotateZ(150deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(7) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 10vw;
+  left: 15vw;
+  -webkit-transform: rotateZ(50deg);
+          transform: rotateZ(50deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(8) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 20vw;
+  left: 75vw;
+  -webkit-transform: rotateZ(100deg);
+          transform: rotateZ(100deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(9) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 120vw;
+  left: 15vw;
+  -webkit-transform: rotateZ(100deg);
+          transform: rotateZ(100deg);
+}
+
+.triangle-container .section-2 .triangle:nth-child(10) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 80vw;
+  left: 5vw;
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+}
+
+.triangle-container .section-3 {
+  position: absolute;
+  left: 0px;
+  top: 4000px;
+}
+
+@media (max-width: 500px) {
+  .triangle-container .section-3 {
+    top: 4100px;
+  }
+}
+
+@media (max-width: 350px) {
+  .triangle-container .section-3 {
+    display: none;
+  }
+}
+
+.triangle-container .section-3 .triangle:nth-child(1) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 84vw;
+  left: 5vw;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+
+.triangle-container .section-3 .triangle:nth-child(2) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 70vw;
+  left: 5vw;
+  -webkit-transform: rotateZ(115deg);
+          transform: rotateZ(115deg);
+}
+
+.triangle-container .section-3 .triangle:nth-child(3) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 60vw;
+  left: 89vw;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.triangle-container .section-3 .triangle:nth-child(4) {
+  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+  top: 90vw;
+  left: 75vw;
+  -webkit-transform: rotateZ(20deg);
+          transform: rotateZ(20deg);
+}
+
 .triangle {
   position: absolute;
   z-index: 3;
+  opacity: 0.8;
   -webkit-clip-path: url(#cp);
           clip-path: url(#cp);
   width: 10vw;
@@ -1378,19 +1515,31 @@ input {
   font-size: 0.75em;
 }
 
+@media (max-width: 500px) {
+  input {
+    padding: 1.1em;
+  }
+}
+
 textarea {
   outline: none;
   border: none;
   margin-bottom: 1rem;
   background: #312f2fdc;
   padding: 1.5em;
-  width: 5rem;
+  height: 90%;
   width: 90%;
   font-size: 0.75em;
   border-radius: 0.7em;
   font-family: "Raleway", sans-serif;
   resize: none;
   color: rgba(236, 228, 228, 0.925);
+}
+
+@media (max-width: 500px) {
+  textarea {
+    height: 5rem;
+  }
 }
 
 button {
@@ -1427,10 +1576,15 @@ input:-webkit-autofill:focus {
 
 .contact-form p {
   padding-bottom: 1em;
-  padding-top: 2em;
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 1em;
+}
+
+@media (max-width: 500px) {
+  .contact-form p {
+    padding-bottom: 1em;
+  }
 }
 
 .contact-form .input-helpers {
@@ -1638,6 +1792,12 @@ body .footer .foot-wrap .left-side .foot-logo {
   padding-top: 0.5em;
 }
 
+@media (max-width: 400px) {
+  body .footer .foot-wrap .left-side .foot-logo {
+    margin-top: 1.2em;
+  }
+}
+
 body .footer .foot-wrap .left-side .mails {
   font-size: 0.8rem;
   color: rgba(236, 228, 228, 0.925);
@@ -1676,11 +1836,14 @@ html.fp-enabled {
   position: absolute;
   z-index: -1;
   font-family: "Open Sans", sans-serif;
-  color: rgba(100, 255, 216, 0.45);
-  opacity: 0.8;
-  font-size: clamp(11.5rem, 12vw, 20rem);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 255, 216, 0.45)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(180deg, rgba(100, 255, 216, 0.45), rgba(0, 0, 0, 0));
+  font-size: clamp(5.5rem, 12vw, 20rem);
   white-space: nowrap;
   top: 0;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .fade-in {

@@ -101,6 +101,9 @@ body {
                     opacity: 0.6;
                     margin-right: 50%;
                     padding-top: 0.5em;
+                    @media (max-width: 400px) {
+                        margin-top: 1.2em;
+                   }
                 }
                 .mails{
                     font-size: 0.8rem;
@@ -144,12 +147,14 @@ html.fp-enabled {
     position: absolute;
     z-index: -1;
     font-family: $open-Sans;
-    color: rgba(100, 255, 216, 0.45);
-    opacity: 0.8;
-    font-size: clamp(11.5rem, 12vw, 20rem);
+    background-image: linear-gradient(180deg, rgba(100, 255, 216, 0.45),rgba(0, 0, 0, 0));
+
+    font-size: clamp(5.5rem, 12vw, 20rem);
     white-space: nowrap;
     top: 0;
-
+    background-size:cover;
+    -webkit-background-clip: text;
+    color:transparent;
     // transform: translateZ(20px);
     // transform: rotate3d(2, -1, -1, -0.2turn);
 }

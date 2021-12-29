@@ -16,11 +16,91 @@
     @media (max-width:500px){
         margin-top: 80px;
         }
+        .section-2{
+
+            position: absolute;
+            left:0px;
+            top:3300px;
+            .triangle{
+                &:nth-child(1){
+                    background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                    @include triangleBase(5vw,-20vw,15deg);
+                    }
+                    &:nth-child(2){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(15vw,30vw,115deg);
+                    }
+                    &:nth-child(3){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(85vw,55vw,90deg);
+                    }
+                    &:nth-child(4){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(75vw,90vw,20deg);
+                    }
+                    &:nth-child(5){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(79vw,80vw,80deg);
+                    }
+                    &:nth-child(6){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(85vw,-25vw,150deg);
+                    }
+                    &:nth-child(7){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(15vw,10vw,50deg);
+                    }
+                    &:nth-child(8){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(75vw,20vw,100deg);
+                    }
+                    &:nth-child(9){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(15vw,120vw,100deg);
+                    }
+                    &:nth-child(10){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(5vw,80vw,10deg);
+                    }
+          
+            }
+        }
+        .section-3{
+            position: absolute;
+            left:0px;
+            top:4000px;
+            @media (max-width:500px){
+                top: 4100px;
+            }
+            @media (max-width:350px){
+                display: none;
+            }
+            .triangle{
+                &:nth-child(1){
+                    background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                    @include triangleBase(5vw,84vw,15deg);
+                    }
+                    &:nth-child(2){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(5vw,70vw,115deg);
+                    }
+                    &:nth-child(3){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(89vw,60vw,90deg);
+                    }
+                    &:nth-child(4){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(75vw,90vw,20deg);
+                    }
+            }
+        }
+        
+            
 }
 .triangle{
   position:absolute;
   z-index: 3;
-       
+       opacity: 0.8;
   // The actual clipping effect
   clip-path: url(#cp);
 
@@ -69,6 +149,7 @@
         background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
         @include triangleBase(5vw,60vw,10deg);
     }
+   
 }
   .circle-container{
       position: absolute;
