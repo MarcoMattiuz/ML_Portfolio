@@ -164,7 +164,8 @@ html.fp-enabled {
 .fade-in {
     opacity: 0.25;
     transform: scale(0.95);
-    transition: all 500ms ease-in;
+    transition: 500ms ease-in;
+    transition-property: opacity;
 }
 
 .fade-in.appear {

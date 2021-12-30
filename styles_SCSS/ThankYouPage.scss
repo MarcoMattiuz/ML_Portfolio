@@ -2,9 +2,11 @@
 @import "./mixins-functions";
 
 @import url("https://rsms.me/inter/inter.css");
+
 html {
     font-family: $open-Sans;
 }
+
 @supports (font-variation-settings: normal) {
     html {
         font-family: "Inter var", sans-serif;
@@ -15,7 +17,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    z-index: 0;
+    z-index: -1;
     margin: 0;
     background: $background-black;
     height: 100vh;
@@ -44,6 +46,8 @@ section {
 
     span {
         @include clipBg-ToText;
+        position: relative;
+        z-index: 1;
         background-image: $buttons-gradient;
         transition: font-weight 0.4s ease-in;
         animation: floating-secondary 2.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
@@ -51,28 +55,50 @@ section {
 }
 
 section {
-    
+
     span:nth-child(1) {
         background-size: 200%;
         background-position: top;
         animation-delay: 1s;
+
     }
+
     span:nth-child(2) {
+        background-size: 140%;
+        background-position: top;
         animation-delay: 2s;
+        z-index: 2;
     }
+
     span:nth-child(3) {
+        background-size: 240%;
+        background-position: top;
         animation-delay: 3s;
+
+
     }
+
     span:nth-child(4) {
+        background-size: 200%;
+        background-position: left;
         animation-delay: 4s;
     }
+
     span:nth-child(5) {
+        background-size: 200%;
+        background-position: right;
         animation-delay: 5s;
     }
+
     span:nth-child(6) {
+        background-size: 230%;
+        background-position: top;
         animation-delay: 6s;
     }
+
     span:nth-child(7) {
+        background-size: 210%;
+        background-position: bottom;
         animation-delay: 7s;
     }
 
@@ -85,9 +111,11 @@ section {
     0% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(0, 5vh);
     }
+
     100% {
         transform: translate(0, 0);
     }
@@ -97,9 +125,11 @@ section {
     0% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(0, 1vh);
     }
+
     100% {
         transform: translate(0, 0);
     }
@@ -109,9 +139,11 @@ section {
     0% {
         transform: rotate(1deg);
     }
+
     50% {
         transform: rotate(-1deg);
     }
+
     100% {
         transform: rotate(1deg);
     }
@@ -138,3 +170,46 @@ section {
     opacity: 1;
 }
 
+
+
+
+.triangle {
+    position: absolute;
+    z-index: 1;
+
+    // The actual clipping effect
+    clip-path: url(#cp);
+
+    // Keep it proportional
+    width: 10vw;
+    height: 10vw;
+    max-height: 11vh;
+    max-width: 11vh;
+
+    &:nth-child(1) {
+        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+        @include triangleBase(80%, 9%, 15deg);
+    }
+
+    &:nth-child(2) {
+        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+        @include triangleBase(53%, 44%, 115deg);
+    }
+
+    &:nth-child(3) {
+        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+        @include triangleBase(43%, 31%, 90deg);
+    }
+
+    &:nth-child(4) {
+        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+        @include triangleBase(67%, 64%, 20deg);
+    }
+
+    &:nth-child(5) {
+        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
+        @include triangleBase(86%, 76%, 80deg);
+    }
+
+
+}
