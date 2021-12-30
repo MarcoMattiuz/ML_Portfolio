@@ -21,14 +21,28 @@ console.log(title_about);
      
         triangle.style.top = cont * 0.25 +'px';
    
-    
+    let velocity;
+
      circle.style.top= cont *0.15+'px';
-//     title_about.style.left = Math.max(-5 + 0.07 * window.scrollY, -1) + '%';
-//     title_Skill.style.left = Math.max(260 - 0.07 * window.scrollY, -10) + '%';
-//     title_projects.style.left = Math.max(-270 + 0.07 * window.scrollY, -50) + '%';
-//     title_contact.style.left = Math.max(+350 - 0.07 * window.scrollY, -50) + '%';
-//     console.log(window.scrollY);
- })
+        if(window.screen.width<500){
+
+            velocity = 0.07;
+            title_about.style.right= Math.max(55 - velocity * window.scrollY, +1) + '%';
+            title_Skill.style.right = Math.max(270 - velocity * window.scrollY, +1) + '%';
+            title_projects.style.right = Math.max(310 - velocity * window.scrollY, +1) + '%';
+            title_contact.style.right = Math.max(350 - velocity * window.scrollY, +1) + '%';
+       
+        }else{
+
+             velocity = 0.04;
+             title_about.style.right= Math.max(55 - velocity * window.scrollY, +1) + '%';
+             title_Skill.style.right = Math.max(240 - velocity * window.scrollY, +1) + '%';
+             title_projects.style.right = Math.max(260 - velocity * window.scrollY, +1) + '%';
+             title_contact.style.right = Math.max(290 - velocity * window.scrollY, +1) + '%';
+        
+        }
+    
+ });
 
 
 
