@@ -6,7 +6,7 @@ var title_contact = document.querySelector("#title-contact");
 var triangle = document.querySelector(".triangle-container");
 var circle = document.querySelector(".circle-container");
 console.log(title_about);
-
+const count= document.querySelector('#visitator-count');
  let cont=1;   
 
  window.addEventListener("scroll", a => {
@@ -23,8 +23,8 @@ console.log(title_about);
     }
     })
      cont = window.scrollY;
-     
-        triangle.style.top = cont * 0.25 +'px';
+        count.style.top= cont *-0.1 +'px';
+        triangle.style.top = cont * -0.23 +'px';
    
     let velocity;
 

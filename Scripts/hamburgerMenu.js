@@ -3,6 +3,16 @@ window.onload = function(){
 
     src="https://kit.fontawesome.com/d53ca7f8cc.js";
     crossorigin="anonymous";
+
+      ///// visitator counter API
+      const count= document.querySelector('#visitator-count');
+      updateVisitCount();
+      function updateVisitCount(){
+  
+        fetch('https://api.countapi.xyz/hit/marco-lorenzo-portfolio.com/visits').then(res => res.json()).then(res =>{
+            count.innerHTML = res.value;
+        });
+      }
 }
     const hamburgerButton = document.querySelector('.hamburger-menu');
     const hamburgerMenu = document.querySelector('.hamburger-menu-container');
@@ -59,3 +69,5 @@ window.onload = function(){
     window.addEventListener('resize', () => {
       spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
     });
+
+  

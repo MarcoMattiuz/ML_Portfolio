@@ -1,4 +1,17 @@
 /* section 1 */
+#visitator-count{
+    position: absolute;
+    font-family: $open-Sans;
+    font-size: clamp(5em,25vw,30em);
+    background-image: linear-gradient(180deg, rgba(255, 100, 100, 0.986),rgba(255, 230, 0, 0.644));
+    left:1%;
+    margin-top:2em;
+    white-space: nowrap;
+    background-size:cover;
+    -webkit-background-clip: text;
+    color:transparent;
+
+}
 .title-container {
     position: relative;
     width: 85%;

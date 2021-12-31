@@ -6,13 +6,13 @@
     left:0px;
     top:0;
     @media (max-width:500px){
-        margin-top: 80px;
+        margin-top: 200px;
         }
         .section-2{
 
             position: absolute;
             left:0px;
-            top:3300px;
+            top:5500px;
             .triangle{
                 &:nth-child(1){
                     background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
@@ -60,7 +60,7 @@
         .section-3{
             position: absolute;
             left:0px;
-            top:4000px;
+            top:7500px;
             @media (max-width:500px){
                 top: 4100px;
             }
