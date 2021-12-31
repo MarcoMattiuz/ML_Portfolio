@@ -1,6 +1,4 @@
-//prova
 
-// window.addEventListener("load", () => {
 var title_about = document.querySelector("#title-about");
 var title_Skill = document.querySelector("#title-skill");
 var title_projects = document.querySelector("#title-projects");
@@ -9,14 +7,21 @@ var triangle = document.querySelector(".triangle-container");
 var circle = document.querySelector(".circle-container");
 console.log(title_about);
 
-
-
-// console.log(cont);
-// var vh=Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);;
-// console.log(vh);
  let cont=1;   
 
  window.addEventListener("scroll", a => {
+    let fadeIn = document.querySelectorAll(".fade-in");
+    fadeIn.forEach(fadeIn =>{
+        let contentPos = fadeIn.getBoundingClientRect().top;
+    let screenPos = window.innerHeight /1.13;
+    if(contentPos< screenPos){
+
+            fadeIn.classList.add("appear");
+
+    }else {
+            fadeIn.classList.remove("appear");
+    }
+    })
      cont = window.scrollY;
      
         triangle.style.top = cont * 0.25 +'px';
@@ -44,7 +49,4 @@ console.log(title_about);
     
  });
 
-
-
-// });
 
