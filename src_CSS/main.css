@@ -12,7 +12,7 @@
 
 @media (max-width: 500px) {
   .triangle-container {
-    margin-top: 200px;
+    margin-top: 80px;
   }
 }
 
@@ -883,6 +883,13 @@
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@media (max-width: 500px) {
+  #visitator-count {
+    left: 10%;
+    margin-top: 3em;
+  }
 }
 
 .title-container {
