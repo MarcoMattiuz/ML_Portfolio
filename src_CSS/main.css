@@ -1019,7 +1019,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr, 1fr;
       grid-template-rows: 4fr, 1fr;
-      grid-template-areas: "img" "text";
+      grid-template-areas: "img" "text";
   -ms-flex-line-pack: end;
       align-content: flex-end;
   -webkit-box-align: stretch;
