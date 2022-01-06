@@ -875,9 +875,11 @@
   position: absolute;
   font-family: "Open Sans", sans-serif;
   font-size: clamp(5em, 25vw, 30em);
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 100, 100, 0.986)), to(rgba(255, 230, 0, 0.644)));
   background-image: linear-gradient(180deg, rgba(255, 100, 100, 0.986), rgba(255, 230, 0, 0.644));
-  left: 1%;
+  left: -1%;
   margin-top: 2em;
   white-space: nowrap;
   background-size: cover;
@@ -888,7 +890,7 @@
 @media (max-width: 500px) {
   #visitator-count {
     left: 10%;
-    margin-top: 3em;
+    margin-top: 4em;
   }
 }
 
