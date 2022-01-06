@@ -71,12 +71,6 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 
-    .fp-tableCell {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
 
     .section {
         position: relative;
@@ -145,10 +139,7 @@ body {
     }
 }
 
-.fp-enabled body,
-html.fp-enabled {
-    overflow-x: hidden !important;
-}
+
 
 .parallax_title {
     position: absolute;
