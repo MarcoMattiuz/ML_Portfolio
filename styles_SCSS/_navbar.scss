@@ -7,6 +7,10 @@
     height: 3em;
     z-index: 100;
     background-color: $background-black;
+    box-shadow: 0.1em 0.1em 2em 3em $background-black;
+    @media (max-width: 750px) {
+    box-shadow: 0.1em 0.1em 1.5em 2em $background-black;
+    }
     @include flex-center;
 
    @media (max-width: 750px) {
@@ -22,10 +26,7 @@
         z-index: 1;
         margin-left: 1em;
         margin-right: 1em;
-        box-shadow: 0.1em 0.1em 2em 3em $background-black;
-            @media (max-width: 750px) {
-            box-shadow: 0.1em 0.1em 1.5em 2em $background-black;
-            }
+      
         .logo {
             width:clamp(4.4em,7vw,7.1em);
             height:auto;
@@ -50,9 +51,9 @@
                 width: 6.5em;
                 height: 90%;
                 border-radius: 0.5rem;
-                background-size: 250%;
-                background-position: right;
-                transition: background-position 0.3s;
+                background-size: 260%;
+                background-position:right;
+                transition: background-position 0.35s;
                 
             }
             .links:hover,.links:focus{
@@ -63,6 +64,11 @@
         }
 
         .contact-button {
+            a{
+                width: 100%;
+                @include flex-center;
+                height: 100%;
+            }
             margin-right: 4em;
             @include flex-center;
             width: 8em;
@@ -91,6 +97,7 @@
             }
 
             .contact-button{
+             
                 position: absolute;
                 margin-right: 1em;
                 font-size: 0.8rem;
@@ -179,9 +186,15 @@
                
             }
             .contact-button1{
-                width: 75% ;
+                a{
+                    @include flex-center;
+                    width: 100% ;
+                    height: 100%;
+                }
+                width: 85% ;
+                height: 10%;
                 margin:0.3em;
-                padding: 1.3em ;
+
                 @include flex-center;
                 border-radius: $standard-radius;
                 background: $buttons-gradient;
@@ -192,33 +205,7 @@
             .contact-button1:hover,.contact-button1:focus{
                 background-position: right;
             }
-            .links1{
-                width: 75% ;
-                margin:0.3em;
-                border-radius: $standard-radius;
-                padding: 1.2em;
-                @include flex-center;
-                background: linear-gradient(90deg,rgba(158, 157, 157, 0.199),$background-black,$background-black );
-                background-size: 150%;
-                background-position: right;
-                transition: background-position 0.3s;
-            }
-            .links1:hover,.links1:focus{
-                background-position: left;  
-            }
-            .menu-icons{
-                @include flex-center;
-                img{
-                    margin: 4em 1em 0 1em ;
-                    width: 40%; height: auto; 
-                    transition: all 100ms ease-in;
-
-                }
-                img:hover,img:focus{
-                    transform: scale(1.2); 
-
-             }
-            } 
+         
         }
     
     }

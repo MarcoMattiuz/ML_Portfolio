@@ -1,11 +1,155 @@
-@mixin circleBase ($size,$minSize){
-    width:$size;
-    height: $size;
-    min-width: $minSize;
-    min-height: $minSize;
-}
+@import "../mixins-functions";
 
+
+.triangle-container{
+    position: absolute;
+    left:0px;
+    top:0;
+    @media (max-width:500px){
+        margin-top: 80px;
+        }
+        .section-2{
+
+            position: absolute;
+            left:0px;
+            top:5500px;
+            .triangle{
+                &:nth-child(1){
+                    background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                    @include triangleBase(5vw,-20vw,15deg);
+                    }
+                    &:nth-child(2){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(15vw,30vw,115deg);
+                    }
+                    &:nth-child(3){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(85vw,55vw,90deg);
+                    }
+                    &:nth-child(4){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(75vw,90vw,20deg);
+                    }
+                    &:nth-child(5){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(79vw,80vw,80deg);
+                    }
+                    &:nth-child(6){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(85vw,-25vw,150deg);
+                    }
+                    &:nth-child(7){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(15vw,10vw,50deg);
+                    }
+                    &:nth-child(8){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(75vw,20vw,100deg);
+                    }
+                    &:nth-child(9){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(15vw,120vw,100deg);
+                    }
+                    &:nth-child(10){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(5vw,80vw,10deg);
+                    }
+          
+            }
+        }
+        .section-3{
+            position: absolute;
+            left:0px;
+            top:7500px;
+            @media (max-width:500px){
+                top: 4100px;
+            }
+            @media (max-width:350px){
+                display: none;
+            }
+            .triangle{
+                &:nth-child(1){
+                    background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                    @include triangleBase(5vw,84vw,15deg);
+                    }
+                    &:nth-child(2){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(5vw,70vw,115deg);
+                    }
+                    &:nth-child(3){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(89vw,60vw,90deg);
+                    }
+                    &:nth-child(4){
+                        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+                        @include triangleBase(75vw,90vw,20deg);
+                    }
+            }
+        }
+        
+            
+}
+.triangle{
+  position:absolute;
+  z-index: 3;
+       opacity: 0.8;
+  // The actual clipping effect
+  clip-path: url(#cp);
+
+  // Keep it proportional
+  width: 10vw;
+  height: 10vw;
+  max-height: 11vh;
+  max-width: 11vh;
+  &:nth-child(1){
+    background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+    @include triangleBase(5vw,20vw,15deg);
+    }
+    &:nth-child(2){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(15vw,30vw,115deg);
+    }
+    &:nth-child(3){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(85vw,35vw,90deg);
+    }
+    &:nth-child(4){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(75vw,90vw,20deg);
+    }
+    &:nth-child(5){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(55vw,80vw,80deg);
+    }
+    &:nth-child(6){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(85vw,20vw,150deg);
+    }
+    &:nth-child(7){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(15vw,10vw,50deg);
+    }
+    &:nth-child(8){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(75vw,10vw,100deg);
+    }
+    &:nth-child(9){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(15vw,100vw,100deg);
+    }
+    &:nth-child(10){
+        background:linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%,#27e8c8 103.96%);
+        @include triangleBase(5vw,60vw,10deg);
+    }
+   
+}
+  .circle-container{
+      position: absolute;
+      width: 100%;
+
+  }
 .circle{
+    display: inline-block;
     position:absolute;
     z-index: -1;
     border-radius: 50%;
@@ -13,26 +157,33 @@
     opacity: 0.8;
     align-items:center;
     justify-content:center;
-    overflow:hidden;
+    max-width: 40em;
+    max-height: 40em;
     @media (max-width: 750px) {
         opacity: 0.6;
+    }
+    @media (max-width: 650px) {
+        display: none;
     }
     .inner-circle{
         position:absolute;
         border-radius: 50%;
         background: hsl(240, 26%, 5%);
-     
+        max-width: 30em;
+        max-height: 30em;
     }
+
     &:nth-child(1){
-        background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
-        @include circleBase(33vw,450px);
-        margin-left: -8em;
+        
+        @include circleBase(60vw,450px);
+        margin-left:70%;
+        margin-top: 10em;
         .inner-circle{
             @include circleBase(27vw,380px);
         }
     }
     &:nth-child(2){
-        background: linear-gradient(150.08deg, #d02020 4.53%, #f6df0e 109%);
+        
         @include circleBase(36vw,480px);
         margin-left: 70%;
         margin-top: 15em;
@@ -44,7 +195,7 @@
         background: linear-gradient(180.08deg,  #b320d0 -6.53%, #0ee7f6 109%);
         @include circleBase(46vw,480px);
         margin-left: -19%;
-        margin-top: 45em;
+        margin-top:85vh;
         .inner-circle{
             @include circleBase(39vw,380px);
         }
@@ -53,7 +204,7 @@
         background: linear-gradient(100.08deg, #efcf18 10%, #27dbe8 );
         @include circleBase(36vw,480px);
         margin-left: 70%;
-        margin-top: 83em;
+        margin-top: 170vh;
         .inner-circle{
             @include circleBase(29vw,370px);
         }
@@ -62,7 +213,7 @@
         background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
         @include circleBase(37vw,490px);
         margin-left: -10em;
-        margin-top: 125em;
+        margin-top: 240vh;
         .inner-circle{
             @include circleBase(30vw,390px);
         }
@@ -71,7 +222,7 @@
         background: linear-gradient(150.08deg, #8822b8, #8333c5 , #1c44f7 );
         @include circleBase(36vw,480px);
         margin-left: 70%;
-        margin-top: 160em;
+        margin-top: 320vh;
         .inner-circle{
             @include circleBase(29vw,350px);
         }
@@ -80,18 +231,68 @@
         background: linear-gradient(180.59deg, #879AF2 -6.53%, #D3208B 51.52%, #FDA000 109%);
         @include circleBase(37vw,490px);
         margin-left: -10em;
-        margin-top: 190em;
+        margin-top: 390vh;
         .inner-circle{
             @include circleBase(30vw,390px);
         }
     }
-    // &:nth-child(8){
-    //     // background: linear-gradient(150.08deg,#f76015 -6.53%, #e032ec 109%,#693ce4 109%);
-    //     @include circleBase(36vw,480px);
-    //     margin-left: 70%;
-    //     margin-top: 225em;
-    //     .inner-circle{
-    //         @include circleBase(29vw,350px);
-    //     }
-    // }
+     &:nth-child(8){
+          background: linear-gradient(150.08deg,#f76015 -6.53%, #e032ec 109%,#693ce4 109%);
+         @include circleBase(36vw,480px);
+         margin-left: 70%;
+         margin-top: 470vh;
+         .inner-circle{
+             @include circleBase(29vw,350px);
+         }
+     }
+     &:nth-child(9){
+        background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
+        @include circleBase(33vw,450px);
+        margin-left:-9em;
+        margin-top: 0vw;
+        .inner-circle{
+            @include circleBase(27vw,380px);
+        }
+    }
+    &:nth-child(10){
+        background: linear-gradient(150.08deg, #d02020 4.53%, #f6df0e 109%);
+        @include circleBase(36vw,480px);
+        margin-left: 70%;
+        margin-top: 25vw;
+        .inner-circle{
+            @include circleBase(29vw,350px);
+        }
+    }
+
+
+    &:nth-child(13){
+        background: linear-gradient(180.59deg, #1861EF -0.9%, #27E85C 103.96%,#27e8de 103.96%);
+        @include circleBase(37vw,490px);
+        margin-left: -10em;
+        margin-top: 550vh;
+        .inner-circle{
+            @include circleBase(30vw,390px);
+        }
+    }
+    &:nth-child(14){
+        background: linear-gradient(150.08deg, #8822b8, #8333c5 , #1c44f7 );
+        @include circleBase(36vw,480px);
+        margin-left: 70%;
+        margin-top: 620vh;
+        .inner-circle{
+            @include circleBase(29vw,350px);
+        }
+    }
+    &:nth-child(15){
+        background: linear-gradient(100.08deg, #efcf18 10%, #27dbe8 );
+        @include circleBase(36vw,480px);
+        margin-left: -10%;
+        margin-top: 700vh;
+
+        .inner-circle{
+            @include circleBase(29vw,370px);
+        }
+    }
+
+
 }
