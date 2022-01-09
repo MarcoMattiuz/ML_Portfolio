@@ -102,56 +102,6 @@
           transform: rotateZ(10deg);
 }
 
-.triangle-container .section-3 {
-  position: absolute;
-  left: 0px;
-  top: 7500px;
-}
-
-@media (max-width: 500px) {
-  .triangle-container .section-3 {
-    top: 4100px;
-  }
-}
-
-@media (max-width: 350px) {
-  .triangle-container .section-3 {
-    display: none;
-  }
-}
-
-.triangle-container .section-3 .triangle:nth-child(1) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 84vw;
-  left: 5vw;
-  -webkit-transform: rotateZ(15deg);
-          transform: rotateZ(15deg);
-}
-
-.triangle-container .section-3 .triangle:nth-child(2) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 70vw;
-  left: 5vw;
-  -webkit-transform: rotateZ(115deg);
-          transform: rotateZ(115deg);
-}
-
-.triangle-container .section-3 .triangle:nth-child(3) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 60vw;
-  left: 89vw;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
-}
-
-.triangle-container .section-3 .triangle:nth-child(4) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 90vw;
-  left: 75vw;
-  -webkit-transform: rotateZ(20deg);
-          transform: rotateZ(20deg);
-}
-
 .triangle {
   position: absolute;
   z-index: 3;
@@ -965,6 +915,10 @@
   background-position: right;
 }
 
+.second-container {
+  background-image: url("../images/lorenzoFace.jpg") !important;
+}
+
 .pr-container {
   display: -ms-grid;
   display: grid;
@@ -975,7 +929,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr, 1fr;
       grid-template-rows: 4fr, 1fr;
-      grid-template-areas: "img" "text";
+      grid-template-areas: "img" "text";
   -ms-flex-line-pack: end;
       align-content: flex-end;
   -webkit-box-align: stretch;
