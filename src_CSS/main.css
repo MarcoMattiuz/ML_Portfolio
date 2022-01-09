@@ -929,13 +929,13 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr, 1fr;
       grid-template-rows: 4fr, 1fr;
-      grid-template-areas: "img" "text";
+      grid-template-areas: "img" "text";
   -ms-flex-line-pack: end;
       align-content: flex-end;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background-image: url("../images/marcoFace.png");
+  background-image: url("../images/marcoFace.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.7em;
@@ -1139,7 +1139,7 @@
       grid-template-areas: "text";
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  background-image: url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg");
+  background-image: url("../images/space-marco.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0.7em;
