@@ -205,9 +205,33 @@
             .contact-button1:hover,.contact-button1:focus{
                 background-position: right;
             }
+            .links1{
+                width: 75% ;
+                margin:0.3em;
+                border-radius: $standard-radius;
+                padding: 1.2em;
+                @include flex-center;
+                background: linear-gradient(90deg,rgba(158, 157, 157, 0.199),$background-black,$background-black );
+                background-size: 150%;
+                background-position: right;
+                transition: background-position 0.3s;
+            }
+            .links1:hover,.links1:focus{
+                background-position: left;  
+            }
+            .menu-icons{
+                @include flex-center;
+                img{
+                    margin: 4em 1em 0 1em ;
+                    width: 40%; height: auto; 
+                    transition: all 100ms ease-in;
 
-            
-         
+                }
+                img:hover,img:focus{
+                    transform: scale(1.2); 
+
+             }
+            } 
         }
     
     }
@@ -217,9 +241,9 @@
         box-shadow: -2em 2em 5em 1em $background-black;
         .links-container1{
             transform: translateX(0%);
+
         }
     
     }
     
 }
-

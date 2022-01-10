@@ -761,6 +761,52 @@
   .hamburger-menu-container .links-container1 .contact-button1:hover, .hamburger-menu-container .links-container1 .contact-button1:focus {
     background-position: right;
   }
+  .hamburger-menu-container .links-container1 .links1 {
+    width: 75%;
+    margin: 0.3em;
+    border-radius: 0.7em;
+    padding: 1.2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(158, 157, 157, 0.199)), color-stop(#090910), to(#090910));
+    background: linear-gradient(90deg, rgba(158, 157, 157, 0.199), #090910, #090910);
+    background-size: 150%;
+    background-position: right;
+    -webkit-transition: background-position 0.3s;
+    transition: background-position 0.3s;
+  }
+  .hamburger-menu-container .links-container1 .links1:hover, .hamburger-menu-container .links-container1 .links1:focus {
+    background-position: left;
+  }
+  .hamburger-menu-container .links-container1 .menu-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hamburger-menu-container .links-container1 .menu-icons img {
+    margin: 4em 1em 0 1em;
+    width: 40%;
+    height: auto;
+    -webkit-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+  }
+  .hamburger-menu-container .links-container1 .menu-icons img:hover, .hamburger-menu-container .links-container1 .menu-icons img:focus {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
   .hamburger-menu-container.open {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -929,7 +975,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr, 1fr;
       grid-template-rows: 4fr, 1fr;
-      grid-template-areas: "img" "text";
+      grid-template-areas: "img" "text";
   -ms-flex-line-pack: end;
       align-content: flex-end;
   -webkit-box-align: stretch;
