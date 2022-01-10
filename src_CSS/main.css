@@ -965,6 +965,10 @@
   background-image: url("../images/lorenzoFace.jpg") !important;
 }
 
+.second-container1 {
+  background-image: url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg") !important;
+}
+
 .pr-container {
   display: -ms-grid;
   display: grid;
