@@ -9,7 +9,9 @@
         margin-top: 80px;
         }
         .section-2{
-
+            @media (max-width:500px){
+                display: none;
+            }
             position: absolute;
             left:0px;
             top:5500px;
@@ -245,6 +247,9 @@
         }
     }
     &:nth-child(14){
+        @media (min-width:1900px){
+            display: none;
+        }
         background: linear-gradient(150.08deg, #8822b8, #8333c5 , #1c44f7 );
         @include circleBase(36vw,480px);
         margin-left: 70%;
@@ -254,6 +259,9 @@
         }
     }
     &:nth-child(15){
+        @media (min-width:2200px){
+            display: none;
+        }
         background: linear-gradient(100.08deg, #efcf18 10%, #27dbe8 );
         @include circleBase(36vw,480px);
         margin-left: -10%;

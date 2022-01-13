@@ -22,6 +22,12 @@
   top: 5500px;
 }
 
+@media (max-width: 500px) {
+  .triangle-container .section-2 {
+    display: none;
+  }
+}
+
 .triangle-container .section-2 .triangle:nth-child(1) {
   background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
   top: -20vw;
@@ -433,6 +439,12 @@
   margin-top: 620vh;
 }
 
+@media (min-width: 1900px) {
+  .circle:nth-child(14) {
+    display: none;
+  }
+}
+
 .circle:nth-child(14) .inner-circle {
   width: 29vw;
   height: 29vw;
@@ -448,6 +460,12 @@
   min-height: 480px;
   margin-left: -10%;
   margin-top: 700vh;
+}
+
+@media (min-width: 2200px) {
+  .circle:nth-child(15) {
+    display: none;
+  }
 }
 
 .circle:nth-child(15) .inner-circle {
