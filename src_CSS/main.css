@@ -1540,8 +1540,8 @@ a {
 .wrap .btn:hover,
 .wrap .btn:link:hover,
 .wrap .btn:visited:hover {
-  -webkit-box-shadow: 0 11em 0 0 #2c3e50 inset, 0em 0em 0 0 #bbb;
-          box-shadow: 0 11em 0 0 #2c3e50 inset, 0em 0em 0 0 #bbb;
+  -webkit-box-shadow: 0em 0em 0 0 #bbb;
+          box-shadow: 0em 0em 0 0 #bbb;
   -webkit-transform: translate(0.5em, 0.4em);
           transform: translate(0.5em, 0.4em);
   color: #fff;

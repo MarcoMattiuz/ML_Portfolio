@@ -42,7 +42,7 @@ a {
         transition: 0.25s box-shadow, 0.25s transform;
 
         &:hover {
-            box-shadow: 0 11em 0 0 #2c3e50 inset, 0em 0em 0 0 #bbb;
+            box-shadow: 0em 0em 0 0 #bbb;
             transform: translate(0.5em, 0.4em);
             color: #fff;
         }
