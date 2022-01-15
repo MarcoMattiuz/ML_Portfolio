@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAuCA,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,MAAM;EACd,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;EACV,aAAa,EAAE,IAAI;CACtB",
+    "mappings": "ACCA,OAAO,CAAC,gIAAI;AACZ,OAAO,CAAC,oEAAI;AAKZ,uCAAuC;AAKvC,uCAAuC;ACiFvC,eAAe;AFtDf,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,MAAM;EACd,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;EACV,aAAa,ECrCC,KAAK;CDsCtB",
     "sources": [
-        "../BallGame/BallGameML2HighRes/style.scss"
+        "../BallGame/style.scss",
+        "../styles_SCSS/_variables.scss",
+        "../styles_SCSS/_mixins-functions.scss"
     ],
     "names": [],
     "file": "style.css"

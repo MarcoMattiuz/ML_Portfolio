@@ -14,7 +14,7 @@ a {
     margin: 20px auto;
     color: $background-white;
     font-family: $open-Sans;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* BUTTON 1 */
@@ -34,15 +34,15 @@ a {
     .btn:link,
     .btn:visited {
         color: $background-white;
-        max-height: 500px;
-        max-width: 300px;
+        max-height: 650px;
+        max-width: 350px;
         text-align: center;    
         line-height: 1em;
         border-radius: $standard-radius;
         background-color: rgba(255, 255, 255, 0.795);
         box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
         border: 0em solid #2c3e50;
-        padding: 5em;
+        padding: 6em;
         text-align: center;
         transition: 0.25s box-shadow, 0.25s transform;
         
@@ -74,7 +74,7 @@ a {
 .emb-game{
     display: block;
 }
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
     .wrap {
         display: grid;
         grid-template-columns: 1fr ;
@@ -83,7 +83,7 @@ a {
         column-gap: 1.5rem;
     }
     .btn{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .emb-game{

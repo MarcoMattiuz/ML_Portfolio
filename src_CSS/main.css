@@ -1506,7 +1506,7 @@ a {
   margin: 20px auto;
   color: rgba(236, 228, 228, 0.952);
   font-family: "Open Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 /* BUTTON 1 */
@@ -1535,8 +1535,8 @@ a {
 .wrap .btn:link,
 .wrap .btn:visited {
   color: rgba(236, 228, 228, 0.952);
-  max-height: 500px;
-  max-width: 300px;
+  max-height: 650px;
+  max-width: 350px;
   text-align: center;
   line-height: 1em;
   border-radius: 0.7em;
@@ -1544,7 +1544,7 @@ a {
   -webkit-box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
           box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
   border: 0em solid #2c3e50;
-  padding: 5em;
+  padding: 6em;
   text-align: center;
   -webkit-transition: 0.25s -webkit-box-shadow, 0.25s -webkit-transform;
   transition: 0.25s -webkit-box-shadow, 0.25s -webkit-transform;
@@ -1585,7 +1585,7 @@ a {
   display: block;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
   .wrap {
     display: -ms-grid;
     display: grid;
@@ -1598,7 +1598,7 @@ a {
             column-gap: 1.5rem;
   }
   .btn {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .emb-game {
     display: none;

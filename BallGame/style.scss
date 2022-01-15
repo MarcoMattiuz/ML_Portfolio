@@ -1,5 +1,5 @@
-// @import "../../styles_SCSS/variables";
-// @import "../../styles_SCSS/mixins-functions";
+@import "../styles_SCSS/variables";
+@import "../styles_SCSS/mixins-functions";
 
 // body,
 // html {
@@ -41,7 +41,7 @@
     margin: 0.5rem;
     position: relative;
     z-index: 2;
-    border-radius: 2rem;
+    border-radius: $standard-radius;
 }
 
 // .audio{

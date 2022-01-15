@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@750&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/****************fonts****************/
+/*************************************/
+/* gradients */
 .canvas {
   margin: 0.5rem;
   position: relative;
   z-index: 2;
-  border-radius: 2rem;
+  border-radius: 0.7em;
 }
 /*# sourceMappingURL=style.css.map */
