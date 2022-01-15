@@ -5,7 +5,6 @@ var title_projects = document.querySelector("#title-projects");
 var title_contact = document.querySelector("#title-contact");
 var triangle = document.querySelector(".triangle-container");
 var circle = document.querySelector(".circle-container");
-console.log(title_about);
 const count= document.querySelector('#visitator-count');
  let cont=1;   
 

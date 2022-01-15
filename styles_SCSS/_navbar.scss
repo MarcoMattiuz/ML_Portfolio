@@ -30,7 +30,7 @@
         .logo {
             width:clamp(4.4em,7vw,7.1em);
             height:auto;
-            margin-left: clamp(1em,2vw,2.5em);
+            margin-left: clamp(0em,2vw,2.5em);
            
         }
         .links-container {
@@ -69,6 +69,7 @@
                 @include flex-center;
                 height: 100%;
             }
+            white-space: nowrap;
             margin-right: 4em;
             @include flex-center;
             width: 8em;
@@ -77,7 +78,6 @@
             background: $buttons-gradient;
             background-size: 300%;
             background-position: left;
-            white-space: nowrap;
             transition: background-position 0.7s;
 
         }   
@@ -102,7 +102,7 @@
                 position: absolute;
                 margin-right: 1em;
                 font-size: 0.8rem;
-                margin-left: 6em;
+                margin-left: 2.5em;
             }
             .hamburger-menu{
                 display: block;

@@ -25,19 +25,23 @@ a {
     grid-template-rows: 1fr ;
     row-gap: 1.5rem;
     column-gap: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     // max-width: 80%;
     
     .btn,
     .btn:link,
     .btn:visited {
         color: $background-white;
-        max-height: 70%;
+        max-height: 500px;
+        max-width: 300px;
         text-align: center;    
         line-height: 1em;
         border-radius: $standard-radius;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.795);
         box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
-        border: 0.2em solid #2c3e50;
+        border: 0em solid #2c3e50;
         padding: 5em;
         text-align: center;
         transition: 0.25s box-shadow, 0.25s transform;

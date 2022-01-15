@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../src_CSS/style.css">
     <title>Unity WebGL Player | ballWallGame</title>
   </head>
   <body style="text-align: center; width: 400px; height: 600px; display: flex; align-items: center; justify-content: center;">
-    <canvas id="unity-canvas" width=400 height=600 style="width: 350px; height: 550px; background: #231F20"></canvas>
+    <canvas class="canvas" id="unity-canvas" width=400 height=600 style="width: 350px; height: 550px; background: #231F20"></canvas>
     <script src="Build/BallGameML2.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {

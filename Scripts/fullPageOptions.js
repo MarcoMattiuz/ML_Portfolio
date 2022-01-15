@@ -12,10 +12,8 @@ let fullPage = new fullpage('#fullPage', {
     controlArrows: false,
     slidesNavigation: true
 });
-
-console.log(fullPage.navigation);
 fullPage.navigation = false;
-console.log(fullPage.navigation);
+
 
 
 
