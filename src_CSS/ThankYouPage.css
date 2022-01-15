@@ -24,7 +24,7 @@ body {
   height: 100vh;
   color: rgba(236, 228, 228, 0.952);
   font-weight: 900;
-  font-size: 15vw;
+  font-size: 12vw;
   overflow: hidden;
 }
 
@@ -218,7 +218,7 @@ section span:hover {
 }
 
 #end-word {
-  margin-right: 5rem;
+  margin-right: calc(1.5vw + 2.5rem);
 }
 
 .logo {
@@ -238,56 +238,5 @@ section span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 1;
-}
-
-.triangle {
-  position: absolute;
-  z-index: 1;
-  -webkit-clip-path: url(#cp);
-          clip-path: url(#cp);
-  width: 10vw;
-  height: 10vw;
-  max-height: 11vh;
-  max-width: 11vh;
-}
-
-.triangle:nth-child(1) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 9%;
-  left: 80%;
-  -webkit-transform: rotateZ(15deg);
-          transform: rotateZ(15deg);
-}
-
-.triangle:nth-child(2) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 44%;
-  left: 53%;
-  -webkit-transform: rotateZ(115deg);
-          transform: rotateZ(115deg);
-}
-
-.triangle:nth-child(3) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 31%;
-  left: 43%;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
-}
-
-.triangle:nth-child(4) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 64%;
-  left: 67%;
-  -webkit-transform: rotateZ(20deg);
-          transform: rotateZ(20deg);
-}
-
-.triangle:nth-child(5) {
-  background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-  top: 76%;
-  left: 86%;
-  -webkit-transform: rotateZ(80deg);
-          transform: rotateZ(80deg);
 }
 /*# sourceMappingURL=ThankYouPage.css.map */

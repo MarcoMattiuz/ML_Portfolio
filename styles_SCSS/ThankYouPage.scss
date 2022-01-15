@@ -23,7 +23,7 @@ body {
     height: 100vh;
     color: $background-white;
     font-weight: 900;
-    font-size: 15vw;
+    font-size: 12vw;
     overflow: hidden;
 }
 
@@ -150,7 +150,7 @@ section {
 }
 
 #end-word {
-    margin-right: 5rem;
+    margin-right: calc(1.5vw + 2.5rem);
 }
 
 .logo {
@@ -173,43 +173,3 @@ section {
 
 
 
-.triangle {
-    position: absolute;
-    z-index: 1;
-
-    // The actual clipping effect
-    clip-path: url(#cp);
-
-    // Keep it proportional
-    width: 10vw;
-    height: 10vw;
-    max-height: 11vh;
-    max-width: 11vh;
-
-    &:nth-child(1) {
-        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-        @include triangleBase(80%, 9%, 15deg);
-    }
-
-    &:nth-child(2) {
-        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-        @include triangleBase(53%, 44%, 115deg);
-    }
-
-    &:nth-child(3) {
-        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-        @include triangleBase(43%, 31%, 90deg);
-    }
-
-    &:nth-child(4) {
-        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-        @include triangleBase(67%, 64%, 20deg);
-    }
-
-    &:nth-child(5) {
-        background: linear-gradient(45.59deg, #186eef -0.9%, #27E85C 103.96%, #27e8c8 103.96%);
-        @include triangleBase(86%, 76%, 80deg);
-    }
-
-
-}
