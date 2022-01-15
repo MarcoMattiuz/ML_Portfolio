@@ -49,7 +49,7 @@
                 @include flex-center;
                 background: linear-gradient(90deg,rgba(158, 157, 157, 0.199),$background-black,$background-black );
                 width: 6.5em;
-                height: 90%;
+                height: 60%;
                 border-radius: 0.5rem;
                 background-size: 260%;
                 background-position:right;
@@ -58,9 +58,7 @@
             }
             .links:hover,.links:focus{
                 background-position: left;  
- 
             }
-
         }
 
         .contact-button {
@@ -102,7 +100,7 @@
                 position: absolute;
                 margin-right: 1em;
                 font-size: 0.8rem;
-                margin-left: 2.5em;
+                margin-left: 2em;
             }
             .hamburger-menu{
                 display: block;

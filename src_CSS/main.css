@@ -571,7 +571,7 @@
   background: -webkit-gradient(linear, left top, right top, from(rgba(158, 157, 157, 0.199)), color-stop(#090910), to(#090910));
   background: linear-gradient(90deg, rgba(158, 157, 157, 0.199), #090910, #090910);
   width: 6.5em;
-  height: 90%;
+  height: 60%;
   border-radius: 0.5rem;
   background-size: 260%;
   background-position: right;
@@ -636,7 +636,7 @@
     position: absolute;
     margin-right: 1em;
     font-size: 0.8rem;
-    margin-left: 2.5em;
+    margin-left: 2em;
   }
   .header .nav-bar .hamburger-menu {
     display: block;
@@ -999,7 +999,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr, 1fr;
       grid-template-rows: 4fr, 1fr;
-      grid-template-areas: "img" "text";
+      grid-template-areas: "img" "text";
   -ms-flex-line-pack: end;
       align-content: flex-end;
   -webkit-box-align: stretch;
