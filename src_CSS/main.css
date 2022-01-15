@@ -1519,6 +1519,7 @@ a {
   row-gap: 1.5rem;
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
+  max-width: 80%;
 }
 
 .wrap .btn,
@@ -1552,17 +1553,20 @@ a {
 .photo1 {
   display: none;
   background-image: url(../images/arcade.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .photo2 {
   background-image: url(../images/somethingunknown.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .photo3 {
   background-image: url(../images/anIdea.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .emb-game {

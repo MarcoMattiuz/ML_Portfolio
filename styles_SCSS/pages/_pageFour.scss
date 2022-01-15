@@ -25,7 +25,7 @@ a {
     grid-template-rows: 1fr ;
     row-gap: 1.5rem;
     column-gap: 1.5rem;
-    
+    max-width: 80%;
     .btn,
     .btn:link,
     .btn:visited {
@@ -41,7 +41,7 @@ a {
         padding: 6em;
         text-align: center;
         transition: 0.25s box-shadow, 0.25s transform;
-
+        
         &:hover {
             box-shadow: 0em 0em 0 0 #bbb;
             transform: translate(0.5em, 0.4em);
@@ -53,15 +53,18 @@ a {
 .photo1 {   
     display: none;
     background-image: url(../images/arcade.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .photo2 {
     background-image: url(../images/somethingunknown.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .photo3 {
     background-image: url(../images/anIdea.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .emb-game{

@@ -1,33 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | ballWallGame1ìFinal</title>
-    <link rel="stylesheet" href="../../src_CSS/style.css" />
+    <link rel="stylesheet" href="../../src_CSS/style.css">
   </head>
   <body style="text-align: center">
-    <div class="wrap"></div>
-    <canvas
-      class="canvas"
-      id="unity-canvas"
-      width="600"
-      height="900"
-      style="width: 600px; height: 900px; background: #231f20"
-    ></canvas>
-    <audio  controls class="audio">
-      <source src="../music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio> 
-      
-      
- 
-    <script src="Build/BallGameML2HighRes.loader.js"></script>
+    <canvas class="canvas"id="unity-canvas" width=600 height=900 style="width: 600px; height: 900px; background: #231F20"></canvas>
+    <script src="Build/BallGameML2HighRes1.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/BallGameML2HighRes.data",
-        frameworkUrl: "Build/BallGameML2HighRes.framework.js",
-        codeUrl: "Build/BallGameML2HighRes.wasm",
+        dataUrl: "Build/BallGameML2HighRes1.data",
+        frameworkUrl: "Build/BallGameML2HighRes1.framework.js",
+        codeUrl: "Build/BallGameML2HighRes1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ballWallGame1ìFinal",
