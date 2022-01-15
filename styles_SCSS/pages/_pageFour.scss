@@ -31,7 +31,6 @@ a {
     .btn:visited {
         color: $background-white;
         line-height: 1em;
-        
         // color: $background-white;
         // text-decoration: none;
         // display: inline-block;
@@ -51,7 +50,8 @@ a {
     }
 }
 
-.photo1 {
+.photo1 {   
+    display: none;
     background-image: url(../images/arcade.jpg);
     background-size: 100%;
 }
@@ -64,6 +64,9 @@ a {
     background-size: 100%;
 }
 
+.emb-game{
+    display: block;
+}
 @media (max-width: 950px) {
     .wrap {
         display: grid;
@@ -74,5 +77,12 @@ a {
     }
     .btn{
         font-size: 0.8rem;
+    }
+
+    .emb-game{
+        display: none;
+    }
+    .photo1{
+        display: block;
     }
 }

@@ -600,6 +600,7 @@
   background: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
   background-size: 300%;
   background-position: left;
+  white-space: nowrap;
   -webkit-transition: background-position 0.7s;
   transition: background-position 0.7s;
 }
@@ -1549,6 +1550,7 @@ a {
 }
 
 .photo1 {
+  display: none;
   background-image: url(../images/arcade.jpg);
   background-size: 100%;
 }
@@ -1561,6 +1563,10 @@ a {
 .photo3 {
   background-image: url(../images/anIdea.jpg);
   background-size: 100%;
+}
+
+.emb-game {
+  display: block;
 }
 
 @media (max-width: 950px) {
@@ -1577,6 +1583,12 @@ a {
   }
   .btn {
     font-size: 0.8rem;
+  }
+  .emb-game {
+    display: none;
+  }
+  .photo1 {
+    display: block;
   }
 }
 

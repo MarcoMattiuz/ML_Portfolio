@@ -1,4 +1,5 @@
 @import "../../styles_SCSS/variables";
+@import "../../styles_SCSS/mixins-functions";
 
 body,
 html {
@@ -7,7 +8,7 @@ html {
     background-color: $background-black;
     padding: 0;
     margin: 0;
-
+    @include flex-center;
     .wrap {
         background-image: $buttons-gradient;
         background-size: 200%;
