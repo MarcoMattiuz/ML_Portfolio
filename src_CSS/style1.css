@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lora:ital,wght@1,500&family=Open+Sans:wght@750&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/****************fonts****************/
+/*************************************/
+/* gradients */
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: #090910;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrap,
+html .wrap {
+  background-image: linear-gradient(150deg, #5ec29c, #5ec2ba, #5e79c2, #845ec2, #d65db1, #ff6f91, #ff9671);
+  background-size: 200%;
+  background-position: left;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation: blurmovement 10s infinite;
+          animation: blurmovement 10s infinite;
+}
+
+@-webkit-keyframes blurmovement {
+  0% {
+    background-position: right;
+  }
+  50% {
+    background-position: bottom;
+  }
+  75% {
+    background-position: top;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes blurmovement {
+  0% {
+    background-position: right;
+  }
+  50% {
+    background-position: bottom;
+  }
+  75% {
+    background-position: top;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.canvas {
+  margin: 0.5rem;
+  position: relative;
+  z-index: 2;
+  border-radius: 0.7em;
+}
+/*# sourceMappingURL=style1.css.map */
