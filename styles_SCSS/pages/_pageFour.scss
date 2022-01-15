@@ -14,7 +14,7 @@ a {
     margin: 20px auto;
     color: $background-white;
     font-family: $open-Sans;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 /* BUTTON 1 */
@@ -24,21 +24,21 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr ;
     row-gap: 1.5rem;
-    column-gap: 1.5rem;
-    max-width: 80%;
+    column-gap: 1.3rem;
+    // max-width: 80%;
+    
     .btn,
     .btn:link,
     .btn:visited {
         color: $background-white;
+        max-height: 70%;
+        text-align: center;    
         line-height: 1em;
-        // color: $background-white;
-        // text-decoration: none;
-        // display: inline-block;
         border-radius: $standard-radius;
         background-color: #fff;
         box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
         border: 0.2em solid #2c3e50;
-        padding: 6em;
+        padding: 5em;
         text-align: center;
         transition: 0.25s box-shadow, 0.25s transform;
         

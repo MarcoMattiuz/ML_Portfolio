@@ -1505,7 +1505,7 @@ a {
   margin: 20px auto;
   color: rgba(236, 228, 228, 0.952);
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* BUTTON 1 */
@@ -1517,22 +1517,23 @@ a {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   row-gap: 1.5rem;
-  -webkit-column-gap: 1.5rem;
-          column-gap: 1.5rem;
-  max-width: 80%;
+  -webkit-column-gap: 1.3rem;
+          column-gap: 1.3rem;
 }
 
 .wrap .btn,
 .wrap .btn:link,
 .wrap .btn:visited {
   color: rgba(236, 228, 228, 0.952);
+  max-height: 70%;
+  text-align: center;
   line-height: 1em;
   border-radius: 0.7em;
   background-color: #fff;
   -webkit-box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
           box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
   border: 0.2em solid #2c3e50;
-  padding: 6em;
+  padding: 5em;
   text-align: center;
   -webkit-transition: 0.25s -webkit-box-shadow, 0.25s -webkit-transform;
   transition: 0.25s -webkit-box-shadow, 0.25s -webkit-transform;
