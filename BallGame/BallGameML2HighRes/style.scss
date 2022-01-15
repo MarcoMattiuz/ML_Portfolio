@@ -1,0 +1,52 @@
+// @import "../../styles_SCSS/variables";
+// @import "../../styles_SCSS/mixins-functions";
+
+// body,
+// html {
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: $background-black;
+//     padding: 0;
+//     margin: 0;
+//     @include flex-center;
+//     .wrap {
+//         background-image: $buttons-gradient;
+//         background-size: 200%;
+//         background-position: left;
+//         opacity: 0.3;
+//         position: absolute;
+//         z-index: 0;
+//         width: 100vw;
+//         height: 100vh;
+//         animation: blurmovement 10s infinite;
+//     }
+
+//     @keyframes blurmovement {
+//         0% {
+//             background-position: right;
+//         }
+//         50% {
+//             background-position: bottom;
+//         }
+//         75% {
+//             background-position: top;
+//         }
+//         100% {
+//             background-position: left;
+//         }
+//     }
+// }
+
+.canvas {
+    margin: 0.5rem;
+    position: relative;
+    z-index: 2;
+    border-radius: 2rem;
+}
+
+// .audio{
+//     position: absolute;
+//     z-index: 2;
+//     top: 0;
+//     right: 0;
+// }

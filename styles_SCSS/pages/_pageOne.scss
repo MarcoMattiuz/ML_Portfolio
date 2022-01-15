@@ -9,6 +9,7 @@
     margin-top:2em;
     white-space: nowrap;
     background-size:cover;
+    background-clip: text;
     -webkit-background-clip: text;
     color:transparent;
     @media (max-width: 500px) {
@@ -51,9 +52,9 @@
         #ourWork {
             @include buttonBig-text;
             @include flex-center;
-            height: 2em;
-            width: 8.5em;
-            border-radius: $standard-radius - 0.2em;
+            height: 1.5em;
+            width: 8em;
+            border-radius: $standard-radius ;
             background: $buttons-gradient;
             background-size: 300%;
             background-position: left;

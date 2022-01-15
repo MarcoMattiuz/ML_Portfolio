@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAuCA,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,MAAM;EACd,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;EACV,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "../BallGame/BallGameML2HighRes/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
