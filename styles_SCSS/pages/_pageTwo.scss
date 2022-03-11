@@ -1,5 +1,6 @@
 .second-container{
     background-image: url("../images/lorenzoFace.jpg") !important;
+    background-position-y: 0px !important;
   }
 .second-container1{
      background-image: url("https://sancho.com.mt/wp-content/uploads/2021/01/michal-kubalczyk-WecngmAT-KY-unsplash.jpg") !important;
@@ -17,9 +18,10 @@
     align-content: flex-end;
     align-items: stretch;
     background-image:
-      url("../images/marcoFace.jpg");
+      url("../images/marcoFace.png");
       background-size:cover;
     background-repeat: no-repeat;
+    background-position-y: -170px;
     border-radius: $standard-radius;
     @media (max-width: 900px) {
         width: 80%;

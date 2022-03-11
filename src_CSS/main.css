@@ -983,6 +983,7 @@
 
 .second-container {
   background-image: url("../images/lorenzoFace.jpg") !important;
+  background-position-y: 0px !important;
 }
 
 .second-container1 {
@@ -1005,9 +1006,10 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background-image: url("../images/marcoFace.jpg");
+  background-image: url("../images/marcoFace.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -170px;
   border-radius: 0.7em;
 }
 
